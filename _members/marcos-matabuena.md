@@ -1,6 +1,6 @@
 ---
 name: Dr. Marcos Matabuena
-image: images/photo.jpg
+image: images/marcos-photo.png
 role: principal-investigator
 affiliation: MBZUAI
 aliases:
