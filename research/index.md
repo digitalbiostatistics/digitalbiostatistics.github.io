@@ -2,14 +2,29 @@
 title: Research
 nav:
   order: 1
-  tooltip: Publications
+  tooltip: Published works
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Publications
+# {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-This page lists publications from Marcos Matabuena's Google Scholar profile and related publisher, arXiv, and indexing records. Paper titles link to the publication page.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {% include section.html %}
+
+## Highlighted
+
+{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
+
+{% include section.html %}
+
+## All
+
+{% include search-box.html %}
+
+{% include search-info.html %}
+
+{% include list.html data="citations" component="citation" style="rich" %}
 
 ## Publications
 
