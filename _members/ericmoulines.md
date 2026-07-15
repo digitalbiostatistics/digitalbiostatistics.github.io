@@ -1,5 +1,5 @@
 ---
-name: Prof. Eric Moulines
+name: Eric Moulines
 image: images/eric.png
 role: mbzuai-collaborator
 description: 
