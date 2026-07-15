@@ -1,7 +1,7 @@
 ---
-name: John Doe
+name: Dr. Yang Xiao
 image: images/photo.jpg
-role: phd
+role: Visiting Researcher
 group: alum
 links:
   github: john-doe
