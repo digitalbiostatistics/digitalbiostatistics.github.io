@@ -2,6 +2,7 @@
 name: Dr. Marcos Matabuena
 image: images/marcos-photo.png
 role: principal-investigator
+description: Assistant Professor
 affiliation: MBZUAI
 links:
   home-page: https://marcosmatabuena.org/
