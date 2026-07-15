@@ -19,7 +19,7 @@ nav:
 
 {% include section.html %}
 
-## MBZUAI Collaborators
+## Collaborators at MBZUAI
 
 <div style="width: 100%; text-align: center;">
   {% include list.html
