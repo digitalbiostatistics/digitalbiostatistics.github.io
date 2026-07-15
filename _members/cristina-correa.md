@@ -1,6 +1,6 @@
 ---
 name: Cristina Correa Segade
-image: images/yang.png
+image: images/cris.png
 role: Visiting-Researcher
 description: Research Engineer
 affiliation: MBZUAI
