@@ -19,10 +19,24 @@ nav:
 
 {% include section.html %}
 
-# Main Collaborators
+## MBZUAI Collaborators
+
+<div style="width: 100%; text-align: center;">
+  {% include list.html
+    data="members"
+    component="portrait-static"
+    filter="role == 'mbzuai-collaborator'"
+  %}
+</div>
 
 {% include section.html %}
 
+## International Collaborators
+
 <div style="width: 100%; text-align: center;">
-  {% include list.html data="members" component="portrait" filter="role == 'collaborator'" %}
+  {% include list.html
+    data="members"
+    component="portrait-static"
+    filter="role == 'international-collaborator'"
+  %}
 </div>
