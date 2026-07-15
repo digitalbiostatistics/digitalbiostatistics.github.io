@@ -1,8 +1,8 @@
 ---
 name: Dr. Ruoyu Wang
 image: images/yang.png
-role: collaborator
-description: 
+role: international-collaborator
+description: photo not
 affiliation: 
 links:
   orcid: 
