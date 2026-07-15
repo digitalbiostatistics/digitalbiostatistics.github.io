@@ -1,7 +1,7 @@
 ---
 name: Dr. Marcos Matabuena
 image: images/marcos-photo.png
-role: principal-investigator
+role: pi
 description: Assistant Professor
 affiliation: MBZUAI
 links:
