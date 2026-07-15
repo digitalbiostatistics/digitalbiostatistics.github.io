@@ -1,6 +1,6 @@
 ---
 name: Georgios Pavlopoulos
-image: images/georgios2.jpg
+image: images/georgios.jpg
 role: mbzuai-collaborator
 description: 
 affiliation: 
