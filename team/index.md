@@ -14,7 +14,7 @@ nav:
 </div>
 
 <div style="width: 100%; text-align: center;">
-  {% include list.html data="members" component="portrait" filter="role != 'pi' and role != 'collaborator'" %}
+  {% include list.html data="members" component="portrait" filter="role != 'pi' and role != 'mbzuai-collaborator' and role != 'international-collaborator'" %}
 </div>
 
 {% include section.html %}
