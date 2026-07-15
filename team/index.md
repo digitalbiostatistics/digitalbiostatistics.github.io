@@ -13,8 +13,13 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+<div style="width: 100%; text-align: center; margin-bottom: 35px;">
+  {% include list.html data="members" component="portrait" filter="role == 'pi'" %}
+</div>
+
+<div style="width: 100%; text-align: center;">
+  {% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+</div>
 
 {% include section.html background="images/background.jpg" dark=true %}
 
