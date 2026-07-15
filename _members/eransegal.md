@@ -1,5 +1,5 @@
 ---
-name: Prof. Eran Segal
+name: Eran Segal
 image: images/eransegal.png
 role: mbzuai-collaborator
 description: 
