@@ -1,37 +1,47 @@
-{% if include.lookup %}
-  {% assign member = site.members
-    | where_exp: "member", "member.slug == include.lookup"
-    | first
-  %}
-{% else %}
-  {% assign member = include %}
-{% endif %}
-
 <div class="portrait-wrapper">
-  <div
-    class="portrait"
-    data-style="{{ include.style }}"
-  >
-    {% if member.image %}
+
+  {% if include.link %}
+    <a
+      href="{{ include.link | escape }}"
+      class="portrait"
+      data-style="{{ include.style }}"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Open profile of {{ include.name }}"
+    >
+  {% else %}
+    <div
+      class="portrait"
+      data-style="{{ include.style }}"
+    >
+  {% endif %}
+
+    {% if include.image %}
       <img
-        src="{{ member.image | relative_url | uri_escape }}"
+        src="{{ include.image | relative_url | uri_escape }}"
         class="portrait-image"
-        alt="Portrait of {{ member.name }}"
+        alt="Portrait of {{ include.name }}"
         loading="lazy"
         {% include fallback.html %}
       >
     {% endif %}
 
-    {% if member.name %}
+    {% if include.name %}
       <span class="portrait-name">
-        {{ member.name }}
+        {{ include.name }}
       </span>
     {% endif %}
 
-    {% if member.affiliation %}
+    {% if include.affiliation %}
       <span class="portrait-affiliation">
-        {{ member.affiliation }}
+        {{ include.affiliation }}
       </span>
     {% endif %}
-  </div>
+
+  {% if include.link %}
+    </a>
+  {% else %}
+    </div>
+  {% endif %}
+
 </div>
