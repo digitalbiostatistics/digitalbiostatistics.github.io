@@ -3,9 +3,6 @@ name: Dr. Marcos Matabuena
 image: images/marcos-photo.png
 role: principal-investigator
 affiliation: MBZUAI
-aliases:
-  - J. Smith
-  - J Smith
 links:
   home-page: https://marcosmatabuena.org/
   orcid: 0000-0002-2764-5824
