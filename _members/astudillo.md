@@ -1,5 +1,5 @@
 ---
-name: Dr. Raul Astudillo
+name: Raul Astudillo
 image: images/astudillo.png
 role: mbzuai-collaborator
 description: 
