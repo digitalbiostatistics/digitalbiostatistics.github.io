@@ -1,6 +1,6 @@
 ---
 name: Dr. Yang Xiao
-image: images/photo.jpg
+image: images/yang.png
 role: Visiting-Researcher
 affiliation: MBZUAI
 links:
