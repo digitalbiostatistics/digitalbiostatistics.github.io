@@ -1,6 +1,6 @@
 ---
 name: Abhijit Das
-image: images/abhijit.png
+image: images/abhijit2.jpeg
 role: mbzuai-collaborator
 description: 
 affiliation: 
