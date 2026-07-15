@@ -1,11 +1,11 @@
 ---
 name: Dr. Yasmeena Akhter
-image: images/yang.png
+image: images/yasmeena.jpg
 role: Visiting-Researcher
 description: Visiting Researcher
 affiliation: MBZUAI
 links:
-  orcid: 0009-0006-6374-2169
+  orcid:0000-0001-9524-9463
 ---
 
 Yasmeena Akhter is a Kashmiri-born researcher currently holding a Visiting Researcher position at MBZUAI. She works with Professor Marcos Matabuena in the Department of Epidemiology.
