@@ -4,6 +4,5 @@ image: images/eric.png
 role: mbzuai-collaborator
 description: 
 affiliation: 
-links:
-  orcid: 
+link: https://scholar.google.com/citations?user=_XE1LvQAAAAJ&hl=fr
 ---
