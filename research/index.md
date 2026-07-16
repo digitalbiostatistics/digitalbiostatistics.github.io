@@ -5,7 +5,7 @@ nav:
   tooltip: Published works
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Research
+# Research
 
 A searchable list of publications from the Digital Biostatistics group. Paper titles link to the publication page.
 
