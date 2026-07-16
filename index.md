@@ -78,7 +78,7 @@ We are currently developing new machine learning models, non-Euclidean statistic
 
 {% capture text %}
 
-The success of research depends on carefully selecting your team and  collaborators. To move the field forward, surround yourself with people who are enthusiastic, motivated, and well-prepared
+The success of research depends on carefully selecting your team and  collaborators. To move the field forward, surround yourself with people who are enthusiastic, motivated, and well-prepared.
 
 {%
   include button.html
