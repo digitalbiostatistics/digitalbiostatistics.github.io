@@ -16,7 +16,13 @@
     data-big
   {% endif %}
 >
-  <a href="{{ "/" | relative_url }}" class="home">
+{% if current_lang == "zh" %}
+  {% assign home_url = "/zh/" %}
+{% else %}
+  {% assign home_url = "/" %}
+{% endif %}
+
+<a href="{{ home_url | relative_url }}" class="home">
     {% if logo %}
       <span class="logo">
         {% if svg %}
@@ -41,8 +47,11 @@
   <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
 
   <nav>
+    {% assign current_lang = page.lang | default: "en" %}
+
     {% assign pages = site.pages
-      | where_exp: "page", "page.nav"
+      | where_exp: "item", "item.nav"
+      | where: "lang", current_lang
       | sort: "nav.order"
     %}
     {% for page in pages %}
@@ -55,5 +64,24 @@
         </a>
       {% endif %}
     {% endfor %}
+    {% assign translations = site.pages
+  | where: "translation_key", page.translation_key
+%}
+
+{% for translation in translations %}
+  {% if translation.lang != current_lang %}
+    <a
+      href="{{ translation.url | relative_url }}"
+      class="language-switcher"
+      data-tooltip="Change language"
+    >
+      {% if translation.lang == "zh" %}
+        中文
+      {% else %}
+        English
+      {% endif %}
+    </a>
+  {% endif %}
+{% endfor %}
   </nav>
 </header>
