@@ -1,5 +1,5 @@
 ---
-name: Dr. Ruoyu Wang
+name: Ruoyu Wang
 image: images/ruoyuwang.jpg
 role: international-collaborator
 description: 
