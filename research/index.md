@@ -1,5 +1,7 @@
 ---
 title: Research
+lang: en
+translation_key: research
 nav:
   order: 1
   tooltip: Published works
