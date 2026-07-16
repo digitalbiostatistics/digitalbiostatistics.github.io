@@ -1,5 +1,7 @@
 ---
 title: Contact
+lang: en
+translation_key: contact
 nav:
   order: 5
   tooltip: Email, address, and location
