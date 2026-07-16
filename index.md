@@ -16,11 +16,45 @@ Digital health has the potential to identify disease risks years—or even decad
 Artificial intelligence in medicine is still in its early stages, and only a small fraction of its potential has been demonstrated in real-world clinical practice. Most current applications address relatively simple and well-defined problems from a statistical learning perspective.
 
 Over the next 10 to 15 years, we expect to witness advances that are difficult to imagine today, particularly in neurological disorders such as ALS. New biological discoveries will emerge, comparable to the recent progress made in solving open mathematical problems using AI tools. The next frontier in biomedical research is the development of longitudinal, causal, and data-driven models that use AI tools to support revolutionary therapies and drug discovery. We will have access to metabolic phenotype profiles containing information at a level never seen before.
+
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/tIgO_Sjh3tQ"
+    title="YouTube video player 1"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/0z03xkwFbw4"
+    title="YouTube video player 2"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ## 3. Our Ultimate Goal
 
 The ultimate goal of our research is to develop a low-cost healthcare operations pipeline that optimizes the health of individuals and populations by combining biostatistics, digital health, and operations research.
 
 Since I was a child, my dream has been to help find cures for diseases. AI will contribute to the discovery of personalized drugs, reduce healthcare costs, and promote greater equality and more individualized prescribing.
+
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/lZjDMStecZc"
+    title="YouTube video player 3"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
 
 {% include section.html %}
 
