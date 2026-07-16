@@ -1,5 +1,5 @@
 ---
-name: Dr. Marcos Matabuena
+name: Marcos Matabuena
 image: images/marcos-photo.png
 role: pi
 description: Assistant Professor
