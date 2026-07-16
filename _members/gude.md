@@ -1,6 +1,6 @@
 ---
 name: Francisco Gude
-image: images/franciscogude.jpeg
+image: images/francisco-gude.png
 role: international-collaborator
 description: 
 affiliation: 
