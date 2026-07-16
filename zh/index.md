@@ -23,6 +23,27 @@ translation_key: home
 
 我们将能够获得前所未有的高精度代谢表型信息。
 
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/tIgO_Sjh3tQ"
+    title="YouTube video player 1"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/0z03xkwFbw4"
+    title="YouTube video player 2"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 ## 3. 我们的最终目标
 
 我们的最终目标是建立一个低成本的医疗健康运营体系，通过结合生物统计学、数字健康和运筹学，优化个体和人群的健康。
