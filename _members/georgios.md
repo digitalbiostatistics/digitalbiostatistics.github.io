@@ -4,6 +4,5 @@ image: images/georgios.jpg
 role: mbzuai-collaborator
 description: 
 affiliation: 
-links:
-  orcid: 
+link: https://scholar.google.com/citations?user=3bL-H00AAAAJ&hl=en
 ---
