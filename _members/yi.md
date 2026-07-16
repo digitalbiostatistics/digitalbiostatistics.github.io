@@ -1,0 +1,8 @@
+---
+name: Mingyang Yi
+image: images/mingyangyi.jpg
+role: international-collaborator
+description: 
+affiliation: 
+link: https://scholar.google.com/citations?user=RlOZiPUAAAAJ&hl=en
+---
