@@ -1,6 +1,6 @@
 ---
 name: James Berry
-image: images/antonio.png
+image: images/jamesberry.jpeg
 role: international-collaborator
 description: Harvard University
 affiliation: 
