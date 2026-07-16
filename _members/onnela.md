@@ -1,6 +1,6 @@
 ---
 name: Jukka-Pekka Onnela
-image: images/NUEVO-onnelaJukka-pEKKA,jpg
+image: images/NUEVO-onnelaJukka-pEKKA.jpg
 role: international-collaborator
 description: Harvard University
 affiliation: 
