@@ -45,7 +45,7 @@ We are pioneering the use of non-Euclidean statistical methods to define a new g
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/OurResearch.png"
   link="research"
   title="Our Research"
   text=text
@@ -69,7 +69,7 @@ We are currently developing new machine learning models, non-Euclidean statistic
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/ourprojects.png"
   link="projects"
   title="Our Projects"
   flip=true
@@ -94,7 +94,7 @@ The success of research depends on carefully selecting your team and  collaborat
 
 {%
   include feature.html
-  image="images/photo.jpg"
+  image="images/collageconsolo1pelado.png"
   link="team"
   title="Our Team"
   text=text
