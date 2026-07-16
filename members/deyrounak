@@ -577,6 +577,15 @@
     
       
         <a
+          href="/zh/research/"
+          data-tooltip="已发表的研究成果"
+        >
+          研究
+        </a>
+      
+    
+      
+        <a
           href="/projects/"
           data-tooltip="Software, datasets, and more"
         >
