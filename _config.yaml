@@ -1,7 +1,20 @@
 # site properties and page defaults
-title: digital biostatistics
+title: digitalbiostatistics
 subtitle: 
-description: An engaging 1-3 sentence description of your lab.
+description: 
+"<strong> 1. Welcome</strong>"
+
+Welcome to the website of Marcos Matabuena’s research group.
+Digital health has the potential to identify disease risks years—or even decades—before clinical symptoms emerge. Our mission is to develop the mathematical, statistical, and artificial intelligence methods needed to make this transformation possible, based on continuous-time information collected through modern medical devices. Ultimately, we aim to move beyond the treatment of disease toward the continuous, real-time optimization of individual and population health.
+
+"<strong> 2. The Future of Artificial Intelligence in Medicine </strong>"
+Artificial intelligence in medicine is still in its early stages, and only a small fraction of its potential has been demonstrated in real-world clinical practice. Most current applications address relatively simple and well-defined problems from a statistical learning perspective.
+Over the next 10 to 15 years, we expect to witness advances that are difficult to imagine today, particularly in neurological disorders such as ALS. New biological discoveries will emerge, comparable to the recent progress made in solving open mathematical problems using AI tools. The next frontier in biomedical research is the development of longitudinal, causal, and data-driven models that use AI tools to support revolutionary therapies and drug discovery. We will have access to metabolic phenotype profiles containing information at a level never seen before.
+
+"<strong> 3. Our Ultimate Goal </strong>"
+The ultimate goal of our research is to develop a low-cost healthcare operations pipeline that optimizes the health of individuals and populations by combining biostatistics, digital health, and operations research.
+Since I was a child, my dream has been to help find cures for diseases. AI will contribute to the discovery of personalized drugs, reduce healthcare costs, and promote greater equality and more individualized prescribing.
+ 
 header: images/banner3.png
 footer: images/banner3.png
 proofer: false
