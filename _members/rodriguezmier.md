@@ -1,6 +1,6 @@
 ---
 name: Pablo Rodriguez Mier
-image: images/pablo-rodriguez-mier
+image: images/Pablo-Rodriguez-Mier.jpeg
 role: international-collaborator
 description: 
 affiliation: 
