@@ -4,8 +4,7 @@ image: images/astudillo.png
 role: mbzuai-collaborator
 description: 
 affiliation: 
-links:
-  orcid: 
+link: https://scholar.google.com/citations?user=r1Jkj7MAAAAJ&hl=en
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
