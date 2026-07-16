@@ -1,5 +1,7 @@
 ---
 title: Projects
+lang: EN
+translation_key: projects
 nav:
   order: 2
   tooltip: Software, datasets, and more
