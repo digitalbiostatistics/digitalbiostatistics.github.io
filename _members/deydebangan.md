@@ -1,6 +1,6 @@
 ---
-name: Debandan Dey
-image: images/davidrossell.jpeg
+name: Debangan Dey
+image: images/debangandey.jpeg
 role: international-collaborator
 description: 
 affiliation: 
