@@ -68,7 +68,7 @@ We are currently developing new machine learning models, non-Euclidean statistic
 
 {%
   include feature.html
-  image="images/ourprojects.png"
+  image="images/ourprojects_web.png"
   link="projects"
   title="Our Projects"
   flip=true
