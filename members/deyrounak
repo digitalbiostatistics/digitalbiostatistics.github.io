@@ -568,10 +568,10 @@
     
       
         <a
-          href="/research/"
-          data-tooltip="Published works"
+          href="/zh/team/"
+          data-tooltip="已发表的研究成果"
         >
-          Research
+          研究
         </a>
       
     
@@ -590,6 +590,15 @@
           data-tooltip="已发表的研究成果"
         >
           研究
+        </a>
+      
+    
+      
+        <a
+          href="/research/"
+          data-tooltip="Published works"
+        >
+          Research
         </a>
       
     
