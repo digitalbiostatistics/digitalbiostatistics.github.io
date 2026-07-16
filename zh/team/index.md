@@ -27,18 +27,22 @@ nav:
 
 ## MBZUAI 合作者
 
+<div>
 {% include list.html
   data="members"
   component="portrait-static"
   filter="role == 'mbzuai-collaborator'"
 %}
+</div>
 
 {% include section.html %}
 
 ## 国际合作者
 
+<div>
 {% include list.html
   data="members"
   component="portrait-static"
   filter="role == 'international-collaborator'"
 %}
+</div>
