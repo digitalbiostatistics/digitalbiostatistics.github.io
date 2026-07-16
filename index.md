@@ -3,9 +3,6 @@
 
 # Digital Biostatistics
 
----
----
-
 ## 1. Welcome
 
 Welcome to the website of Marcos Matabuena’s research group.
