@@ -1,5 +1,5 @@
 ---
-name: Dr. Yasmeena Akhter
+name: Yasmeena Akhter
 image: images/yasmeena.jpg
 role: Visiting-Researcher
 description: Visiting Researcher
