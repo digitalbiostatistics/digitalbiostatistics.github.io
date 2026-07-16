@@ -50,6 +50,17 @@ translation_key: home
 
 从小开始，我的梦想就是帮助寻找疾病的治疗方法。人工智能将促进个性化药物的发现，降低医疗成本，推动更加平等的医疗服务，并实现更加个性化的处方和治疗方案。
 
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/lZjDMStecZc"
+    title="YouTube video player 3"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
 {% include section.html %}
 
 ## 研究亮点
