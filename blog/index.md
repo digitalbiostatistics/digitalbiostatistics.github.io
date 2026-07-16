@@ -1,5 +1,7 @@
 ---
 title: Blog
+lang: en
+translation_key: blog
 nav:
   order: 4
   tooltip: Musings and miscellany
