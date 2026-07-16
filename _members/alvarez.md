@@ -1,5 +1,5 @@
 ---
-name: Antonio Alvarez-Lopez
+name: Antonio Alvarez Lopez
 image: images/antonio.png
 role: international-collaborator
 description: 
