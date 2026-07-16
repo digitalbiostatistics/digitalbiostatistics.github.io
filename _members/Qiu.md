@@ -4,6 +4,5 @@ image: images/jianing.jpeg
 role: mbzuai-collaborator
 description: 
 affiliation: 
-links:
-  orcid: 
+link: https://scholar.google.com/citations?user=ETgWwQoAAAAJ&hl=zh-TW
 ---
