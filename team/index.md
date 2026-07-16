@@ -1,5 +1,7 @@
 ---
 title: Team
+lang: en
+translation_key: team
 nav:
   order: 3
   tooltip: About our team
