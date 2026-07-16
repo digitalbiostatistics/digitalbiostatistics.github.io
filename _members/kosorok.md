@@ -1,6 +1,6 @@
 ---
 name: Michael Kosorok
-image: images/kosorok_michael.jpg.avif
+image: images/kosorok.jpeg
 role: international-collaborator
 description: 
 affiliation: 
