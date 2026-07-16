@@ -1,5 +1,5 @@
 ---
-name: Dr. Yang Xiao
+name: Yang Xiao
 image: images/yang.png
 role: Visiting-Researcher
 description: Visiting Researcher
