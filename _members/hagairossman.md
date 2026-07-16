@@ -4,6 +4,5 @@ image: images/Hagai-Rossman.jpg
 role: mbzuai-collaborator
 description: 
 affiliation: 
-links:
-  orcid: 
+link: https://scholar.google.com/citations?user=kQrQJ1gAAAAJ&hl=en
 ---
