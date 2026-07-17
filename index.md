@@ -10,6 +10,16 @@ translation_key: home
 Welcome to the website of Marcos Matabuena’s research group.
 
 Digital health has the potential to identify disease risks years—or even decades—before clinical symptoms emerge. Our mission is to develop the mathematical, statistical, and artificial intelligence methods needed to make this transformation possible, based on continuous-time information collected through modern medical devices. Ultimately, we aim to move beyond the treatment of disease toward the continuous, real-time optimization of individual and population health.
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/UnkboTF1Bhk"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
 
 ## 2. The Future of Artificial Intelligence in Medicine
 
