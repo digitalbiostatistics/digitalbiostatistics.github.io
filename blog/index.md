@@ -3,7 +3,7 @@ title: News
 lang: en
 translation_key: blog
 nav:
-  order: 4
+  order: 7
   tooltip: Updates and miscellany
 ---
 
