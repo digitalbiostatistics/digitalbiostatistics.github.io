@@ -1,8 +1,8 @@
 ---
 name: Sujit Ghosh
-image: images/sujit-ghosh.png
+image: images/realsujitghosh.jpeg
 role: international-collaborator
 description: 
-affiliation: IISER
-link: https://scholar.google.com/citations?user=dS9gqzcAAAAJ&hl=en
+affiliation: North Carolina State University 
+link: https://scholar.google.com/citations?user=nDj-zN0AAAAJ&hl=en
 ---
