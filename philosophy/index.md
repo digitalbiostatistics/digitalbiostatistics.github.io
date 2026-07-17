@@ -3,7 +3,7 @@ title: Philosophy
 lang: en
 description: 
 nav:
-  order: 5
+  order: 4
   tooltip: Explore our vision
 ---
 
