@@ -1,6 +1,7 @@
 ---
 title: Philosophy
 lang: en
+translation_key: philosophy
 description: 
 nav:
   order: 4
