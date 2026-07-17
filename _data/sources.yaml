@@ -1,129 +1,293 @@
-# Publications for the Research page: 2024 onward only.
-# Upload this file to _data/sources.yaml.
-# The GitHub Action generates _data/citations.yaml from these entries.
-# Keep publication data here so the All/search UI in research/index.md continues to work.
+# 2026
 
-- id: "doi:10.3389/fdgth.2025.1705368"
+- id: "doi:10.64898/2026.06.22.26356272"
   type: paper
-  link: "https://doi.org/10.3389/fdgth.2025.1705368"
-  title: "Exploratory analysis of smartphone-based step counts as a digital biomarker for survival in ALS patients"
+  link: "https://doi.org/10.64898/2026.06.22.26356272"
+  title: "Pre-activity glycemic prediction prioritizes post-meal movement"
+  image: "images/photo.jpg"
 
-- id: "doi:10.1214/26-AOAS2139"
+- id: "arxiv:2605.28344"
   type: paper
-  link: "https://doi.org/10.1214/26-AOAS2139"
-  title: "Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials"
+  link: "https://arxiv.org/abs/2605.28344"
+  title: "Capturing the Curve: Functional Data Analysis for Validated Digital Outcome Measures"
+  image: "images/photo.jpg"
 
-- id: "doi:10.1007/s11634-024-00619-0"
+- id: "doi:10.64898/2026.05.24.26354007"
   type: paper
-  link: "https://doi.org/10.1007/s11634-024-00619-0"
-  title: "Kernel biclustering algorithm in Hilbert spaces"
+  link: "https://doi.org/10.64898/2026.05.24.26354007"
+  title: "A Deep Learning-Based Predictive Algorithm for Metabolic Syndrome Detection in the U.S. Population"
+  image: "images/photo.jpg"
 
-- id: "doi:10.1002/sam.70068"
+- id: "doi:10.1177/09622802261442893"
   type: paper
-  link: "https://doi.org/10.1002/sam.70068"
-  title: "Survival on Image Regression With Application to Partially Functional Distributional Representation of Physical Activity"
-
-- id: "arxiv:2603.24427"
-  type: paper
-  link: "https://arxiv.org/abs/2603.24427"
-  title: "Continuous-Time Learning of Probability Distributions: A Case Study in a Digital Trial of Young Children with Type 1 Diabetes"
-
-- id: "arxiv:2605.02693"
-  type: paper
-  link: "https://arxiv.org/abs/2605.02693"
-  title: "Random-Effects Algorithm for Random Objects in Metric Spaces"
+  link: "https://doi.org/10.1177/09622802261442893"
+  title: "Screening for diabetes mellitus in the US population using neural network-based modeling and complex survey designs"
+  image: "images/photo.jpg"
 
 - id: "arxiv:2605.05996"
   type: paper
   link: "https://arxiv.org/abs/2605.05996"
   title: "Gaussian mixture models in Hilbert spaces via kernel methods"
+  image: "images/photo.jpg"
 
-- id: "doi:10.1016/j.csda.2025.108131"
+- id: "arxiv:2605.02693"
   type: paper
-  link: "https://doi.org/10.1016/j.csda.2025.108131"
-  title: "Functional time transformation model with applications to digital health"
+  link: "https://arxiv.org/abs/2605.02693"
+  title: "Random-Effects Algorithm for Random Objects in Metric Spaces"
+  image: "images/photo.jpg"
+
+- id: "doi:10.13140/RG.2.2.35806.60486"
+  type: paper
+  link: "https://doi.org/10.13140/RG.2.2.35806.60486"
+  title: "From Physical Activity to Spirometry (as a Curve): A Combined Model for Mortality Prediction"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1123/jmpb.2025-0052"
+  type: paper
+  link: "https://doi.org/10.1123/jmpb.2025-0052"
+  title: "Daily Physical Activity Patterns Enhance Mortality Prediction in NHANES 2011-2014: A Comparative Study Across Classical, Machine Learning, and Deep Learning Models Using Accelerometer Data"
+  image: "images/photo.jpg"
+
+- id: "arxiv:2603.24427"
+  type: paper
+  link: "https://arxiv.org/abs/2603.24427"
+  title: "Continuous-Time Learning of Probability Distributions: A Case Study in a Digital Trial of Young Children with Type 1 Diabetes"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1002/sam.70068"
+  type: paper
+  link: "https://doi.org/10.1002/sam.70068"
+  title: "Survival on Image Regression With Application to Partially Functional Distributional Representation of Physical Activity"
+  image: "images/photo.jpg"
+
+- id: "doi:10.3389/fdgth.2025.1705368"
+  type: paper
+  link: "https://doi.org/10.3389/fdgth.2025.1705368"
+  title: "Exploratory analysis of smartphone-based step counts as a digital biomarker for survival in ALS patients"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1177/19322968261421954"
+  type: paper
+  link: "https://doi.org/10.1177/19322968261421954"
+  title: "Glucodensity-Based Models Outperform Time in Range and Glycemia Risk Index in Prediction Models"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1186/s12874-025-02748-2"
+  type: paper
+  link: "https://doi.org/10.1186/s12874-025-02748-2"
+  title: "Beyond scalar metrics: functional data analysis of postprandial continuous glucose monitoring in the AEGIS study"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1214/26-AOAS2139"
+  type: paper
+  link: "https://doi.org/10.1214/26-AOAS2139"
+  title: "Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1007/s13253-024-00656-4"
+  type: paper
+  link: "https://doi.org/10.1007/s13253-024-00656-4"
+  title: "Book Review: Functional Data Analysis with R by Ciprian M. Crainiceanu, Jeff Goldsmith, Andrew Leroux, and Erjia Cui"
+  image: "images/photo.jpg"
+
+# 2025
+
+- id: "arxiv:2512.08179"
+  type: paper
+  link: "https://arxiv.org/abs/2512.08179"
+  title: "Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces"
+  image: "images/photo.jpg"
+
+- id: "arxiv:2510.14494"
+  type: paper
+  link: "https://arxiv.org/abs/2510.14494"
+  title: "ROC Analysis with Covariate Adjustment Using Neural Network Models: Evaluating the Role of Age in the Physical Activity-Mortality Association"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1016/j.annepidem.2025.10.009"
+  type: paper
+  link: "https://doi.org/10.1016/j.annepidem.2025.10.009"
+  title: "Unequal strides to longevity. The extra mile to health equity"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1016/j.diabres.2025.112952"
+  type: paper
+  link: "https://doi.org/10.1016/j.diabres.2025.112952"
+  title: "Continuous Glucose Monitoring as an alternative for Cystic Fibrosis Related diabetes screening and diagnosis"
+  image: "images/photo.jpg"
 
 - id: "doi:10.1038/s41598-025-18119-2"
   type: paper
   link: "https://doi.org/10.1038/s41598-025-18119-2"
   title: "Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics"
+  image: "images/photo.jpg"
 
-- id: "doi:10.1371/journal.pcbi.1013098"
+- id: "doi:10.1001/jamanetworkopen.2025.33193"
   type: paper
-  link: "https://doi.org/10.1371/journal.pcbi.1013098"
-  title: "Conformal prediction for uncertainty quantification in dynamic biological systems"
+  link: "https://doi.org/10.1001/jamanetworkopen.2025.33193"
+  title: "Age, Sex, BMI, Meal Timing, and Glycemic Response to Meal Glycemic Load"
+  image: "images/photo.jpg"
 
-- id: "arxiv:2501.06868"
+- id: "doi:10.1101/2025.09.05.674557"
   type: paper
-  link: "https://arxiv.org/abs/2501.06868"
-  title: "Variable Selection Methods for Multivariate, Functional, and Complex Biomedical Data in the AI Age"
-
-- id: "arxiv:2505.08698"
-  type: paper
-  link: "https://arxiv.org/abs/2505.08698"
-  title: "Continuous Temporal Learning of Probability Distributions via Neural ODEs with Applications in Continuous Glucose Monitoring Data"
-
-- id: "arxiv:2506.08325"
-  type: paper
-  link: "https://arxiv.org/abs/2506.08325"
-  title: "Model-Free Kernel Conformal Depth Measures Algorithm for Uncertainty Quantification in Regression Models in Separable Hilbert Spaces"
+  link: "https://doi.org/10.1101/2025.09.05.674557"
+  title: "Distributional Data Analysis Uncovers Hundreds of Novel and Heritable Phenomic Features from Temporal Cotton and Maize Drone Imagery"
+  image: "images/photo.jpg"
 
 - id: "arxiv:2507.15741"
   type: paper
   link: "https://arxiv.org/abs/2507.15741"
   title: "Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces"
+  image: "images/photo.jpg"
 
-- id: "doi:10.1177/09622802241311455"
+- id: "arxiv:2506.08325"
   type: paper
-  link: "https://doi.org/10.1177/09622802241311455"
-  title: "Causal survival embeddings: Non-parametric counterfactual inference under censoring"
+  link: "https://arxiv.org/abs/2506.08325"
+  title: "Model-Free Kernel Conformal Depth Measures Algorithm for Uncertainty Quantification in Regression Models in Separable Hilbert Spaces"
+  image: "images/photo.jpg"
+
+- id: "arxiv:2505.08698"
+  type: paper
+  link: "https://arxiv.org/abs/2505.08698"
+  title: "Continuous Temporal Learning of Probability Distributions via Neural ODEs with Applications in Continuous Glucose Monitoring Data"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1371/journal.pcbi.1013098"
+  type: paper
+  link: "https://doi.org/10.1371/journal.pcbi.1013098"
+  title: "Conformal prediction for uncertainty quantification in dynamic biological systems"
+  image: "images/photo.jpg"
+
+- id: "arxiv:2505.05416"
+  type: paper
+  link: "https://arxiv.org/abs/2505.05416"
+  title: "Variable Selection for Fixed and Random Effects in Multilevel Functional Mixed Effects Models"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1093/biostatistics/kxaf013"
+  type: paper
+  link: "https://doi.org/10.1093/biostatistics/kxaf013"
+  title: "Predicting distributions of physical activity profiles in the National Health and Nutrition Examination Survey database using a partially linear Fr√©chet single index model"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1016/j.csda.2025.108131"
+  type: paper
+  link: "https://doi.org/10.1016/j.csda.2025.108131"
+  title: "Functional time transformation model with applications to digital health"
+  image: "images/photo.jpg"
+
+- id: "arxiv:2501.06868"
+  type: paper
+  link: "https://arxiv.org/abs/2501.06868"
+  title: "Variable Selection Methods for Multivariate, Functional, and Complex Biomedical Data in the AI Age"
+  image: "images/photo.jpg"
 
 - id: "arxiv:2501.00212"
   type: paper
   link: "https://arxiv.org/abs/2501.00212"
   title: "Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model"
+  image: "images/photo.jpg"
 
-- id: "doi:10.1002/sam.11704"
+- id: "doi:10.1177/09622802241311455"
   type: paper
-  link: "https://doi.org/10.1002/sam.11704"
-  title: "Neural interval-censored survival regression with feature selection"
+  link: "https://doi.org/10.1177/09622802241311455"
+  title: "Causal survival embeddings: Non-parametric counterfactual inference under right-censoring"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1007/s11634-024-00619-0"
+  type: paper
+  link: "https://doi.org/10.1007/s11634-024-00619-0"
+  title: "Kernel biclustering algorithm in Hilbert spaces"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1089/dia.2024.0356"
+  type: paper
+  link: "https://doi.org/10.1089/dia.2024.0356"
+  title: "A Telehealth Program Using Continuous Glucose Monitoring and a Connected Insulin Pen Cap in Nursing Homes for Older Adults with Insulin-Treated Diabetes: The Trescasas Study"
+  image: "images/photo.jpg"
+
+# 2024
+
+- id: "doi:10.1016/j.clnu.2024.11.020"
+  type: paper
+  link: "https://doi.org/10.1016/j.clnu.2024.11.020"
+  title: "Divergent hypoglycemic and hyperglycemic responses to the components of evening meals. A general adult population study in individuals without diabetes (AEGIS Study)"
+  image: "images/photo.jpg"
+
+- id: "doi:10.21203/rs.3.rs-5314139/v1"
+  type: paper
+  link: "https://doi.org/10.21203/rs.3.rs-5314139/v1"
+  title: "Exploring the Interplay Between Physical Activity, Dietary Patterns, Diabetes, and All-Cause Mortality in the U.S.A. Population, NHANES 2011-2014: A Distributional Data Analysis Perspective"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1016/j.annepidem.2024.10.001"
+  type: paper
+  link: "https://doi.org/10.1016/j.annepidem.2024.10.001"
+  title: "Exploring the association between daily distributional patterns of physical activity and cardiovascular mortality risk among older adults in NHANES 2003-2006"
+  image: "images/photo.jpg"
 
 - id: "doi:10.1002/bimj.202400042"
   type: paper
   link: "https://doi.org/10.1002/bimj.202400042"
   title: "Multivariate scalar on multidimensional distribution regression with application to modeling the association between physical activity and cognitive functions"
-
-- id: "arxiv:2405.05110"
-  type: paper
-  link: "https://arxiv.org/abs/2405.05110"
-  title: "Uncertainty quantification in metric spaces"
-
-- id: "arxiv:2405.13970"
-  type: paper
-  link: "https://arxiv.org/abs/2405.13970"
-  title: "Conformal uncertainty quantification using kernel depth measures in separable Hilbert spaces"
-
-- id: "arxiv:2403.19752"
-  type: paper
-  link: "https://arxiv.org/abs/2403.19752"
-  title: "Screening for Diabetes Mellitus in the U.S. Population Using Neural Network Models and Complex Survey Designs"
-
-- id: "arxiv:2403.18069"
-  type: paper
-  link: "https://arxiv.org/abs/2403.18069"
-  title: "Personalized Imputation in metric spaces via conformal prediction: Applications in Predicting Diabetes Development with Continuous Glucose Monitoring Information"
-
-- id: "arxiv:2404.09716"
-  type: paper
-  link: "https://arxiv.org/abs/2404.09716"
-  title: "Optimal Cut-Point Estimation for Functional Digital Biomarkers: Application to Diabetes Risk Stratification via Continuous Glucose Monitoring"
+  image: "images/photo.jpg"
 
 - id: "arxiv:2408.16381"
   type: paper
   link: "https://arxiv.org/abs/2408.16381"
   title: "Uncertainty quantification for intervals"
+  image: "images/photo.jpg"
+
+- id: "doi:10.57805/revstat.vi.572"
+  type: paper
+  link: "https://doi.org/10.57805/revstat.vi.572"
+  title: "Energy Distance and Kernel Mean Embeddings for Two-Sample Survival Testing with Applications in Immunotherapy Clinical Trials"
+  image: "images/photo.jpg"
+
+- id: "arxiv:2405.13970"
+  type: paper
+  link: "https://arxiv.org/abs/2405.13970"
+  title: "Conformal uncertainty quantification using kernel depth measures in separable Hilbert spaces"
+  image: "images/photo.jpg"
+
+- id: "arxiv:2405.05110"
+  type: paper
+  link: "https://arxiv.org/abs/2405.05110"
+  title: "Uncertainty quantification in metric spaces"
+  image: "images/photo.jpg"
+
+- id: "arxiv:2404.09716"
+  type: paper
+  link: "https://arxiv.org/abs/2404.09716"
+  title: "Optimal Cut-Point Estimation for Functional Digital Biomarkers: Application to Diabetes Risk Stratification via Continuous Glucose Monitoring"
+  image: "images/photo.jpg"
+
+- id: "arxiv:2403.18069"
+  type: paper
+  link: "https://arxiv.org/abs/2403.18069"
+  title: "Personalized Imputation in metric spaces via conformal prediction: Applications in Predicting Diabetes Development with Continuous Glucose Monitoring Information"
+  image: "images/photo.jpg"
 
 - id: "arxiv:2402.01635"
   type: paper
   link: "https://arxiv.org/abs/2402.01635"
   title: "kNN Algorithm for Conditional Mean and Variance Estimation with Automated Uncertainty Quantification and Variable Selection"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1111/dom.15496"
+  type: paper
+  link: "https://doi.org/10.1111/dom.15496"
+  title: "Insulin glargine 300 U/ml versus insulin degludec 100 U/ml improves nocturnal glycaemic control and variability in type 1 diabetes under routine clinical practice: A glucodensities-based post hoc analysis of the OneCare study"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1002/sam.11704"
+  type: paper
+  link: "https://doi.org/10.1002/sam.11704"
+  title: "Neural interval-censored survival regression with feature selection"
+  image: "images/photo.jpg"
+
+- id: "doi:10.1038/s41598-024-51672-w"
+  type: paper
+  link: "https://doi.org/10.1038/s41598-024-51672-w"
+  title: "Author Correction: Reassessment of fluctuating dental asymmetry in Down syndrome"
+  image: "images/photo.jpg"
