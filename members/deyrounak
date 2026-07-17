@@ -599,6 +599,15 @@
     
       
         <a
+          href="/philosophy/"
+          data-tooltip="Explore our vision"
+        >
+          Philosophy
+        </a>
+      
+    
+      
+        <a
           href="/contact/"
           data-tooltip="Email, address, and location"
         >
@@ -945,16 +954,6 @@
     </a>
   
 
-  
-    <a
-      href="/philosophy/"
-      class="language-switcher"
-      data-tooltip="Change language"
-    >
-      
-        English
-      
-    </a>
   
 
   
