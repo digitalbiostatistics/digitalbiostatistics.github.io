@@ -1,6 +1,6 @@
 ---
 name: Xiaokai Luo
-image: images/xiaokai-luo.jpeg
+image: images/realxiaokailuo.jpeg
 role: international-collaborator
 description: 
 affiliation: University of Notre Dame
