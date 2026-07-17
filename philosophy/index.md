@@ -14,7 +14,7 @@ Our philosophy is grounded in intellectual courage, perseverance, loyalty, fairn
 
 The following twelve principles reflect the values that guide how we conduct research, choose problems, support one another, and pursue long-term scientific impact.
 
-<div style="max-width: 1100px; margin: 40px auto 10px auto;">
+<div style="max-width: 700px; margin: 40px auto 10px auto;">
   <img
     src="{{ '/images/skyopeningGOOD.png' | relative_url }}"
     alt=""
