@@ -1,5 +1,170 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.64898/2026.06.22.26356272
+  title: Pre-activity glycemic prediction prioritizes post-meal movement
+  authors:
+  - Smadar Shilo
+  - Gal Sapir
+  - Guy Lutsker
+  - Yeela Talmor-Barkan
+  - Anastasia Godneva
+  - Alon Diament
+  - Marcos Matabuena
+  - Eran Segal
+  - Hagai Rossman
+  publisher: openRxiv
+  date: '2026-06-24'
+  link: https://doi.org/10.64898/2026.06.22.26356272
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2605.28344
+  title: 'Capturing the Curve: Functional Data Analysis for Validated Digital Outcome
+    Measures'
+  authors:
+  - Mia S. Tackney
+  - Marcos Matabuena
+  - Marco Palma
+  - Michael Wester
+  - Claire Maassen
+  - Thomas Krammer
+  - Julian Mustroph
+  - Peter H. Charlton
+  - James Carpenter
+  - Sofia S. Villar
+  publisher: arXiv
+  date: '2026-05-28'
+  link: https://arxiv.org/abs/2605.28344
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.64898/2026.05.24.26354007
+  title: A Deep Learning-Based Predictive Algorithm for Metabolic Syndrome Detection
+    in the U.S. Population
+  authors:
+  - Cristina Correa
+  - Ruben Solozabal
+  - Ziad Akram Ali Hammouri
+  - "Fernando G\xF3mez-Peralta"
+  - Hagai Rossman
+  - Juan C. Vidal
+  - David C. Klonoff
+  - Eran Segal
+  - Marcos Matabuena
+  publisher: openRxiv
+  date: '2026-06-02'
+  link: https://doi.org/10.64898/2026.05.24.26354007
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1177/09622802261442893
+  title: Screening for diabetes mellitus in the US population using neural network-based
+    modeling and complex survey designs
+  authors:
+  - Marcos Matabuena
+  - Juan C Vidal
+  - Rahul Ghosal
+  - Jukka-Pekka Onnela
+  publisher: Statistical Methods in Medical Research
+  date: '2026-05-07'
+  link: https://doi.org/10.1177/09622802261442893
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2605.05996
+  title: Gaussian mixture models in Hilbert spaces via kernel methods
+  authors:
+  - "Daniel L\xC3\xB3pez-Montero"
+  - "Antonio \xC3\x81lvarez-L\xC3\xB3pez"
+  - Marcos Matabuena
+  publisher: arXiv
+  date: '2026-05-08'
+  link: https://arxiv.org/abs/2605.05996
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2605.02693
+  title: Random-Effects Algorithm for Random Objects in Metric Spaces
+  authors:
+  - Marcos Matabuena
+  - "Mateo C\xC3\xA1mara"
+  publisher: arXiv
+  date: '2026-05-05'
+  link: https://arxiv.org/abs/2605.02693
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.13140/RG.2.2.35806.60486
+  title: 'From Physical Activity to Spirometry (as a Curve): A Combined Model for
+    Mortality Prediction'
+  authors:
+  - Marcos Matabuena
+  - Marcos Matabuena@mbzuai Ac Ae
+  - Emma Cho
+  - Rahul Ghosal
+  - Cristina Correa
+  - "Mateo C\xE1mara"
+  - Manuel Oviedo De La Fuente
+  - Holger Cevallos
+  - Francisco Gude
+  publisher: Unpublished
+  date: '2026-01-01'
+  link: https://doi.org/10.13140/RG.2.2.35806.60486
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1123/jmpb.2025-0052
+  title: 'Daily Physical Activity Patterns Enhance Mortality Prediction in NHANES
+    2011-2014: A Comparative Study Across Classical, Machine Learning, and Deep Learning
+    Models Using Accelerometer Data'
+  authors:
+  - Srimanta Ghosh
+  - Sunwoo Emma Cho
+  - Yuanzhen Yue
+  - Marcos Matabuena
+  - Enakshi Saha
+  - Rahul Ghosal
+  publisher: Journal for the Measurement of Physical Behaviour
+  date: '2026-01-01'
+  link: https://doi.org/10.1123/jmpb.2025-0052
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2603.24427
+  title: 'Continuous-Time Learning of Probability Distributions: A Case Study in a
+    Digital Trial of Young Children with Type 1 Diabetes'
+  authors:
+  - "Antonio \xC3\x81lvarez-L\xC3\xB3pez"
+  - Marcos Matabuena
+  publisher: arXiv
+  date: '2026-03-26'
+  link: https://arxiv.org/abs/2603.24427
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1002/sam.70068
+  title: Survival on Image Regression With Application to Partially Functional Distributional
+    Representation of Physical Activity
+  authors:
+  - Rahul Ghosal
+  - Sunwoo Emma Cho
+  - Marcos Matabuena
+  publisher: 'Statistical Analysis and Data Mining: An ASA Data Science Journal'
+  date: '2026-02-01'
+  link: https://doi.org/10.1002/sam.70068
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.3389/fdgth.2025.1705368
   title: Exploratory analysis of smartphone-based step counts as a digital biomarker
     for survival in ALS patients
@@ -18,6 +183,37 @@
   date: '2026-01-29'
   link: https://doi.org/10.3389/fdgth.2025.1705368
   type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1177/19322968261421954
+  title: Glucodensity-Based Models Outperform Time in Range and Glycemia Risk Index
+    in Prediction Models
+  authors:
+  - Mandy M. Shao
+  - Agatha F. Scheideman
+  - David C. Klonoff
+  - Francisco Gude
+  - Marcos Matabuena
+  publisher: Journal of Diabetes Science and Technology
+  date: '2026-02-23'
+  link: https://doi.org/10.1177/19322968261421954
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1186/s12874-025-02748-2
+  title: 'Beyond scalar metrics: functional data analysis of postprandial continuous
+    glucose monitoring in the AEGIS study'
+  authors:
+  - Marcos Matabuena
+  - Joseph Sartini
+  - Francisco Gude
+  publisher: BMC Medical Research Methodology
+  date: '2026-01-24'
+  link: https://doi.org/10.1186/s12874-025-02748-2
+  type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1214/26-AOAS2139
@@ -30,79 +226,85 @@
   date: '2026-03-01'
   link: https://doi.org/10.1214/26-AOAS2139
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1007/s11634-024-00619-0
-  title: Kernel biclustering algorithm in Hilbert spaces
+- id: doi:10.1007/s13253-024-00656-4
+  title: 'Book Review: Functional Data Analysis with R by Ciprian M. Crainiceanu,
+    Jeff Goldsmith, Andrew Leroux, and Erjia Cui'
   authors:
   - Marcos Matabuena
+  publisher: Journal of Agricultural, Biological and Environmental Statistics
+  date: '2024-10-01'
+  link: https://doi.org/10.1007/s13253-024-00656-4
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2512.08179
+  title: Distributional Random Forests for Complex Survey Designs on Reproducing Kernel
+    Hilbert Spaces
+  authors:
+  - Yating Zou
+  - Marcos Matabuena
+  - Michael R. Kosorok
+  publisher: arXiv
+  date: '2026-01-07'
+  link: https://arxiv.org/abs/2512.08179
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2510.14494
+  title: 'ROC Analysis with Covariate Adjustment Using Neural Network Models: Evaluating
+    the Role of Age in the Physical Activity-Mortality Association'
+  authors:
+  - Ziad Akram Ali Hammouri
+  - Yating Zou
+  - Rahul Ghosal
   - Juan C. Vidal
-  - Oscar Hernan Madrid Padilla
-  - Dino Sejdinovic
-  publisher: Advances in Data Analysis and Classification
-  date: '2025-01-21'
-  link: https://doi.org/10.1007/s11634-024-00619-0
-  type: paper
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1002/sam.70068
-  title: Survival on Image Regression With Application to Partially Functional Distributional
-    Representation of Physical Activity
-  authors:
-  - Rahul Ghosal
-  - Sunwoo Emma Cho
-  - Marcos Matabuena
-  publisher: 'Statistical Analysis and Data Mining: An ASA Data Science Journal'
-  date: '2026-02-01'
-  link: https://doi.org/10.1002/sam.70068
-  type: paper
-  plugin: sources.py
-  file: sources.yaml
-- id: arxiv:2603.24427
-  title: 'Continuous-Time Learning of Probability Distributions: A Case Study in a
-    Digital Trial of Young Children with Type 1 Diabetes'
-  authors:
-  - "Antonio \xC3\x81lvarez-L\xC3\xB3pez"
   - Marcos Matabuena
   publisher: arXiv
-  date: '2026-03-26'
-  link: https://arxiv.org/abs/2603.24427
+  date: '2025-10-20'
+  link: https://arxiv.org/abs/2510.14494
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:2605.02693
-  title: Random-Effects Algorithm for Random Objects in Metric Spaces
+- id: doi:10.1016/j.annepidem.2025.10.009
+  title: Unequal strides to longevity. The extra mile to health equity
   authors:
+  - Borja del Pozo Cruz
+  - Francisco Perales
+  - Marcin Straczkiewicz
   - Marcos Matabuena
-  - "Mateo C\xC3\xA1mara"
-  publisher: arXiv
-  date: '2026-05-05'
-  link: https://arxiv.org/abs/2605.02693
+  - "Jes\xFAs del Pozo-Cruz"
+  - "Rub\xE9n L\xF3pez-Bueno"
+  publisher: Annals of Epidemiology
+  date: '2025-11-01'
+  link: https://doi.org/10.1016/j.annepidem.2025.10.009
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:2605.05996
-  title: Gaussian mixture models in Hilbert spaces via kernel methods
+- id: doi:10.1016/j.diabres.2025.112952
+  title: Continuous Glucose Monitoring as an alternative for Cystic Fibrosis Related
+    diabetes screening and diagnosis
   authors:
-  - "Daniel L\xC3\xB3pez-Montero"
-  - "Antonio \xC3\x81lvarez-L\xC3\xB3pez"
-  - Marcos Matabuena
-  publisher: arXiv
-  date: '2026-05-08'
-  link: https://arxiv.org/abs/2605.05996
+  - "I. Aguilera Garc\xEDa"
+  - "P. V\xE1zquez P\xE9rez"
+  - "B. L\xF3pez Plaza"
+  - M. Matabuena
+  - "R.M. Garc\xEDa Moreno"
+  - S.Palma Milla
+  - "E. Zamarr\xF3n de Lucas"
+  - "M.C. Prados S\xE1nchez"
+  - "N. Gonz\xE1lez P\xE9rez de Villar"
+  publisher: Diabetes Research and Clinical Practice
+  date: '2025-11-01'
+  link: https://doi.org/10.1016/j.diabres.2025.112952
   type: paper
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1016/j.csda.2025.108131
-  title: Functional time transformation model with applications to digital health
-  authors:
-  - Rahul Ghosal
-  - Marcos Matabuena
-  - Sujit K. Ghosh
-  publisher: Computational Statistics &amp; Data Analysis
-  date: '2025-07-01'
-  link: https://doi.org/10.1016/j.csda.2025.108131
-  type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1038/s41598-025-18119-2
@@ -123,42 +325,65 @@
   date: '2025-09-29'
   link: https://doi.org/10.1038/s41598-025-18119-2
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1371/journal.pcbi.1013098
-  title: Conformal prediction for uncertainty quantification in dynamic biological
-    systems
+- id: doi:10.1001/jamanetworkopen.2025.33193
+  title: Age, Sex, BMI, Meal Timing, and Glycemic Response to Meal Glycemic Load
   authors:
-  - Alberto Portela
-  - Julio R. Banga
+  - Mar Calvo-Malvar
+  - "\xD3scar Lado-Baleato"
+  - "Ana Cao R\xEDos"
+  - "Cristina Porca Fern\xE1ndez"
+  - "Alfonso Ben\xEDtez-Calvo"
+  - Carmen Fernandez-Merino
+  - "Juan S\xE1nchez-Castro"
+  - Robert Wagner
   - Marcos Matabuena
-  publisher: PLOS Computational Biology
-  date: '2025-05-12'
-  link: https://doi.org/10.1371/journal.pcbi.1013098
+  - Francisco Gude
+  publisher: JAMA Network Open
+  date: '2025-09-23'
+  link: https://doi.org/10.1001/jamanetworkopen.2025.33193
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:2501.06868
-  title: Variable Selection Methods for Multivariate, Functional, and Complex Biomedical
-    Data in the AI Age
+- id: doi:10.1101/2025.09.05.674557
+  title: Distributional Data Analysis Uncovers Hundreds of Novel and Heritable Phenomic
+    Features from Temporal Cotton and Maize Drone Imagery
   authors:
+  - Aaron J. DeSalvio
+  - Marcos Matabuena
+  - Alper Adak
+  - Mustafa A. Arik
+  - Serina M. DeSalvio
+  - Seth C. Murray
+  - Raymond K.W. Wong
+  - Jode Edwards
+  - Natalia de Leon
+  - Shawn M. Kaeppler
+  - Dayane C. Lima
+  - Candice N. Hirsch
+  - Addie Thompson
+  - David M. Stelly
+  publisher: openRxiv
+  date: '2025-09-07'
+  link: https://doi.org/10.1101/2025.09.05.674557
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2507.15741
+  title: Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric
+    Spaces
+  authors:
+  - "G\xC3\xA1bor Lugosi"
   - Marcos Matabuena
   publisher: arXiv
-  date: '2025-01-14'
-  link: https://arxiv.org/abs/2501.06868
+  date: '2026-06-23'
+  link: https://arxiv.org/abs/2507.15741
   type: paper
-  plugin: sources.py
-  file: sources.yaml
-- id: arxiv:2505.08698
-  title: Continuous Temporal Learning of Probability Distributions via Neural ODEs
-    with Applications in Continuous Glucose Monitoring Data
-  authors:
-  - "Antonio \xC3\x81lvarez-L\xC3\xB3pez"
-  - Marcos Matabuena
-  publisher: arXiv
-  date: '2025-09-18'
-  link: https://arxiv.org/abs/2505.08698
-  type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2506.08325
@@ -174,30 +399,89 @@
   date: '2025-06-11'
   link: https://arxiv.org/abs/2506.08325
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:2507.15741
-  title: Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric
-    Spaces
+- id: arxiv:2505.08698
+  title: Continuous Temporal Learning of Probability Distributions via Neural ODEs
+    with Applications in Continuous Glucose Monitoring Data
   authors:
-  - "G\xC3\xA1bor Lugosi"
+  - "Antonio \xC3\x81lvarez-L\xC3\xB3pez"
   - Marcos Matabuena
   publisher: arXiv
-  date: '2026-06-23'
-  link: https://arxiv.org/abs/2507.15741
+  date: '2025-09-18'
+  link: https://arxiv.org/abs/2505.08698
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1177/09622802241311455
-  title: 'Causal survival embeddings: Non-parametric counterfactual inference under
-    censoring'
+- id: doi:10.1371/journal.pcbi.1013098
+  title: Conformal prediction for uncertainty quantification in dynamic biological
+    systems
   authors:
-  - "Carlos Garc\xEDa Meixide"
+  - Alberto Portela
+  - Julio R. Banga
   - Marcos Matabuena
-  publisher: Statistical Methods in Medical Research
-  date: '2025-02-11'
-  link: https://doi.org/10.1177/09622802241311455
+  publisher: PLOS Computational Biology
+  date: '2025-05-12'
+  link: https://doi.org/10.1371/journal.pcbi.1013098
   type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2505.05416
+  title: Variable Selection for Fixed and Random Effects in Multilevel Functional
+    Mixed Effects Models
+  authors:
+  - Rahul Ghosal
+  - Marcos Matabuena
+  - Enakshi Saha
+  publisher: arXiv
+  date: '2025-10-24'
+  link: https://arxiv.org/abs/2505.05416
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1093/biostatistics/kxaf013
+  title: "Predicting distributions of physical activity profiles in the National Health\
+    \ and Nutrition Examination Survey database using a partially linear Fr\u221A\xA9\
+    chet single index model"
+  authors:
+  - Marcos Matabuena
+  - Aritra Ghosal
+  - Wendy Meiring
+  - Alexander Petersen
+  publisher: Biostatistics
+  date: '2024-12-31'
+  link: https://doi.org/10.1093/biostatistics/kxaf013
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.csda.2025.108131
+  title: Functional time transformation model with applications to digital health
+  authors:
+  - Rahul Ghosal
+  - Marcos Matabuena
+  - Sujit K. Ghosh
+  publisher: Computational Statistics &amp; Data Analysis
+  date: '2025-07-01'
+  link: https://doi.org/10.1016/j.csda.2025.108131
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: arxiv:2501.06868
+  title: Variable Selection Methods for Multivariate, Functional, and Complex Biomedical
+    Data in the AI Age
+  authors:
+  - Marcos Matabuena
+  publisher: arXiv
+  date: '2025-01-14'
+  link: https://arxiv.org/abs/2501.06868
+  type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2501.00212
@@ -212,19 +496,116 @@
   date: '2026-07-14'
   link: https://arxiv.org/abs/2501.00212
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.1002/sam.11704
-  title: Neural interval-censored survival regression with feature selection
+- id: doi:10.1177/09622802241311455
+  title: 'Causal survival embeddings: Non-parametric counterfactual inference under
+    right-censoring'
   authors:
   - "Carlos Garc\xEDa Meixide"
   - Marcos Matabuena
-  - Louis Abraham
-  - Michael R. Kosorok
-  publisher: 'Statistical Analysis and Data Mining: The ASA Data Science Journal'
-  date: '2024-07-16'
-  link: https://doi.org/10.1002/sam.11704
+  publisher: Statistical Methods in Medical Research
+  date: '2025-02-11'
+  link: https://doi.org/10.1177/09622802241311455
   type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1007/s11634-024-00619-0
+  title: Kernel biclustering algorithm in Hilbert spaces
+  authors:
+  - Marcos Matabuena
+  - Juan C. Vidal
+  - Oscar Hernan Madrid Padilla
+  - Dino Sejdinovic
+  publisher: Advances in Data Analysis and Classification
+  date: '2025-01-21'
+  link: https://doi.org/10.1007/s11634-024-00619-0
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1089/dia.2024.0356
+  title: 'A Telehealth Program Using Continuous Glucose Monitoring and a Connected
+    Insulin Pen Cap in Nursing Homes for Older Adults with Insulin-Treated Diabetes:
+    The Trescasas Study'
+  authors:
+  - Fernando Gomez-Peralta
+  - Cristina Abreu
+  - "Estefan\xEDa Santos"
+  - Alvaro Da Silva
+  - Ana San Frutos
+  - Luisa Vega-Valderrama
+  - "Marta Garc\xEDa-Galindo"
+  - "Ana Franco-L\xF3pez"
+  - "Cristina L\xF3pez Mardomingo"
+  - "Benito Ca\xF1uelo"
+  - Guillermo Blazquez
+  - Marcos Matabuena
+  publisher: Diabetes Technology &amp; Therapeutics
+  date: '2025-05-01'
+  link: https://doi.org/10.1089/dia.2024.0356
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.clnu.2024.11.020
+  title: Divergent hypoglycemic and hyperglycemic responses to the components of evening
+    meals. A general adult population study in individuals without diabetes (AEGIS
+    Study)
+  authors:
+  - "Tom\xE1s Gonz\xE1lez-Vidal"
+  - Mar Calvo-Malvar
+  - "Carmen Fern\xE1ndez-Merino"
+  - "Juan S\xE1nchez-Castro"
+  - "\xD3scar Lado-Baleato"
+  - "Carla D\xEDaz-Louzao"
+  - Marcos Pazos-Couselo
+  - Manuela Alonso-Sampedro
+  - Marcos Matabuena
+  - Francisco Gude
+  publisher: Clinical Nutrition
+  date: '2024-12-01'
+  link: https://doi.org/10.1016/j.clnu.2024.11.020
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.21203/rs.3.rs-5314139/v1
+  title: 'Exploring the Interplay Between Physical Activity, Dietary Patterns, Diabetes,
+    and All-Cause Mortality in the U.S.A. Population, NHANES 2011-2014: A Distributional
+    Data Analysis Perspective'
+  authors:
+  - Marcos Matabuena
+  - Anxo Carreira
+  - Robert Wagner
+  - Miguel Sousa
+  - Miguel Saavedra
+  - Rahul Ghosal
+  - JP Onnela
+  - Lucimere Bohn
+  publisher: Springer Science and Business Media LLC
+  date: '2024-11-15'
+  link: https://doi.org/10.21203/rs.3.rs-5314139/v1
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1016/j.annepidem.2024.10.001
+  title: Exploring the association between daily distributional patterns of physical
+    activity and cardiovascular mortality risk among older adults in NHANES 2003-2006
+  authors:
+  - Sunwoo Emma Cho
+  - Enakshi Saha
+  - Marcos Matabuena
+  - Jingkai Wei
+  - Rahul Ghosal
+  publisher: Annals of Epidemiology
+  date: '2024-11-01'
+  link: https://doi.org/10.1016/j.annepidem.2024.10.001
+  type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1002/bimj.202400042
@@ -237,17 +618,33 @@
   date: '2024-09-22'
   link: https://doi.org/10.1002/bimj.202400042
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:2405.05110
-  title: Uncertainty quantification in metric spaces
+- id: arxiv:2408.16381
+  title: Uncertainty quantification for intervals
   authors:
-  - "G\xC3\xA1bor Lugosi"
+  - "Carlos Garc\xC3\xADa Meixide"
+  - Michael R. Kosorok
   - Marcos Matabuena
   publisher: arXiv
-  date: '2024-05-09'
-  link: https://arxiv.org/abs/2405.05110
+  date: '2025-04-01'
+  link: https://arxiv.org/abs/2408.16381
   type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.57805/revstat.vi.572
+  title: Energy Distance and Kernel Mean Embeddings for Two-Sample Survival Testing
+    with Applications in Immunotherapy Clinical Trials
+  authors:
+  - Marcos Matabuena
+  - Oscar Hernan Madrid Padilla
+  publisher: REVSTAT-Statistical Journal
+  date: '2024-06-14'
+  link: https://doi.org/10.57805/revstat.vi.572
+  type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2405.13970
@@ -263,34 +660,19 @@
   date: '2024-05-24'
   link: https://arxiv.org/abs/2405.13970
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:2403.19752
-  title: Screening for Diabetes Mellitus in the U.S. Population Using Neural Network
-    Models and Complex Survey Designs
+- id: arxiv:2405.05110
+  title: Uncertainty quantification in metric spaces
   authors:
+  - "G\xC3\xA1bor Lugosi"
   - Marcos Matabuena
-  - Juan C. Vidal
-  - Rahul Ghosal
-  - Jukka-Pekka Onnela
   publisher: arXiv
-  date: '2025-03-27'
-  link: https://arxiv.org/abs/2403.19752
+  date: '2024-05-09'
+  link: https://arxiv.org/abs/2405.05110
   type: paper
-  plugin: sources.py
-  file: sources.yaml
-- id: arxiv:2403.18069
-  title: 'Personalized Imputation in metric spaces via conformal prediction: Applications
-    in Predicting Diabetes Development with Continuous Glucose Monitoring Information'
-  authors:
-  - Marcos Matabuena
-  - "Carla D\xC3\xADaz-Louzao"
-  - Rahul Ghosal
-  - Francisco Gude
-  publisher: arXiv
-  date: '2024-03-28'
-  link: https://arxiv.org/abs/2403.18069
-  type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2404.09716
@@ -305,18 +687,22 @@
   date: '2025-03-11'
   link: https://arxiv.org/abs/2404.09716
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:2408.16381
-  title: Uncertainty quantification for intervals
+- id: arxiv:2403.18069
+  title: 'Personalized Imputation in metric spaces via conformal prediction: Applications
+    in Predicting Diabetes Development with Continuous Glucose Monitoring Information'
   authors:
-  - "Carlos Garc\xC3\xADa Meixide"
-  - Michael R. Kosorok
   - Marcos Matabuena
+  - "Carla D\xC3\xADaz-Louzao"
+  - Rahul Ghosal
+  - Francisco Gude
   publisher: arXiv
-  date: '2025-04-01'
-  link: https://arxiv.org/abs/2408.16381
+  date: '2024-03-28'
+  link: https://arxiv.org/abs/2403.18069
   type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
 - id: arxiv:2402.01635
@@ -331,5 +717,58 @@
   date: '2025-10-28'
   link: https://arxiv.org/abs/2402.01635
   type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1111/dom.15496
+  title: 'Insulin glargine 300 U/ml versus insulin degludec 100 U/ml improves nocturnal
+    glycaemic control and variability in type 1 diabetes under routine clinical practice:
+    A glucodensities-based post hoc analysis of the OneCare study'
+  authors:
+  - "Fernando Gomez\u2010Peralta"
+  - Ana Chico Ballesteros
+  - "Amparo Marco Mart\xEDnez"
+  - "Bego\xF1a P\xE9rez Corral"
+  - Ignacio Conget Donlo
+  - Paulina Fuentealba Melo
+  - "Fernando Zaragoz\xE1 Arn\xE1ez"
+  - "Marcos Matabuena Rodr\xEDguez"
+  publisher: Diabetes, Obesity and Metabolism
+  date: '2024-02-20'
+  link: https://doi.org/10.1111/dom.15496
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1002/sam.11704
+  title: Neural interval-censored survival regression with feature selection
+  authors:
+  - "Carlos Garc\xEDa Meixide"
+  - Marcos Matabuena
+  - Louis Abraham
+  - Michael R. Kosorok
+  publisher: 'Statistical Analysis and Data Mining: The ASA Data Science Journal'
+  date: '2024-07-16'
+  link: https://doi.org/10.1002/sam.11704
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1038/s41598-024-51672-w
+  title: 'Author Correction: Reassessment of fluctuating dental asymmetry in Down
+    syndrome'
+  authors:
+  - "Marcos Matabuena Rodr\xEDguez"
+  - Pedro Diz Dios
+  - "Carmen Cadarso-Su\xE1rez"
+  - "M\xE1rcio Diniz-Freitas"
+  - Mercedes Outumuro Rial
+  - Maria Teresa Abeleira Pazos
+  - Jacobo Limeres Posse
+  publisher: Scientific Reports
+  date: '2024-01-16'
+  link: https://doi.org/10.1038/s41598-024-51672-w
+  type: paper
+  image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
