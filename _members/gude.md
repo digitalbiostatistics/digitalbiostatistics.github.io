@@ -1,6 +1,6 @@
 ---
 name: Francisco Gude
-image: images/francisco-gude.png
+image: images/franciscogude.jpeg
 role: international-collaborator
 description: 
 affiliation: SERGAS
