@@ -1,6 +1,6 @@
 ---
 title: Projects
-lang: EN
+lang: en
 translation_key: projects
 nav:
   order: 2
