@@ -88,16 +88,9 @@
         {% if citation.buttons.size > 0 %}
           <div class="citation-buttons">
             {% for button in citation.buttons %}
-              {%
-                include button.html
+              {% include button.html
                 type=button.type
-                {% include button.html
-                  type=button.type
-                  icon=button.icon
-                  text=button.text
-                  link=button.link
-                  style="bare"
-                %}
+                icon=button.icon
                 text=button.text
                 link=button.link
                 style="bare"
