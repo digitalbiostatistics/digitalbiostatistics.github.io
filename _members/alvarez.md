@@ -3,6 +3,6 @@ name: Antonio Alvarez Lopez
 image: images/antonio.png
 role: international-collaborator
 description: 
-affiliation: 
+affiliation: Universidad Autonoma de Madrid 
 link: https://scholar.google.com/citations?user=4Xm2yLgAAAAJ&hl=en
 ---
