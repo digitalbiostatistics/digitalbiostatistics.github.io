@@ -1,5 +1,24 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: 10.64898/2026.07.06.736502
+  title: 'EpiBinder: a multimodal framework for cell-type-specific prediction and
+    interpretation of transcription factor binding'
+  authors:
+  - Ruben Solozabal
+  - Albert Baichorov
+  - Irina Miodownik
+  - Tamir Avioz
+  - Le Song
+  - Marcos Matabuena
+  - "Martin Tak\xE1\u010D"
+  - Ariel Afek
+  publisher: openRxiv
+  date: '2026-07-08'
+  link: https://www.biorxiv.org/content/10.64898/2026.07.06.736502v1.abstract
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.64898/2026.06.22.26356272
   title: Pre-activity glycemic prediction prioritizes post-meal movement
   authors:
@@ -550,6 +569,49 @@
   image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
+- id: arXiv:2403.19752
+  title: 'Deep Learning Framework with Uncertainty Quantification for Survey Data:
+    Assessing and Predicting Diabetes Mellitus Risk in the American Population'
+  authors:
+  - Marcos Matabuena
+  - Juan C. Vidal
+  - Rahul Ghosal
+  - Jukka-Pekka Onnela
+  publisher: arXiv
+  date: '2025-03-27'
+  link: https://www.researchgate.net/profile/Marcos-Matabuena/publication/379368659_Deep_Learning_Framework_with_Uncertainty_Quantification_for_Survey_Data_Assessing_and_Predicting_Diabetes_Mellitus_Risk_in_the_American_Population/links/6605b272390c214cfd2372af/Deep-Learning-Framework-with-Uncertainty-Quantification-for-Survey-Data-Assessing-and-Predicting-Diabetes-Mellitus-Risk-in-the-American-Population.pdf
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: 'doi: 10.1111/dom.15496'
+  title: "Insulin glargine 300\u2009U/ml versus insulin degludec 100\u2009U/ml improves\
+    \ nocturnal glycaemic control and variability in type 1 diabetes under routine\
+    \ clinical practice: A glucodensities-based post hoc analysis of the OneCare study"
+  authors:
+  - "Fernando Gomez\u2010Peralta"
+  - Ana Chico Ballesteros
+  - "Amparo Marco Mart\xEDnez"
+  - "Bego\xF1a P\xE9rez Corral"
+  - Ignacio Conget Donlo
+  - Paulina Fuentealba Melo
+  - "Fernando Zaragoz\xE1 Arn\xE1ez"
+  - "Marcos Matabuena Rodr\xEDguez"
+  publisher: Diabetes, Obesity and Metabolism
+  date: '2024-05-01'
+  link: https://dom-pubs.onlinelibrary.wiley.com/doi/full/10.1111/dom.15496
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: ''
+  type: paper
+  link: https://www.researchgate.net/profile/Marcos-Matabuena/publication/380814667_Multilevel_functional_data_analysis_modeling_of_human_glucose_response_to_meal_intake/links/664f623f479366623a088815/Multilevel-functional-data-analysis-modeling-of-human-glucose-response-to-meal-intake.pdf
+  title: Multilevel functional data analysis modeling of human glucose response to
+    meal intake
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1016/j.clnu.2024.11.020
   title: Divergent hypoglycemic and hyperglycemic responses to the components of evening
     meals. A general adult population study in individuals without diabetes (AEGIS
@@ -768,6 +830,20 @@
   publisher: Scientific Reports
   date: '2024-01-16'
   link: https://doi.org/10.1038/s41598-024-51672-w
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
+- id: "doi:\t10.5281/zenodo.13838652"
+  title: Uncertainty Quantification in Dynamic Models of Biological Systems Using
+    Conformal Prediction
+  authors:
+  - Alberto Portela
+  - Julio R. Banga
+  - Marcos Matabuena
+  publisher: '[object Object]'
+  date: '2024-10-01'
+  link: https://digital.csic.es/handle/10261/385477
   type: paper
   image: images/photo.jpg
   plugin: sources.py
