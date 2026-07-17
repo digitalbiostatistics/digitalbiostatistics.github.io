@@ -1,9 +1,10 @@
 ---
 title: Philosophy
+lang: en
 description: 
 nav:
   order: 5
-  tooltip: Explore our resources
+  tooltip: Explore our vision
 ---
 
 # Philosophy
