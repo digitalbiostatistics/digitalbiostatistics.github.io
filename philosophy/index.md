@@ -11,6 +11,8 @@ nav:
 # Philosophy
 
 Our philosophy is grounded in intellectual courage, perseverance, loyalty, fairness, independent thought, and the responsibility to transform knowledge into meaningful action.
+The following twelve principles reflect the values that guide how we conduct research, choose problems, support one another, and pursue long-term scientific impact.
+
 <div style="max-width: 600px; margin: 40px auto 10px auto;">
   <img
     src="{{ '/images/skyopeningGOOD.png' | relative_url }}"
@@ -18,9 +20,6 @@ Our philosophy is grounded in intellectual courage, perseverance, loyalty, fairn
     style="width: 100%; display: block; border-radius: 4px;"
   >
 </div
-  
-The following twelve principles reflect the values that guide how we conduct research, choose problems, support one another, and pursue long-term scientific impact.
-
 {% include section.html %}
 
 ## Our Twelve Principles
