@@ -49,7 +49,13 @@ nav:
   <p>
     This philosophy is closely aligned with the nature of the institution itself. MBZUAI was established as a university entirely dedicated to artificial intelligence and aspires to become a place where some of the next scientific frontiers of the field are defined.
   </p>
-
+<div style="max-width: 600px; margin: 40px auto 20px auto;">
+  <img
+    src="{{ '/images/mbzuai.png' | relative_url }}"
+    alt="MBZUAI, UAE, and the future of artificial intelligence"
+    style="width: 100%; display: block; border-radius: 6px;"
+  >
+</div>
   <h3>3. A Strategic Location for Attracting Global Talent</h3>
 
   <p>
