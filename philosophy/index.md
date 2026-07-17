@@ -17,8 +17,7 @@ The following twelve principles reflect the values that guide how we conduct res
   <img
     src="{{ '/images/skyopeningGOOD.png' | relative_url }}"
     alt=""
-    style="width: 100%; display: block; border-radius: 4px;"
-  >
+    style="width: 100%; display: block; border-radius: 4px;">
 </div
 {% include section.html %}
 
