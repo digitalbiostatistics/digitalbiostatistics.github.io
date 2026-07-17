@@ -33,7 +33,7 @@ nav:
 
 {% include section.html %}
 
-## International Collaborators
+## International Collaborators (Current/Past)
 
 <div style="width: 100%; text-align: center;">
   {% include list.html
