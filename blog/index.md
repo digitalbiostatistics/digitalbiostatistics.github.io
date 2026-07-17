@@ -1,10 +1,10 @@
 ---
-title: Blog
+title: News
 lang: en
 translation_key: blog
 nav:
   order: 4
-  tooltip: Musings and miscellany
+  tooltip: Updates and miscellany
 ---
 
 # {% include icon.html icon="fa-solid fa-feather-pointed" %}Blog
