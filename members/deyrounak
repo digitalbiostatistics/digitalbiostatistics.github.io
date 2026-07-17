@@ -608,19 +608,19 @@
     
       
         <a
-          href="/contact/"
-          data-tooltip="Email, address, and location"
+          href="/blog/"
+          data-tooltip="Updates and miscellany"
         >
-          Contact
+          News
         </a>
       
     
       
         <a
-          href="/blog/"
-          data-tooltip="Updates and miscellany"
+          href="/contact/"
+          data-tooltip="Email, address, and location"
         >
-          News
+          Contact
         </a>
       
     
