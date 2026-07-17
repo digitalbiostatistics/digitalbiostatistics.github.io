@@ -14,6 +14,17 @@ nav:
   <p>
     A natural question is why one would choose to develop such an ambitious scientific agenda in a country with a relatively recent research tradition and at a newly established university such as MBZUAI. It is also worth asking why more scientists should consider moving to this region. There are several important reasons.
   </p>
+  
+<div style="max-width: 600px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/K48b1hIW7ZY"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
 
   <h3>1. A Society Open to New Ideas</h3>
 
@@ -38,16 +49,6 @@ nav:
   <p>
     This philosophy is closely aligned with the nature of the institution itself. MBZUAI was established as a university entirely dedicated to artificial intelligence and aspires to become a place where some of the next scientific frontiers of the field are defined.
   </p>
-<div style="max-width: 760px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/K48b1hIW7ZY"
-    title="YouTube video player"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
 
   <h3>3. A Strategic Location for Attracting Global Talent</h3>
 
@@ -68,7 +69,14 @@ nav:
   <p>
     Within this changing landscape, the Emirati ecosystem offers particularly favorable conditions for innovation and entrepreneurship. Its capacity to make decisions rapidly, reduce certain bureaucratic barriers, and support ambitious projects enables scientific ideas to be translated into concrete initiatives with greater agility.
   </p>
-
+  
+<div style="max-width: 600px; margin: 40px auto 20px auto;">
+  <img
+    src="{{ '/images/emiratosarabes.png' | relative_url }}"
+    alt="MBZUAI, UAE, and the future of artificial intelligence"
+    style="width: 100%; display: block; border-radius: 6px;"
+  >
+</div>
   <h3>5. A Truly International Community</h3>
 
   <p>
