@@ -8,23 +8,23 @@ tooltip: Software, datasets, and more
 ---
 <style>
   .projects-page {
-    max-width: 1180px;
+    max-width: 1080px;
     margin: 0 auto;
   }
 
-  .projects-intro {
-    max-width: 900px;
-    margin-bottom: 60px;
-  }
-
-  .projects-intro h1 {
-    margin-bottom: 24px;
-  }
-
-  .projects-intro p,
-  .open-questions p {
-    line-height: 1.75;
+  .projects-page p {
     text-align: left;
+    line-height: 1.7;
+  }
+
+  .projects-intro,
+  .questions-main-header,
+  .questions-section-header {
+    max-width: 900px;
+  }
+
+  .projects-intro {
+    margin-bottom: 55px;
   }
 
   .projects-lead {
@@ -32,16 +32,14 @@ tooltip: Software, datasets, and more
   }
 
   .questions-main-header {
-    max-width: 900px;
-    margin-bottom: 60px;
+    margin: 55px 0 65px;
   }
 
   .questions-section {
-    margin: 65px 0 85px;
+    margin: 60px 0 75px;
   }
 
   .questions-section-header {
-    max-width: 900px;
     margin-bottom: 32px;
   }
 
@@ -50,30 +48,23 @@ tooltip: Software, datasets, and more
     margin-bottom: 8px;
     font-size: 0.78rem;
     font-weight: 700;
-    letter-spacing: 0.11em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    opacity: 0.62;
-  }
-
-  .questions-main-header h2,
-  .questions-section-header h2 {
-    margin-top: 0;
-    margin-bottom: 18px;
+    color: #7897aa;
   }
 
   .question-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 22px;
+    gap: 20px;
   }
 
   .question-card {
     position: relative;
-    padding: 30px 32px 30px 78px;
-    border: 1px solid rgba(20, 70, 105, 0.16);
-    border-radius: 9px;
-    background: rgba(255, 255, 255, 0.62);
-    box-shadow: 0 5px 18px rgba(30, 70, 100, 0.045);
+    padding: 28px 28px 28px 72px;
+    border-left: 3px solid #a9c5d6;
+    background: rgba(240, 247, 251, 0.48);
+    border-radius: 4px;
   }
 
   .question-card-wide {
@@ -82,41 +73,32 @@ tooltip: Software, datasets, and more
 
   .question-number {
     position: absolute;
-    top: 31px;
-    left: 28px;
-    font-size: 0.84rem;
+    top: 30px;
+    left: 24px;
+    font-size: 0.78rem;
     font-weight: 700;
-    color: #6d91aa;
+    color: #6f91a6;
   }
 
   .question-card h3 {
-    margin: 0 0 14px;
-    font-size: 1.18rem;
-    line-height: 1.35;
+    margin: 0 0 12px;
+    font-size: 1.05rem;
+    line-height: 1.4;
   }
 
   .question-card p {
     margin: 0;
-    font-size: 0.98rem;
-    line-height: 1.7;
+    font-size: 0.96rem;
+    line-height: 1.65;
   }
 
-  @media (max-width: 750px) {
+  @media (max-width: 760px) {
     .question-grid {
       grid-template-columns: 1fr;
     }
 
     .question-card-wide {
       grid-column: auto;
-    }
-
-    .question-card {
-      padding: 26px 24px 26px 65px;
-    }
-
-    .question-number {
-      top: 27px;
-      left: 23px;
     }
   }
 </style>
