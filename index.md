@@ -5,7 +5,7 @@ translation_key: home
 
 # Digital Biostatistics
 
-## 1. Welcome
+## Welcome
 
 Welcome to the website of Marcos Matabuena’s research group.
 
@@ -21,7 +21,7 @@ Digital health has the potential to identify disease risks years—or even decad
   </iframe>
 </div>
 
-## 2. The Future of Artificial Intelligence in Medicine
+## The Future of Artificial Intelligence in Medicine
 
 Artificial intelligence in medicine is still in its early stages, and only a small fraction of its potential has been demonstrated in real-world clinical practice. Most current applications address relatively simple and well-defined problems from a statistical learning perspective.
 
@@ -49,7 +49,7 @@ Over the next 10 to 15 years, we expect to witness advances that are difficult t
   </iframe>
 </div>
 
-## 3. Our Ultimate Goal
+## Our Ultimate Goal
 
 The ultimate goal of our research is to develop a low-cost healthcare operations pipeline that optimizes the health of individuals and populations by combining biostatistics, digital health, and operations research.
 
