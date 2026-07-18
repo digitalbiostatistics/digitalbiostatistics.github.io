@@ -14,6 +14,13 @@ nav:
 Imagine a person experiencing an acute coronary syndrome alone at home, wearing a device that continuously monitors vital signs. As the device detects critical changes—such as an abnormal electrocardiogram or a drop in oxygen levels—it automatically triggers an emergency response. Within seconds, the system locates and dispatches the nearest available ambulance, adapting in real-time to factors like traffic conditions and hospital capacity.
 
 While en route, the device continuously transmits vital patient data, enabling dynamic adjustments to <strong>medical</strong> and logistical decisions. If the patient's condition worsens, the hospital is alerted to prepare a critical care unit. Upon arrival, predictive models guide decision-making, ensuring the best possible outcome while maximising healthcare resource efficiency.
+<div style="max-width: 600px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/ambulance.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
 
 {% include section.html %}
 
