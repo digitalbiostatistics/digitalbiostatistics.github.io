@@ -6,13 +6,6 @@ nav:
   order: 2
   tooltip: Software, datasets, and more
 ---
----
-title: Projects
-nav:
-  order: 2
-  tooltip: Explore our projects
----
-
 <style>
   .projects-page {
     max-width: 1180px;
