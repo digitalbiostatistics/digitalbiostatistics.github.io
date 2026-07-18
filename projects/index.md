@@ -3,8 +3,8 @@ title: Projects
 lang: en
 translation_key: projects
 nav:
-  order: 2
-  tooltip: Software, datasets, and more
+order: 2
+tooltip: Software, datasets, and more
 ---
 <style>
   .projects-page {
