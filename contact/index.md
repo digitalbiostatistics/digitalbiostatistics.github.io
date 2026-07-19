@@ -22,10 +22,11 @@ that can make a difference and help define the digital future of healthcare.
     >
 </div>
 
+{% include section.html %}
 {%
   include button.html
   type="email"
-  text="email"
+  text="Email"
   link="marcos.matabuena@mbzuai.ac.ae"
 %}
 
