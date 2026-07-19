@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-dark="false">
+<html
+  lang="en"
+  dir="ltr"
+  data-dark="false"
+>
   <head>
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
@@ -472,6 +476,8 @@
 
 
 
+
+
 <header
   class="background"
   style="--image: url('/images/banner3.png')"
@@ -687,23 +693,102 @@
       
     
 
+    <div class="language-menu">
+      <button
+        class="language-menu-button"
+        type="button"
+        aria-label="Choose language"
+        aria-expanded="false"
+        aria-controls="language-menu-dropdown"
+      >
+        <span aria-hidden="true">
+          <i class="fa-solid fa-globe"></i>
+        </span>
+      </button>
     
-
+      <div
+        class="language-menu-dropdown"
+        id="language-menu-dropdown"
+      >
+        
+          
     
-
+          
+            
+          <a
+            href="/"
+            lang="en"
+            
+            
+              class="is-current"
+              aria-current="page"
+            
+          >
+            English
+          </a>
+        
+          
     
-      
-        <a
-          href="/zh/"
-          class="language-switcher"
-          data-tooltip="Change language"
-        >
-          中文
-        </a>
-      
+          
+            
+          <a
+            href="/zh/"
+            lang="zh"
+            
+            
+          >
+            中文
+          </a>
+        
+          
     
+          
+            
+          <a
+            href="/es/"
+            lang="es"
+            
+            
+          >
+            Español
+          </a>
+        
+          
+    
+          
+            
+          <a
+            href="/gl/"
+            lang="gl"
+            
+            
+          >
+            Galego
+          </a>
+        
+          
+    
+          
+            
+          <a
+            href="/ar/"
+            lang="ar"
+            
+              dir="rtl"
+            
+            
+          >
+            العربية
+          </a>
+        
+      </div>
+    </div>
   </nav>
 </header>
+<script
+  src="/assets/js/language-menu.js"
+  defer
+></script>
     <main>
       <!--
   modify main content of page:
