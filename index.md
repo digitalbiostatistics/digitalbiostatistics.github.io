@@ -258,7 +258,7 @@ translation_key: home
       role="heading"
       aria-level="1"
     >
-      Digital Biostatistics
+      DIGITAL BIOSTATISTICS
     </div>
 
     <p class="home-hero-quote">
