@@ -8,6 +8,28 @@ proofer: false
 header-dark: false
 footer-dark: false
 
+languages:
+  - code: en
+    name: English
+    home: /
+
+  - code: zh
+    name: 中文
+    home: /zh/
+
+  - code: es
+    name: Español
+    home: /es/
+
+  - code: gl
+    name: Galego
+    home: /gl/
+
+  - code: ar
+    name: العربية
+    home: /ar/
+    direction: rtl
+
 # site social media and other links
 links:
   email: contact@digitalbiostatistics.com

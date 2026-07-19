@@ -1,0 +1,920 @@
+---
+lang: es
+translation_key: home
+---
+
+<style>
+  .home-hero {
+    position: relative;
+    width: 100%;
+    margin: 20px auto 70px;
+    padding: clamp(38px, 7vw, 82px) clamp(24px, 6vw, 78px);
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgba(84, 127, 157, 0.16);
+    border-radius: 28px;
+    background:
+      radial-gradient(
+        circle at 88% 15%,
+        rgba(84, 127, 157, 0.17),
+        transparent 34%
+      ),
+      radial-gradient(
+        circle at 8% 92%,
+        rgba(175, 201, 218, 0.18),
+        transparent 30%
+      ),
+      linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.98),
+        rgba(245, 250, 252, 0.96)
+      );
+    box-shadow:
+      0 24px 65px rgba(32, 49, 60, 0.08),
+      0 4px 14px rgba(32, 49, 60, 0.04);
+  }
+
+  .home-hero::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    right: -90px;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(84, 127, 157, 0.13);
+    border-radius: 50%;
+    animation: hero-float 9s ease-in-out infinite;
+  }
+
+  .home-hero::after {
+    content: "";
+    position: absolute;
+    right: 12%;
+    bottom: -145px;
+    width: 230px;
+    height: 230px;
+    border: 1px solid rgba(84, 127, 157, 0.1);
+    border-radius: 50%;
+    animation: hero-float 12s ease-in-out infinite reverse;
+  }
+
+  .home-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 930px;
+  }
+
+  .home-hero-label {
+    margin: 0 0 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #547f9d;
+    opacity: 0;
+    animation: hero-reveal 0.7s ease forwards;
+  }
+
+  .home-hero-title {
+    margin: 0;
+    font-size: clamp(2.4rem, 6vw, 5.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+    font-weight: 780;
+    background: linear-gradient(
+      110deg,
+      #17242d 10%,
+      #547f9d 48%,
+      #17242d 85%
+    );
+    background-size: 220% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    animation:
+      hero-reveal 0.85s 0.12s ease forwards,
+      hero-shimmer 8s 1.2s ease-in-out infinite;
+  }
+
+  .home-hero-quote {
+    max-width: 780px;
+    margin: 28px 0 34px;
+    padding-left: 22px;
+    border-left: 3px solid rgba(84, 127, 157, 0.55);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+    line-height: 1.55;
+    font-style: italic;
+    color: #263b49;
+    opacity: 0;
+    transform: translateY(18px);
+    animation: hero-reveal 0.8s 0.35s ease forwards;
+  }
+
+  .home-hero-text {
+    max-width: 880px;
+    margin: 0 0 19px;
+    font-size: clamp(1.02rem, 1.5vw, 1.22rem);
+    line-height: 1.8;
+    color: #26343d;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .home-hero-text.first {
+    animation: hero-reveal 0.8s 0.58s ease forwards;
+  }
+
+  .home-hero-text.second {
+    animation: hero-reveal 0.8s 0.8s ease forwards;
+  }
+
+  .hero-highlight {
+    position: relative;
+    display: inline;
+    font-weight: 650;
+    color: #274e68;
+    background-image: linear-gradient(
+      transparent 66%,
+      rgba(124, 174, 204, 0.28) 66%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: highlight-draw 1.15s 1.35s ease forwards;
+  }
+
+  .home-hero-title a,
+  .home-hero-title .anchor,
+  .home-hero-title .header-link,
+  .home-hero-title .heading-anchor {
+    display: none !important;
+  }
+
+  .home-hero-title::before,
+  .home-hero-title::after {
+    content: none !important;
+    display: none !important;
+  }
+
+  @keyframes hero-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(4px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes hero-shimmer {
+    0%,
+    100% {
+      background-position: 0% center;
+    }
+
+    50% {
+      background-position: 100% center;
+    }
+  }
+
+  @keyframes highlight-draw {
+    from {
+      background-size: 0% 100%;
+    }
+
+    to {
+      background-size: 100% 100%;
+    }
+  }
+
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+      transform: translate3d(-12px, 16px, 0);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .home-hero {
+      margin: 12px auto 48px;
+      padding: 38px 24px 42px;
+      border-radius: 22px;
+    }
+
+    .home-hero-title {
+      letter-spacing: -0.035em;
+    }
+
+    .home-hero-quote {
+      margin-top: 22px;
+      margin-bottom: 27px;
+      padding-left: 17px;
+    }
+
+    .home-hero-text {
+      line-height: 1.7;
+    }
+
+    .home-hero::before {
+      width: 190px;
+      height: 190px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-hero::before,
+    .home-hero::after,
+    .home-hero-label,
+    .home-hero-title,
+    .home-hero-quote,
+    .home-hero-text,
+    .hero-highlight {
+      animation: none !important;
+      opacity: 1;
+      transform: none;
+      filter: none;
+      background-size: 100% 100%;
+    }
+  }
+</style>
+
+<section
+  class="home-hero"
+  aria-label="Introducción a Digital Biostatistics"
+>
+  <div class="home-hero-content">
+
+    <div
+      class="home-hero-title"
+      role="heading"
+      aria-level="1"
+    >
+      BIOESTADÍSTICA DIGITAL
+    </div>
+
+    <p class="home-hero-quote">
+      Por muy alta que sea la montaña, siempre existe un camino hacia la cima.
+    </p>
+
+    <p class="home-hero-text first">
+      ¿Cuál es la mejor dieta para cada persona? ¿Podemos predecir qué
+      enfermedades podría desarrollar alguien durante los próximos veinte
+      años y
+      <span class="hero-highlight">actuar antes de que aparezcan?</span>
+    </p>
+
+    <p class="home-hero-text second">
+      Responder a preguntas como estas requiere un nuevo marco científico
+      que integre la
+      <span class="hero-highlight">bioestadística</span>,
+      la inteligencia artificial, la salud digital y la toma de decisiones
+      clínicas.
+    </p>
+
+  </div>
+</section>
+
+## Bienvenidos
+
+Bienvenidos a la página web del grupo de investigación de Marcos Matabuena.
+
+La salud digital tiene el potencial de identificar el riesgo de desarrollar enfermedades años —o incluso décadas— antes de que aparezcan los primeros síntomas clínicos. Nuestra misión es desarrollar los métodos matemáticos, estadísticos y de inteligencia artificial necesarios para hacer posible esta transformación, utilizando información continua en el tiempo recopilada mediante dispositivos médicos modernos.
+
+Nuestro objetivo final es ir más allá del tratamiento de las enfermedades y avanzar hacia la optimización continua y en tiempo real de la salud individual y poblacional.
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/UnkboTF1Bhk"
+    title="YouTube video player"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+## El futuro de la inteligencia artificial en medicina
+
+La inteligencia artificial aplicada a la medicina todavía se encuentra en una fase inicial, y solo una pequeña parte de su potencial se ha demostrado en la práctica clínica real. Desde la perspectiva del aprendizaje estadístico, la mayoría de las aplicaciones actuales abordan problemas relativamente sencillos y bien definidos.
+
+Durante los próximos diez o quince años esperamos presenciar avances que hoy resultan difíciles de imaginar, especialmente en enfermedades neurológicas como la esclerosis lateral amiotrófica. Surgirán nuevos descubrimientos biológicos comparables a los progresos recientes obtenidos mediante herramientas de inteligencia artificial en la resolución de problemas matemáticos abiertos.
+
+La próxima frontera de la investigación biomédica será el desarrollo de modelos longitudinales, causales y basados en datos que utilicen herramientas de inteligencia artificial para impulsar terapias revolucionarias y el descubrimiento de nuevos fármacos. Dispondremos de perfiles fenotípicos y metabólicos con un nivel de información nunca visto hasta ahora.
+
+<div style="
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+">
+
+  <div style="
+    flex: 1 1 320px;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+  ">
+    <iframe
+      style="
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        margin: 0;
+        padding: 0;
+      "
+      src="https://www.youtube.com/embed/tIgO_Sjh3tQ"
+      title="YouTube video player 1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div style="
+    flex: 1 1 320px;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+  ">
+    <iframe
+      style="
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        margin: 0;
+        padding: 0;
+      "
+      src="https://www.youtube.com/embed/0z03xkwFbw4"
+      title="YouTube video player 2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</div>
+
+## Nuestro objetivo final
+
+El objetivo último de nuestra investigación es desarrollar una infraestructura sanitaria de bajo coste que permita optimizar la salud de las personas y las poblaciones mediante la combinación de bioestadística, salud digital e investigación operativa.
+
+Desde niño, mi sueño ha sido contribuir a encontrar tratamientos para las enfermedades. La inteligencia artificial ayudará al descubrimiento de medicamentos personalizados, reducirá los costes sanitarios y favorecerá una atención médica más equitativa, así como una prescripción más individualizada.
+
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/lZjDMStecZc"
+    title="YouTube video player 3"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+{% include section.html %}
+
+## A Destacar
+
+{% capture text %}
+
+Somos pioneros en el uso de métodos estadísticos no euclídeos para definir una nueva generación de biomarcadores digitales. Nuestro trabajo introdujo el concepto de glucodensidad, un biomarcador integral diseñado para resumir datos de salud digital recopilados en condiciones de vida cotidiana.
+
+También desarrollamos técnicas modernas de aprendizaje automático y nuevos métodos de cuantificación de la incertidumbre para datos complejos y de alta dimensión. Estas herramientas permiten aprovechar plenamente la información rica, densa y longitudinal generada por las tecnologías de salud digital.
+
+{%
+  include button.html
+  link="es/research"
+  text="See our publications"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/OurResearch.png"
+  link="es/research"
+  title="Our Research"
+  text=text
+%}
+
+{% capture text %}
+
+Nuestros proyectos actuales se centran en desarrollar una nueva generación de métodos estadísticos de inteligencia artificial capaces de transformar las enormes cantidades de información recopiladas por dispositivos digitales en conocimiento clínicamente relevante.
+
+Mediante problemas médicos reales, queremos demostrar cómo estos métodos pueden producir avances tangibles en la investigación clínica y en la práctica asistencial.
+
+{%
+  include button.html
+  link="es/projects"
+  text="Browse our projects"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/ourprojects_web.png"
+  link="es/projects"
+  title="Our Projects"
+  flip=true
+  style="bare"
+  text=text
+%}
+
+{% capture text %}
+
+El éxito de una investigación depende de seleccionar cuidadosamente al equipo y a las personas colaboradoras. Para hacer avanzar una disciplina es fundamental rodearse de personas entusiastas, motivadas y bien preparadas.
+
+{%
+  include button.html
+  link="es/team"
+  text="Meet our team"
+  icon="fa-solid fa-arrow-right"
+  flip=true
+  style="bare"
+%}
+
+{% endcapture %}
+
+{%
+  include feature.html
+  image="images/collageconsolo1pelado.png"
+  link="es/team"
+  title="Our Team"
+  text=text
+%}
+
+## Testimonios
+
+<style>
+  .testimonials-slider {
+    --testimonial-accent: #547f9d;
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    margin: 40px auto 70px;
+    padding: 0 34px;
+    box-sizing: border-box;
+  }
+
+  .testimonials-viewport {
+    overflow: hidden;
+    border-radius: 28px;
+    touch-action: pan-y;
+    cursor: grab;
+  }
+
+  .testimonials-viewport:active {
+    cursor: grabbing;
+  }
+
+  .testimonials-track {
+    display: flex !important;
+    align-items: stretch !important;
+    width: 100%;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+
+  .testimonial-slide {
+    display: flex !important;
+    align-items: stretch !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box;
+
+    /* Espacio interior para que la sombra no sea recortada */
+    padding: 14px 14px 32px;
+  }
+
+  .testimonial-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    align-items: center;
+    gap: 44px;
+
+    width: 100%;
+    min-height: 390px;
+    padding: 46px 54px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+    border: 1px solid rgba(84, 127, 157, 0.18);
+    border-radius: 24px;
+
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(84, 127, 157, 0.12),
+        transparent 35%
+      ),
+      #ffffff;
+
+    box-shadow:
+      0 22px 35px rgba(32, 49, 60, 0.12),
+      0 5px 12px rgba(32, 49, 60, 0.07);
+
+    flex: 1 1 auto;
+  }
+
+  .testimonial-photo-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+  }
+
+  .testimonial-photo-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: -9px;
+    border: 2px solid rgba(84, 127, 157, 0.18);
+    border-radius: 50%;
+  }
+
+  .testimonial-photo {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #eef3f6;
+  }
+
+  .testimonial-content {
+    position: relative;
+    min-width: 0;
+  }
+
+  .testimonial-quote-mark {
+    position: absolute;
+    top: -32px;
+    left: -5px;
+    font-family: Georgia, serif;
+    font-size: 90px;
+    line-height: 1;
+    color: var(--testimonial-accent);
+    opacity: 0.16;
+    pointer-events: none;
+  }
+
+  .testimonial-text {
+    position: relative;
+    margin: 0 0 26px;
+    font-size: 1.06rem;
+    line-height: 1.75;
+  }
+
+  .testimonial-name {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 750;
+  }
+
+  .testimonial-role {
+    margin: 6px 0 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    opacity: 0.68;
+  }
+
+  .testimonial-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 1px solid rgba(84, 127, 157, 0.22);
+    border-radius: 50%;
+    background: #ffffff;
+    color: #263b49;
+    box-shadow: 0 10px 28px rgba(32, 49, 60, 0.14);
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .testimonial-arrow:hover {
+    background: #f4f8fa;
+    box-shadow: 0 13px 32px rgba(32, 49, 60, 0.2);
+    transform: translateY(-50%) scale(1.08);
+  }
+
+  .testimonial-arrow.previous {
+    left: 7px;
+  }
+
+  .testimonial-arrow.next {
+    right: 7px;
+  }
+
+  .testimonial-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 22px;
+    margin-top: 24px;
+  }
+
+  .testimonial-dot {
+    width: 10px;
+    height: 10px;
+    display: block;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: var(--testimonial-accent);
+    opacity: 0.28;
+    cursor: pointer;
+    transition:
+      width 0.3s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .testimonial-dot.is-active {
+    width: 34px;
+    opacity: 1;
+  }
+
+  .testimonial-dot:hover {
+    opacity: 0.75;
+    transform: scale(1.12);
+  }
+
+  .testimonial-arrow:focus-visible,
+  .testimonial-dot:focus-visible {
+    outline: 3px solid rgba(84, 127, 157, 0.55);
+    outline-offset: 3px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .testimonials-slider {
+      margin: 28px auto 60px;
+      padding: 0 8px;
+    }
+
+    .testimonial-card {
+      grid-template-columns: 1fr;
+      align-content: center;
+      gap: 27px;
+      min-height: 540px;
+      padding: 38px 25px 42px;
+      text-align: center;
+    }
+
+    .testimonial-photo-wrapper,
+    .testimonial-photo {
+      width: 132px;
+      height: 132px;
+    }
+
+    .testimonial-content {
+      padding-top: 12px;
+    }
+
+    .testimonial-quote-mark {
+      top: -28px;
+      left: 50%;
+      font-size: 72px;
+      transform: translateX(-50%);
+    }
+
+    .testimonial-text {
+      margin-bottom: 22px;
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
+
+    .testimonial-arrow {
+      top: 120px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .testimonial-arrow.previous {
+      left: 16px;
+    }
+
+    .testimonial-arrow.next {
+      right: 16px;
+    }
+
+    .testimonial-slide {
+      padding: 10px 8px 28px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .testimonial-card {
+      min-height: 570px;
+      padding-right: 19px;
+      padding-left: 19px;
+    }
+
+    .testimonial-photo-wrapper,
+    .testimonial-photo {
+      width: 112px;
+      height: 112px;
+    }
+
+    .testimonial-arrow {
+      top: 105px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .testimonials-track {
+      transition: none;
+    }
+  }
+</style>
+
+<div
+  class="testimonials-slider"
+  id="testimonials-slider"
+  aria-label="Testimonials"
+>
+  <div class="testimonials-viewport">
+    <div class="testimonials-track">
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/rounakdey.jpg' | relative_url }}"
+              alt="Portrait of Rounak Dey"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Marcos es un investigador brillante que aporta un rigor, una dedicación y una capacidad de innovación extraordinarios a cada proyecto. Destaca por fomentar colaboraciones significativas y mantiene unos estándares excepcionalmente elevados en sus publicaciones. Ha sido un placer trabajar con él y le deseo que continúen los éxitos a lo largo de su prometedora carrera.
+            </p>
+
+            <p class="testimonial-name">Rounak Dey</p>
+
+            <p class="testimonial-role">
+              Staff Data Scientist at Insitro
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/cris.png' | relative_url }}"
+              alt="Portrait of Cristina Correa"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Marcos ha sido un supervisor excepcional y, sinceramente, una de las influencias más positivas en mi carrera académica hasta el momento. Es una persona increíblemente trabajadora y un referente para mí. Me ha ayudado a descubrir oportunidades que nunca había considerado y me ha animado a ser más ambiciosa tanto en mi investigación como en mi carrera académica. Tenerlo como mentor me ha convertido en una investigadora mucho mejor, y me siento muy afortunada de formar parte de su grupo de investigación.
+            </p>
+
+            <p class="testimonial-name">Cristina Correa</p>
+
+            <p class="testimonial-role">
+              Computational Biology Master Student at MBZUAI
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/testimonial-3.jpg' | relative_url }}"
+              alt="Portrait of Name Surname"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Their interdisciplinary vision creates an environment in which
+              statisticians, clinicians, and artificial intelligence researchers
+              can collaborate effectively and learn from one another.
+            </p>
+
+            <p class="testimonial-name">Name Surname</p>
+
+            <p class="testimonial-role">
+              Medical Researcher · Hospital or institution
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/testimonial-4.jpg' | relative_url }}"
+              alt="Portrait of Name Surname"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              This is a team with scientific ambition and a strong sense of
+              purpose. Their work has the potential to shape the future of
+              digital health and personalized medicine.
+            </p>
+
+            <p class="testimonial-name">Name Surname</p>
+
+            <p class="testimonial-role">
+              Professor · University or institution
+            </p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <button
+    class="testimonial-arrow previous"
+    type="button"
+    aria-label="Previous testimonial"
+  >
+    &#10094;
+  </button>
+
+  <button
+    class="testimonial-arrow next"
+    type="button"
+    aria-label="Next testimonial"
+  >
+    &#10095;
+  </button>
+
+  <div class="testimonial-dots" aria-label="Choose a testimonial">
+    <button
+      class="testimonial-dot is-active"
+      type="button"
+      data-slide="0"
+      aria-label="Show testimonial 1"
+    ></button>
+
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="1"
+      aria-label="Show testimonial 2"
+    ></button>
+
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="2"
+      aria-label="Show testimonial 3"
+    ></button>
+
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="3"
+      aria-label="Show testimonial 4"
+    ></button>
+  </div>
+</div>
+<script src="{{ '/assets/js/testimonials.js' | relative_url }}" defer></script>

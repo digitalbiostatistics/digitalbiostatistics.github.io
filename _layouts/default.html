@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" data-dark="false">
+<html
+  lang="{{ page.lang | default: 'en' }}"
+  dir="{% if page.lang == 'ar' %}rtl{% else %}ltr{% endif %}"
+  data-dark="false"
+>
   {% include head.html %}
   <body>
     {% include header.html %}
