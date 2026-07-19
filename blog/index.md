@@ -7,11 +7,16 @@ nav:
   tooltip: Updates and miscellany
 ---
 
-# {% include icon.html icon="fa-solid fa-feather-pointed" %}Blog
+# News
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
+Stay up to date with the latest news from our team, including research developments, publications, collaborations, awards, events, and other important milestones. Here, we share the activities and achievements shaping the growth of the Digital Biostatistics group.
+<div style="max-width: 800px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/news.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
 {% include section.html %}
 
 {% include search-box.html %}
