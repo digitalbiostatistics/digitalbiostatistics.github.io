@@ -133,26 +133,26 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
 
 ### Rafael Nadal and Toni Nadal
 
-<div style="max-width: 760px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/79fcTRwAnw8?start=7"
-    title="Rafael Nadal"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
+<div class="nadal-videos">
+  <div class="nadal-video">
+    <iframe
+      src="https://www.youtube.com/embed/79fcTRwAnw8?start=7"
+      title="Rafael Nadal"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-<div style="max-width: 760px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/7dpqMtzEhBs"
-    title="Toni Nadal on effort and talent"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
+  <div class="nadal-video">
+    <iframe
+      src="https://www.youtube.com/embed/7dpqMtzEhBs"
+      title="Toni Nadal on effort and talent"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
 {% include section.html %}
