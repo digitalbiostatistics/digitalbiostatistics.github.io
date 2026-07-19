@@ -475,8 +475,6 @@ The success of research depends on carefully selecting your team and  collaborat
           </div>
 
           <div class="testimonial-content">
-            <span class="testimonial-quote-mark" aria-hidden="true">“</span>
-
             <p class="testimonial-text">
               Marcos is a brilliant researcher who brings incredible rigor, dedication, and innovation to every project. He excels at fostering meaningful collaborations and maintains an exceptionally high standard for his publications. It has been a pleasure working alongside him, and I wish him continued success throughout his promising career.
             </p>
@@ -495,24 +493,20 @@ The success of research depends on carefully selecting your team and  collaborat
           <div class="testimonial-photo-wrapper">
             <img
               class="testimonial-photo"
-              src="{{ '/images/testimonial-2.jpg' | relative_url }}"
-              alt="Portrait of Name Surname"
+              src="{{ '/images/cris.png' | relative_url }}"
+              alt="Portrait of Cristina Correa"
             >
           </div>
 
           <div class="testimonial-content">
-            <span class="testimonial-quote-mark" aria-hidden="true">“</span>
-
             <p class="testimonial-text">
-              The group approaches complex scientific problems with remarkable
-              intellectual openness, combining methodological innovation with
-              research questions that genuinely matter for patients.
+              Marcos has been an amazing supervisor and, honestly, one of the most positive influences on my academic career so far. He is incredibly hardworking and someone I really look up to. He has opened my eyes to opportunities I had never considered before and encouraged me to be more ambitious in both my research and my academic career. Having him as a mentor has made me a much better researcher, and I feel very lucky to be part of his research lab.
             </p>
 
-            <p class="testimonial-name">Name Surname</p>
+            <p class="testimonial-name">Cristina Correa</p>
 
             <p class="testimonial-role">
-              Research Scientist · University or institution
+              Computational Biology Master Student at MBZUAI
             </p>
           </div>
         </div>
@@ -529,8 +523,6 @@ The success of research depends on carefully selecting your team and  collaborat
           </div>
 
           <div class="testimonial-content">
-            <span class="testimonial-quote-mark" aria-hidden="true">“</span>
-
             <p class="testimonial-text">
               Their interdisciplinary vision creates an environment in which
               statisticians, clinicians, and artificial intelligence researchers
@@ -557,8 +549,6 @@ The success of research depends on carefully selecting your team and  collaborat
           </div>
 
           <div class="testimonial-content">
-            <span class="testimonial-quote-mark" aria-hidden="true">“</span>
-
             <p class="testimonial-text">
               This is a team with scientific ambition and a strong sense of
               purpose. Their work has the potential to shape the future of
