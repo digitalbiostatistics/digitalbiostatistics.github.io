@@ -156,9 +156,13 @@ nav:
   biomedical research, clinical practice, and population health.
 </p>
 
-
+<div style="max-width: 600px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/projects.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
 </div>
-
 {% include section.html %}
 
 ## Open Questions We Are Working to Solve
