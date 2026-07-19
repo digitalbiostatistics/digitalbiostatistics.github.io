@@ -9,7 +9,7 @@ nav:
 ---
 <section style="max-width: 1000px; margin: 0 auto; line-height: 1.75;">
 
-  <h2>Why Develop an Ambitious Scientific Agenda in the United Arab Emirates?</h2>
+  # Why Develop an Ambitious Scientific Agenda in the United Arab Emirates?
 
   <p>
     A natural question is why one would choose to develop such an ambitious scientific agenda in a country with a relatively recent research tradition and at a newly established university such as MBZUAI. It is also worth asking why more scientists should consider moving to this region. There are several important reasons.
