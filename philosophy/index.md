@@ -131,6 +131,37 @@ We see scientific life as a marathon—or, more broadly, as an endurance sport. 
 
 Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly well.
 
+<style>
+  .nadal-videos {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+  }
+
+  .nadal-video {
+    width: 100%;
+    min-width: 0;
+    margin: 0;
+  }
+
+  .nadal-video iframe {
+    display: block;
+    width: 100% !important;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .nadal-videos {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
+
 ### Rafael Nadal and Toni Nadal
 
 <div class="nadal-videos">

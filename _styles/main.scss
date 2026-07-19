@@ -6,28 +6,3 @@ main {
   flex-direction: column;
   flex-grow: 1;
 }
-
-.nadal-videos {
-  display: flex;
-  gap: 24px;
-  max-width: 1200px;
-  margin: 30px auto;
-}
-
-.nadal-video {
-  flex: 1;
-  min-width: 0;
-}
-
-.nadal-video iframe {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  border: 0;
-}
-
-@media (max-width: 768px) {
-  .nadal-videos {
-    flex-direction: column;
-  }
-}
