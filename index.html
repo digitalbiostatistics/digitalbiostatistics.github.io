@@ -711,15 +711,18 @@
 
 <style>
   .testimonials-slider {
+    --testimonial-accent: #547f9d;
     position: relative;
     width: 100%;
-    max-width: 980px;
-    margin: 35px auto 60px;
+    max-width: 1050px;
+    margin: 40px auto 70px;
+    padding: 0 34px;
+    box-sizing: border-box;
   }
 
   .testimonials-viewport {
     overflow: hidden;
-    border-radius: 22px;
+    border-radius: 24px;
     touch-action: pan-y;
     cursor: grab;
   }
@@ -729,192 +732,251 @@
   }
 
   .testimonials-track {
-    display: flex;
-    transition: transform 0.55s ease;
+    display: flex !important;
+    width: 100%;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: transform;
   }
 
   .testimonial-slide {
-    flex: 0 0 100%;
-    min-width: 100%;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
     box-sizing: border-box;
     padding: 4px;
   }
 
   .testimonial-card {
+    position: relative;
     display: grid;
-    grid-template-columns: 220px minmax(0, 1fr);
+    grid-template-columns: 190px minmax(0, 1fr);
     align-items: center;
-    gap: 38px;
-    min-height: 330px;
+    gap: 44px;
+    min-height: 340px;
+    padding: 46px 54px;
     box-sizing: border-box;
-    padding: 42px;
-    border: 1px solid rgba(127, 127, 127, 0.22);
-    border-radius: 22px;
-    background: var(--background, #ffffff);
-    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    border: 1px solid rgba(84, 127, 157, 0.18);
+    border-radius: 24px;
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(84, 127, 157, 0.12),
+        transparent 35%
+      ),
+      #ffffff;
+    box-shadow:
+      0 20px 55px rgba(32, 49, 60, 0.1),
+      0 3px 10px rgba(32, 49, 60, 0.05);
+  }
+
+  .testimonial-photo-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+  }
+
+  .testimonial-photo-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: -9px;
+    border: 2px solid rgba(84, 127, 157, 0.18);
+    border-radius: 50%;
   }
 
   .testimonial-photo {
-    width: 210px;
-    height: 210px;
+    position: relative;
+    width: 180px;
+    height: 180px;
     display: block;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid rgba(127, 127, 127, 0.12);
+    background: #eef3f6;
   }
 
   .testimonial-content {
+    position: relative;
     min-width: 0;
   }
 
   .testimonial-quote-mark {
-    display: block;
-    height: 42px;
-    margin-bottom: 8px;
+    position: absolute;
+    top: -32px;
+    left: -5px;
     font-family: Georgia, serif;
-    font-size: 72px;
+    font-size: 90px;
     line-height: 1;
-    opacity: 0.2;
+    color: var(--testimonial-accent);
+    opacity: 0.16;
+    pointer-events: none;
   }
 
   .testimonial-text {
-    margin: 0 0 24px;
-    font-size: 1.1rem;
+    position: relative;
+    margin: 0 0 26px;
+    font-size: 1.06rem;
     line-height: 1.75;
   }
 
   .testimonial-name {
     margin: 0;
     font-size: 1.05rem;
-    font-weight: 700;
+    font-weight: 750;
   }
 
   .testimonial-role {
-    margin: 5px 0 0;
+    margin: 6px 0 0;
     font-size: 0.92rem;
     line-height: 1.5;
-    opacity: 0.7;
+    opacity: 0.68;
   }
 
   .testimonial-arrow {
     position: absolute;
     top: 50%;
-    z-index: 2;
-    width: 46px;
-    height: 46px;
+    z-index: 5;
+    width: 48px;
+    height: 48px;
     display: grid;
     place-items: center;
     padding: 0;
-    border: 1px solid rgba(127, 127, 127, 0.25);
+    border: 1px solid rgba(84, 127, 157, 0.22);
     border-radius: 50%;
-    background: var(--background, #ffffff);
-    color: inherit;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    background: #ffffff;
+    color: #263b49;
+    box-shadow: 0 10px 28px rgba(32, 49, 60, 0.14);
     cursor: pointer;
     transform: translateY(-50%);
     transition:
       transform 0.2s ease,
-      box-shadow 0.2s ease;
+      box-shadow 0.2s ease,
+      background 0.2s ease;
   }
 
   .testimonial-arrow:hover {
+    background: #f4f8fa;
+    box-shadow: 0 13px 32px rgba(32, 49, 60, 0.2);
     transform: translateY(-50%) scale(1.08);
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.17);
-  }
-
-  .testimonial-arrow:focus-visible,
-  .testimonial-dot:focus-visible {
-    outline: 3px solid currentColor;
-    outline-offset: 3px;
   }
 
   .testimonial-arrow.previous {
-    left: -23px;
+    left: 7px;
   }
 
   .testimonial-arrow.next {
-    right: -23px;
+    right: 7px;
   }
 
   .testimonial-dots {
-    display: flex;
+    display: flex !important;
     justify-content: center;
-    gap: 9px;
-    margin-top: 22px;
+    align-items: center;
+    gap: 10px;
+    min-height: 22px;
+    margin-top: 24px;
   }
 
   .testimonial-dot {
     width: 10px;
     height: 10px;
+    display: block;
     padding: 0;
     border: 0;
     border-radius: 999px;
-    background: currentColor;
-    opacity: 0.25;
+    background: var(--testimonial-accent);
+    opacity: 0.28;
     cursor: pointer;
     transition:
-      width 0.25s ease,
-      opacity 0.25s ease;
+      width 0.3s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
   }
 
   .testimonial-dot.is-active {
-    width: 30px;
-    opacity: 0.85;
+    width: 34px;
+    opacity: 1;
+  }
+
+  .testimonial-dot:hover {
+    opacity: 0.75;
+    transform: scale(1.12);
+  }
+
+  .testimonial-arrow:focus-visible,
+  .testimonial-dot:focus-visible {
+    outline: 3px solid rgba(84, 127, 157, 0.55);
+    outline-offset: 3px;
   }
 
   @media screen and (max-width: 768px) {
     .testimonials-slider {
-      margin-top: 25px;
+      margin: 28px auto 60px;
+      padding: 0 8px;
     }
 
     .testimonial-card {
       grid-template-columns: 1fr;
-      gap: 22px;
+      gap: 27px;
       min-height: 0;
-      padding: 30px 24px;
+      padding: 38px 25px 42px;
       text-align: center;
     }
 
+    .testimonial-photo-wrapper,
     .testimonial-photo {
-      width: 135px;
-      height: 135px;
-      margin: 0 auto;
+      width: 132px;
+      height: 132px;
+    }
+
+    .testimonial-content {
+      padding-top: 12px;
     }
 
     .testimonial-quote-mark {
-      height: 30px;
-      font-size: 58px;
+      top: -28px;
+      left: 50%;
+      font-size: 72px;
+      transform: translateX(-50%);
     }
 
     .testimonial-text {
-      font-size: 1rem;
+      margin-bottom: 22px;
+      font-size: 0.98rem;
       line-height: 1.65;
     }
 
     .testimonial-arrow {
-      top: auto;
-      bottom: -3px;
+      top: 120px;
       width: 40px;
       height: 40px;
-      transform: none;
-    }
-
-    .testimonial-arrow:hover {
-      transform: scale(1.06);
     }
 
     .testimonial-arrow.previous {
-      left: 12px;
+      left: 16px;
     }
 
     .testimonial-arrow.next {
-      right: 12px;
+      right: 16px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .testimonial-card {
+      padding-right: 19px;
+      padding-left: 19px;
     }
 
-    .testimonial-dots {
-      min-height: 40px;
-      align-items: center;
+    .testimonial-photo-wrapper,
+    .testimonial-photo {
+      width: 112px;
+      height: 112px;
+    }
+
+    .testimonial-arrow {
+      top: 105px;
+      width: 36px;
+      height: 36px;
     }
   }
 
@@ -925,13 +987,15 @@
   }
 </style>
 
-<div class="testimonials-slider" id="testimonials-slider" aria-label="Testimonials carousel">
+<div class="testimonials-slider" id="testimonials-slider" aria-label="Testimonials">
   <div class="testimonials-viewport">
     <div class="testimonials-track">
 
       <article class="testimonial-slide">
         <div class="testimonial-card">
-          <img class="testimonial-photo" src="/images/testimonial-1.jpg" alt="Portrait of testimonial author 1">
+          <div class="testimonial-photo-wrapper">
+            <img class="testimonial-photo" src="/images/testimonial-1.jpg" alt="Portrait of Name Surname">
+          </div>
 
           <div class="testimonial-content">
             <span class="testimonial-quote-mark" aria-hidden="true">“</span>
@@ -943,6 +1007,7 @@
             </p>
 
             <p class="testimonial-name">Name Surname</p>
+
             <p class="testimonial-role">
               Professor of Biostatistics · University or institution
             </p>
@@ -952,18 +1017,21 @@
 
       <article class="testimonial-slide">
         <div class="testimonial-card">
-          <img class="testimonial-photo" src="/images/testimonial-2.jpg" alt="Portrait of testimonial author 2">
+          <div class="testimonial-photo-wrapper">
+            <img class="testimonial-photo" src="/images/testimonial-2.jpg" alt="Portrait of Name Surname">
+          </div>
 
           <div class="testimonial-content">
             <span class="testimonial-quote-mark" aria-hidden="true">“</span>
 
             <p class="testimonial-text">
               The group approaches complex scientific problems with remarkable
-              intellectual openness. Their work connects advanced methodology
-              with questions that genuinely matter for patients.
+              intellectual openness, combining methodological innovation with
+              research questions that genuinely matter for patients.
             </p>
 
             <p class="testimonial-name">Name Surname</p>
+
             <p class="testimonial-role">
               Research Scientist · University or institution
             </p>
@@ -973,7 +1041,9 @@
 
       <article class="testimonial-slide">
         <div class="testimonial-card">
-          <img class="testimonial-photo" src="/images/testimonial-3.jpg" alt="Portrait of testimonial author 3">
+          <div class="testimonial-photo-wrapper">
+            <img class="testimonial-photo" src="/images/testimonial-3.jpg" alt="Portrait of Name Surname">
+          </div>
 
           <div class="testimonial-content">
             <span class="testimonial-quote-mark" aria-hidden="true">“</span>
@@ -985,6 +1055,7 @@
             </p>
 
             <p class="testimonial-name">Name Surname</p>
+
             <p class="testimonial-role">
               Medical Researcher · Hospital or institution
             </p>
@@ -994,18 +1065,21 @@
 
       <article class="testimonial-slide">
         <div class="testimonial-card">
-          <img class="testimonial-photo" src="/images/testimonial-4.jpg" alt="Portrait of testimonial author 4">
+          <div class="testimonial-photo-wrapper">
+            <img class="testimonial-photo" src="/images/testimonial-4.jpg" alt="Portrait of Name Surname">
+          </div>
 
           <div class="testimonial-content">
             <span class="testimonial-quote-mark" aria-hidden="true">“</span>
 
             <p class="testimonial-text">
-              This is a team with both scientific ambition and a strong sense of
-              purpose. They are developing methods capable of shaping the future
-              of digital health and personalized medicine.
+              This is a team with scientific ambition and a strong sense of
+              purpose. Their work has the potential to shape the future of
+              digital health and personalized medicine.
             </p>
 
             <p class="testimonial-name">Name Surname</p>
+
             <p class="testimonial-role">
               Professor · University or institution
             </p>
@@ -1024,195 +1098,17 @@
     ❯
   </button>
 
-  <div class="testimonial-dots" aria-label="Choose a testimonial"></div>
+  <div class="testimonial-dots" aria-label="Choose a testimonial">
+    <button class="testimonial-dot is-active" type="button" data-slide="0" aria-label="Show testimonial 1"></button>
+
+    <button class="testimonial-dot" type="button" data-slide="1" aria-label="Show testimonial 2"></button>
+
+    <button class="testimonial-dot" type="button" data-slide="2" aria-label="Show testimonial 3"></button>
+
+    <button class="testimonial-dot" type="button" data-slide="3" aria-label="Show testimonial 4"></button>
+  </div>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.getElementById("testimonials-slider");
-
-    if \(!slider \|| slider.dataset.initialized === \"true\") {
-      return;
-    }
-
-    slider.dataset.initialized = "true";
-
-    const viewport = slider.querySelector(".testimonials-viewport");
-    const track = slider.querySelector(".testimonials-track");
-    const slides = Array.from(slider.querySelectorAll(".testimonial-slide"));
-    const previousButton = slider.querySelector(".testimonial-arrow.previous");
-    const nextButton = slider.querySelector(".testimonial-arrow.next");
-    const dotsContainer = slider.querySelector(".testimonial-dots");
-
-    if \(!viewport \|| !track \|| slides.length === 0) {
-      return;
-    }
-
-    let currentIndex = 0;
-    let autoplayTimer = null;
-    let isVisible = false;
-    let pointerStartX = 0;
-    let pointerCurrentX = 0;
-    let isDragging = false;
-
-    const prefersReducedMotion = window.matchMedia(
-      "(prefers-reduced-motion: reduce)"
-    ).matches;
-
-    const dots = slides.map(function (_, index) {
-      const dot = document.createElement("button");
-      dot.type = "button";
-      dot.className = "testimonial-dot";
-      dot.setAttribute("aria-label", "Show testimonial " + (index + 1));
-
-      dot.addEventListener("click", function () {
-        showSlide(index);
-        restartAutoplay();
-      });
-
-      dotsContainer.appendChild(dot);
-      return dot;
-    });
-
-    function showSlide(index) {
-      currentIndex = (index + slides.length) % slides.length;
-      track.style.transform = "translateX(-" + currentIndex * 100 + "%)";
-
-      slides.forEach(function (slide, slideIndex) {
-        slide.setAttribute(
-          "aria-hidden",
-          slideIndex === currentIndex ? "false" : "true"
-        );
-      });
-
-      dots.forEach(function (dot, dotIndex) {
-        const isActive = dotIndex === currentIndex;
-        dot.classList.toggle("is-active", isActive);
-        dot.setAttribute("aria-current", isActive ? "true" : "false");
-      });
-    }
-
-    function nextSlide() {
-      showSlide(currentIndex + 1);
-    }
-
-    function previousSlide() {
-      showSlide(currentIndex - 1);
-    }
-
-    function stopAutoplay() {
-      if (autoplayTimer !== null) {
-        window.clearInterval(autoplayTimer);
-        autoplayTimer = null;
-      }
-    }
-
-    function startAutoplay() {
-      if (
-        prefersReducedMotion \||
-        !isVisible \||
-        document.hidden \||
-        autoplayTimer !== null
-      ) {
-        return;
-      }
-
-      autoplayTimer = window.setInterval(nextSlide, 5000);
-    }
-
-    function restartAutoplay() {
-      stopAutoplay();
-      startAutoplay();
-    }
-
-    previousButton.addEventListener("click", function () {
-      previousSlide();
-      restartAutoplay();
-    });
-
-    nextButton.addEventListener("click", function () {
-      nextSlide();
-      restartAutoplay();
-    });
-
-    slider.addEventListener("mouseenter", stopAutoplay);
-    slider.addEventListener("mouseleave", startAutoplay);
-    slider.addEventListener("focusin", stopAutoplay);
-    slider.addEventListener("focusout", startAutoplay);
-
-    viewport.addEventListener("pointerdown", function (event) {
-      isDragging = true;
-      pointerStartX = event.clientX;
-      pointerCurrentX = event.clientX;
-      viewport.setPointerCapture(event.pointerId);
-      stopAutoplay();
-    });
-
-    viewport.addEventListener("pointermove", function (event) {
-      if (!isDragging) {
-        return;
-      }
-
-      pointerCurrentX = event.clientX;
-    });
-
-    viewport.addEventListener("pointerup", function (event) {
-      if (!isDragging) {
-        return;
-      }
-
-      const movement = pointerCurrentX - pointerStartX;
-      isDragging = false;
-
-      if (Math.abs(movement) > 50) {
-        if (movement < 0) {
-          nextSlide();
-        } else {
-          previousSlide();
-        }
-      }
-
-      if (viewport.hasPointerCapture(event.pointerId)) {
-        viewport.releasePointerCapture(event.pointerId);
-      }
-
-      startAutoplay();
-    });
-
-    viewport.addEventListener("pointercancel", function () {
-      isDragging = false;
-      startAutoplay();
-    });
-
-    document.addEventListener("visibilitychange", function () {
-      if (document.hidden) {
-        stopAutoplay();
-      } else {
-        startAutoplay();
-      }
-    });
-
-    const observer = new IntersectionObserver(
-      function (entries) {
-        entries.forEach(function (entry) {
-          isVisible = entry.isIntersecting;
-
-          if (isVisible) {
-            startAutoplay();
-          } else {
-            stopAutoplay();
-          }
-        });
-      },
-      {
-        threshold: 0.35
-      }
-    );
-
-    observer.observe(slider);
-    showSlide(0);
-  });
-</script>
+<script src="/assets/js/testimonials.js" defer></script>
   </section>
 
 
