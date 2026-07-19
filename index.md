@@ -144,6 +144,19 @@ translation_key: home
     animation: highlight-draw 1.15s 1.35s ease forwards;
   }
 
+  .home-hero-title a,
+  .home-hero-title .anchor,
+  .home-hero-title .header-link,
+  .home-hero-title .heading-anchor {
+    display: none !important;
+  }
+
+  .home-hero-title::before,
+  .home-hero-title::after {
+    content: none !important;
+    display: none !important;
+  }
+
   @keyframes hero-reveal {
     from {
       opacity: 0;
@@ -234,11 +247,19 @@ translation_key: home
   }
 </style>
 
-<section class="home-hero" aria-labelledby="home-hero-title">
+<section
+  class="home-hero"
+  aria-label="Digital Biostatistics introduction"
+>
   <div class="home-hero-content">
-    <h1 class="home-hero-title" id="home-hero-title">
+
+    <div
+      class="home-hero-title"
+      role="heading"
+      aria-level="1"
+    >
       Digital Biostatistics
-    </h1>
+    </div>
 
     <p class="home-hero-quote">
       No matter how high the mountain, there is always a path to the summit.
