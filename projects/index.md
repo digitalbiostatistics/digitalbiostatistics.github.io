@@ -319,7 +319,6 @@ produce tangible clinical and biomedical value.
   </article>
 
 </div>
-{% include section.html %}
 
 ## More
 
