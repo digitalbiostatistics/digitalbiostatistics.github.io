@@ -163,6 +163,8 @@ nav:
     style="width: 100%; display: block; border-radius: 4px;"
     >
 </div>
+
+</div>
 {% include section.html %}
 
 ## Open Questions We Are Working to Solve
