@@ -27,26 +27,60 @@ Artificial intelligence in medicine is still in its early stages, and only a sma
 
 Over the next 10 to 15 years, we expect to witness advances that are difficult to imagine today, particularly in neurological disorders such as ALS. New biological discoveries will emerge, comparable to the recent progress made in solving open mathematical problems using AI tools. The next frontier in biomedical research is the development of longitudinal, causal, and data-driven models that use AI tools to support revolutionary therapies and drug discovery. We will have access to metabolic phenotype profiles containing information at a level never seen before.
 
-<div style="max-width: 560px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/tIgO_Sjh3tQ"
-    title="YouTube video player 1"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
+<style>
+  .dual-videos {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 30px auto !important;
+  }
 
-<div style="max-width: 560px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/0z03xkwFbw4"
-    title="YouTube video player 2"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
+  .dual-videos > .dual-video {
+    width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .dual-videos > .dual-video > iframe {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+
+  @media screen and (max-width: 768px) {
+    .dual-videos {
+      grid-template-columns: 1fr !important;
+    }
+  }
+</style>
+
+<div class="dual-videos" markdown="0">
+  <div class="dual-video">
+    <iframe
+      src="https://www.youtube.com/embed/tIgO_Sjh3tQ"
+      title="YouTube video player 1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="dual-video">
+    <iframe
+      src="https://www.youtube.com/embed/0z03xkwFbw4"
+      title="YouTube video player 2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
 
 ## Our Ultimate Goal
