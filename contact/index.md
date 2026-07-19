@@ -17,7 +17,7 @@ that can make a difference and help define the digital future of healthcare.
 {%
   include button.html
   type="email"
-  text="marcos.matabuena@mbzuai.ac.ae"
+  text="email"
   link="marcos.matabuena@mbzuai.ac.ae"
 %}
 
@@ -36,10 +36,10 @@ that can make a difference and help define the digital future of healthcare.
   link="https://www.google.com/maps/search/?api=1&query=Mohamed+bin+Zayed+University+of+Artificial+Intelligence+Masdar+City+Abu+Dhabi"
 %}
 
-{% include section.html %}
-
-{%
-  include figure.html
-  image="images/contact.jpg"
-  caption=""
-%}
+<div style="max-width: 600px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/contact.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
