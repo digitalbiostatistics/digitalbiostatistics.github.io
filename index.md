@@ -236,11 +236,6 @@ translation_key: home
 
 <section class="home-hero" aria-labelledby="home-hero-title">
   <div class="home-hero-content">
-
-    <p class="home-hero-label">
-      Statistics · Artificial Intelligence · Digital Health
-    </p>
-
     <h1 class="home-hero-title" id="home-hero-title">
       Digital Biostatistics
     </h1>
