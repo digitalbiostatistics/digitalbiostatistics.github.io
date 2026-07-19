@@ -191,7 +191,7 @@ The success of research depends on carefully selecting your team and  collaborat
 
   .testimonials-viewport {
     overflow: hidden;
-    border-radius: 24px;
+    border-radius: 28px;
     touch-action: pan-y;
     cursor: grab;
   }
@@ -202,17 +202,22 @@ The success of research depends on carefully selecting your team and  collaborat
 
   .testimonials-track {
     display: flex !important;
+    align-items: stretch !important;
     width: 100%;
     transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
     will-change: transform;
   }
 
   .testimonial-slide {
+    display: flex !important;
+    align-items: stretch !important;
     flex: 0 0 100% !important;
     width: 100% !important;
     min-width: 100% !important;
     box-sizing: border-box;
-    padding: 4px;
+
+    /* Espacio interior para que la sombra no sea recortada */
+    padding: 14px 14px 32px;
   }
 
   .testimonial-card {
@@ -221,12 +226,16 @@ The success of research depends on carefully selecting your team and  collaborat
     grid-template-columns: 190px minmax(0, 1fr);
     align-items: center;
     gap: 44px;
-    min-height: 340px;
+
+    width: 100%;
+    min-height: 390px;
     padding: 46px 54px;
     box-sizing: border-box;
+
     overflow: hidden;
     border: 1px solid rgba(84, 127, 157, 0.18);
     border-radius: 24px;
+
     background:
       radial-gradient(
         circle at top right,
@@ -234,9 +243,12 @@ The success of research depends on carefully selecting your team and  collaborat
         transparent 35%
       ),
       #ffffff;
+
     box-shadow:
-      0 20px 55px rgba(32, 49, 60, 0.1),
-      0 3px 10px rgba(32, 49, 60, 0.05);
+      0 22px 35px rgba(32, 49, 60, 0.12),
+      0 5px 12px rgba(32, 49, 60, 0.07);
+
+    flex: 1 1 auto;
   }
 
   .testimonial-photo-wrapper {
@@ -386,8 +398,9 @@ The success of research depends on carefully selecting your team and  collaborat
 
     .testimonial-card {
       grid-template-columns: 1fr;
+      align-content: center;
       gap: 27px;
-      min-height: 0;
+      min-height: 540px;
       padding: 38px 25px 42px;
       text-align: center;
     }
@@ -428,10 +441,15 @@ The success of research depends on carefully selecting your team and  collaborat
     .testimonial-arrow.next {
       right: 16px;
     }
+
+    .testimonial-slide {
+      padding: 10px 8px 28px;
+    }
   }
 
   @media screen and (max-width: 420px) {
     .testimonial-card {
+      min-height: 570px;
       padding-right: 19px;
       padding-left: 19px;
     }
