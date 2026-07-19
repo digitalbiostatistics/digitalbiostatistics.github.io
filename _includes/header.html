@@ -60,18 +60,23 @@
   <nav>
     {% assign nav_pages = site.pages
       | where_exp: "item", "item.nav"
-      | where: "lang", current_lang"
       | sort: "nav.order"
     %}
 
     {% for nav_page in nav_pages %}
-      <a
-        href="{{ nav_page.dir | relative_url | uri_escape }}"
-        data-tooltip="{{ nav_page.nav.tooltip | xml_escape }}"
-      >
-        {{ nav_page.title }}
-      </a>
+      {% assign nav_lang = nav_page.lang | default: "en" %}
+
+      {% if nav_lang == current_lang %}
+        <a
+          href="{{ nav_page.url | relative_url | uri_escape }}"
+          data-tooltip="{{ nav_page.nav.tooltip | xml_escape }}"
+        >
+          {{ nav_page.title }}
+        </a>
+      {% endif %}
     {% endfor %}
+
+    {% assign language_link_found = false %}
 
     {% if page.translation_key %}
       {% assign translations = site.pages
@@ -91,8 +96,30 @@
               English
             {% endif %}
           </a>
+
+          {% assign language_link_found = true %}
         {% endif %}
       {% endfor %}
     {% endif %}
+
+    {% unless language_link_found %}
+      {% if current_lang == "zh" %}
+        <a
+          href="{{ '/' | relative_url }}"
+          class="language-switcher"
+          data-tooltip="Change language"
+        >
+          English
+        </a>
+      {% else %}
+        <a
+          href="{{ '/zh/' | relative_url }}"
+          class="language-switcher"
+          data-tooltip="Change language"
+        >
+          中文
+        </a>
+      {% endif %}
+    {% endunless %}
   </nav>
 </header>
