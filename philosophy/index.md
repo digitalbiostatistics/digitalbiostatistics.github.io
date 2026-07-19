@@ -179,7 +179,7 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
 
 ### Rafael Nadal and Toni Nadal
 
-<div class="dual-videos">
+<div class="dual-videos" markdown="0">
   <div class="dual-video">
     <iframe
       src="https://www.youtube.com/embed/79fcTRwAnw8?start=7"
@@ -205,7 +205,7 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
 
 ## Historical Moments in Spanish Sport
 
-<div class="dual-videos">
+<div class="dual-videos" markdown="0">
   <div class="dual-video">
     <iframe
       src="https://www.youtube.com/embed/jm04y-F5UXM"
