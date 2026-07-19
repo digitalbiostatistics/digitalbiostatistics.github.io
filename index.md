@@ -469,8 +469,8 @@ The success of research depends on carefully selecting your team and  collaborat
           <div class="testimonial-photo-wrapper">
             <img
               class="testimonial-photo"
-              src="{{ '/images/testimonial-1.jpg' | relative_url }}"
-              alt="Portrait of Name Surname"
+              src="{{ '/images/rounakdey.jpg' | relative_url }}"
+              alt="Portrait of Rounak Dey"
             >
           </div>
 
@@ -478,15 +478,13 @@ The success of research depends on carefully selecting your team and  collaborat
             <span class="testimonial-quote-mark" aria-hidden="true">“</span>
 
             <p class="testimonial-text">
-              Working with this research group has been an inspiring experience.
-              Their combination of statistical rigor, creativity, and commitment
-              to real-world medical impact is exceptional.
+              Marcos is a brilliant researcher who brings incredible rigor, dedication, and innovation to every project. He excels at fostering meaningful collaborations and maintains an exceptionally high standard for his publications. It has been a pleasure working alongside him, and I wish him continued success throughout his promising career.
             </p>
 
-            <p class="testimonial-name">Name Surname</p>
+            <p class="testimonial-name">Rounak Dey</p>
 
             <p class="testimonial-role">
-              Professor of Biostatistics · University or institution
+              Staff Data Scientist at Insitro
             </p>
           </div>
         </div>
