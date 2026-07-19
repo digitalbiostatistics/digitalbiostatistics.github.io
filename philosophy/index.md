@@ -133,31 +133,46 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
 
 <style>
   .nadal-videos {
-    display: grid !important;
-    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-    gap: 24px;
-    width: 100%;
-    max-width: 1200px;
-    margin: 30px auto;
-  }
-
-  .nadal-video {
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-  }
-
-  .nadal-video iframe {
-    display: block;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: stretch !important;
+    gap: 24px !important;
     width: 100% !important;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    border: 0;
+    max-width: 1200px !important;
+    margin: 30px auto !important;
+  }
+
+  .nadal-videos .nadal-video {
+    display: block !important;
+    flex: 0 0 calc(50% - 12px) !important;
+    width: calc(50% - 12px) !important;
+    max-width: calc(50% - 12px) !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .nadal-videos .nadal-video iframe {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
   }
 
   @media screen and (max-width: 768px) {
     .nadal-videos {
-      grid-template-columns: 1fr !important;
+      flex-direction: column !important;
+      flex-wrap: nowrap !important;
+    }
+
+    .nadal-videos .nadal-video {
+      flex: 0 0 100% !important;
+      width: 100% !important;
+      max-width: 100% !important;
     }
   }
 </style>
