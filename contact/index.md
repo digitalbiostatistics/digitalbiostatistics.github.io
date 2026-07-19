@@ -4,76 +4,42 @@ lang: en
 translation_key: contact
 nav:
   order: 8
-  tooltip: Email, address, and location
+  tooltip: Email, website, and location
 ---
 
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+If you have ideas or problems where rigorous statistical methodology could
+make a meaningful difference in a clinical or biomedical setting, feel free
+to get in touch. **Marcos is open to collaborating** on **high-impact questions**
+that can make a difference and help define the digital future of healthcare.
 
 {%
   include button.html
   type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
+  text="marcos.matabuena@mbzuai.ac.ae"
+  link="marcos.matabuena@mbzuai.ac.ae"
 %}
+
 {%
   include button.html
-  type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
+  type="website"
+  text="Webpage"
+  link="https://marcosmatabuena.org/"
 %}
+
 {%
   include button.html
   type="address"
-  tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
+  text="MBZUAI"
+  tooltip="Mohamed bin Zayed University of Artificial Intelligence on Google Maps"
+  link="https://www.google.com/maps/search/?api=1&query=Mohamed+bin+Zayed+University+of+Artificial+Intelligence+Masdar+City+Abu+Dhabi"
 %}
 
 {% include section.html %}
 
-{% capture col1 %}
-
 {%
   include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
+  image="images/contact.jpg"
+  caption=""
 %}
-
-{% endcapture %}
-
-{% capture col2 %}
-
-{%
-  include figure.html
-  image="images/photo.jpg"
-  caption="Lorem ipsum"
-%}
-
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 %}
-
-{% include section.html dark=true %}
-
-{% capture col1 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col2 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% capture col3 %}
-Lorem ipsum dolor sit amet  
-consectetur adipiscing elit  
-sed do eiusmod tempor
-{% endcapture %}
-
-{% include cols.html col1=col1 col2=col2 col3=col3 %}
