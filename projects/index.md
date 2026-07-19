@@ -105,12 +105,16 @@ nav:
     line-height: 1.4;
   }
 
-  .question-card p {
-    margin: 0;
-    color: #314b59;
-    font-size: 0.97rem;
-    line-height: 1.65;
-  }
+ .question-card p {
+  margin: 0;
+  color: #314b59;
+  font-size: 0.97rem;
+  line-height: 1.65;
+
+  text-align: left !important;
+  word-spacing: normal !important;
+  letter-spacing: normal;
+}
 
   .question-card p + p {
     margin-top: 12px;
@@ -170,7 +174,7 @@ address consequential problems in medicine and public health.
 
   <article class="question-card">
 
-    <span class="question-number">01</span>
+    <span class="question-number">1</span>
 
     <h4>E-values for High-Dimensional Multiple Testing</h4>
 
@@ -184,7 +188,7 @@ address consequential problems in medicine and public health.
 
   <article class="question-card">
 
-    <span class="question-number">02</span>
+    <span class="question-number">2</span>
 
     <h4>Conditional Predictive Inference for Random Objects</h4>
 
@@ -199,7 +203,7 @@ address consequential problems in medicine and public health.
 
   <article class="question-card">
 
-    <span class="question-number">03</span>
+    <span class="question-number">3</span>
 
     <h4>Optimal Conformal Prediction for Random-Effects Models</h4>
 
@@ -213,7 +217,7 @@ address consequential problems in medicine and public health.
 
   <article class="question-card">
 
-    <span class="question-number">04</span>
+    <span class="question-number">4</span>
 
     <h4>Deep Learning Without Manifold Assumptions</h4>
 
@@ -228,7 +232,7 @@ address consequential problems in medicine and public health.
 
   <article class="question-card question-card-wide">
 
-    <span class="question-number">05</span>
+    <span class="question-number">5</span>
 
     <h4>Mathematical Foundations of Distributional Data Analysis</h4>
 
@@ -254,7 +258,7 @@ produce tangible clinical and biomedical value.
 
   <article class="question-card">
 
-    <span class="question-number">01</span>
+    <span class="question-number">1</span>
 
     <h4>Genetic Discovery Using Digital Phenotypes</h4>
 
@@ -267,7 +271,7 @@ produce tangible clinical and biomedical value.
 
   <article class="question-card">
 
-    <span class="question-number">02</span>
+    <span class="question-number">2</span>
 
     <h4>Validation of Glucodensity as a Digital Biomarker</h4>
 
@@ -281,7 +285,7 @@ produce tangible clinical and biomedical value.
 
   <article class="question-card">
 
-    <span class="question-number">03</span>
+    <span class="question-number">3</span>
 
     <h4>Glucose Variability and the Microbiome</h4>
 
@@ -295,7 +299,7 @@ produce tangible clinical and biomedical value.
 
   <article class="question-card">
 
-    <span class="question-number">04</span>
+    <span class="question-number">4</span>
 
     <h4>Continuous Glucose Monitoring and Retinopathy</h4>
 
@@ -308,7 +312,7 @@ produce tangible clinical and biomedical value.
 
   <article class="question-card question-card-wide">
 
-    <span class="question-number">05</span>
+    <span class="question-number">5</span>
 
     <h4>Phenotyping Continuous Biomedical Signals</h4>
 
