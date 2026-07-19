@@ -3,7 +3,267 @@ lang: en
 translation_key: home
 ---
 
-# Digital Biostatistics
+<style>
+  .home-hero {
+    position: relative;
+    width: 100%;
+    margin: 20px auto 70px;
+    padding: clamp(38px, 7vw, 82px) clamp(24px, 6vw, 78px);
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid rgba(84, 127, 157, 0.16);
+    border-radius: 28px;
+    background:
+      radial-gradient(
+        circle at 88% 15%,
+        rgba(84, 127, 157, 0.17),
+        transparent 34%
+      ),
+      radial-gradient(
+        circle at 8% 92%,
+        rgba(175, 201, 218, 0.18),
+        transparent 30%
+      ),
+      linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.98),
+        rgba(245, 250, 252, 0.96)
+      );
+    box-shadow:
+      0 24px 65px rgba(32, 49, 60, 0.08),
+      0 4px 14px rgba(32, 49, 60, 0.04);
+  }
+
+  .home-hero::before {
+    content: "";
+    position: absolute;
+    top: -110px;
+    right: -90px;
+    width: 280px;
+    height: 280px;
+    border: 1px solid rgba(84, 127, 157, 0.13);
+    border-radius: 50%;
+    animation: hero-float 9s ease-in-out infinite;
+  }
+
+  .home-hero::after {
+    content: "";
+    position: absolute;
+    right: 12%;
+    bottom: -145px;
+    width: 230px;
+    height: 230px;
+    border: 1px solid rgba(84, 127, 157, 0.1);
+    border-radius: 50%;
+    animation: hero-float 12s ease-in-out infinite reverse;
+  }
+
+  .home-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 930px;
+  }
+
+  .home-hero-label {
+    margin: 0 0 12px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #547f9d;
+    opacity: 0;
+    animation: hero-reveal 0.7s ease forwards;
+  }
+
+  .home-hero-title {
+    margin: 0;
+    font-size: clamp(2.4rem, 6vw, 5.4rem);
+    line-height: 1.02;
+    letter-spacing: -0.045em;
+    font-weight: 780;
+    background: linear-gradient(
+      110deg,
+      #17242d 10%,
+      #547f9d 48%,
+      #17242d 85%
+    );
+    background-size: 220% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    opacity: 0;
+    animation:
+      hero-reveal 0.85s 0.12s ease forwards,
+      hero-shimmer 8s 1.2s ease-in-out infinite;
+  }
+
+  .home-hero-quote {
+    max-width: 780px;
+    margin: 28px 0 34px;
+    padding-left: 22px;
+    border-left: 3px solid rgba(84, 127, 157, 0.55);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(1.2rem, 2.2vw, 1.65rem);
+    line-height: 1.55;
+    font-style: italic;
+    color: #263b49;
+    opacity: 0;
+    transform: translateY(18px);
+    animation: hero-reveal 0.8s 0.35s ease forwards;
+  }
+
+  .home-hero-text {
+    max-width: 880px;
+    margin: 0 0 19px;
+    font-size: clamp(1.02rem, 1.5vw, 1.22rem);
+    line-height: 1.8;
+    color: #26343d;
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  .home-hero-text.first {
+    animation: hero-reveal 0.8s 0.58s ease forwards;
+  }
+
+  .home-hero-text.second {
+    animation: hero-reveal 0.8s 0.8s ease forwards;
+  }
+
+  .hero-highlight {
+    position: relative;
+    display: inline;
+    font-weight: 650;
+    color: #274e68;
+    background-image: linear-gradient(
+      transparent 66%,
+      rgba(124, 174, 204, 0.28) 66%
+    );
+    background-repeat: no-repeat;
+    background-size: 0% 100%;
+    animation: highlight-draw 1.15s 1.35s ease forwards;
+  }
+
+  @keyframes hero-reveal {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+      filter: blur(4px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+      filter: blur(0);
+    }
+  }
+
+  @keyframes hero-shimmer {
+    0%,
+    100% {
+      background-position: 0% center;
+    }
+
+    50% {
+      background-position: 100% center;
+    }
+  }
+
+  @keyframes highlight-draw {
+    from {
+      background-size: 0% 100%;
+    }
+
+    to {
+      background-size: 100% 100%;
+    }
+  }
+
+  @keyframes hero-float {
+    0%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    50% {
+      transform: translate3d(-12px, 16px, 0);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .home-hero {
+      margin: 12px auto 48px;
+      padding: 38px 24px 42px;
+      border-radius: 22px;
+    }
+
+    .home-hero-title {
+      letter-spacing: -0.035em;
+    }
+
+    .home-hero-quote {
+      margin-top: 22px;
+      margin-bottom: 27px;
+      padding-left: 17px;
+    }
+
+    .home-hero-text {
+      line-height: 1.7;
+    }
+
+    .home-hero::before {
+      width: 190px;
+      height: 190px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .home-hero::before,
+    .home-hero::after,
+    .home-hero-label,
+    .home-hero-title,
+    .home-hero-quote,
+    .home-hero-text,
+    .hero-highlight {
+      animation: none !important;
+      opacity: 1;
+      transform: none;
+      filter: none;
+      background-size: 100% 100%;
+    }
+  }
+</style>
+
+<section class="home-hero" aria-labelledby="home-hero-title">
+  <div class="home-hero-content">
+
+    <p class="home-hero-label">
+      Statistics · Artificial Intelligence · Digital Health
+    </p>
+
+    <h1 class="home-hero-title" id="home-hero-title">
+      Digital Biostatistics
+    </h1>
+
+    <p class="home-hero-quote">
+      No matter how high the mountain, there is always a path to the summit.
+    </p>
+
+    <p class="home-hero-text first">
+      What is the best diet for each person? Can we predict which diseases
+      someone may develop over the next twenty years—and
+      <span class="hero-highlight">act before they appear?</span>
+    </p>
+
+    <p class="home-hero-text second">
+      Answering questions like these requires a new scientific framework that
+      brings together
+      <span class="hero-highlight">biostatistics</span>,
+      artificial intelligence, digital health, and clinical decision-making.
+    </p>
+
+  </div>
+</section>
 
 ## Welcome
 
