@@ -323,4 +323,13 @@ produce tangible clinical and biomedical value.
 
 </div>
 
+## More
+
+{% include list.html
+  component="card"
+  data="projects"
+  filter="!group"
+  style="small"
+%}
+
 </div>
