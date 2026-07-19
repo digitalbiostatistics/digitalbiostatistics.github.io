@@ -46,24 +46,3 @@ that can make a difference and help define the digital future of healthcare.
 %}
 {% include section.html %}
 
-## Visitors Around the World
-
-<div style="
-  display: flex;
-  justify-content: center;
-  margin: 35px auto 10px;
-">
-
-  <a
-    href="https://info.flagcounter.com/LbmZ"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    <img
-      src="https://s05.flagcounter.com/count2/LbmZ/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_1/pageviews_1/flags_0/percent_0/"
-      alt="Visitor statistics by country"
-      style="max-width: 100%; height: auto; border: 0;"
-    >
-  </a>
-
-</div>
