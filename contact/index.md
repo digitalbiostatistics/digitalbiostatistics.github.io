@@ -14,7 +14,7 @@ make a meaningful difference in a clinical or biomedical setting, feel free
 to get in touch. **Marcos is open to collaborating** on **high-impact questions**
 that can make a difference and help define the digital future of healthcare. 
 
-<div style="max-width: 600px; margin: 40px auto 10px auto;">
+<div style="max-width: 800px; margin: 40px auto 10px auto;">
   <img
     src="{{ '/images/contact.png' | relative_url }}"
     alt=""
