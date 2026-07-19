@@ -63,7 +63,7 @@ nav:
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 20px;
     width: 100%;
-    margin: 30px 0 70px;
+    margin: 30px 0 45px;
     padding: 0;
     position: static;
   }
@@ -156,7 +156,7 @@ nav:
   biomedical research, clinical practice, and population health.
 </p>
 
-<div style="max-width: 800px; margin: 40px auto 10px auto;">
+<div style="max-width: 950px; margin: 40px auto 10px auto;">
   <img
     src="{{ '/images/projects.png' | relative_url }}"
     alt=""
@@ -246,7 +246,6 @@ address consequential problems in medicine and public health.
 
 </div>
 
-{% include section.html %}
 
 ## Applied and Clinical Questions
 
@@ -320,6 +319,7 @@ produce tangible clinical and biomedical value.
   </article>
 
 </div>
+{% include section.html %}
 
 ## More
 
