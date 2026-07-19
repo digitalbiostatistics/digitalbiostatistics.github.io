@@ -132,10 +132,10 @@ We see scientific life as a marathon—or, more broadly, as an endurance sport. 
 Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly well.
 
 <style>
-  .nadal-videos {
+  .dual-videos {
     display: flex !important;
     flex-direction: row !important;
-    flex-wrap: nowrap !important;
+    flex-wrap: wrap !important;
     align-items: stretch !important;
     gap: 24px !important;
     width: 100% !important;
@@ -143,7 +143,7 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
     margin: 30px auto !important;
   }
 
-  .nadal-videos .nadal-video {
+  .dual-videos .dual-video {
     display: block !important;
     flex: 0 0 calc(50% - 12px) !important;
     width: calc(50% - 12px) !important;
@@ -153,7 +153,7 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
     padding: 0 !important;
   }
 
-  .nadal-videos .nadal-video iframe {
+  .dual-videos .dual-video iframe {
     display: block !important;
     width: 100% !important;
     height: auto !important;
@@ -164,12 +164,12 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
   }
 
   @media screen and (max-width: 768px) {
-    .nadal-videos {
+    .dual-videos {
       flex-direction: column !important;
       flex-wrap: nowrap !important;
     }
 
-    .nadal-videos .nadal-video {
+    .dual-videos .dual-video {
       flex: 0 0 100% !important;
       width: 100% !important;
       max-width: 100% !important;
@@ -179,8 +179,8 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
 
 ### Rafael Nadal and Toni Nadal
 
-<div class="nadal-videos">
-  <div class="nadal-video">
+<div class="dual-videos">
+  <div class="dual-video">
     <iframe
       src="https://www.youtube.com/embed/79fcTRwAnw8?start=7"
       title="Rafael Nadal"
@@ -190,7 +190,7 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
     </iframe>
   </div>
 
-  <div class="nadal-video">
+  <div class="dual-video">
     <iframe
       src="https://www.youtube.com/embed/7dpqMtzEhBs"
       title="Toni Nadal on effort and talent"
@@ -205,46 +205,44 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
 
 ## Historical Moments in Spanish Sport
 
-<div style="max-width: 760px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/jm04y-F5UXM"
-    title="Spanish athlete inspiration 1"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
+<div class="dual-videos">
+  <div class="dual-video">
+    <iframe
+      src="https://www.youtube.com/embed/jm04y-F5UXM"
+      title="Spanish athlete inspiration 1"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-<div style="max-width: 760px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/eA4hwNA7MJg"
-    title="Spanish athlete inspiration 4"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
+  <div class="dual-video">
+    <iframe
+      src="https://www.youtube.com/embed/eA4hwNA7MJg"
+      title="Spanish athlete inspiration 4"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-<div style="max-width: 760px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/szLGtG_yQzo"
-    title="Spanish athlete inspiration 2"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
-</div>
+  <div class="dual-video">
+    <iframe
+      src="https://www.youtube.com/embed/szLGtG_yQzo"
+      title="Spanish athlete inspiration 2"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-<div style="max-width: 760px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/ys0KdeZHtq0"
-    title="Spanish athlete inspiration 3"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
+  <div class="dual-video">
+    <iframe
+      src="https://www.youtube.com/embed/ys0KdeZHtq0"
+      title="Spanish athlete inspiration 3"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
