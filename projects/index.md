@@ -173,7 +173,6 @@ address consequential problems in medicine and public health.
 
   <article class="question-card">
 
-    <span class="question-number">1</span>
 
     <h4>E-values for High-Dimensional Multiple Testing</h4>
 
@@ -187,7 +186,6 @@ address consequential problems in medicine and public health.
 
   <article class="question-card">
 
-    <span class="question-number">2</span>
 
     <h4>Conditional Predictive Inference for Random Objects</h4>
 
@@ -202,7 +200,6 @@ address consequential problems in medicine and public health.
 
   <article class="question-card">
 
-    <span class="question-number">3</span>
 
     <h4>Optimal Conformal Prediction for Random-Effects Models</h4>
 
@@ -216,7 +213,6 @@ address consequential problems in medicine and public health.
 
   <article class="question-card">
 
-    <span class="question-number">4</span>
 
     <h4>Deep Learning Without Manifold Assumptions</h4>
 
@@ -231,7 +227,6 @@ address consequential problems in medicine and public health.
 
   <article class="question-card question-card-wide">
 
-    <span class="question-number">5</span>
 
     <h4>Mathematical Foundations of Distributional Data Analysis</h4>
 
@@ -257,7 +252,6 @@ produce tangible clinical and biomedical value.
 
   <article class="question-card">
 
-    <span class="question-number">1</span>
 
     <h4>Genetic Discovery Using Digital Phenotypes</h4>
 
@@ -269,8 +263,6 @@ produce tangible clinical and biomedical value.
   </article>
 
   <article class="question-card">
-
-    <span class="question-number">2</span>
 
     <h4>Validation of Glucodensity as a Digital Biomarker</h4>
 
@@ -284,7 +276,6 @@ produce tangible clinical and biomedical value.
 
   <article class="question-card">
 
-    <span class="question-number">3</span>
 
     <h4>Glucose Variability and the Microbiome</h4>
 
@@ -298,7 +289,6 @@ produce tangible clinical and biomedical value.
 
   <article class="question-card">
 
-    <span class="question-number">4</span>
 
     <h4>Continuous Glucose Monitoring and Retinopathy</h4>
 
@@ -311,7 +301,6 @@ produce tangible clinical and biomedical value.
 
   <article class="question-card question-card-wide">
 
-    <span class="question-number">5</span>
 
     <h4>Phenotyping Continuous Biomedical Signals</h4>
 
