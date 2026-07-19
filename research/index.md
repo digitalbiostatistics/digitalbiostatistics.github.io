@@ -27,19 +27,13 @@ While en route, the device continuously transmits vital patient data, enabling d
 ## Our Mission and Vision
 
 Our long-term goal is to build a healthcare decision-making framework that supports better clinical and public health decisions at both the individual and population levels by combining biostatistics, digital health technologies, and operations research.
-
-We are currently developing statistical and artificial intelligence methods for complex clinical problems involving continuous, high-frequency, and real-time health data. We want these methods not only to answer existing medical questions, but also to help identify the questions that matter most.
-
-What diet is best for a particular person?
-
-How much physical activity does someone need to support healthy aging and longevity?
-
-How should these recommendations change according to an individual’s clinical profile, biology, environment, and lifestyle?
-
-To address these questions, our research brings together causal inference, survival analysis, conformal inference and uncertainty quantification, random-effects and multilevel models, generative AI, spatiotemporal modeling, functional data analysis, and statistical learning for non-Euclidean data and other complex data structures.
-
-Careful study design and computational scalability are essential to this vision. Our goal is to develop methods that are mathematically rigorous, computationally efficient, and practical enough to be used with large-scale biomedical resources such as the UK Biobank, the All of Us Research Program, the Human Phenotype Project, and NHANES.
  
+We are currently developing statistical and artificial intelligence methods for complex clinical problems involving continuous, high-frequency, and real-time health data. We want these methods not only to answer existing medical questions, but also to help identify the questions that matter most. What diet is best for a particular person? How much physical activity does someone need to support healthy aging and longevity? How should these recommendations change according to an individual’s clinical profile, biology, environment, and lifestyle?
+ 
+To address these questions, our research brings together causal inference, survival analysis, conformal inference and uncertainty quantification, random-effects and multilevel models, generative AI, spatiotemporal modeling, functional data analysis, and statistical learning for non-Euclidean data and other complex data structures.Careful study design and computational scalability are essential to this vision. Our goal is to develop methods that are mathematically rigorous, computationally efficient, and practical enough to be used with large-scale biomedical resources such as the UK Biobank, the All of Us Research Program, the Human Phenotype Project, and NHANES.
+ 
+Although many methods published in leading statistics and machine learning journals are technically sound, they are not always designed with the complexities of real-world clinical data in mind. Our research therefore starts from concrete biomedical questions and practical challenges. We develop methods that reflect the structure of the data, the realities of clinical practice, and the decisions that clinicians, patients, and healthcare systems need to make.
+
 ## Highlighted
 
 {% include citation.html lookup="Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics" style="rich" %}
