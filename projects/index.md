@@ -168,7 +168,6 @@ applied, and clinical questions. These questions guide the development
 of new statistical theory while ensuring that the resulting methods
 address consequential problems in medicine and public health.
 
-### Methodological Foundations
 
 <div class="question-grid">
 
