@@ -95,7 +95,7 @@
         return;
       }
 
-      autoplayTimer = window.setInterval(nextSlide, 10000);
+      autoplayTimer = window.setInterval(nextSlide, 20000);
     }
 
     function restartAutoplay() {
