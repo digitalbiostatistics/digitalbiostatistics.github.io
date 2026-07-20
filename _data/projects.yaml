@@ -8,13 +8,13 @@
 - title: Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project
   image: images/photo.jpg
   link: https://digitalbiostatistics.github.io/projects/project2/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: Developing statistical AI models to integrate multimodal digital health, medical imaging, genomic, and microbiome data from the Human Phenotyping Project, with applications to retinopathy risk, glucose metabolism, and functional digital health phenotypes.
   tags:
     - resource
 
 - title: Functional Distributional Biomarkers for Tracking ALS Disease Progression
   image: images/photo.jpg
   link: https://digitalbiostatistics.github.io/projects/project3/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: Developing functional and distributional biomarkers from near-continuous hand-movement data to improve the monitoring of ALS progression and the prediction of survival.
   tags:
     - software
