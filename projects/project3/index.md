@@ -1,8 +1,7 @@
 ---
-
 title: Functional Distributional Biomarkers for Tracking ALS Disease Progression
 lang: en
---------
+---
 # Functional Distributional Biomarkers for Tracking ALS Disease Progression
 
 In this project, we develop novel statistical methods to exploit near-continuous measurements of hand movements collected from individuals with amyotrophic lateral sclerosis (ALS) over a two-year longitudinal study.

@@ -1,8 +1,7 @@
 ---
-
 title: Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project
 lang: en
---------
+---
 # Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project
 
 The Human Phenotyping Project (HPP) offers enormous opportunities to improve our understanding of human health by integrating medical imaging, biochemical measurements, omics data, and digital health profiles collected at multiple time points.
