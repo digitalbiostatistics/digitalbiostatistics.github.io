@@ -47,3 +47,50 @@ Students joining the group will work at the intersection of statistical inferenc
 Outside academia, Marcos enjoys practicing sports, travelling, and attending concerts. Above all, he tries to approach life with curiosity and a sense of humor, believing that scientific ambition and professional commitment should remain compatible with a full life rich in experiences and emotions.
 
 Beyond the aspiration for his own work to become influential, one of his greatest goals is to create an environment in which his students can find fulfilling professional paths, develop meaningful ideas, and become independent researchers capable of addressing important scientific problems.
+
+<style>
+  .marcos-video-section {
+    width: 100%;
+    max-width: 950px;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+  }
+
+  .marcos-video-container {
+    overflow: hidden;
+    width: 100%;
+    background-color: #f5f1e8;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  }
+
+  .marcos-video-container video {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 600px) {
+    .marcos-video-section {
+      margin: 1.5rem auto;
+      padding: 0 0.75rem;
+    }
+
+    .marcos-video-container {
+      border-radius: 10px;
+    }
+  }
+</style>
+
+<div class="marcos-video-section">
+  <div class="marcos-video-container">
+    <video controls playsinline preload="metadata">
+      <source
+        src="{{ '/images/videomarcos.mp4' | relative_url }}"
+        type="video/mp4"
+      >
+      Your browser does not support the video element.
+    </video>
+  </div>
+</div>
