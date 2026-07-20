@@ -20,8 +20,11 @@ $wrap: 800px;
 .citation-image {
   position: relative;
   width: $thumb-size;
-  flex-shrink: 0;
-  // box-shadow: var(--shadow);
+  height: $thumb-size;
+  min-width: $thumb-size;
+  flex: 0 0 $thumb-size;
+  align-self: center;
+  overflow: hidden;
 }
 
 .citation-image img {
