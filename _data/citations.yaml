@@ -424,7 +424,7 @@
   title: Continuous Temporal Learning of Probability Distributions via Neural ODEs
     with Applications in Continuous Glucose Monitoring Data
   authors:
-  - "Antonio \xC3\x81lvarez-L\xC3\xB3pez"
+  - "Antonio Alvarez-Lopez"
   - Marcos Matabuena
   publisher: arXiv
   date: '2025-09-18'
@@ -727,7 +727,7 @@
 - id: arxiv:2405.05110
   title: Uncertainty quantification in metric spaces
   authors:
-  - "G\xC3\xA1bor Lugosi"
+  - "Gabor Lugosi"
   - Marcos Matabuena
   publisher: arXiv
   date: '2024-05-09'
