@@ -812,22 +812,24 @@ The success of research depends on carefully selecting your team and  collaborat
           <div class="testimonial-photo-wrapper">
             <img
               class="testimonial-photo"
-              src="{{ '/images/testimonial-3.jpg' | relative_url }}"
-              alt="Portrait of Name Surname"
+              src="{{ '/images/elvis.jpg' | relative_url }}"
+              alt="Portrait of Elvis Han Cui"
             >
           </div>
 
           <div class="testimonial-content">
             <p class="testimonial-text">
-              Their interdisciplinary vision creates an environment in which
-              statisticians, clinicians, and artificial intelligence researchers
-              can collaborate effectively and learn from one another.
+              Digital Biostatistics is not merely a website; it is a banner raised at the frontier of biomedical science.
+Health, in this vision, is no longer a frozen number recorded at a clinic visit. It becomes a living signal: continuous, wearable, longitudinal, uncertain, and deeply human.
+Marcos Matabuena’s work refuses the false choice between mathematical rigor and clinical imagination. Functional data analysis, causal inference, uncertainty quantification, digital biomarkers, and AI are brought together as instruments for reading the pulse of the future.
+As the Chinese saying goes, “观水有术，必观其澜” — to understand the river, one must watch its waves.
+For those who wish to know whither biostatistics goeth, this is a place well worth following.
             </p>
 
-            <p class="testimonial-name">Name Surname</p>
+            <p class="testimonial-name">Elvis Han Cui</p>
 
             <p class="testimonial-role">
-              Medical Researcher · Hospital or institution
+              Biostatistics PhD Student at UCLA Fielding School of Public Health
             </p>
           </div>
         </div>
