@@ -788,20 +788,20 @@ The success of research depends on carefully selecting your team and  collaborat
           <div class="testimonial-photo-wrapper">
             <img
               class="testimonial-photo"
-              src="{{ '/images/cris.png' | relative_url }}"
-              alt="Portrait of Cristina Correa"
+              src="{{ '/images/yating.jpeg' | relative_url }}"
+              alt="Portrait of Yating Zou"
             >
           </div>
 
           <div class="testimonial-content">
             <p class="testimonial-text">
-              Marcos has been an amazing supervisor and, honestly, one of the most positive influences on my academic career so far. He is incredibly hardworking and someone I really look up to. He has opened my eyes to opportunities I had never considered before and encouraged me to be more ambitious in both my research and my academic career. Having him as a mentor has made me a much better researcher, and I feel very lucky to be part of his research lab.
+              Marcos is an remarkably sharp, enthusiastic collaborator who stays closely attuned to the literature and is quick to connect ideas across problems. He thinks fast, engages directly, and brings genuine commitment to statistically principled work grounded in real, important biomedical questions. Beyond the research, he has been a great friend and a source of real support in my own scientific journey. I’m sure he’ll accomplish great things, and I look forward to continuing our work together at the intersection of statistical methodology and digital health!
             </p>
 
-            <p class="testimonial-name">Cristina Correa</p>
+            <p class="testimonial-name">Yating Zou</p>
 
             <p class="testimonial-role">
-              Computational Biology Master Student at MBZUAI
+              Biostatistics PhD Student at UNC-CH
             </p>
           </div>
         </div>
@@ -854,6 +854,30 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
 
             <p class="testimonial-role">
               Postdoc at Nanyang Technological University
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/cris.png' | relative_url }}"
+              alt="Portrait of Cristina Correa"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Marcos has been an amazing supervisor and, honestly, one of the most positive influences on my academic career so far. He is incredibly hardworking and someone I really look up to. He has opened my eyes to opportunities I had never considered before and encouraged me to be more ambitious in both my research and my academic career. Having him as a mentor has made me a much better researcher, and I feel very lucky to be part of his research lab.
+            </p>
+
+            <p class="testimonial-name">Cristina Correa</p>
+
+            <p class="testimonial-role">
+              Computational Biology Master Student at MBZUAI
             </p>
           </div>
         </div>
