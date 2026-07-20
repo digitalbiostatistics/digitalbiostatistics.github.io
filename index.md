@@ -847,7 +847,7 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
 
           <div class="testimonial-content">
             <p class="testimonial-text">
-              In the highly competitive world of science, Marcos stands out for his human approach. He puts personal relationships first, as reflected in the exceptional care he shows the many people in his network of collaborators. I have known him for several years, and over the past eighteen months we have written two papers together—one of which received an award—, an experience that has only reinforced my admiration for his dedication and teamwork. Marcos works tirelessly toward an ambitious and meaningful goal that goes far beyond mathematics: using the statistical and AI methods he develops in digital health to improve health and make a positive impact on society. He is a brilliant researcher and a collaborator you can always count on.
+              In the highly competitive world of science, Marcos stands out for his human approach. He puts personal relationships first, as reflected in the exceptional care he shows the many people in his network of collaborators. I have known him for several years, and over the past eighteen months we have written two papers together—one of which received an award—, an experience that has only reinforced my admiration for his dedication and teamwork. Marcos works tirelessly toward an ambitious and meaningful goal that goes far beyond mathematics: making a positive impact on society through the statistical and AI methods he develops for digital health. He is a brilliant researcher and a collaborator you can always count on.
             </p>
 
             <p class="testimonial-name">Antonio Álvarez</p>
