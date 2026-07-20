@@ -1,6 +1,3 @@
-$thumb-size: 180px;
-$wrap: 800px;
-
 .citation-container {
   container-type: inline-size;
 }
@@ -16,10 +13,10 @@ $wrap: 800px;
 
 .citation-image {
   position: relative;
-  width: $thumb-size;
-  height: $thumb-size;
-  min-width: $thumb-size;
-  flex: 0 0 $thumb-size;
+  width: 180px;
+  height: 180px;
+  min-width: 180px;
+  flex: 0 0 180px;
   align-self: center;
   overflow: hidden;
 }
@@ -91,13 +88,14 @@ $wrap: 800px;
   margin: 0;
 }
 
-@container (max-width: #{$wrap}) {
+@container (max-width: 800px) {
   .citation {
     flex-direction: column;
   }
-
   .citation-image {
     width: unset;
-    height: $thumb-size;
+    height: 180px;
   }
 }
+
+/*# sourceMappingURL=citation.css.map */
