@@ -930,6 +930,13 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
       data-slide="3"
       aria-label="Show testimonial 4"
     ></button>
+
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="4"
+      aria-label="Show testimonial 5"
+    ></button>
   </div>
 </div>
 <script src="{{ '/assets/js/testimonials.js' | relative_url }}" defer></script>
