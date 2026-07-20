@@ -1,8 +1,7 @@
 ---
-
 title: Spatiotemporal Methods for Digital Health Data
 lang: en
---------
+---
 
 In this research project, we will develop and validate spatiotemporal methods for analysing digital health data collected through continuous monitoring in real-world conditions using wearable and mobile devices, together with electronic health records. Although these technologies generate dense, continuous, and structured data streams, current analytical approaches often rely on scalar summaries or aggregated measures, which fail to capture their temporal dynamics, distributional structure, and geographic heterogeneity. As a result, existing methods are suboptimal for fully exploiting digital health data to understand chronic disease progression and risk.
 
