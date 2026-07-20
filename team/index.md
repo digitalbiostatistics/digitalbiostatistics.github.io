@@ -18,7 +18,13 @@ nav:
 <div style="width: 100%; text-align: center;">
   {% include list.html data="members" component="portrait" filter="role != 'pi' and role != 'mbzuai-collaborator' and role != 'international-collaborator'" %}
 </div>
-
+<p>
+  <strong>
+    <em>
+      Discovering, constructing, and nurturing scientific collaborators holds immense significance. My exceptional collaborators have played a pivotal role in shaping my thoughts, advancing my professional journey, and influencing the problems I choose to tackle. Collaborating with distinguished scientists worldwide not only brings immense satisfaction but also opens extraordinary avenues to make a profound difference in the lives of millions.
+    </em>
+  </strong>
+</p>
 {% include section.html %}
 
 ## Collaborators at MBZUAI
