@@ -332,7 +332,7 @@ This vision has been shaped by formative experiences, mentorship, and collaborat
 <div class="dual-videos" markdown="0">
   <div class="dual-video">
     <iframe
-      src="https://www.youtube.com/watch?v=aI8VAvqbvg0"
+      src="https://www.youtube.com/embed/aI8VAvqbvg0"
       title="Jukka-Pekka 'JP' Onnela 'Smartphone Based Digital Phenotyping'"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin"
@@ -342,7 +342,7 @@ This vision has been shaped by formative experiences, mentorship, and collaborat
 
   <div class="dual-video">
     <iframe
-      src="https://www.youtube.com/watch?v=IsbcQo8LgyQ"
+      src="https://www.youtube.com/embed/IsbcQo8LgyQ"
       title="Dr. Michael Kosorok (UNC) 'Clinical trial design for precision medicine'"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin"
