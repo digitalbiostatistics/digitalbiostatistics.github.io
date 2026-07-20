@@ -1,26 +1,20 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- title: Spatiotemporal Methods for Digital Epidemiology with Applications in Diabetes Mellitus
   image: images/photo.jpg
-  link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  link: https://digitalbiostatistics.github.io/projects/project1/
+  description: Developing spatiotemporal statistical and machine learning methods to analyse digital health data from wearable devices, CGM systems, and electronic health records, with the goal of mapping diabetes risk and metabolic control across space and time.
   tags:
     - resource
 
-- title: Cool Package
-  subtitle: a subtitle
+- title: Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project
   image: images/photo.jpg
-  link: https://github.com/
+  link: https://digitalbiostatistics.github.io/projects/project2/
   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
   tags:
     - resource
 
-- title: Cool Web App
-  subtitle: a subtitle
+- title: Functional Distributional Biomarkers for Tracking ALS Disease Progression
   image: images/photo.jpg
-  link: https://github.com/
+  link: https://digitalbiostatistics.github.io/projects/project3/
   description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
   tags:
     - software
