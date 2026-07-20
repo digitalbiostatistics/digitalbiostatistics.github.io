@@ -1,20 +1,17 @@
 - title: Spatiotemporal Methods for Digital Epidemiology with Applications in Diabetes Mellitus
-  image: images/photo.jpg
+  image: images/heatmap.png
   link: https://digitalbiostatistics.github.io/projects/project1/
   description: Developing spatiotemporal statistical and machine learning methods to analyse digital health data from wearable devices, CGM systems, and electronic health records, with the goal of mapping diabetes risk and metabolic control across space and time.
-  tags:
-    - resource
+
 
 - title: Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project
-  image: images/photo.jpg
+  image: images/AEGIScoeffunct.png
   link: https://digitalbiostatistics.github.io/projects/project2/
   description: Developing statistical AI models to integrate multimodal digital health, medical imaging, genomic, and microbiome data from the Human Phenotyping Project, with applications to retinopathy risk, glucose metabolism, and functional digital health phenotypes.
-  tags:
-    - resource
+
 
 - title: Functional Distributional Biomarkers for Tracking ALS Disease Progression
-  image: images/photo.jpg
+  image: images/ALSfigure.jpeg
   link: https://digitalbiostatistics.github.io/projects/project3/
   description: Developing functional and distributional biomarkers from near-continuous hand-movement data to improve the monitoring of ALS progression and the prediction of survival.
-  tags:
-    - software
+

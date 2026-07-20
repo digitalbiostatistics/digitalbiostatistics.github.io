@@ -142,6 +142,12 @@ nav:
       padding: 21px 20px;
     }
   }
+ .card-text p {
+    text-align: left !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    hyphens: auto;
+  }
 </style>
 
 <div class="projects-page" markdown="1">
