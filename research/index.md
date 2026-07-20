@@ -178,7 +178,7 @@ Although many methods published in leading statistics and machine learning journ
 Añade aquí los títulos EXACTOS de los papers separados por ||
 -->
 
-{% assign highlighted_papers = "Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics"||"Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials"||"Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces"||"Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model"||"Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces"||"Random-Effects Algorithm for Random Objects in Metric Spaces" | split: "||" %}
+{% assign highlighted_papers = "Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics||Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials||Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces||Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model||Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces||Random-Effects Algorithm for Random Objects in Metric Spaces" | split: "||" %}
 
 <div
   id="highlighted-papers-slider"
