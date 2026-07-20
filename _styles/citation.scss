@@ -1,3 +1,6 @@
+$thumb-size: 180px;
+$wrap: 800px;
+
 .citation-container {
   container-type: inline-size;
 }
@@ -13,10 +16,10 @@
 
 .citation-image {
   position: relative;
-  width: 180px;
-  height: 180px;
-  min-width: 180px;
-  flex: 0 0 180px;
+  width: $thumb-size;
+  height: $thumb-size;
+  min-width: $thumb-size;
+  flex: 0 0 $thumb-size;
   align-self: center;
   overflow: hidden;
 }
@@ -88,14 +91,13 @@
   margin: 0;
 }
 
-@container (max-width: 800px) {
+@container (max-width: #{$wrap}) {
   .citation {
     flex-direction: column;
   }
+
   .citation-image {
     width: unset;
-    height: 180px;
+    height: $thumb-size;
   }
 }
-
-/*# sourceMappingURL=citation.css.map */
