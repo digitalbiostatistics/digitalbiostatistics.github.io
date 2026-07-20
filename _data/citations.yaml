@@ -97,8 +97,8 @@
 - id: arxiv:2605.05996
   title: Gaussian mixture models in Hilbert spaces via kernel methods
   authors:
-  - "Daniel Lopez-Montero"
-  - "Antonio Alvarez-Lopez"
+  - "Daniel L\xC3\xB3pez-Montero"
+  - "Antonio \xC3\x81lvarez-L\xC3\xB3pez"
   - Marcos Matabuena
   publisher: arXiv
   date: '2026-05-08'
@@ -111,7 +111,7 @@
   title: Random-Effects Algorithm for Random Objects in Metric Spaces
   authors:
   - Marcos Matabuena
-  - "Mateo Camara"
+  - "Mateo C\xC3\xA1mara"
   publisher: arXiv
   date: '2026-05-05'
   link: https://arxiv.org/abs/2605.02693
@@ -124,6 +124,7 @@
     Mortality Prediction'
   authors:
   - Marcos Matabuena
+  - Marcos Matabuena@mbzuai Ac Ae
   - Emma Cho
   - Rahul Ghosal
   - Cristina Correa
@@ -160,7 +161,7 @@
   title: 'Continuous-Time Learning of Probability Distributions: A Case Study in a
     Digital Trial of Young Children with Type 1 Diabetes'
   authors:
-  - "Antonio Alvarez-Lopez"
+  - "Antonio \xC3\x81lvarez-L\xC3\xB3pez"
   - Marcos Matabuena
   publisher: arXiv
   date: '2026-03-26'
@@ -395,7 +396,7 @@
   title: Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric
     Spaces
   authors:
-  - "Gabor Lugosi"
+  - "G\xC3\xA1bor Lugosi"
   - Marcos Matabuena
   publisher: arXiv
   date: '2026-06-23'
@@ -685,7 +686,7 @@
 - id: arxiv:2408.16381
   title: Uncertainty quantification for intervals
   authors:
-  - Carlos Garcia Meixide
+  - "Carlos Garc\xC3\xADa Meixide"
   - Michael R. Kosorok
   - Marcos Matabuena
   publisher: arXiv
@@ -741,7 +742,7 @@
     to Diabetes Risk Stratification via Continuous Glucose Monitoring'
   authors:
   - Oscar Lado-Baleato
-  - Carla Diaz-Louza
+  - "Carla D\xC3\xADaz-Louza"
   - Francisco Gude
   - Marcos Matabuena
   publisher: arXiv
@@ -756,7 +757,7 @@
     in Predicting Diabetes Development with Continuous Glucose Monitoring Information'
   authors:
   - Marcos Matabuena
-  - Carla Diaz-Louza
+  - "Carla D\xC3\xADaz-Louzao"
   - Rahul Ghosal
   - Francisco Gude
   publisher: arXiv
