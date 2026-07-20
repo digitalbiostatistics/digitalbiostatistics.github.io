@@ -85,7 +85,6 @@ jobs:
 
             Visit **[website url](#)** 🚀
 
-            _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
           " "${{ env.USER }}" > README.md 
 
       - name: Personalize Jekyll config for user
@@ -112,7 +111,7 @@ jobs:
             const { readFileSync, writeFileSync } = require("fs");
             const file = "index.md";
             let contents = readFileSync(file).toString();
-            const find = /\# Lab Website Template[\s\S]+({% include section\.html)/;
+            const find = /^# .*$[\s\S]*?({% include section\.html)/m;
             const replace = `# ${{ env.USER }}'s Website\n\n${{ env.DESCRIPTION }}\n\n$1`;
             contents = contents.replace(find, replace);
             writeFileSync(file, contents);

@@ -1,4 +1,16 @@
-This website is based on the Lab Website Template.
-See its documentation for working with this site:
+## Summary
 
-https://greene-lab.gitbook.io/lab-website-template-docs
+Briefly describe the changes included in this pull request.
+
+## Changes
+
+-
+-
+-
+
+## Checklist
+
+- [ ] I have reviewed my changes.
+- [ ] I have tested the site locally.
+- [ ] I have updated the documentation where necessary.
+- [ ] I have verified that no broken links or missing files were introduced.
