@@ -43,21 +43,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>الفلسفة | digitalbiostatistics</title>
+<title>Projects | digitalbiostatistics</title>
 
 <link rel="icon" href="/images/icon.png">
 
-<meta name="title" content="الفلسفة">
+<meta name="title" content="Projects">
 <meta name="description" content="">
 
-<meta property="og:title" content="الفلسفة">
+<meta property="og:title" content="Projects">
 <meta property="og:site_title" content="digitalbiostatistics">
 <meta property="og:description" content="">
 <meta property="og:url" content="https://digitalbiostatistics.github.io">
 <meta property="og:image" content="/images/share.jpg">
 <meta property="og:locale" content="en_US">
 
-<meta property="twitter:title" content="الفلسفة">
+<meta property="twitter:title" content="Projects">
 <meta property="twitter:description" content="">
 <meta property="twitter:url" content="https://digitalbiostatistics.github.io">
 <meta property="twitter:card" content="summary_large_image">
@@ -73,9 +73,9 @@
     
       "@type": "WebSite",
     
-    "name": "الفلسفة",
+    "name": "Projects",
     "description": "",
-    "headline": "الفلسفة",
+    "headline": "Projects",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -576,7 +576,7 @@
     
           
             
-          <a href="/philosophy/" lang="en">
+          <a href="/projects/" lang="en">
             English
           </a>
         
@@ -584,7 +584,7 @@
     
           
             
-          <a href="/zh/" lang="zh">
+          <a href="/zh/projects/" lang="zh">
             中文
           </a>
         
@@ -608,7 +608,7 @@
     
           
             
-          <a href="/ar/philosophy/" lang="ar" dir="rtl" class="is-current" aria-current="page">
+          <a href="/ar/projects/" lang="ar" dir="rtl" class="is-current" aria-current="page">
             العربية
           </a>
         
@@ -635,16 +635,169 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="الفلسفة">الفلسفة</h1>
+    <style>
+  /* ---------- INTRODUCCIÓN ---------- */
 
-<p>ترتكز فلسفتنا على الشجاعة الفكرية، والمثابرة، والوفاء، والإنصاف، والتفكير المستقل، والمسؤولية عن تحويل المعرفة إلى عمل ذي معنى.</p>
+  .projects-intro {
+    max-width: 900px;
+    margin-bottom: 55px;
+  }
 
-<p>وتعكس المبادئ الاثنا عشر التالية القيم التي توجه كيفية إجرائنا للبحوث، واختيارنا للمشكلات، ودعمنا بعضنا لبعض، وسعينا إلى تحقيق أثر علمي طويل الأمد.</p>
+  .projects-lead {
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
 
-<div style="max-width: 600px; margin: 40px auto 10px auto;">
-  <img src="/images/skyopeningGOOD.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
+  .projects-intro p {
+    line-height: 1.75;
+  }
+
+
+  /* ---------- ENCABEZADOS ANTIGUOS ---------- */
+  /* Evita que se desplacen o se queden flotando si todavía
+     queda algún <header> antiguo en el HTML. */
+
+  .questions-main-header,
+  .questions-section-header {
+    position: static !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    z-index: auto !important;
+    width: auto !important;
+    max-width: 900px;
+    margin: 0 0 30px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .questions-section {
+    position: static !important;
+    margin: 55px 0 70px;
+  }
+
+  .section-label {
+    display: none;
+  }
+
+
+  /* ---------- CUADRÍCULA DE PREGUNTAS ---------- */
+
+  .question-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 30px 0 45px;
+    padding: 0;
+    position: static;
+  }
+
+
+  /* ---------- RECUADROS AZULES ---------- */
+
+  .question-card {
+    position: static;
+    display: block;
+    box-sizing: border-box;
+    min-width: 0;
+    height: auto;
+    margin: 0;
+    padding: 24px 26px;
+
+    background: #eef6fa;
+    border: 1px solid #cbdfe9;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(40, 78, 98, 0.08);
+
+    overflow: visible;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .question-card:hover,
+  .question-card:focus,
+  .question-card:focus-within {
+    transform: none !important;
+  }
+
+  .question-card h3,
+  .question-card h4 {
+    margin: 0 0 12px;
+    color: #254f65;
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+ .question-card p {
+  margin: 0;
+  color: #314b59;
+  font-size: 0.97rem;
+  line-height: 1.65;
+
+  text-align: left !important;
+  word-spacing: normal !important;
+  letter-spacing: normal;
+}
+
+  .question-card p + p {
+    margin-top: 12px;
+  }
+
+  .question-card strong {
+    color: #254f65;
+  }
+
+
+  /* ---------- PANTALLAS PEQUEÑAS ---------- */
+
+  @media (max-width: 760px) {
+    .projects-intro {
+      margin-bottom: 40px;
+    }
+
+    .question-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 24px 0 50px;
+    }
+
+    .question-card {
+      padding: 21px 20px;
+    }
+  }
+ .card-text p {
+    text-align: left !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    hyphens: auto;
+  }
+</style>
+
+<div class="projects-page">
+
+  <h1 id="projects">Projects</h1>
+
+  <div class="projects-intro">
+
+<p class="projects-lead">
+Our projects seek to establish the rigorous methodological foundations of digital biostatistics and demonstrate their practical value in biomedical research, clinical practice, and population health. 
+</p>  
+<p class="projects-lead">
+We define <strong> digital biostatistics </strong> as the branch of biostatistics concerned with the design, analysis, statistical inference, and clinical translation of continuously collected, high-frequency, longitudinal, and multimodal health data generated by digital technologies, with the ultimate goal of supporting clinical and healthcare decision-making by integrating biostatistics with operations research.
+</p>
+
+<div style="max-width: 950px; margin: 40px auto 10px auto;">
+  <img src="/images/projects.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
 </div>
-  </section>
+
+</div>
+  
 
   
   
@@ -657,161 +810,9 @@
   <size></size>
 -->
 
-<h2 id="مبادئنا-الاثنا-عشر">مبادئنا الاثنا عشر</h2>
+  <p>This vision has been shaped by formative experiences, mentorship, and collaborations at Harvard, Johns Hopkins, and the University of North Carolina at Chapel Hill, particularly in digital phenotyping, functional data analysis, personalized medicine, and longitudinal health data.</p>
 
-<h3 id="1-استحقاق-النجاح">1. استحقاق النجاح</h3>
-
-<blockquote>
-  <p>«من السهل تحقيق النجاح؛ أما الجزء الصعب فهو استحقاقه.»</p>
-</blockquote>
-
-<p>— <strong>ألبير كامو</strong></p>
-
-<h3 id="2-القيادة-من-خلال-الرعاية">2. القيادة من خلال الرعاية</h3>
-
-<blockquote>
-  <p>«عامل جنودك كما تعامل طفلًا حديث الولادة، وسيكونون مستعدين لاتباعك إلى أعمق الوديان. واعتنِ بهم كما تعتني بأبنائك الأحباء، وسيكونون على استعداد للموت إلى جانبك.»</p>
-</blockquote>
-
-<p>— <strong>صن تزو</strong></p>
-
-<h3 id="3-اختيار-المشكلات-ذات-المعنى">3. اختيار المشكلات ذات المعنى</h3>
-
-<blockquote>
-  <p>«إن اختيار مسألة بحثية جديرة بالدراسة لنيل الدكتوراه يشبه اختيار عروس صالحة لابنك.»</p>
-</blockquote>
-
-<p>— <strong>فلاديمير أرنولد</strong></p>
-
-<h3 id="4-شجاعة-العمل">4. شجاعة العمل</h3>
-
-<blockquote>
-  <p>«أن تدرك ما هو صواب ثم تمتنع عن القيام به هو الجبن بعينه.»</p>
-</blockquote>
-
-<p>— <strong>كونفوشيوس</strong></p>
-
-<h3 id="5-قيمة-الفكرة">5. قيمة الفكرة</h3>
-
-<blockquote>
-  <p>«نصيحة الفقير، مهما كانت سديدة، لا تلقى قبولًا أبدًا.»</p>
-</blockquote>
-
-<p>— <strong>ميغيل دي ثيربانتس</strong></p>
-
-<h3 id="6-المعرفة-النابعة-من-الداخل">6. المعرفة النابعة من الداخل</h3>
-
-<blockquote>
-  <p>«المعرفة الحقيقية هي وحدها المعرفة التي تنبع من الداخل.»</p>
-</blockquote>
-
-<p>— <strong>سقراط</strong></p>
-
-<h3 id="7-المثابرة-مدى-الحياة">7. المثابرة مدى الحياة</h3>
-
-<blockquote>
-  <p>«هناك من يناضلون يومًا واحدًا، وهم صالحون. وهناك من يناضلون عامًا كاملًا، وهم أفضل. وبعضهم يناضلون سنوات عديدة، وهم ممتازون. لكن هناك من يناضلون طوال حياتهم: أولئك هم الذين لا غنى عنهم.»</p>
-</blockquote>
-
-<p>— <strong>برتولت بريشت</strong></p>
-
-<h3 id="8-البقاء-شغوفين-بالعمل">8. البقاء شغوفين بالعمل</h3>
-
-<blockquote>
-  <p>«ينبغي للمرء أن يظل عاشقًا دائمًا؛ ولهذا ينبغي ألا يتزوج أبدًا.»</p>
-</blockquote>
-
-<p>— <strong>أوسكار وايلد</strong></p>
-
-<h3 id="9-إيجاد-الطريق">9. إيجاد الطريق</h3>
-
-<blockquote>
-  <p>«من يريد فعل شيء يجد سبيلًا، ومن لا يريد يجد عذرًا.»</p>
-</blockquote>
-
-<p>— <strong>مثل عربي</strong></p>
-
-<h3 id="10-العمل-بعيدًا-عن-الأضواء">10. العمل بعيدًا عن الأضواء</h3>
-
-<blockquote>
-  <p>«من يدرس عشر سنوات بعيدًا عن الأضواء سيصبح معروفًا في نهاية المطاف على نطاق واسع.»</p>
-</blockquote>
-
-<p>— <strong>مثل صيني</strong></p>
-
-<h3 id="11-شجاعة-الأفكار-الجديدة">11. شجاعة الأفكار الجديدة</h3>
-
-<blockquote>
-  <p>«يُعد صاحب الأفكار الجديدة مجنونًا حتى تنجح أفكاره.»</p>
-</blockquote>
-
-<p>— <strong>مارك توين</strong></p>
-
-<h3 id="12-خياراتنا-هي-التي-تحدد-هويتنا">12. خياراتنا هي التي تحدد هويتنا</h3>
-
-<blockquote>
-  <p>«ليست قدراتنا هي التي تكشف حقيقتنا، بل اختياراتنا.»</p>
-</blockquote>
-
-<p>— <strong>ج. ك. رولينغ</strong></p>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  <background></background>
-  <dark></dark>
-  <size></size>
--->
-
-<h2 id="بيانات-تلهمنا">بيانات تلهمنا</h2>
-
-<h3 id="a-personal-journey-through-biostatistics-artificial-intelligence-and-change">A Personal Journey Through Biostatistics, Artificial Intelligence, and Change</h3>
-
-<p>في هذا المقال الشخصي، يتأمل ماركوس ماتابوينا في مسيرته العلمية، وتأثير الرياضة والترياثلون، وأهمية التفكير متعدد التخصصات، والدروس التي تعلّمها من مرشديه والمتعاونين معه ومن أبرز الشخصيات في عالم العلم.</p>
-
-<p><a href="https://www.digitalbiostatistics.com/2025/01/my-thoughts-on-future-of-biostatistics.html" target="_blank" rel="noopener noreferrer">
-  Read “My Thoughts on the Future of Biostatistics in the Era of Artificial Intelligence”
-</a></p>
-
-<h3 id="الإحصاء-الحيوي-والذكاء-الاصطناعي-وغاية-العمل-العلمي">الإحصاء الحيوي والذكاء الاصطناعي وغاية العمل العلمي</h3>
-
-<p>يتناول هذا التأمل دور الإحصاء الحيوي في عصر الذكاء الاصطناعي من خلال قصة يينتشاو وأفكاره.</p>
-
-<p><a href="https://www.digitalbiostatistics.com/2025/12/biostatistics-in-age-of-artificial.html" target="_blank" rel="noopener noreferrer">
-  Read “Biostatistics in the Age of Artificial Intelligence”
-</a></p>
-
-<h3 id="دليل-عملي-للبحث-العلمي-باللغة-الصينية">دليل عملي للبحث العلمي (باللغة الصينية)</h3>
-
-<p>يقدّم دليل جيانكياو وانغ من جامعة تسينغهوا تأملات حول التدريب في مرحلة الدكتوراه، والتواصل العلمي، والانفتاح الفكري، وطرح الأسئلة ذات المعنى، وتنمية الحدس تجاه البيانات، والتعلّم من الزملاء بدلًا من النظر إليهم بوصفهم منافسين.</p>
-
-<p><a href="https://www.jianqiao.me/post/guide-to-research/" target="_blank" rel="noopener noreferrer">
-  Read “A Hitchhiker’s Guide to Research”
-</a></p>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  <background></background>
-  <dark></dark>
-  <size></size>
--->
-
-<h2 id="الرياضة-والقدرة-على-الصمود-وعقلية-المسافات-الطويلة">الرياضة والقدرة على الصمود وعقلية المسافات الطويلة</h2>
-
-<p>ننظر إلى الحياة العلمية بوصفها سباق ماراثون، أو بصورة أوسع، رياضة تتطلب قدرة عالية على التحمّل. فالبحث ذو المعنى يحتاج إلى الصبر والانضباط والتكرار والمرونة والقدرة على الاستمرار عندما يكون التقدم بطيئًا أو غير مؤكد. ونادرًا ما ينجح الرياضيون بسبب لحظة استثنائية واحدة، بل تُبنى إنجازاتهم عبر سنوات من التدريب.</p>
-
-<p>ويجسّد رافاييل نادال ومدربه توني نادال هذه الفلسفة بصورة مميزة.</p>
-
-<style>
+  <style>
   .dual-videos {
     display: flex !important;
     flex-direction: row !important;
@@ -857,16 +858,14 @@
   }
 </style>
 
-<h3 id="رافاييل-نادال-وتوني-نادال">رافاييل نادال وتوني نادال</h3>
-
-<div class="dual-videos">
+  <div class="dual-videos">
   <div class="dual-video">
-    <iframe src="https://www.youtube.com/embed/79fcTRwAnw8?start=7" title="Rafael Nadal" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+    <iframe src="https://www.youtube.com/embed/aI8VAvqbvg0" title="Jukka-Pekka 'JP' Onnela 'Smartphone Based Digital Phenotyping'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
     </iframe>
   </div>
 
   <div class="dual-video">
-    <iframe src="https://www.youtube.com/embed/7dpqMtzEhBs" title="Toni Nadal on effort and talent" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+    <iframe src="https://www.youtube.com/embed/IsbcQo8LgyQ" title="Dr. Michael Kosorok (UNC) 'Clinical trial design for precision medicine'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
     </iframe>
   </div>
 </div>
@@ -883,28 +882,244 @@
   <size></size>
 -->
 
-<h2 id="لحظات-تاريخية-في-الرياضة-الإسبانية">لحظات تاريخية في الرياضة الإسبانية</h2>
+  <h2 id="research-philosophy">Research Philosophy</h2>
+  <p>Five years ago, one of my most important mentors—and perhaps the person who has had the greatest influence on my life, aside from my mother and my high school teacher—told me, “Marcos, if you truly focus, you have the potential to become one of the best in the world.”</p>
 
-<div class="dual-videos">
-  <div class="dual-video">
-    <iframe src="https://www.youtube.com/embed/jm04y-F5UXM" title="Spanish athlete inspiration 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-    </iframe>
-  </div>
+  <p>Three years later, he shared another piece of advice that has stayed with me ever since: “Many statisticians take pride in the impact of their work, yet their contributions remain largely unknown within the biomedical community. You have a gift. You must develop models that truly matter.”</p>
 
-  <div class="dual-video">
-    <iframe src="https://www.youtube.com/embed/eA4hwNA7MJg" title="Spanish athlete inspiration 4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-    </iframe>
-  </div>
+  <p>Four months ago, he reminded me once again that, if I remain focused, the sky is the limit.</p>
 
-  <div class="dual-video">
-    <iframe src="https://www.youtube.com/embed/szLGtG_yQzo" title="Spanish athlete inspiration 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-    </iframe>
-  </div>
+  <p>His words have profoundly shaped my scientific ambitions, my approach to mentorship, and the way I support my team. Our central goal is to build upon the glucodensity framework and related statistical methodologies to help drive transformative advances in diabetes research and personalized nutrition. We seek to develop methods that are not only mathematically innovative, but also capable of changing how diseases are understood, monitored, prevented, and treated.</p>
 
-  <div class="dual-video">
-    <iframe src="https://www.youtube.com/embed/ys0KdeZHtq0" title="Spanish athlete inspiration 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-    </iframe>
+  <h2 id="open-questions-we-are-working-to-solve">Open Questions We Are Working to Solve</h2>
+
+  <p>Our research is structured around a set of open methodological,
+applied, and clinical questions. These questions guide the development
+of new statistical theory while ensuring that the resulting methods
+address consequential problems in medicine and public health.</p>
+
+  <div class="question-grid">
+
+  <article class="question-card">
+
+
+    <h4>E-values for High-Dimensional Multiple Testing</h4>
+
+    <p>
+      How can e-values be developed into a general framework for
+      large-scale multiple-hypothesis testing in high-dimensional
+      digital health studies?
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>Conditional Predictive Inference for Random Objects</h4>
+
+    <p>
+      How can we construct predictive regions for random objects in
+      metric spaces with strong—and, where possible, optimal—conditional
+      coverage guarantees, without imposing restrictive smoothing
+      assumptions?
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>Optimal Conformal Prediction for Random-Effects Models</h4>
+
+    <p>
+      How can conformal prediction be extended to multilevel and
+      random-effects models while preserving meaningful conditional
+      coverage guarantees?
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>Deep Learning Without Manifold Assumptions</h4>
+
+    <p>
+      What theoretical guarantees can be established for deep-learning
+      algorithms operating on general non-Euclidean spaces without
+      assuming that the observations lie on a smooth manifold,
+      particularly in digital health applications?
+    </p>
+
+  </article>
+
+  <article class="question-card question-card-wide">
+
+
+    <h4>Mathematical Foundations of Distributional Data Analysis</h4>
+
+    <p>
+      What mathematical and statistical foundations are needed to
+      establish distributional data analysis as a rigorous,
+      interpretable, and broadly applicable framework for digital health?
+    </p>
+
+  </article>
+
+</div>
+
+  <h2 id="applied-and-clinical-questions">Applied and Clinical Questions</h2>
+
+  <p>Alongside these methodological challenges, we investigate major
+applied questions through which advanced statistical methods could
+produce tangible clinical and biomedical value.</p>
+
+  <div class="question-grid">
+
+  <article class="question-card">
+
+
+    <h4>Genetic Discovery Using Digital Phenotypes</h4>
+
+    <p>
+      Can digital phenotypes reveal genetic associations that
+      conventional clinical biomarkers fail to detect?
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+    <h4>Validation of Glucodensity as a Digital Biomarker</h4>
+
+    <p>
+      Can glucodensity and related distributional representations be
+      validated as robust, reproducible, and more informative digital
+      biomarkers of metabolic health?
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>Glucose Variability and the Microbiome</h4>
+
+    <p>
+      What role does glucose variability play in the relationship between
+      the microbiome and metabolic health, and how can continuous
+      glucose-monitoring data improve its characterization?
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>Continuous Glucose Monitoring and Retinopathy</h4>
+
+    <p>
+      How are continuous glucose-monitoring phenotypes associated with
+      diabetic retinopathy and other microvascular complications?
+    </p>
+
+  </article>
+
+  <article class="question-card question-card-wide">
+
+
+    <h4>Phenotyping Continuous Biomedical Signals</h4>
+
+    <p>
+      How should continuous physiological signals be transformed into
+      clinically meaningful and reproducible digital phenotypes, and what
+      is required to establish a rigorous framework for CGM-based
+      phenotyping in populations without diabetes?
+    </p>
+
+  </article>
+
+</div>
+
+  <h2 id="more">More</h2>
+
+  <div class="card" data-style="small">
+  <a aria-label="Spatiotemporal Methods for Digital Epidemiology with Applications in Diabetes Mellitus" class="card-image">
+    <img src="/images/heatmap.png" alt="Spatiotemporal Methods for Digital Epidemiology with Applications in Diabetes Mellitus" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    
+      <a class="card-title">
+        Spatiotemporal Methods for Digital Epidemiology with Applications in Diabetes Mellitus
+    </a>
+    
+
+    
+
+    
+      <p>
+        Developing spatiotemporal statistical and machine learning methods to analyse digital health data from wearable devices, CGM systems, and electronic health records, with the goal of mapping diabetes risk and metabolic control across space and time.
+
+      </p>
+    
+
+    
   </div>
+</div>
+
+  <div class="card" data-style="small">
+  <a aria-label="Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project" class="card-image">
+    <img src="/images/AEGIScoeffunct.png" alt="Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    
+      <a class="card-title">
+        Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project
+    </a>
+    
+
+    
+
+    
+      <p>
+        Developing statistical AI models to integrate multimodal digital health, medical imaging, genomic, and microbiome data from the Human Phenotyping Project, with applications to retinopathy risk, glucose metabolism, and functional digital health phenotypes.
+
+      </p>
+    
+
+    
+  </div>
+</div>
+
+  <div class="card" data-style="small">
+  <a aria-label="Functional Distributional Biomarkers for Tracking ALS Disease Progression" class="card-image">
+    <img src="/images/ALSfigure.jpeg" alt="Functional Distributional Biomarkers for Tracking ALS Disease Progression" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    
+      <a class="card-title">
+        Functional Distributional Biomarkers for Tracking ALS Disease Progression
+    </a>
+    
+
+    
+
+    
+      <p>
+        Developing functional and distributional biomarkers from near-continuous hand-movement data to improve the monitoring of ALS progression and the prediction of survival.
+
+      </p>
+    
+
+    
+  </div>
+</div>
+
+</section>
 </div>
   </section>
 
