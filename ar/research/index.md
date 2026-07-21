@@ -7,13 +7,14 @@ nav:
   tooltip: الأعمال المنشورة
 ---
 
-# Research
+# الأبحاث
 
-## The Ongoing Future
+## المستقبل المتواصل
 
-Imagine a person experiencing an acute coronary syndrome alone at home, wearing a device that continuously monitors vital signs. As the device detects critical changes—such as an abnormal electrocardiogram or a drop in oxygen levels—it automatically triggers an emergency response. Within seconds, the system locates and dispatches the nearest available ambulance, adapting in real-time to factors like traffic conditions and hospital capacity.
+تخيّل شخصًا يتعرض لمتلازمة تاجية حادة وهو بمفرده في المنزل، ويرتدي جهازًا يراقب علاماته الحيوية باستمرار. وعندما يكتشف الجهاز تغيرات خطيرة — مثل تخطيط غير طبيعي لكهربائية القلب أو انخفاض مستويات الأكسجين — فإنه يفعّل تلقائيًا استجابة طارئة. وخلال ثوانٍ، يحدد النظام أقرب سيارة إسعاف متاحة ويرسلها، مع التكيف في الوقت الفعلي مع عوامل مثل حالة حركة المرور وقدرة المستشفيات الاستيعابية.
 
-While en route, the device continuously transmits vital patient data, enabling dynamic adjustments to <strong>medical</strong> and logistical decisions. If the patient's condition worsens, the hospital is alerted to prepare a critical care unit. Upon arrival, predictive models guide decision-making, ensuring the best possible outcome while maximising healthcare resource efficiency.
+وأثناء الطريق، يواصل الجهاز إرسال البيانات الحيوية للمريض، مما يتيح إجراء تعديلات ديناميكية على القرارات <strong>الطبية</strong> واللوجستية. وإذا ساءت حالة المريض، يُخطر المستشفى للاستعداد وتجهيز وحدة للعناية الحرجة. وعند وصول المريض، تدعم النماذج التنبؤية عملية اتخاذ القرار، بما يضمن أفضل نتيجة ممكنة مع تعظيم كفاءة استخدام موارد الرعاية الصحية.
+
 <div style="max-width: 600px; margin: 40px auto 10px auto;">
   <img
     src="{{ '/images/ambulance.png' | relative_url }}"
@@ -24,17 +25,18 @@ While en route, the device continuously transmits vital patient data, enabling d
 
 {% include section.html %}
 
-## Our Mission and Vision
+## رسالتنا ورؤيتنا
 
-Our long-term goal is to build a healthcare decision-making framework that supports better clinical and public health decisions at both the individual and population levels by combining biostatistics, digital health technologies, and operations research.
- 
-We are currently developing statistical and artificial intelligence methods for complex clinical problems involving continuous, high-frequency, and real-time health data. We want these methods not only to answer existing medical questions, but also to help identify the questions that matter most. What diet is best for a particular person? How much physical activity does someone need to support healthy aging and longevity? How should these recommendations change according to an individual’s clinical profile, biology, environment, and lifestyle?
- 
-To address these questions, our research brings together causal inference, survival analysis, conformal inference and uncertainty quantification, random-effects and multilevel models, generative AI, spatiotemporal modeling, functional data analysis, and statistical learning for non-Euclidean data and other complex data structures.Careful study design and computational scalability are essential to this vision. Our goal is to develop methods that are mathematically rigorous, computationally efficient, and practical enough to be used with large-scale biomedical resources such as the UK Biobank, the All of Us Research Program, the Human Phenotype Project, and NHANES.
- 
-Although many methods published in leading statistics and machine learning journals are technically sound, they are not always designed with the complexities of real-world clinical data in mind. Our research therefore starts from concrete biomedical questions and practical challenges. We develop methods that reflect the structure of the data, the realities of clinical practice, and the decisions that clinicians, patients, and healthcare systems need to make.
+يتمثل هدفنا طويل المدى في بناء إطار لاتخاذ القرارات في مجال الرعاية الصحية، يدعم اتخاذ قرارات سريرية وصحية عامة أفضل على مستوى الأفراد والسكان، من خلال الجمع بين الإحصاء الحيوي، وتقنيات الصحة الرقمية، وبحوث العمليات.
 
-## Highlighted
+نعمل حاليًا على تطوير أساليب إحصائية وأساليب للذكاء الاصطناعي لمعالجة مشكلات سريرية معقدة تتضمن بيانات صحية مستمرة، وعالية التواتر، وآنية. ونريد لهذه الأساليب ألا تقتصر على الإجابة عن الأسئلة الطبية القائمة، بل أن تساعد أيضًا في تحديد الأسئلة الأكثر أهمية. ما النظام الغذائي الأنسب لشخص معين؟ وما مقدار النشاط البدني الذي يحتاج إليه لدعم الشيخوخة الصحية وطول العمر؟ وكيف ينبغي أن تتغير هذه التوصيات وفقًا للملف السريري للفرد، وخصائصه البيولوجية، وبيئته، ونمط حياته؟
+
+ولمعالجة هذه الأسئلة، يجمع بحثنا بين الاستدلال السببي، وتحليل البقاء، والاستدلال المطابقي وقياس عدم اليقين، ونماذج التأثيرات العشوائية والنماذج متعددة المستويات، والذكاء الاصطناعي التوليدي، والنمذجة المكانية والزمانية، وتحليل البيانات الدالية، والتعلّم الإحصائي للبيانات غير الإقليدية وغيرها من هياكل البيانات المعقدة. ويُعد التصميم الدقيق للدراسات وقابلية التوسع الحاسوبي عنصرين أساسيين في هذه الرؤية. ويتمثل هدفنا في تطوير أساليب صارمة رياضيًا، وفعّالة حاسوبيًا، وعملية بما يكفي لاستخدامها مع موارد طبية حيوية واسعة النطاق، مثل البنك الحيوي البريطاني، وبرنامج All of Us للأبحاث، ومشروع النمط الظاهري البشري، وبرنامج NHANES.
+
+وعلى الرغم من أن العديد من الأساليب المنشورة في أبرز دوريات الإحصاء وتعلّم الآلة سليمة من الناحية التقنية، فإنها لا تُصمم دائمًا مع مراعاة تعقيدات البيانات السريرية الواقعية. لذلك، ينطلق بحثنا من أسئلة طبية حيوية محددة وتحديات عملية. ونطوّر أساليب تراعي بنية البيانات، وواقع الممارسة السريرية، والقرارات التي يحتاج الأطباء والمرضى وأنظمة الرعاية الصحية إلى اتخاذها.
+
+## أبحاث مختارة
+
 
 <style>
   .highlighted-papers-slider {
@@ -452,7 +454,7 @@ Añade aquí los títulos EXACTOS de los papers separados por ||
 
 {% include section.html %}
 
-## All
+## الكل
 
 {% include search-box.html %}
 {% include search-info.html %}
