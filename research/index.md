@@ -34,7 +34,7 @@ To address these questions, our research brings together causal inference, survi
  
 Although many methods published in leading statistics and machine learning journals are technically sound, they are not always designed with the complexities of real-world clinical data in mind. Our research therefore starts from concrete biomedical questions and practical challenges. We develop methods that reflect the structure of the data, the realities of clinical practice, and the decisions that clinicians, patients, and healthcare systems need to make.
 
-## Highlighted
+## The Seven Pillars of Digital Medicine
 
 <style>
   .highlighted-papers-slider {

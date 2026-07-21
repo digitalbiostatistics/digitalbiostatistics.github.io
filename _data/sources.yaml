@@ -319,3 +319,9 @@
   link: "https://digital.csic.es/handle/10261/385477"
   title: "Uncertainty Quantification in Dynamic Models of Biological Systems Using Conformal Prediction"
   image: "images/photo.jpg"
+
+- id: "doi:	10.1177/0962280221998064"
+  type: paper
+  link: "https://pubmed.ncbi.nlm.nih.gov/33760665/"
+  title: "Glucodensities: A new representation of glucose profiles using distributional data analysis"
+  image: "images/photo.jpg"
