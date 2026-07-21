@@ -40,4 +40,4 @@ nav:
     >
 </div>
 
-<p>Read the article in English <a href="https://translate.google.com/translate?sl=auto&amp;tl=en&amp;u=https%3A%2F%2Fwww.lavozdegalicia.es%2Fnoticia%2Fopinion%2F2025%2F06%2F01%2Foxford-leccion-manana-institucion-ves%2F0003_202506G1P18995.htm" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<p>To read the original article, click <a href="https://www.lavozdegalicia.es/noticia/opinion/2025/06/01/oxford-leccion-manana-institucion-ves/0003_202506G1P18995.htm" target="_blank" rel="noopener noreferrer">here</a>.</p>
