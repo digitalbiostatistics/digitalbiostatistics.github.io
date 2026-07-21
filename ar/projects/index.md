@@ -261,8 +261,6 @@ nav:
 يتمحور بحثنا حول مجموعة من الأسئلة المنهجية والتطبيقية والسريرية المفتوحة. وتوجّه هذه الأسئلة تطوير نظريات إحصائية جديدة، مع ضمان أن تعالج الأساليب الناتجة مشكلات ذات أهمية جوهرية في الطب والصحة العامة.
 
 
-Aquí tienes toda la sección traducida, manteniendo intacto lo que aparece dentro de `<>` y `{}`:
-
 <div class="question-grid">
 
   <article class="question-card">
