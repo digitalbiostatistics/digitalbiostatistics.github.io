@@ -1,6 +1,6 @@
 ---
 title: الفريق
-lang: ar
+lang: en
 translation_key: team
 nav:
   order: 3
