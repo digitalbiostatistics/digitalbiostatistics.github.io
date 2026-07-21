@@ -1323,9 +1323,20 @@
       transition: none;
     }
   }
+
+    /* El carrusel funciona internamente de izquierda a derecha */
+  .testimonials-slider {
+    direction: ltr;
+  }
+
+  /* El contenido textual continúa en árabe */
+  .testimonial-content {
+    direction: rtl;
+    text-align: right;
+  }
 </style>
 
-<div class="testimonials-slider" id="testimonials-slider" aria-label="Testimonials">
+<div class="testimonials-slider" id="testimonials-slider" aria-label="Testimonials" dir="ltr">
   <div class="testimonials-viewport">
     <div class="testimonials-track">
 
