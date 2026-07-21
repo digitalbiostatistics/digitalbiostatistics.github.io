@@ -1,6 +1,6 @@
 ---
 title: الأخبار
-lang: en
+lang: ar
 translation_key: blog
 nav:
   order: 7

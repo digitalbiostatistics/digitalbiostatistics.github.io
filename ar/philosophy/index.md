@@ -1,6 +1,6 @@
 ---
 title: الفلسفة
-lang: en
+lang: ar
 translation_key: philosophy
 description: 
 nav:
