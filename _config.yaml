@@ -32,12 +32,10 @@ languages:
 
 # site social media and other links
 links:
-  email: contact@digitalbiostatistics.com
-  orcid: 0000-0001-8713-9213
-  google-scholar: ETJoidYAAAAJ
+  email: Marcos.Matabuena@mbzuai.ac.ae
+  orcid: 0000-0002-2764-5824
+  google-scholar: qaEtbuEAAAAJ
   github: digitalbiostatistics
-  twitter: digitalbiostatistics
-  youtube: digitalbiostatistics
 
 ### jekyll settings
 
