@@ -1,5 +1,5 @@
 ---
-title: الفريق
+title: Team
 lang: en
 translation_key: team
 nav:
