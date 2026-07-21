@@ -258,34 +258,37 @@ translation_key: home
       role="heading"
       aria-level="1"
     >
-      DIGITAL BIOSTATISTICS
+     الإحصاء الحيوي الرقمي
     </div>
 
     <p class="home-hero-quote">
-      No matter how high the mountain, there is always a path to the summit.
+      مهما كان الجبل شاهقًا، فهناك دائمًا طريق إلى القمة.
+
     </p>
 
     <p class="home-hero-text first">
-      What is the best diet for each person? Can we predict which diseases
-      someone may develop over the next twenty years—and
-      <span class="hero-highlight">act before they appear?</span>
+      ما النظام الغذائي الأنسب لكل شخص؟ وهل يمكننا التنبؤ بالأمراض التي
+      قد يُصاب بها شخص ما خلال العشرين عامًا القادمة—
+      <span class="hero-highlight">والتدخل قبل ظهورها؟</span>
     </p>
 
     <p class="home-hero-text second">
-      Answering questions like these requires a new scientific framework that
-      brings together
-      <span class="hero-highlight">biostatistics</span>,
-      artificial intelligence, digital health, and clinical decision-making.
+      تتطلب الإجابة عن مثل هذه الأسئلة إطارًا علميًا جديدًا يجمع بين
+      <span class="hero-highlight">الإحصاء الحيوي</span>،
+      والذكاء الاصطناعي، والصحة الرقمية، واتخاذ القرارات السريرية.
     </p>
+
+
 
   </div>
 </section>
 
-## Welcome
+## مرحبًا
 
-Welcome to the website of Marcos Matabuena’s research group.
+مرحبًا بكم في الموقع الإلكتروني لمجموعة ماركوس ماتابوينا البحثية.
 
-Digital health has the potential to identify disease risks years—or even decades—before clinical symptoms emerge. Our mission is to develop the mathematical, statistical, and artificial intelligence methods needed to make this transformation possible, based on continuous-time information collected through modern medical devices. Ultimately, we aim to move beyond the treatment of disease toward the continuous, real-time optimization of individual and population health.
+تمتلك الصحة الرقمية القدرة على تحديد مخاطر الإصابة بالأمراض قبل ظهور الأعراض السريرية بسنوات، بل وحتى بعقود. وتتمثل مهمتنا في تطوير الأساليب الرياضية والإحصائية وأساليب الذكاء الاصطناعي اللازمة لجعل هذا التحول ممكنًا، بالاعتماد على المعلومات المستمرة زمنيًا التي تُجمع عبر الأجهزة الطبية الحديثة. وفي نهاية المطاف، نهدف إلى تجاوز علاج الأمراض نحو التحسين المستمر والآني لصحة الأفراد والسكان.
+
 <div style="max-width: 560px; margin: 30px auto;">
   <iframe
     style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
@@ -297,11 +300,12 @@ Digital health has the potential to identify disease risks years—or even decad
   </iframe>
 </div>
 
-## The Future of Artificial Intelligence in Medicine
+## مستقبل الذكاء الاصطناعي في الطب
 
-Artificial intelligence in medicine is still in its early stages, and only a small fraction of its potential has been demonstrated in real-world clinical practice. Most current applications address relatively simple and well-defined problems from a statistical learning perspective.
+لا يزال الذكاء الاصطناعي في الطب في مراحله الأولى، ولم يُثبت في الممارسة السريرية الواقعية سوى جزء ضئيل من إمكاناته. وتعالج معظم التطبيقات الحالية مشكلات بسيطة نسبيًا ومحددة بوضوح من منظور التعلّم الإحصائي.
 
-Over the next 10 to 15 years, we expect to witness advances that are difficult to imagine today, particularly in neurological disorders such as ALS. New biological discoveries will emerge, comparable to the recent progress made in solving open mathematical problems using AI tools. The next frontier in biomedical research is the development of longitudinal, causal, and data-driven models that use AI tools to support revolutionary therapies and drug discovery. We will have access to metabolic phenotype profiles containing information at a level never seen before.
+وخلال السنوات العشر إلى الخمس عشرة المقبلة، نتوقع أن نشهد تطورات يصعب تصورها اليوم، ولا سيما في الاضطرابات العصبية مثل التصلب الجانبي الضموري. وستظهر اكتشافات بيولوجية جديدة تضاهي التقدم الحديث في حل المسائل الرياضية المفتوحة باستخدام أدوات الذكاء الاصطناعي. ويتمثل الأفق التالي للبحث الطبي الحيوي في تطوير نماذج طولية وسببية وقائمة على البيانات، تستخدم أدوات الذكاء الاصطناعي لدعم العلاجات الثورية واكتشاف الأدوية. كما سيتاح لنا الوصول إلى ملفات تعريفية للأنماط الظاهرية الأيضية تتضمن معلومات بمستوى من التفصيل لم يسبق له مثيل.
+
 
 <div style="
   display: flex;
@@ -360,11 +364,12 @@ Over the next 10 to 15 years, we expect to witness advances that are difficult t
 
 </div>
 
-## Our Ultimate Goal
+## هدفنا الأسمى
 
-The ultimate goal of our research is to develop a low-cost healthcare operations pipeline that optimizes the health of individuals and populations by combining biostatistics, digital health, and operations research.
+يتمثل الهدف الأسمى لبحثنا في تطوير منظومة تشغيلية منخفضة التكلفة للرعاية الصحية، تهدف إلى تحسين صحة الأفراد والمجتمعات من خلال الجمع بين الإحصاء الحيوي، والصحة الرقمية، وبحوث العمليات.
 
-Since I was a child, my dream has been to help find cures for diseases. AI will contribute to the discovery of personalized drugs, reduce healthcare costs, and promote greater equality and more individualized prescribing.
+منذ طفولتي، كان حلمي أن أساهم في إيجاد علاجات للأمراض. وسيسهم الذكاء الاصطناعي في اكتشاف أدوية مخصصة لكل فرد، وخفض تكاليف الرعاية الصحية، وتعزيز قدر أكبر من المساواة، ودعم وصف علاجات أكثر تخصيصًا.
+
 
 <div style="max-width: 560px; margin: 30px auto;">
   <iframe
@@ -379,16 +384,17 @@ Since I was a child, my dream has been to help find cures for diseases. AI will 
 
 {% include section.html %}
 
-## Highlights
+## أبرز الإنجازات
 
 {% capture text %}
 
-We are pioneering the use of non-Euclidean statistical methods to define a new generation of digital biomarkers. Our work introduced the concept of glucodensity, a comprehensive biomarker designed to summarize digital health data collected under free-living conditions. We also develop modern machine learning techniques and novel uncertainty quantification methods for complex, high-dimensional data, enabling us to fully exploit the rich, dense, and longitudinal information generated by digital health technologies.
+نحن روّاد في استخدام الأساليب الإحصائية غير الإقليدية لتطوير جيل جديد من المؤشرات الحيوية الرقمية. وقد أسهم عملنا في تقديم مفهوم «كثافة الغلوكوز»، وهو مؤشر حيوي شامل صُمم لتلخيص بيانات الصحة الرقمية التي تُجمع في ظروف الحياة اليومية. كما نطوّر تقنيات حديثة في تعلّم الآلة وأساليب مبتكرة لقياس عدم اليقين في البيانات المعقدة وعالية الأبعاد، مما يتيح لنا الاستفادة الكاملة من المعلومات الغنية والكثيفة والطولية التي تولدها تقنيات الصحة الرقمية.
+
 
 {%
   include button.html
   link="research"
-  text="See our publications"
+  text="اطّلع على منشوراتنا"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -400,18 +406,19 @@ We are pioneering the use of non-Euclidean statistical methods to define a new g
   include feature.html
   image="images/OurResearch.png"
   link="research"
-  title="Our Research"
+  title="أبحاثنا"
   text=text
 %}
 
 {% capture text %}
 
-Our current projects focus on developing a new generation of statistical AI methods capable of transforming the vast amounts of information collected by digital devices into clinically meaningful knowledge. We aim to demonstrate, through real-world medical problems, how these methods can produce tangible advances in clinical research and practice.
+تركّز مشاريعنا الحالية على تطوير جيل جديد من أساليب الذكاء الاصطناعي الإحصائي القادرة على تحويل الكميات الهائلة من المعلومات التي تجمعها الأجهزة الرقمية إلى معرفة ذات معنى سريري. ونهدف، من خلال مشكلات طبية واقعية، إلى إظهار كيف يمكن لهذه الأساليب أن تحقق تقدمًا ملموسًا في البحث والممارسة السريرية.
+
 
 {%
   include button.html
   link="projects"
-  text="Browse our projects"
+  text="تصفّح مشاريعنا"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -423,7 +430,7 @@ Our current projects focus on developing a new generation of statistical AI meth
   include feature.html
   image="images/ourprojects_web.png"
   link="projects"
-  title="Our Projects"
+  title="مشاريعنا"
   flip=true
   style="bare"
   text=text
@@ -431,12 +438,12 @@ Our current projects focus on developing a new generation of statistical AI meth
 
 {% capture text %}
 
-The success of research depends on carefully selecting your team and  collaborators. To move the field forward, surround yourself with people who are enthusiastic, motivated, and well-prepared.
+يعتمد نجاح البحث على الاختيار الدقيق لأعضاء فريقك والمتعاونين معك. وللمساهمة في دفع المجال إلى الأمام، أحط نفسك بأشخاص متحمسين، ومحفَّزين، ومؤهلين تأهيلًا جيدًا.
 
 {%
   include button.html
   link="team"
-  text="Meet our team"
+  text="تعرّف على فريقنا"
   icon="fa-solid fa-arrow-right"
   flip=true
   style="bare"
@@ -448,11 +455,11 @@ The success of research depends on carefully selecting your team and  collaborat
   include feature.html
   image="images/collageconsolo1pelado.png"
   link="team"
-  title="Our Team"
+  title="فريقنا"
   text=text
 %}
 
-## Testimonials
+## شهادات وآراء
 
 <style>
   .testimonials-slider {
@@ -763,20 +770,23 @@ The success of research depends on carefully selecting your team and  collaborat
           <div class="testimonial-photo-wrapper">
             <img
               class="testimonial-photo"
-              src="{{ '/images/rounakdey.jpg' | relative_url }}"
-              alt="Portrait of Rounak Dey"
+              src="{{ '/images/yating.jpeg' | relative_url }}"
+              alt="Portrait of Yating Zou"
             >
           </div>
 
           <div class="testimonial-content">
             <p class="testimonial-text">
-              Marcos is a brilliant researcher who brings incredible rigor, dedication, and innovation to every project. He excels at fostering meaningful collaborations and maintains an exceptionally high standard for his publications. It has been a pleasure working alongside him, and I wish him continued success throughout his promising career.
+              ماركوس متعاون يتمتع بذكاء لافت وحماس كبير، ويواكب الأدبيات العلمية عن كثب، كما يتميز بسرعة الربط بين الأفكار عبر مشكلات مختلفة. فهو سريع التفكير، ويتفاعل بصورة مباشرة، ويُظهر التزامًا حقيقيًا بالعمل القائم على أسس إحصائية رصينة والمرتبط بأسئلة طبية حيوية واقعية وذات أهمية.
+
+              وإلى جانب الجانب البحثي، كان صديقًا رائعًا ومصدرًا حقيقيًا للدعم في مسيرتي العلمية. وأنا واثق من أنه سيحقق إنجازات عظيمة، وأتطلع إلى مواصلة عملنا معًا عند نقطة التقاء المنهجيات الإحصائية والصحة الرقمية!
+
             </p>
 
-            <p class="testimonial-name">Rounak Dey</p>
+            <p class="testimonial-name">Yating Zou</p>
 
             <p class="testimonial-role">
-              Staff Data Scientist at Insitro
+              طالب دكتوراه في الإحصاء الحيوي بجامعة كارولينا الشمالية في تشابل هيل
             </p>
           </div>
         </div>
@@ -794,13 +804,13 @@ The success of research depends on carefully selecting your team and  collaborat
 
           <div class="testimonial-content">
             <p class="testimonial-text">
-              Marcos has been an amazing supervisor and, honestly, one of the most positive influences on my academic career so far. He is incredibly hardworking and someone I really look up to. He has opened my eyes to opportunities I had never considered before and encouraged me to be more ambitious in both my research and my academic career. Having him as a mentor has made me a much better researcher, and I feel very lucky to be part of his research lab.
+              كان ماركوس مشرفًا رائعًا، وبصراحة، أحد أكثر الأشخاص تأثيرًا بصورة إيجابية في مسيرتي الأكاديمية حتى الآن. فهو مجتهد للغاية وشخص أكنّ له قدرًا كبيرًا من الاحترام والتقدير. لقد فتح عينيّ على فرص لم أكن قد فكرت فيها من قبل، وشجّعني على أن أكون أكثر طموحًا في أبحاثي وفي مسيرتي الأكاديمية على حد سواء. وقد جعلني وجوده مرشدًا لي باحثةً أفضل بكثير، وأشعر بامتنان كبير لكوني جزءًا من مختبره البحثي.
             </p>
 
             <p class="testimonial-name">Cristina Correa</p>
 
             <p class="testimonial-role">
-              Computational Biology Master Student at MBZUAI
+              طالبة ماجستير في علم الأحياء الحاسوبي بجامعة محمد بن زايد للذكاء الاصطناعي
             </p>
           </div>
         </div>
@@ -811,22 +821,20 @@ The success of research depends on carefully selecting your team and  collaborat
           <div class="testimonial-photo-wrapper">
             <img
               class="testimonial-photo"
-              src="{{ '/images/testimonial-3.jpg' | relative_url }}"
-              alt="Portrait of Name Surname"
+              src="{{ '/images/rounakdey.jpg' | relative_url }}"
+              alt="Portrait of Rounak Dey"
             >
           </div>
 
           <div class="testimonial-content">
             <p class="testimonial-text">
-              Their interdisciplinary vision creates an environment in which
-              statisticians, clinicians, and artificial intelligence researchers
-              can collaborate effectively and learn from one another.
+              ماركوس باحث لامع يجلب إلى كل مشروع قدرًا استثنائيًا من الدقة والتفاني والابتكار. كما يتميز بقدرته على بناء علاقات تعاون مثمرة، ويحافظ على معايير عالية جدًا في منشوراته العلمية. لقد كان من دواعي سروري العمل إلى جانبه، وأتمنى له دوام النجاح طوال مسيرته المهنية الواعدة.
             </p>
 
-            <p class="testimonial-name">Name Surname</p>
+            <p class="testimonial-name">Rounak Dey</p>
 
             <p class="testimonial-role">
-              Medical Researcher · Hospital or institution
+              عالِم بيانات رئيسي في شركة Insitro
             </p>
           </div>
         </div>
@@ -837,22 +845,56 @@ The success of research depends on carefully selecting your team and  collaborat
           <div class="testimonial-photo-wrapper">
             <img
               class="testimonial-photo"
-              src="{{ '/images/testimonial-4.jpg' | relative_url }}"
-              alt="Portrait of Name Surname"
+              src="{{ '/images/antonio.png' | relative_url }}"
+              alt="Portrait of Antonio Álvarez"
             >
           </div>
 
           <div class="testimonial-content">
             <p class="testimonial-text">
-              This is a team with scientific ambition and a strong sense of
-              purpose. Their work has the potential to shape the future of
-              digital health and personalized medicine.
+              في عالم العلوم شديد التنافسية، يتميّز ماركوس بنهجه الإنساني. فهو يضع العلاقات الشخصية في المقام الأول، ويتجلى ذلك في الاهتمام الاستثنائي الذي يوليه للأشخاص العديدين ضمن شبكة المتعاونين معه. أعرفه منذ عدة سنوات، وخلال الأشهر الثمانية عشر الماضية شاركنا في تأليف ورقتين بحثيتين، حصلت إحداهما على جائزة، وهي تجربة لم تزدني إلا إعجابًا بتفانيه وروحه التعاونية.
+
+              يعمل ماركوس بلا كلل لتحقيق هدف طموح وهادف يتجاوز الرياضيات بكثير، وهو إحداث أثر إيجابي في المجتمع من خلال الأساليب الإحصائية وأساليب الذكاء الاصطناعي التي يطورها في مجال الصحة الرقمية. إنه باحث لامع ومتعاون يمكنك الاعتماد عليه دائمًا.
+
             </p>
 
-            <p class="testimonial-name">Name Surname</p>
+            <p class="testimonial-name">Antonio Álvarez</p>
 
             <p class="testimonial-role">
-              Professor · University or institution
+             باحث ما بعد الدكتوراه في جامعة نانيانغ التكنولوجية
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/elvis.jpg' | relative_url }}"
+              alt="Portrait of Elvis Han Cui"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              إن «الإحصاء الحيوي الرقمي» ليس مجرد موقع إلكتروني، بل هو راية مرفوعة على تخوم علوم الطب الحيوي.
+
+              في هذه الرؤية، لم تعد الصحة رقمًا جامدًا يُسجَّل خلال زيارة إلى العيادة، بل أصبحت إشارة حيّة: مستمرة، وقابلة للرصد عبر الأجهزة القابلة للارتداء، وطولية، ومحاطة بعدم اليقين، وإنسانية في جوهرها.
+
+              يرفض عمل ماركوس ماتابوينا المفاضلة الزائفة بين الصرامة الرياضية والخيال السريري. إذ يجمع بين تحليل البيانات الدالية، والاستدلال السببي، وقياس عدم اليقين، والمؤشرات الحيوية الرقمية، والذكاء الاصطناعي، بوصفها أدوات لقراءة نبض المستقبل.
+
+              وكما يقول المثل الصيني: «观水有术，必观其澜» — لفهم النهر، لا بد من تأمل أمواجه.
+
+              ولمن يرغب في معرفة الوجهة التي يمضي إليها علم الإحصاء الحيوي، فهذا مكان جدير بالمتابعة.
+
+            </p>
+
+            <p class="testimonial-name">Elvis Han Cui</p>
+
+            <p class="testimonial-role">
+              طالب دكتوراه في الإحصاء الحيوي بكلية فيلدينغ للصحة العامة في جامعة كاليفورنيا، لوس أنجلوس
             </p>
           </div>
         </div>
@@ -904,6 +946,13 @@ The success of research depends on carefully selecting your team and  collaborat
       type="button"
       data-slide="3"
       aria-label="Show testimonial 4"
+    ></button>
+
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="4"
+      aria-label="Show testimonial 5"
     ></button>
   </div>
 </div>
