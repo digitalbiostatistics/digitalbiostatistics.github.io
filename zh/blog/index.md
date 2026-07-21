@@ -1,12 +1,29 @@
 ---
-title: 研究
+title: 新闻
 lang: zh
 translation_key: blog
 nav:
-  order: 1
-  tooltip: 已发表的研究成果
+  order: 7
+  tooltip: 最新动态与其他内容
 ---
 
-# 研究
+# 新闻
 
-这里展示数字生物统计学研究团队的论文和研究成果。
+及时了解我们团队的最新动态，包括研究进展、学术成果发表、合作项目、获奖情况、活动以及其他重要里程碑。在这里，我们将分享推动数字生物统计学研究组不断发展壮大的各项活动与成就。
+
+<div style="max-width: 800px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/news.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
+{% include section.html %}
+
+{% include search-box.html %}
+
+{% include tags.html tags=site.tags %}
+
+{% include search-info.html %}
+
+{% include list.html data="posts" component="post-excerpt" %}

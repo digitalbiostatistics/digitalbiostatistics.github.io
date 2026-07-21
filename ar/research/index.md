@@ -1,7 +1,7 @@
 ---
-title: Research
+title:  الأبحاث
 lang: ar
-translation_key: الأبحاث
+translation_key: research
 nav:
   order: 1
   tooltip: الأعمال المنشورة
