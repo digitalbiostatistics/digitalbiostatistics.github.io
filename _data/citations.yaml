@@ -848,3 +848,18 @@
   image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
+- id: "doi:\t10.1177/0962280221998064"
+  title: 'Glucodensities: A new representation of glucose profiles using distributional
+    data analysis'
+  authors:
+  - Marcos Matabuena
+  - Alexander Petersen
+  - Juan C Vidal
+  - Francisco Gude
+  publisher: Statistical Methods in Medical Research
+  date: '2021-06-01'
+  link: https://pubmed.ncbi.nlm.nih.gov/33760665/
+  type: paper
+  image: images/photo.jpg
+  plugin: sources.py
+  file: sources.yaml
