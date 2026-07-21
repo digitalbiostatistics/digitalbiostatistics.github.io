@@ -764,20 +764,20 @@ The success of research depends on carefully selecting your team and  collaborat
           <div class="testimonial-photo-wrapper">
             <img
               class="testimonial-photo"
-              src="{{ '/images/rounakdey.jpg' | relative_url }}"
-              alt="Portrait of Rounak Dey"
+              src="{{ '/images/yating.jpeg' | relative_url }}"
+              alt="Portrait of Yating Zou"
             >
           </div>
 
           <div class="testimonial-content">
             <p class="testimonial-text">
-              Marcos is a brilliant researcher who brings incredible rigor, dedication, and innovation to every project. He excels at fostering meaningful collaborations and maintains an exceptionally high standard for his publications. It has been a pleasure working alongside him, and I wish him continued success throughout his promising career.
+              Marcos is an remarkably sharp, enthusiastic collaborator who stays closely attuned to the literature and is quick to connect ideas across problems. He thinks fast, engages directly, and brings genuine commitment to statistically principled work grounded in real, important biomedical questions. Beyond the research, he has been a great friend and a source of real support in my own scientific journey. I’m sure he’ll accomplish great things, and I look forward to continuing our work together at the intersection of statistical methodology and digital health!
             </p>
 
-            <p class="testimonial-name">Rounak Dey</p>
+            <p class="testimonial-name">Yating Zou</p>
 
             <p class="testimonial-role">
-              Staff Data Scientist at Insitro
+              Biostatistics PhD Student at UNC-CH
             </p>
           </div>
         </div>
@@ -812,24 +812,20 @@ The success of research depends on carefully selecting your team and  collaborat
           <div class="testimonial-photo-wrapper">
             <img
               class="testimonial-photo"
-              src="{{ '/images/elvis.jpg' | relative_url }}"
-              alt="Portrait of Elvis Han Cui"
+              src="{{ '/images/rounakdey.jpg' | relative_url }}"
+              alt="Portrait of Rounak Dey"
             >
           </div>
 
           <div class="testimonial-content">
             <p class="testimonial-text">
-              Digital Biostatistics is not merely a website; it is a banner raised at the frontier of biomedical science.
-Health, in this vision, is no longer a frozen number recorded at a clinic visit. It becomes a living signal: continuous, wearable, longitudinal, uncertain, and deeply human.
-Marcos Matabuena’s work refuses the false choice between mathematical rigor and clinical imagination. Functional data analysis, causal inference, uncertainty quantification, digital biomarkers, and AI are brought together as instruments for reading the pulse of the future.
-As the Chinese saying goes, “观水有术，必观其澜” — to understand the river, one must watch its waves.
-For those who wish to know whither biostatistics goeth, this is a place well worth following.
+              Marcos is a brilliant researcher who brings incredible rigor, dedication, and innovation to every project. He excels at fostering meaningful collaborations and maintains an exceptionally high standard for his publications. It has been a pleasure working alongside him, and I wish him continued success throughout his promising career.
             </p>
 
-            <p class="testimonial-name">Elvis Han Cui</p>
+            <p class="testimonial-name">Rounak Dey</p>
 
             <p class="testimonial-role">
-              Biostatistics PhD Student at UCLA Fielding School of Public Health
+              Staff Data Scientist at Insitro
             </p>
           </div>
         </div>
@@ -854,6 +850,34 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
 
             <p class="testimonial-role">
               Postdoc at Nanyang Technological University
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/elvis.jpg' | relative_url }}"
+              alt="Portrait of Elvis Han Cui"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Digital Biostatistics is not merely a website; it is a banner raised at the frontier of biomedical science.
+Health, in this vision, is no longer a frozen number recorded at a clinic visit. It becomes a living signal: continuous, wearable, longitudinal, uncertain, and deeply human.
+Marcos Matabuena’s work refuses the false choice between mathematical rigor and clinical imagination. Functional data analysis, causal inference, uncertainty quantification, digital biomarkers, and AI are brought together as instruments for reading the pulse of the future.
+As the Chinese saying goes, “观水有术，必观其澜” — to understand the river, one must watch its waves.
+For those who wish to know whither biostatistics goeth, this is a place well worth following.
+            </p>
+
+            <p class="testimonial-name">Elvis Han Cui</p>
+
+            <p class="testimonial-role">
+              Biostatistics PhD Student at UCLA Fielding School of Public Health
             </p>
           </div>
         </div>
@@ -905,6 +929,13 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
       type="button"
       data-slide="3"
       aria-label="Show testimonial 4"
+    ></button>
+
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="4"
+      aria-label="Show testimonial 5"
     ></button>
   </div>
 </div>
