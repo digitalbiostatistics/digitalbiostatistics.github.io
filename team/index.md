@@ -21,13 +21,13 @@ nav:
 <p>
   <strong>
     <em>
-      يكتسب اكتشاف المتعاونين العلميين وبناء العلاقات معهم ورعايتها أهمية بالغة. وقد أدّى المتعاونون المتميزون الذين عملت معهم دورًا محوريًا في تشكيل أفكاري، ودفع مسيرتي المهنية إلى الأمام، والتأثير في المشكلات التي أختار معالجتها. ولا يحقق التعاون مع علماء بارزين من مختلف أنحاء العالم قدرًا كبيرًا من الرضا فحسب، بل يفتح أيضًا آفاقًا استثنائية لإحداث فرق عميق في حياة الملايين.
+     Discovering, constructing, and nurturing scientific collaborators holds immense significance. My exceptional collaborators have played a pivotal role in shaping my thoughts, advancing my professional journey, and influencing the problems I choose to tackle. Collaborating with distinguished scientists worldwide not only brings immense satisfaction but also opens extraordinary avenues to make a profound difference in the lives of millions.
     </em>
   </strong>
 </p>
 {% include section.html %}
 
-## المتعاونون في MBZUAI
+## Collaborators MBZUAI
 
 <div style="width: 100%; text-align: center;">
   {% include list.html
@@ -39,7 +39,7 @@ nav:
 
 {% include section.html %}
 
-## المتعاونون الدوليون (الحاليون/السابقون)
+## International Collaborators (Current/Past)
 
 <div style="width: 100%; text-align: center;">
   {% include list.html

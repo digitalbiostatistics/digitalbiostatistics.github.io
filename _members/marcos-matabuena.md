@@ -1,6 +1,6 @@
 ---
 name: Marcos Matabuena
-image: images/marcos-photo.png
+image: images/marcospatron.jpeg
 role: pi
 description: Founder and Principal Investigator
 affiliation: MBZUAI
