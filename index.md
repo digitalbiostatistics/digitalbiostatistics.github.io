@@ -338,7 +338,7 @@ translation_key: home
 
 <div style="max-width: 900px; margin: 40px auto 10px auto;">
   <img
-    src="{{ '/images/horizontalguy2.png' | relative_url }}"
+    src="{{ '/images/horizontalguy.png' | relative_url }}"
     alt=""
     style="width: 100%; display: block; border-radius: 4px;"
     >
