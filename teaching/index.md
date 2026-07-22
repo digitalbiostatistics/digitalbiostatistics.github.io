@@ -426,14 +426,13 @@ nav:
   defer
 ></script>
 
-<div style="max-width: 800px; margin: 40px auto 10px auto;">
+<div style="max-width: 600px; margin: 40px auto 10px auto;">
   <img
     src="{{ '/images/marcosbb.png' | relative_url }}"
     alt=""
     style="width: 100%; display: block; border-radius: 4px;"
     >
 </div>
-From an early age, Marcos understood that knowledge only truly matters when it is shared.
 
 {% include section.html %}
 <div style="max-width: 800px; margin: 40px auto 10px auto;">
