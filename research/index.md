@@ -50,6 +50,14 @@ To address these questions, our research brings together causal inference, survi
  
 Although many methods published in leading statistics and machine learning journals are technically sound, they are not always designed with the complexities of real-world clinical data in mind. Our research therefore starts from concrete biomedical questions and practical challenges. We develop methods that reflect the structure of the data, the realities of clinical practice, and the decisions that clinicians, patients, and healthcare systems need to make.
 
+<div style="max-width: 700px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/cluster.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
+
 ## Seven Pillars of Our Group in Digital Health
 These seven papers represent, in my view, a real methodological and conceptual advance for the field of digital health.
 
@@ -74,19 +82,24 @@ Together, these works define the main pillars of our research program: new repre
     --highlighted-accent: #547f9d;
 
     position: relative;
+
     width: 100%;
-    max-width: 1050px;
-    margin: 40px auto 70px;
-    padding: 0 34px;
+    max-width: 900px;
+
+    margin: 40px auto 65px;
+    padding: 0 38px;
+
     box-sizing: border-box;
   }
 
   .highlighted-papers-viewport {
     width: 100%;
     overflow: hidden;
-    border-radius: var(--rounded);
-    touch-action: pan-y;
+
+    border-radius: var(--rounded, 8px);
+
     cursor: grab;
+    touch-action: pan-y;
   }
 
   .highlighted-papers-viewport:active {
@@ -96,58 +109,174 @@ Together, these works define the main pillars of our research program: new repre
   .highlighted-papers-track {
     display: flex !important;
     align-items: stretch !important;
+
     width: 100%;
+
     transition:
       transform 0.6s
       cubic-bezier(0.22, 1, 0.36, 1);
+
     will-change: transform;
   }
 
   .highlighted-paper-slide {
     display: flex !important;
     align-items: stretch !important;
+
     flex: 0 0 100% !important;
+
     width: 100% !important;
     min-width: 100% !important;
-    padding: 14px 14px 32px;
+
+    padding: 10px;
+
     box-sizing: border-box;
   }
 
-  .highlighted-paper-slide
-    .citation-container {
+  .highlighted-paper-card {
     display: flex;
+    flex-direction: column;
+
     width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border:
+      1px solid
+      rgba(84, 127, 157, 0.17);
+
+    border-radius: var(--rounded, 8px);
+
+    box-shadow:
+      0 14px 38px
+      rgba(32, 49, 60, 0.1);
   }
 
-  .highlighted-paper-slide .citation {
-    flex: 1 1 auto;
+  /*
+    Esta caja siempre tiene la misma altura.
+    Así, el carrusel no crece ni se encoge aunque
+    los abstracts tengan dimensiones diferentes.
+  */
+  .highlighted-paper-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
+    height: clamp(400px, 52vw, 560px);
+
+    padding: 20px 24px;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background: #f7f9fa;
+  }
+
+  /*
+    contain muestra el abstract completo:
+    no lo recorta y no lo deforma.
+  */
+  .highlighted-paper-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    background: #ffffff;
+  }
+
+  .highlighted-paper-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 190px;
+
+    padding: 24px 38px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-top:
+      1px solid
+      rgba(84, 127, 157, 0.13);
+
+    text-align: center;
+  }
+
+  .highlighted-paper-title {
+    max-width: 760px;
+
     margin: 0;
+
+    font-size:
+      clamp(
+        1.2rem,
+        2vw,
+        1.6rem
+      );
+
+    font-weight: 650;
+    line-height: 1.28;
+
+    color: #263b49;
+
+    text-wrap: balance;
+  }
+
+  .highlighted-paper-authors {
+    max-width: 730px;
+
+    margin: 15px 0 0;
+
+    font-size: 1rem;
+    line-height: 1.5;
+
+    color: #66757f;
+
+    text-wrap: balance;
   }
 
   .highlighted-paper-arrow {
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 5;
 
     display: grid;
     place-items: center;
 
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
+
     padding: 0;
 
-    border: 1px solid
+    border:
+      1px solid
       rgba(84, 127, 157, 0.22);
+
     border-radius: 50%;
 
     background: #ffffff;
     color: #263b49;
 
     box-shadow:
-      0 10px 28px rgba(32, 49, 60, 0.14);
+      0 9px 25px
+      rgba(32, 49, 60, 0.14);
 
-    font-size: 24px;
+    font-size: 27px;
     line-height: 1;
 
     cursor: pointer;
@@ -156,51 +285,54 @@ Together, these works define the main pillars of our research program: new repre
 
     transition:
       transform 0.2s ease,
-      box-shadow 0.2s ease,
-      background 0.2s ease;
+      background 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .highlighted-paper-arrow:hover {
     background: #f4f8fa;
 
     box-shadow:
-      0 13px 32px rgba(32, 49, 60, 0.2);
+      0 12px 30px
+      rgba(32, 49, 60, 0.19);
 
     transform:
       translateY(-50%)
-      scale(1.08);
+      scale(1.06);
   }
 
   .highlighted-paper-arrow.previous {
-    left: 7px;
+    left: 8px;
   }
 
   .highlighted-paper-arrow.next {
-    right: 7px;
+    right: 8px;
   }
 
   .highlighted-papers-dots {
     display: flex !important;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
 
-    min-height: 22px;
-    margin-top: 24px;
+    gap: 9px;
+
+    min-height: 18px;
+    margin-top: 16px;
   }
 
   .highlighted-paper-dot {
     display: block;
 
-    width: 10px;
-    height: 10px;
-    padding: 0;
+    width: 9px;
+    height: 9px;
 
+    padding: 0;
     border: 0;
+
     border-radius: 999px;
 
     background: var(--highlighted-accent);
-    opacity: 0.28;
+    opacity: 0.25;
 
     cursor: pointer;
 
@@ -211,84 +343,154 @@ Together, these works define the main pillars of our research program: new repre
   }
 
   .highlighted-paper-dot.is-active {
-    width: 34px;
+    width: 30px;
     opacity: 1;
   }
 
   .highlighted-paper-dot:hover {
-    opacity: 0.75;
-    transform: scale(1.12);
+    opacity: 0.7;
+    transform: scale(1.1);
   }
 
   .highlighted-paper-arrow:focus-visible,
   .highlighted-paper-dot:focus-visible {
-    outline: 3px solid
-      rgba(84, 127, 157, 0.55);
+    outline:
+      3px solid
+      rgba(84, 127, 157, 0.5);
+
     outline-offset: 3px;
   }
 
   @media screen and (max-width: 768px) {
     .highlighted-papers-slider {
-      margin: 28px auto 60px;
+      max-width: 100%;
+
+      margin: 28px auto 50px;
       padding: 0 8px;
     }
 
     .highlighted-paper-slide {
-      padding: 10px 8px 28px;
+      padding: 6px;
+    }
+
+    .highlighted-paper-image {
+      height: 410px;
+      padding: 12px;
+    }
+
+    .highlighted-paper-information {
+      height: auto;
+      min-height: 185px;
+
+      padding: 24px 42px;
+    }
+
+    .highlighted-paper-title {
+      font-size: 1.15rem;
+    }
+
+    .highlighted-paper-authors {
+      margin-top: 12px;
+      font-size: 0.92rem;
     }
 
     .highlighted-paper-arrow {
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
+      top: 43%;
+
+      width: 38px;
+      height: 38px;
+
+      font-size: 22px;
     }
 
     .highlighted-paper-arrow.previous {
-      left: 16px;
+      left: 14px;
     }
 
     .highlighted-paper-arrow.next {
-      right: 16px;
+      right: 14px;
+    }
+
+    .highlighted-papers-dots {
+      margin-top: 12px;
     }
   }
 
   @media screen and (max-width: 420px) {
+    .highlighted-paper-image {
+      height: 340px;
+      padding: 8px;
+    }
+
+    .highlighted-paper-information {
+      min-height: 190px;
+      padding: 22px 38px;
+    }
+
+    .highlighted-paper-title {
+      font-size: 1.02rem;
+    }
+
+    .highlighted-paper-authors {
+      font-size: 0.85rem;
+    }
+
     .highlighted-paper-arrow {
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
+
+      font-size: 20px;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .highlighted-papers-track {
+    .highlighted-papers-track,
+    .highlighted-paper-arrow,
+    .highlighted-paper-dot {
       transition: none;
     }
   }
 </style>
 
-{% assign highlighted_papers = "Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics||Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials||Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces||Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model||Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces||Random-Effects Algorithm for Random Objects in Metric Spaces" | split: "||" %}
-
 <div
   id="highlighted-papers-slider"
   class="highlighted-papers-slider"
-  aria-label="Highlighted publications"
+  aria-label="Seven pillars publications"
   aria-roledescription="carousel"
 >
   <div class="highlighted-papers-viewport">
     <div class="highlighted-papers-track">
-      {% for paper in highlighted_papers %}
-        {% assign paper_title = paper | strip %}
 
+      {% for paper in site.data.highlighted %}
         <article
           class="highlighted-paper-slide"
           aria-hidden="{% if forloop.first %}false{% else %}true{% endif %}"
         >
-          {% include citation.html
-            lookup=paper_title
-            style="rich"
-          %}
+          <div class="highlighted-paper-card">
+
+            <div class="highlighted-paper-image">
+              <img
+                src="{{ paper.image | relative_url }}"
+                alt="Abstract of {{ paper.title | escape }}"
+                loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                decoding="async"
+              >
+            </div>
+
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                {{ paper.title }}
+              </h3>
+
+              <p class="highlighted-paper-authors">
+                {{ paper.authors }}
+              </p>
+            </div>
+
+          </div>
         </article>
       {% endfor %}
+
     </div>
   </div>
 
@@ -297,7 +499,7 @@ Together, these works define the main pillars of our research program: new repre
     type="button"
     aria-label="Previous publication"
   >
-    &#10094;
+    <span aria-hidden="true">‹</span>
   </button>
 
   <button
@@ -305,19 +507,19 @@ Together, these works define the main pillars of our research program: new repre
     type="button"
     aria-label="Next publication"
   >
-    &#10095;
+    <span aria-hidden="true">›</span>
   </button>
 
   <div
     class="highlighted-papers-dots"
-    aria-label="Choose highlighted publication"
+    aria-label="Choose a publication"
   >
-    {% for paper in highlighted_papers %}
+    {% for paper in site.data.highlighted %}
       <button
         class="highlighted-paper-dot{% if forloop.first %} is-active{% endif %}"
         type="button"
         data-slide="{{ forloop.index0 }}"
-        aria-label="Show highlighted publication {{ forloop.index }}"
+        aria-label="Show publication {{ forloop.index }}"
         {% if forloop.first %}
           aria-current="true"
         {% endif %}
@@ -330,6 +532,7 @@ Together, these works define the main pillars of our research program: new repre
   src="{{ '/assets/js/highlighted-papers.js' | relative_url }}"
   defer
 ></script>
+
 
 {% include section.html %}
 
