@@ -1,12 +1,10 @@
-- title: Spatiotemporal Methods for Digital Epidemiology with Applications in Diabetes Mellitus
-  image: images/heatmap.png
-  description: Developing spatiotemporal statistical and machine learning methods to analyse digital health data from wearable devices, CGM systems, and electronic health records, with the goal of mapping diabetes risk and metabolic control across space and time.
-
-
 - title: Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project
   image: images/AEGIScoeffunct.png
   description: Developing statistical AI models to integrate multimodal digital health, medical imaging, genomic, and microbiome data from the Human Phenotyping Project, with applications to retinopathy risk, glucose metabolism, and functional digital health phenotypes.
 
+- title: Spatiotemporal Methods for Digital Epidemiology with Applications in Diabetes Mellitus
+  image: images/heatmap.png
+  description: Developing spatiotemporal statistical and machine learning methods to analyse digital health data from wearable devices, CGM systems, and electronic health records, with the goal of mapping diabetes risk and metabolic control across space and time.
 
 - title: Functional Distributional Biomarkers for Tracking ALS Disease Progression
   image: images/ALSfigure.jpeg
