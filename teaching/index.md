@@ -496,3 +496,11 @@ An opinion article from a national Spaish newspaper written by Marcos Matabuena.
 </div>
 
 ## Universal Literature for the Age of Artificial Intelligence and Beyond
+
+<div style="max-width: 800px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/finalteaching.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
