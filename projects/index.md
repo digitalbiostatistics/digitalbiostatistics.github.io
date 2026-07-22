@@ -246,14 +246,6 @@ This vision has been shaped by formative experiences, mentorship, and collaborat
 
 {% include section.html %}
 
-## Research Philosophy
-Five years ago, one of my most important mentors—and perhaps the person who has had the greatest influence on my life, aside from my mother and my high school teacher—told me, “Marcos, if you truly focus, you have the potential to become one of the best in the world.”
-
-Three years later, he shared another piece of advice that has stayed with me ever since: “Many statisticians take pride in the impact of their work, yet their contributions remain largely unknown within the biomedical community. You have a gift. You must develop models that truly matter.” 
-
-Four months ago, he reminded me once again that, if I remain focused, the sky is the limit. 
-
-His words have profoundly shaped my scientific ambitions, my approach to mentorship, and the way I support my team. Our central goal is to build upon the glucodensity framework and related statistical methodologies to help drive transformative advances in diabetes research and personalized nutrition. We seek to develop methods that are not only mathematically innovative, but also capable of changing how diseases are understood, monitored, prevented, and treated.
 
 ## Open Questions We Are Working to Solve
 
