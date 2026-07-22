@@ -336,9 +336,9 @@ translation_key: home
   </div>
 </section>
 
-<div style="max-width: 400px; margin: 40px auto 10px auto;">
+<div style="max-width: 700px; margin: 40px auto 10px auto;">
   <img
-    src="{{ '/images/final-logo-wearables.png' | relative_url }}"
+    src="{{ '/images/horizontalguy.png' | relative_url }}"
     alt=""
     style="width: 100%; display: block; border-radius: 4px;"
     >
