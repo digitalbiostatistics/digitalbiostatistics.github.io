@@ -416,7 +416,9 @@ produce tangible clinical and biomedical value.
   filter="!group"
   style="small"
 %}
-<div style="max-width: 800px; margin: 40px auto 10px auto;">
+
+## Digital Biostatistics
+<div style="max-width: 700px; margin: 40px auto 10px auto;">
   <img
     src="{{ '/images/coheteacolor.png' | relative_url }}"
     alt=""
