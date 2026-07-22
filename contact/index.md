@@ -45,3 +45,22 @@ that can make a difference and help define the digital future of healthcare.
   link="https://www.google.com/maps/search/?api=1&query=Mohamed+bin+Zayed+University+of+Artificial+Intelligence+Masdar+City+Abu+Dhabi"
 %}
 
+{% include section.html %}
+
+# Join us
+
+## PhD Opportunities in Digital Biostatistics
+
+**Current recruitment:** PhD students for Fall 2027
+
+**Institution:** Mohamed bin Zayed University of Artificial Intelligence
+
+**Possible program:** PhD in Computational Biology
+
+**Research areas:** statistical AI, digital biomarkers, functional and distributional data, uncertainty quantification, longitudinal health, genetics and multimodal biomedical data
+
+**Ideal background:** mathematics, statistics, computer science, biomedical engineering, bioinformatics or related fields
+
+**Funding:** full MBZUAI scholarship, monthly stipend, access to university accommodation, health insurance and UAE visa
+
+**How to apply:** official application plus a brief introductory email containing CV, transcripts, research interests and one representative project or paper.
