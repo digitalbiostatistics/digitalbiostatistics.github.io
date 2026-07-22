@@ -454,8 +454,6 @@ Over the next 10 to 15 years, we expect to witness advances that are difficult t
 
 The ultimate goal of our research is to develop a low-cost healthcare operations pipeline that optimizes the health of individuals and populations by combining biostatistics, digital health, and operations research.
 
-Since I was a child, my dream has been to help find cures for diseases. AI will contribute to the discovery of personalized drugs, reduce healthcare costs, and promote greater equality and more individualized prescribing.
-
 <div style="max-width: 560px; margin: 30px auto;">
   <iframe
     style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
@@ -895,7 +893,7 @@ The success of research depends on carefully selecting your team and  collaborat
           </div>
         </div>
       </article>
-
+      {% comment %}
       <article class="testimonial-slide">
         <div class="testimonial-card">
           <div class="testimonial-photo-wrapper">
@@ -919,7 +917,7 @@ The success of research depends on carefully selecting your team and  collaborat
           </div>
         </div>
       </article>
-
+      {% endcomment %}
       <article class="testimonial-slide">
         <div class="testimonial-card">
           <div class="testimonial-photo-wrapper">
@@ -943,7 +941,7 @@ The success of research depends on carefully selecting your team and  collaborat
           </div>
         </div>
       </article>
-
+      {% comment %}
       <article class="testimonial-slide">
         <div class="testimonial-card">
           <div class="testimonial-photo-wrapper">
@@ -971,7 +969,7 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
           </div>
         </div>
       </article>
-
+    {% endcomment %}
     </div>
   </div>
 
@@ -1005,27 +1003,28 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
       data-slide="1"
       aria-label="Show testimonial 2"
     ></button>
-
+    {% comment %}
     <button
       class="testimonial-dot"
       type="button"
       data-slide="2"
       aria-label="Show testimonial 3"
     ></button>
-
+    {% endcomment %}
     <button
       class="testimonial-dot"
       type="button"
       data-slide="3"
       aria-label="Show testimonial 4"
     ></button>
-
+    {% comment %}
     <button
       class="testimonial-dot"
       type="button"
       data-slide="4"
       aria-label="Show testimonial 5"
     ></button>
+    {% endcomment %}
   </div>
 </div>
 <script src="{{ '/assets/js/testimonials.js' | relative_url }}" defer></script>
