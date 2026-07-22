@@ -14,6 +14,14 @@ Marcos Matabuena is a Galician mathematician born in Santiago de Compostela. He 
 
 His interest in quantitative research applied to health began at an early age. At fifteen, while competing in athletics, he decided to study Mathematics, convinced that the future of sports-performance optimization would increasingly depend on the development of rigorous quantitative methods.
 
+<div style="max-width: 600px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/marcos-runner.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
+
 During the final year of his undergraduate studies, he developed an indirect methodology based on functional data analysis to predict maximal oxygen uptake. He also proposed a new formulation of the Banister model, one of the main mathematical models used to describe and predict changes in physical performance resulting from training and fatigue.
 
 During his master’s studies, he investigated new procedures for identifying the anaerobic threshold through the analysis of heart-rate variability. These early projects strengthened his interest in combining mathematics, statistics, and physiology to extract clinically and biologically meaningful information from complex signals.
