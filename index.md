@@ -452,7 +452,7 @@ Over the next 10 to 15 years, we expect to witness advances that are difficult t
 
 ## Our Ultimate Goal
 
-The ultimate goal of our research is to develop a low-cost healthcare operations pipeline that optimizes the health of individuals and populations by combining biostatistics, digital health, and operations research.
+Over the next ten years, our ultimate research goal is to develop a low-cost healthcare operations framework that improves health outcomes at both the individual and population levels by integrating biostatistics, digital health, and operations research.
 
 <div style="max-width: 560px; margin: 30px auto;">
   <iframe
@@ -519,7 +519,7 @@ Our current projects focus on developing a new generation of statistical AI meth
 
 {% capture text %}
 
-The success of research depends on carefully selecting your team and  collaborators. To move the field forward, surround yourself with people who are enthusiastic, motivated, and well-prepared.
+An interdisciplinary team working at the intersection of statistics, artificial intelligence, and biomedical research, with a global network of leading collaborators.
 
 {%
   include button.html
