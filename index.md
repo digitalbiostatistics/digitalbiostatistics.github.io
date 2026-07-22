@@ -245,6 +245,61 @@ translation_key: home
       background-size: 100% 100%;
     }
   }
+
+  .homepage-music {
+    display: flex;
+    justify-content: center;
+
+    margin: 24px auto;
+  }
+
+  .homepage-audio-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 11px 19px;
+
+    border: 1px solid rgba(84, 127, 157, 0.28);
+    border-radius: 999px;
+
+    background: rgba(255, 255, 255, 0.92);
+    color: #263b49;
+
+    box-shadow:
+      0 7px 20px rgba(32, 49, 60, 0.1);
+
+    font: inherit;
+    font-size: 0.92rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .homepage-audio-button:hover {
+    background: #f4f8fa;
+
+    box-shadow:
+      0 10px 25px rgba(32, 49, 60, 0.15);
+
+    transform: translateY(-1px);
+  }
+
+  .homepage-audio-button:focus-visible {
+    outline: 3px solid rgba(84, 127, 157, 0.45);
+    outline-offset: 3px;
+  }
+
+  .homepage-audio-icon {
+    width: 1em;
+    text-align: center;
+  }
 </style>
 
 <section
@@ -285,6 +340,40 @@ translation_key: home
 ## Welcome
 
 Welcome to the website of Marcos Matabuena’s research group.
+
+<div class="homepage-music">
+  <audio
+    id="homepage-audio"
+    preload="metadata"
+    loop
+  >
+    <source
+      src="{{ '/assets/flamenco.mp3' | relative_url }}"
+      type="audio/mpeg"
+    >
+    Your browser does not support audio playback.
+  </audio>
+
+  <button
+    id="homepage-audio-button"
+    class="homepage-audio-button"
+    type="button"
+    aria-label="Play background music"
+  >
+    <span class="homepage-audio-icon" aria-hidden="true">
+      ▶
+    </span>
+
+    <span class="homepage-audio-label">
+      Play music
+    </span>
+  </button>
+</div>
+
+<script
+  src="{{ '/assets/js/homepage-audio.js' | relative_url }}"
+  defer
+></script>
 
 Digital health has the potential to identify disease risks years—or even decades—before clinical symptoms emerge. Our mission is to develop the mathematical, statistical, and artificial intelligence methods needed to make this transformation possible, based on continuous-time information collected through modern medical devices. Ultimately, we aim to move beyond the treatment of disease toward the continuous, real-time optimization of individual and population health.
 <div style="max-width: 560px; margin: 30px auto;">
