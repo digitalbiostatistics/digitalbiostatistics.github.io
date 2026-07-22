@@ -9,6 +9,14 @@ nav:
 
 # Join us
 
+<div style="max-width: 800px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/joinus.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
+
 ## PhD Opportunities in Digital Biostatistics
 
 **Current recruitment:** PhD students for Fall 2027
@@ -25,6 +33,7 @@ nav:
 
 **How to apply:** official application plus a brief introductory email containing CV, transcripts, research interests and one representative project or paper.
 
+{% include section.html %}
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
 
 If you have ideas or problems where rigorous statistical methodology could

@@ -40,7 +40,7 @@ We are currently developing statistical and artificial intelligence methods for 
 
 To address these questions, our research brings together causal inference, survival analysis, conformal inference and uncertainty quantification, random-effects and multilevel models, generative AI, spatiotemporal modeling, functional data analysis, and statistical learning for non-Euclidean data and other complex data structures.Careful study design and computational scalability are essential to this vision. Our goal is to develop methods that are mathematically rigorous, computationally efficient, and practical enough to be used with large-scale biomedical resources such as the UK Biobank, the All of Us Research Program, the Human Phenotype Project, and NHANES.
 
-<div style="max-width: 500px; margin: 40px auto 10px auto;">
+<div style="max-width: 400px; margin: 40px auto 10px auto;">
   <img
     src="{{ '/images/HPP.png' | relative_url }}"
     alt=""
