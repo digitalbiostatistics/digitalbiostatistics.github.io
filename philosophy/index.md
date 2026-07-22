@@ -245,4 +245,23 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
       allowfullscreen>
     </iframe>
   </div>
+    <div class="dual-video">
+    <iframe
+      src="https://www.youtube.com/embed/D0-Z80q4e8A?si=cbw_Apbb-iRDx56R"
+      title="Spanish athlete inspiration 4"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <div class="dual-video">
+    <iframe
+      src="https://www.youtube.com/embed/xMewaufqszQ?si=ewo-rHgzkLVQtDLs" 
+      title="Spanish athlete inspiration 5"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen>
+    </iframe>
+  </div>
 </div>
