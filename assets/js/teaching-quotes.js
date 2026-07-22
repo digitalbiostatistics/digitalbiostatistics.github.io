@@ -114,7 +114,7 @@
 
       autoplayTimer = window.setInterval(
         nextSlide,
-        7000
+        2000
       );
     }
 
