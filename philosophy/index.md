@@ -203,7 +203,7 @@ Rafael Nadal and his coach, Toni Nadal, represent this philosophy particularly w
 
 {% include section.html %}
 
-## Historical Moments in Spanish Sport
+## Legendary and Inspirational Moments in Spanish Sports History
 
 <div class="dual-videos" markdown="0">
   <div class="dual-video">
