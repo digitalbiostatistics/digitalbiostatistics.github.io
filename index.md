@@ -336,7 +336,7 @@ translation_key: home
   </div>
 </section>
 
-<div style="max-width: 700px; margin: 40px auto 10px auto;">
+<div style="max-width: 900px; margin: 40px auto 10px auto;">
   <img
     src="{{ '/images/horizontalguy.png' | relative_url }}"
     alt=""
