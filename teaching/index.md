@@ -472,7 +472,7 @@ nav:
 
 **Oxford and Tomorrow’s Lesson: The Institution You Cannot See**
 
-An opinion article by Marcos Matabuena exploring how universities can remain relevant in the age of artificial intelligence by fostering interdisciplinary collaboration and preserving their role as living communities of people, knowledge, and ideas.
+An opinion article from a national Spaish newspaper written by Marcos Matabuena. It explores whether universities can remain relevant in the age of artificial intelligence.
 
 <div style="max-width: 600px; margin: 40px auto 10px auto;">
   <img
@@ -483,3 +483,14 @@ An opinion article by Marcos Matabuena exploring how universities can remain rel
 </div>
 
 <p>To read the original article, click <a href="https://www.lavozdegalicia.es/noticia/opinion/2025/06/01/oxford-leccion-manana-institucion-ves/0003_202506G1P18995.htm" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+** AI evolution in Medicine in the future **
+
+<p>To read the original article, click <a href="https://www.lavozdegalicia.es/noticia/lavozdelasalud/enfermedades/2025/04/03/marcos-matabuena-investigador-gallego-harvard-bill-gates-acaba-predecir-diez-anos-medicos-tendran-rol-bastante-diferente-actual/00031743692850087318685.htm" target="_blank" rel="noopener noreferrer">here</a>.</p>
+<div style="max-width: 600px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/lavozdegalicia2.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
