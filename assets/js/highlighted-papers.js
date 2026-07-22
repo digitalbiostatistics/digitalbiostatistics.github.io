@@ -17,11 +17,15 @@
     );
 
     const slides = Array.from(
-      slider.querySelectorAll(".highlighted-paper-slide")
+      slider.querySelectorAll(
+        ".highlighted-paper-slide"
+      )
     );
 
     const dots = Array.from(
-      slider.querySelectorAll(".highlighted-paper-dot")
+      slider.querySelectorAll(
+        ".highlighted-paper-dot"
+      )
     );
 
     const previousButton = slider.querySelector(
@@ -76,12 +80,20 @@
       dots.forEach(function (dot, dotIndex) {
         const active = dotIndex === currentIndex;
 
-        dot.classList.toggle("is-active", active);
+        dot.classList.toggle(
+          "is-active",
+          active
+        );
 
         if (active) {
-          dot.setAttribute("aria-current", "true");
+          dot.setAttribute(
+            "aria-current",
+            "true"
+          );
         } else {
-          dot.removeAttribute("aria-current");
+          dot.removeAttribute(
+            "aria-current"
+          );
         }
       });
     }
@@ -96,7 +108,10 @@
 
     function stopAutoplay() {
       if (autoplayTimer !== null) {
-        window.clearInterval(autoplayTimer);
+        window.clearInterval(
+          autoplayTimer
+        );
+
         autoplayTimer = null;
       }
     }
@@ -114,7 +129,7 @@
 
       autoplayTimer = window.setInterval(
         nextSlide,
-        2000
+        20000
       );
     }
 
@@ -140,14 +155,19 @@
     );
 
     dots.forEach(function (dot) {
-      dot.addEventListener("click", function () {
-        const index = Number(dot.dataset.slide);
+      dot.addEventListener(
+        "click",
+        function () {
+          const index = Number(
+            dot.dataset.slide
+          );
 
-        if (Number.isInteger(index)) {
-          showSlide(index);
-          restartAutoplay();
+          if (Number.isInteger(index)) {
+            showSlide(index);
+            restartAutoplay();
+          }
         }
-      });
+      );
     });
 
     viewport.addEventListener(
@@ -160,7 +180,9 @@
         stopAutoplay();
 
         if (viewport.setPointerCapture) {
-          viewport.setPointerCapture(event.pointerId);
+          viewport.setPointerCapture(
+            event.pointerId
+          );
         }
       }
     );
@@ -183,7 +205,8 @@
           return;
         }
 
-        const distance = currentX - startX;
+        const distance =
+          currentX - startX;
 
         isDragging = false;
 
@@ -197,7 +220,9 @@
 
         if (
           viewport.hasPointerCapture &&
-          viewport.hasPointerCapture(event.pointerId)
+          viewport.hasPointerCapture(
+            event.pointerId
+          )
         ) {
           viewport.releasePointerCapture(
             event.pointerId
@@ -251,9 +276,10 @@
       previousButton.hidden = true;
       nextButton.hidden = true;
 
-      const dotsContainer = slider.querySelector(
-        ".highlighted-papers-dots"
-      );
+      const dotsContainer =
+        slider.querySelector(
+          ".highlighted-papers-dots"
+        );
 
       if (dotsContainer) {
         dotsContainer.hidden = true;
@@ -261,22 +287,26 @@
     }
 
     if ("IntersectionObserver" in window) {
-      const observer = new IntersectionObserver(
-        function (entries) {
-          entries.forEach(function (entry) {
-            isVisible = entry.isIntersecting;
+      const observer =
+        new IntersectionObserver(
+          function (entries) {
+            entries.forEach(
+              function (entry) {
+                isVisible =
+                  entry.isIntersecting;
 
-            if (isVisible) {
-              startAutoplay();
-            } else {
-              stopAutoplay();
-            }
-          });
-        },
-        {
-          threshold: 0.3
-        }
-      );
+                if (isVisible) {
+                  startAutoplay();
+                } else {
+                  stopAutoplay();
+                }
+              }
+            );
+          },
+          {
+            threshold: 0.3
+          }
+        );
 
       observer.observe(slider);
     } else {

@@ -696,6 +696,10 @@
 
 <p>Although many methods published in leading statistics and machine learning journals are technically sound, they are not always designed with the complexities of real-world clinical data in mind. Our research therefore starts from concrete biomedical questions and practical challenges. We develop methods that reflect the structure of the data, the realities of clinical practice, and the decisions that clinicians, patients, and healthcare systems need to make.</p>
 
+<div style="max-width: 700px; margin: 40px auto 10px auto;">
+  <img src="/images/cluster.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
+</div>
+
 <h2 id="seven-pillars-of-our-group-in-digital-health">Seven Pillars of Our Group in Digital Health</h2>
 <p>These seven papers represent, in my view, a real methodological and conceptual advance for the field of digital health.</p>
 
@@ -720,19 +724,24 @@
     --highlighted-accent: #547f9d;
 
     position: relative;
+
     width: 100%;
-    max-width: 1050px;
-    margin: 40px auto 70px;
-    padding: 0 34px;
+    max-width: 900px;
+
+    margin: 40px auto 65px;
+    padding: 0 38px;
+
     box-sizing: border-box;
   }
 
   .highlighted-papers-viewport {
     width: 100%;
     overflow: hidden;
-    border-radius: var(--rounded);
-    touch-action: pan-y;
+
+    border-radius: var(--rounded, 8px);
+
     cursor: grab;
+    touch-action: pan-y;
   }
 
   .highlighted-papers-viewport:active {
@@ -742,58 +751,174 @@
   .highlighted-papers-track {
     display: flex !important;
     align-items: stretch !important;
+
     width: 100%;
+
     transition:
       transform 0.6s
       cubic-bezier(0.22, 1, 0.36, 1);
+
     will-change: transform;
   }
 
   .highlighted-paper-slide {
     display: flex !important;
     align-items: stretch !important;
+
     flex: 0 0 100% !important;
+
     width: 100% !important;
     min-width: 100% !important;
-    padding: 14px 14px 32px;
+
+    padding: 10px;
+
     box-sizing: border-box;
   }
 
-  .highlighted-paper-slide
-    .citation-container {
+  .highlighted-paper-card {
     display: flex;
+    flex-direction: column;
+
     width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border:
+      1px solid
+      rgba(84, 127, 157, 0.17);
+
+    border-radius: var(--rounded, 8px);
+
+    box-shadow:
+      0 14px 38px
+      rgba(32, 49, 60, 0.1);
   }
 
-  .highlighted-paper-slide .citation {
-    flex: 1 1 auto;
+  /*
+    Esta caja siempre tiene la misma altura.
+    Así, el carrusel no crece ni se encoge aunque
+    los abstracts tengan dimensiones diferentes.
+  */
+  .highlighted-paper-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     width: 100%;
+    height: clamp(400px, 52vw, 560px);
+
+    padding: 20px 24px;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background: #f7f9fa;
+  }
+
+  /*
+    contain muestra el abstract completo:
+    no lo recorta y no lo deforma.
+  */
+  .highlighted-paper-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    background: #ffffff;
+  }
+
+  .highlighted-paper-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 190px;
+
+    padding: 24px 38px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-top:
+      1px solid
+      rgba(84, 127, 157, 0.13);
+
+    text-align: center;
+  }
+
+  .highlighted-paper-title {
+    max-width: 760px;
+
     margin: 0;
+
+    font-size:
+      clamp(
+        1.2rem,
+        2vw,
+        1.6rem
+      );
+
+    font-weight: 650;
+    line-height: 1.28;
+
+    color: #263b49;
+
+    text-wrap: balance;
+  }
+
+  .highlighted-paper-authors {
+    max-width: 730px;
+
+    margin: 15px 0 0;
+
+    font-size: 1rem;
+    line-height: 1.5;
+
+    color: #66757f;
+
+    text-wrap: balance;
   }
 
   .highlighted-paper-arrow {
     position: absolute;
-    top: 50%;
+    top: 45%;
     z-index: 5;
 
     display: grid;
     place-items: center;
 
-    width: 48px;
-    height: 48px;
+    width: 46px;
+    height: 46px;
+
     padding: 0;
 
-    border: 1px solid
+    border:
+      1px solid
       rgba(84, 127, 157, 0.22);
+
     border-radius: 50%;
 
     background: #ffffff;
     color: #263b49;
 
     box-shadow:
-      0 10px 28px rgba(32, 49, 60, 0.14);
+      0 9px 25px
+      rgba(32, 49, 60, 0.14);
 
-    font-size: 24px;
+    font-size: 27px;
     line-height: 1;
 
     cursor: pointer;
@@ -802,51 +927,54 @@
 
     transition:
       transform 0.2s ease,
-      box-shadow 0.2s ease,
-      background 0.2s ease;
+      background 0.2s ease,
+      box-shadow 0.2s ease;
   }
 
   .highlighted-paper-arrow:hover {
     background: #f4f8fa;
 
     box-shadow:
-      0 13px 32px rgba(32, 49, 60, 0.2);
+      0 12px 30px
+      rgba(32, 49, 60, 0.19);
 
     transform:
       translateY(-50%)
-      scale(1.08);
+      scale(1.06);
   }
 
   .highlighted-paper-arrow.previous {
-    left: 7px;
+    left: 8px;
   }
 
   .highlighted-paper-arrow.next {
-    right: 7px;
+    right: 8px;
   }
 
   .highlighted-papers-dots {
     display: flex !important;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
+    justify-content: center;
 
-    min-height: 22px;
-    margin-top: 24px;
+    gap: 9px;
+
+    min-height: 18px;
+    margin-top: 16px;
   }
 
   .highlighted-paper-dot {
     display: block;
 
-    width: 10px;
-    height: 10px;
-    padding: 0;
+    width: 9px;
+    height: 9px;
 
+    padding: 0;
     border: 0;
+
     border-radius: 999px;
 
     background: var(--highlighted-accent);
-    opacity: 0.28;
+    opacity: 0.25;
 
     cursor: pointer;
 
@@ -857,371 +985,287 @@
   }
 
   .highlighted-paper-dot.is-active {
-    width: 34px;
+    width: 30px;
     opacity: 1;
   }
 
   .highlighted-paper-dot:hover {
-    opacity: 0.75;
-    transform: scale(1.12);
+    opacity: 0.7;
+    transform: scale(1.1);
   }
 
   .highlighted-paper-arrow:focus-visible,
   .highlighted-paper-dot:focus-visible {
-    outline: 3px solid
-      rgba(84, 127, 157, 0.55);
+    outline:
+      3px solid
+      rgba(84, 127, 157, 0.5);
+
     outline-offset: 3px;
   }
 
   @media screen and (max-width: 768px) {
     .highlighted-papers-slider {
-      margin: 28px auto 60px;
+      max-width: 100%;
+
+      margin: 28px auto 50px;
       padding: 0 8px;
     }
 
     .highlighted-paper-slide {
-      padding: 10px 8px 28px;
+      padding: 6px;
+    }
+
+    .highlighted-paper-image {
+      height: 410px;
+      padding: 12px;
+    }
+
+    .highlighted-paper-information {
+      height: auto;
+      min-height: 185px;
+
+      padding: 24px 42px;
+    }
+
+    .highlighted-paper-title {
+      font-size: 1.15rem;
+    }
+
+    .highlighted-paper-authors {
+      margin-top: 12px;
+      font-size: 0.92rem;
     }
 
     .highlighted-paper-arrow {
-      width: 40px;
-      height: 40px;
-      font-size: 20px;
+      top: 43%;
+
+      width: 38px;
+      height: 38px;
+
+      font-size: 22px;
     }
 
     .highlighted-paper-arrow.previous {
-      left: 16px;
+      left: 14px;
     }
 
     .highlighted-paper-arrow.next {
-      right: 16px;
+      right: 14px;
+    }
+
+    .highlighted-papers-dots {
+      margin-top: 12px;
     }
   }
 
   @media screen and (max-width: 420px) {
+    .highlighted-paper-image {
+      height: 340px;
+      padding: 8px;
+    }
+
+    .highlighted-paper-information {
+      min-height: 190px;
+      padding: 22px 38px;
+    }
+
+    .highlighted-paper-title {
+      font-size: 1.02rem;
+    }
+
+    .highlighted-paper-authors {
+      font-size: 0.85rem;
+    }
+
     .highlighted-paper-arrow {
-      width: 36px;
-      height: 36px;
+      width: 34px;
+      height: 34px;
+
+      font-size: 20px;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .highlighted-papers-track {
+    .highlighted-papers-track,
+    .highlighted-paper-arrow,
+    .highlighted-paper-dot {
       transition: none;
     }
   }
 </style>
 
-<div id="highlighted-papers-slider" class="highlighted-papers-slider" aria-label="Highlighted publications" aria-roledescription="carousel">
+<div id="highlighted-papers-slider" class="highlighted-papers-slider" aria-label="Seven pillars publications" aria-roledescription="carousel">
   <div class="highlighted-papers-viewport">
     <div class="highlighted-papers-track">
-      
-        
 
+      
         <article class="highlighted-paper-slide" aria-hidden="false">
-          
+          <div class="highlighted-paper-card">
 
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/10.1038/s41598-025-18119-2" class="citation-image" aria-label="Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics">
-        <img src="/images/photo.jpg" alt="Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
+            <div class="highlighted-paper-image">
+              <img src="/images/highlighted/glucodensity-abstract.png" alt="Abstract of Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics" loading="eager" decoding="async">
+            </div>
 
-    <div class="citation-text">
-      
-      <i class="icon fa-solid fa-scroll"></i>
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics
+              </h3>
 
-      <a href="https://doi.org/10.1038/s41598-025-18119-2" class="citation-title">
-        Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics
-      </a>
+              <p class="highlighted-paper-authors">
+                Autores del artículo
+              </p>
+            </div>
 
-      <div class="citation-authors" tabindex="0">
-        Marcos Matabuena, Rahul Ghosal, Javier Enrique Aguilar, Ayya Keshet, Robert Wagner, Carmen Fernández Merino, Juan Sánchez Castro, Vadim Zipunnikov, Jukka-Pekka Onnela, Francisco Gude
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">Scientific Reports</span>
-         · 
-        <span class="citation-date">29 Sep 2025</span>
-         · 
-        <span class="citation-id">doi:10.1038/s41598-025-18119-2</span>
-      </div>
-
-     
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
+          </div>
         </article>
       
-        
-
         <article class="highlighted-paper-slide" aria-hidden="true">
-          
+          <div class="highlighted-paper-card">
 
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://doi.org/10.1214/26-AOAS2139" class="citation-image" aria-label="Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials">
-        <img src="/images/photo.jpg" alt="Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
+            <div class="highlighted-paper-image">
+              <img src="/images/highlighted/multilevel-abstract.png" alt="Abstract of Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials" loading="lazy" decoding="async">
+            </div>
 
-    <div class="citation-text">
-      
-      <i class="icon fa-solid fa-scroll"></i>
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials
+              </h3>
 
-      <a href="https://doi.org/10.1214/26-AOAS2139" class="citation-title">
-        Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials
-      </a>
+              <p class="highlighted-paper-authors">
+                Autores del artículo
+              </p>
+            </div>
 
-      <div class="citation-authors" tabindex="0">
-        Marcos Matabuena, Ciprian M. Crainiceanu
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">The Annals of Applied Statistics</span>
-         · 
-        <span class="citation-date">01 Mar 2026</span>
-         · 
-        <span class="citation-id">doi:10.1214/26-AOAS2139</span>
-      </div>
-
-     
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
+          </div>
         </article>
       
-        
-
         <article class="highlighted-paper-slide" aria-hidden="true">
-          
+          <div class="highlighted-paper-card">
 
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://arxiv.org/abs/2507.15741" class="citation-image" aria-label="Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces">
-        <img src="/images/photo.jpg" alt="Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
+            <div class="highlighted-paper-image">
+              <img src="/images/highlighted/conformal-abstract.png" alt="Abstract of Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces" loading="lazy" decoding="async">
+            </div>
 
-    <div class="citation-text">
-      
-      <i class="icon fa-solid fa-scroll"></i>
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces
+              </h3>
 
-      <a href="https://arxiv.org/abs/2507.15741" class="citation-title">
-        Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces
-      </a>
+              <p class="highlighted-paper-authors">
+                Autores del artículo
+              </p>
+            </div>
 
-      <div class="citation-authors" tabindex="0">
-        GÃ¡bor Lugosi, Marcos Matabuena
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">arXiv</span>
-         · 
-        <span class="citation-date">23 Jun 2026</span>
-         · 
-        <span class="citation-id">arxiv:2507.15741</span>
-      </div>
-
-     
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
+          </div>
         </article>
       
-        
-
         <article class="highlighted-paper-slide" aria-hidden="true">
-          
+          <div class="highlighted-paper-card">
 
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://arxiv.org/abs/2501.00212" class="citation-image" aria-label="Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model">
-        <img src="/images/photo.jpg" alt="Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
+            <div class="highlighted-paper-image">
+              <img src="/images/highlighted/denoising-abstract.png" alt="Abstract of Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model" loading="lazy" decoding="async">
+            </div>
 
-    <div class="citation-text">
-      
-      <i class="icon fa-solid fa-scroll"></i>
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model
+              </h3>
 
-      <a href="https://arxiv.org/abs/2501.00212" class="citation-title">
-        Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model
-      </a>
+              <p class="highlighted-paper-authors">
+                Autores del artículo
+              </p>
+            </div>
 
-      <div class="citation-authors" tabindex="0">
-        Mingyang Yi, Marcos Matabuena, Zhiming Ma, Ruoyu Wang
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">arXiv</span>
-         · 
-        <span class="citation-date">14 Jul 2026</span>
-         · 
-        <span class="citation-id">arxiv:2501.00212</span>
-      </div>
-
-     
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
+          </div>
         </article>
       
-        
-
         <article class="highlighted-paper-slide" aria-hidden="true">
-          
+          <div class="highlighted-paper-card">
 
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://arxiv.org/abs/2512.08179" class="citation-image" aria-label="Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces">
-        <img src="/images/photo.jpg" alt="Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
+            <div class="highlighted-paper-image">
+              <img src="/images/highlighted/paperdistributionalrandomforest.png" alt="Abstract of Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces" loading="lazy" decoding="async">
+            </div>
 
-    <div class="citation-text">
-      
-      <i class="icon fa-solid fa-scroll"></i>
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces
+              </h3>
 
-      <a href="https://arxiv.org/abs/2512.08179" class="citation-title">
-        Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces
-      </a>
+              <p class="highlighted-paper-authors">
+                Yating Zou, Marcos Matabuena, and Michael R. Kosorok
+              </p>
+            </div>
 
-      <div class="citation-authors" tabindex="0">
-        Yating Zou, Marcos Matabuena, Michael R. Kosorok
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">arXiv</span>
-         · 
-        <span class="citation-date">07 Jan 2026</span>
-         · 
-        <span class="citation-id">arxiv:2512.08179</span>
-      </div>
-
-     
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
+          </div>
         </article>
       
-        
-
         <article class="highlighted-paper-slide" aria-hidden="true">
-          
+          <div class="highlighted-paper-card">
 
-<div class="citation-container">
-  <div class="citation">
-    
-      <a href="https://arxiv.org/abs/2605.02693" class="citation-image" aria-label="Random-Effects Algorithm for Random Objects in Metric Spaces">
-        <img src="/images/photo.jpg" alt="Random-Effects Algorithm for Random Objects in Metric Spaces" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
-      </a>
-    
+            <div class="highlighted-paper-image">
+              <img src="/images/highlighted/random-effects-abstract.png" alt="Abstract of Random-Effects Algorithm for Random Objects in Metric Spaces" loading="lazy" decoding="async">
+            </div>
 
-    <div class="citation-text">
-      
-      <i class="icon fa-solid fa-scroll"></i>
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Random-Effects Algorithm for Random Objects in Metric Spaces
+              </h3>
 
-      <a href="https://arxiv.org/abs/2605.02693" class="citation-title">
-        Random-Effects Algorithm for Random Objects in Metric Spaces
-      </a>
+              <p class="highlighted-paper-authors">
+                Autores del artículo
+              </p>
+            </div>
 
-      <div class="citation-authors" tabindex="0">
-        Marcos Matabuena, Mateo CÃ¡mara
-
-      </div>
-
-      <div class="citation-details">
-        <span class="citation-publisher">arXiv</span>
-         · 
-        <span class="citation-date">05 May 2026</span>
-         · 
-        <span class="citation-id">arxiv:2605.02693</span>
-      </div>
-
-     
-        
-
-        
-
-        
-      
-    </div>
-  </div>
-</div>
-
+          </div>
         </article>
       
+        <article class="highlighted-paper-slide" aria-hidden="true">
+          <div class="highlighted-paper-card">
+
+            <div class="highlighted-paper-image">
+              <img src="/images/highlighted/random-effects-abstract.png" alt="Abstract of Random-Effects Algorithm for Random Objects in Metric Spaces" loading="lazy" decoding="async">
+            </div>
+
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Random-Effects Algorithm for Random Objects in Metric Spaces
+              </h3>
+
+              <p class="highlighted-paper-authors">
+                Autores del artículo
+              </p>
+            </div>
+
+          </div>
+        </article>
+      
+
     </div>
   </div>
 
   <button class="highlighted-paper-arrow previous" type="button" aria-label="Previous publication">
-    ❮
+    <span aria-hidden="true">‹</span>
   </button>
 
   <button class="highlighted-paper-arrow next" type="button" aria-label="Next publication">
-    ❯
+    <span aria-hidden="true">›</span>
   </button>
 
-  <div class="highlighted-papers-dots" aria-label="Choose highlighted publication">
+  <div class="highlighted-papers-dots" aria-label="Choose a publication">
     
-      <button class="highlighted-paper-dot is-active" type="button" data-slide="0" aria-label="Show highlighted publication 1" aria-current="true"></button>
+      <button class="highlighted-paper-dot is-active" type="button" data-slide="0" aria-label="Show publication 1" aria-current="true"></button>
     
-      <button class="highlighted-paper-dot" type="button" data-slide="1" aria-label="Show highlighted publication 2"></button>
+      <button class="highlighted-paper-dot" type="button" data-slide="1" aria-label="Show publication 2"></button>
     
-      <button class="highlighted-paper-dot" type="button" data-slide="2" aria-label="Show highlighted publication 3"></button>
+      <button class="highlighted-paper-dot" type="button" data-slide="2" aria-label="Show publication 3"></button>
     
-      <button class="highlighted-paper-dot" type="button" data-slide="3" aria-label="Show highlighted publication 4"></button>
+      <button class="highlighted-paper-dot" type="button" data-slide="3" aria-label="Show publication 4"></button>
     
-      <button class="highlighted-paper-dot" type="button" data-slide="4" aria-label="Show highlighted publication 5"></button>
+      <button class="highlighted-paper-dot" type="button" data-slide="4" aria-label="Show publication 5"></button>
     
-      <button class="highlighted-paper-dot" type="button" data-slide="5" aria-label="Show highlighted publication 6"></button>
+      <button class="highlighted-paper-dot" type="button" data-slide="5" aria-label="Show publication 6"></button>
+    
+      <button class="highlighted-paper-dot" type="button" data-slide="6" aria-label="Show publication 7"></button>
     
   </div>
 </div>
