@@ -12,12 +12,11 @@ nav:
     --teaching-quote-accent: #547f9d;
 
     position: relative;
-
     width: 100%;
-    max-width: 1050px;
+    max-width: 760px;
 
-    margin: 45px auto 70px;
-    padding: 0 42px;
+    margin: 25px auto 45px;
+    padding: 0 30px;
 
     box-sizing: border-box;
   }
@@ -58,7 +57,7 @@ nav:
     width: 100%;
     min-width: 100%;
 
-    padding: 12px;
+    padding: 6px;
 
     box-sizing: border-box;
   }
@@ -72,13 +71,12 @@ nav:
     justify-content: center;
 
     width: 100%;
-    min-height: 320px;
+    min-height: 190px;
 
     margin: 0;
-    padding: 65px 75px 55px;
+    padding: 32px 55px 27px;
 
     box-sizing: border-box;
-
     overflow: hidden;
 
     background:
@@ -95,19 +93,19 @@ nav:
     border-radius: var(--rounded);
 
     box-shadow:
-      0 16px 42px
-      rgba(32, 49, 60, 0.1);
+      0 10px 28px
+      rgba(32, 49, 60, 0.08);
 
     text-align: center;
   }
 
   .teaching-quote-mark {
     position: absolute;
-    top: 5px;
-    left: 32px;
+    top: 3px;
+    left: 20px;
 
     font-family: Georgia, serif;
-    font-size: 9rem;
+    font-size: 5rem;
     line-height: 1;
 
     color: var(--teaching-quote-accent);
@@ -121,14 +119,13 @@ nav:
     position: relative;
     z-index: 1;
 
-    max-width: 820px;
-
+    max-width: 620px;
     margin: 0;
 
     font-family: Georgia, serif;
-    font-size: clamp(1.6rem, 3vw, 2.45rem);
+    font-size: clamp(1.15rem, 2vw, 1.55rem);
     font-style: italic;
-    line-height: 1.45;
+    line-height: 1.4;
 
     color: #263b49;
 
@@ -139,11 +136,24 @@ nav:
     position: relative;
     z-index: 1;
 
-    margin-top: 30px;
+    display: block;
 
-    font-size: 1.05rem;
+    width: auto;
+    min-height: 0;
+
+    margin: 18px 0 0;
+    padding: 0;
+
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    font-size: 0.82rem;
     font-weight: 600;
     letter-spacing: 0.05em;
+    line-height: 1.3;
+    text-align: center;
     text-transform: uppercase;
 
     color: var(--teaching-quote-accent);
@@ -157,9 +167,8 @@ nav:
     display: grid;
     place-items: center;
 
-    width: 48px;
-    height: 48px;
-
+    width: 38px;
+    height: 38px;
     padding: 0;
 
     border:
@@ -172,10 +181,10 @@ nav:
     color: #263b49;
 
     box-shadow:
-      0 10px 28px
-      rgba(32, 49, 60, 0.14);
+      0 7px 20px
+      rgba(32, 49, 60, 0.12);
 
-    font-size: 24px;
+    font-size: 18px;
     line-height: 1;
 
     cursor: pointer;
@@ -192,20 +201,20 @@ nav:
     background: #f4f8fa;
 
     box-shadow:
-      0 13px 32px
-      rgba(32, 49, 60, 0.2);
+      0 10px 24px
+      rgba(32, 49, 60, 0.18);
 
     transform:
       translateY(-50%)
-      scale(1.08);
+      scale(1.06);
   }
 
   .teaching-quote-arrow.previous {
-    left: 15px;
+    left: 10px;
   }
 
   .teaching-quote-arrow.next {
-    right: 15px;
+    right: 10px;
   }
 
   .teaching-quotes-dots {
@@ -213,17 +222,17 @@ nav:
     align-items: center;
     justify-content: center;
 
-    gap: 10px;
+    gap: 8px;
 
-    min-height: 22px;
-    margin-top: 22px;
+    min-height: 16px;
+    margin-top: 12px;
   }
 
   .teaching-quote-dot {
     display: block;
 
-    width: 10px;
-    height: 10px;
+    width: 8px;
+    height: 8px;
 
     padding: 0;
     border: 0;
@@ -241,13 +250,13 @@ nav:
   }
 
   .teaching-quote-dot.is-active {
-    width: 34px;
+    width: 26px;
     opacity: 1;
   }
 
   .teaching-quote-dot:hover {
     opacity: 0.75;
-    transform: scale(1.12);
+    transform: scale(1.1);
   }
 
   .teaching-quote-arrow:focus-visible,
@@ -261,48 +270,80 @@ nav:
 
   @media screen and (max-width: 768px) {
     .teaching-quotes-slider {
-      margin: 30px auto 55px;
-      padding: 0 8px;
+      max-width: 100%;
+
+      margin: 22px auto 40px;
+      padding: 0 10px;
     }
 
     .teaching-quote-slide {
-      padding: 8px;
+      padding: 5px;
     }
 
     .teaching-quote-card {
-      min-height: 360px;
-      padding: 60px 35px 45px;
+      min-height: 220px;
+      padding: 35px 42px 28px;
     }
 
     .teaching-quote-mark {
-      top: 12px;
-      left: 22px;
+      top: 7px;
+      left: 17px;
 
-      font-size: 7rem;
+      font-size: 4.5rem;
     }
 
     .teaching-quote-text {
-      font-size: clamp(1.35rem, 6vw, 1.8rem);
+      font-size:
+        clamp(
+          1.05rem,
+          4.7vw,
+          1.35rem
+        );
+    }
+
+    .teaching-quote-author {
+      margin-top: 16px;
+      font-size: 0.75rem;
     }
 
     .teaching-quote-arrow {
-      width: 40px;
-      height: 40px;
+      width: 34px;
+      height: 34px;
 
-      font-size: 20px;
+      font-size: 16px;
     }
 
     .teaching-quote-arrow.previous {
-      left: 17px;
+      left: 12px;
     }
 
     .teaching-quote-arrow.next {
-      right: 17px;
+      right: 12px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .teaching-quote-card {
+      min-height: 235px;
+      padding: 38px 37px 27px;
+    }
+
+    .teaching-quote-text {
+      font-size: 1.05rem;
+    }
+
+    .teaching-quote-arrow {
+      width: 31px;
+      height: 31px;
+
+      font-size: 15px;
     }
   }
 
   @media (prefers-reduced-motion: reduce) {
-    .teaching-quotes-track {
+    .teaching-quotes-track,
+    .teaching-quote-arrow,
+    .teaching-quote-dot {
       transition: none;
     }
   }
@@ -336,9 +377,9 @@ nav:
               {{ item.quote }}
             </p>
 
-            <footer class="teaching-quote-author">
+            <p class="teaching-quote-author">
               — {{ item.author }}
-            </footer>
+            </p>
           </blockquote>
         </article>
       {% endfor %}

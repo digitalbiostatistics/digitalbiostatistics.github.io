@@ -416,5 +416,11 @@ produce tangible clinical and biomedical value.
   filter="!group"
   style="small"
 %}
-
+<div style="max-width: 800px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/coheteacolor.png' | relative_url }}"
+    alt=""
+    style="width: 100%; display: block; border-radius: 4px;"
+    >
+</div>
 </div>
