@@ -901,31 +901,7 @@ An interdisciplinary team working at the intersection of statistics, artificial 
           </div>
         </div>
       </article>
-      {% comment %}
-      <article class="testimonial-slide">
-        <div class="testimonial-card">
-          <div class="testimonial-photo-wrapper">
-            <img
-              class="testimonial-photo"
-              src="{{ '/images/rounakdey.jpg' | relative_url }}"
-              alt="Portrait of Rounak Dey"
-            >
-          </div>
 
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              Marcos is a brilliant researcher who brings incredible rigor, dedication, and innovation to every project. He excels at fostering meaningful collaborations and maintains an exceptionally high standard for his publications. It has been a pleasure working alongside him, and I wish him continued success throughout his promising career.
-            </p>
-
-            <p class="testimonial-name">Rounak Dey</p>
-
-            <p class="testimonial-role">
-              Staff Data Scientist at Insitro
-            </p>
-          </div>
-        </div>
-      </article>
-      {% endcomment %}
       <article class="testimonial-slide">
         <div class="testimonial-card">
           <div class="testimonial-photo-wrapper">
@@ -949,35 +925,6 @@ An interdisciplinary team working at the intersection of statistics, artificial 
           </div>
         </div>
       </article>
-      {% comment %}
-      <article class="testimonial-slide">
-        <div class="testimonial-card">
-          <div class="testimonial-photo-wrapper">
-            <img
-              class="testimonial-photo"
-              src="{{ '/images/elvis.jpg' | relative_url }}"
-              alt="Portrait of Elvis Han Cui"
-            >
-          </div>
-
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              Digital Biostatistics is not merely a website; it is a banner raised at the frontier of biomedical science.
-Health, in this vision, is no longer a frozen number recorded at a clinic visit. It becomes a living signal: continuous, wearable, longitudinal, uncertain, and deeply human.
-Marcos Matabuena’s work refuses the false choice between mathematical rigor and clinical imagination. Functional data analysis, causal inference, uncertainty quantification, digital biomarkers, and AI are brought together as instruments for reading the pulse of the future.
-As the Chinese saying goes, “观水有术，必观其澜” — to understand the river, one must watch its waves.
-For those who wish to know whither biostatistics goeth, this is a place well worth following.
-            </p>
-
-            <p class="testimonial-name">Elvis Han Cui</p>
-
-            <p class="testimonial-role">
-              Biostatistics PhD Student at UCLA Fielding School of Public Health
-            </p>
-          </div>
-        </div>
-      </article>
-    {% endcomment %}
     </div>
   </div>
 
@@ -1011,28 +958,6 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
       data-slide="1"
       aria-label="Show testimonial 2"
     ></button>
-    {% comment %}
-    <button
-      class="testimonial-dot"
-      type="button"
-      data-slide="2"
-      aria-label="Show testimonial 3"
-    ></button>
-    {% endcomment %}
-    <button
-      class="testimonial-dot"
-      type="button"
-      data-slide="3"
-      aria-label="Show testimonial 4"
-    ></button>
-    {% comment %}
-    <button
-      class="testimonial-dot"
-      type="button"
-      data-slide="4"
-      aria-label="Show testimonial 5"
-    ></button>
-    {% endcomment %}
   </div>
 </div>
 <script src="{{ '/assets/js/testimonials.js' | relative_url }}" defer></script>

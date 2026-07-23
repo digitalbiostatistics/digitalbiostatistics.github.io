@@ -27,6 +27,495 @@ nav:
 </p>
 {% include section.html %}
 
+## Testimonials
+
+<style>
+  .testimonials-slider {
+    --testimonial-accent: #547f9d;
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    margin: 40px auto 70px;
+    padding: 0 34px;
+    box-sizing: border-box;
+  }
+
+  .testimonials-viewport {
+    overflow: hidden;
+    border-radius: 28px;
+    touch-action: pan-y;
+    cursor: grab;
+  }
+
+  .testimonials-viewport:active {
+    cursor: grabbing;
+  }
+
+  .testimonials-track {
+    display: flex !important;
+    align-items: stretch !important;
+    width: 100%;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+
+  .testimonial-slide {
+    display: flex !important;
+    align-items: stretch !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box;
+
+    /* Espacio interior para que la sombra no sea recortada */
+    padding: 14px 14px 32px;
+  }
+
+  .testimonial-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    align-items: center;
+    gap: 44px;
+
+    width: 100%;
+    min-height: 390px;
+    padding: 46px 54px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+    border: 1px solid rgba(84, 127, 157, 0.18);
+    border-radius: 24px;
+
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(84, 127, 157, 0.12),
+        transparent 35%
+      ),
+      #ffffff;
+
+    box-shadow:
+      0 22px 35px rgba(32, 49, 60, 0.12),
+      0 5px 12px rgba(32, 49, 60, 0.07);
+
+    flex: 1 1 auto;
+  }
+
+  .testimonial-photo-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+  }
+
+  .testimonial-photo-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: -9px;
+    border: 2px solid rgba(84, 127, 157, 0.18);
+    border-radius: 50%;
+  }
+
+  .testimonial-photo {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #eef3f6;
+  }
+
+  .testimonial-content {
+    position: relative;
+    min-width: 0;
+  }
+
+  .testimonial-quote-mark {
+    position: absolute;
+    top: -32px;
+    left: -5px;
+    font-family: Georgia, serif;
+    font-size: 90px;
+    line-height: 1;
+    color: var(--testimonial-accent);
+    opacity: 0.16;
+    pointer-events: none;
+  }
+
+  .testimonial-text {
+    position: relative;
+    margin: 0 0 26px;
+    font-size: 1.06rem;
+    line-height: 1.75;
+  }
+
+  .testimonial-name {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 750;
+  }
+
+  .testimonial-role {
+    margin: 6px 0 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    opacity: 0.68;
+  }
+
+  .testimonial-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 1px solid rgba(84, 127, 157, 0.22);
+    border-radius: 50%;
+    background: #ffffff;
+    color: #263b49;
+    box-shadow: 0 10px 28px rgba(32, 49, 60, 0.14);
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .testimonial-arrow:hover {
+    background: #f4f8fa;
+    box-shadow: 0 13px 32px rgba(32, 49, 60, 0.2);
+    transform: translateY(-50%) scale(1.08);
+  }
+
+  .testimonial-arrow.previous {
+    left: 7px;
+  }
+
+  .testimonial-arrow.next {
+    right: 7px;
+  }
+
+  .testimonial-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 22px;
+    margin-top: 24px;
+  }
+
+  .testimonial-dot {
+    width: 10px;
+    height: 10px;
+    display: block;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: var(--testimonial-accent);
+    opacity: 0.28;
+    cursor: pointer;
+    transition:
+      width 0.3s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .testimonial-dot.is-active {
+    width: 34px;
+    opacity: 1;
+  }
+
+  .testimonial-dot:hover {
+    opacity: 0.75;
+    transform: scale(1.12);
+  }
+
+  .testimonial-arrow:focus-visible,
+  .testimonial-dot:focus-visible {
+    outline: 3px solid rgba(84, 127, 157, 0.55);
+    outline-offset: 3px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .testimonials-slider {
+      margin: 28px auto 60px;
+      padding: 0 8px;
+    }
+
+    .testimonial-card {
+      grid-template-columns: 1fr;
+      align-content: center;
+      gap: 27px;
+      min-height: 540px;
+      padding: 38px 25px 42px;
+      text-align: center;
+    }
+
+    .testimonial-photo-wrapper,
+    .testimonial-photo {
+      width: 132px;
+      height: 132px;
+    }
+
+    .testimonial-content {
+      padding-top: 12px;
+    }
+
+    .testimonial-quote-mark {
+      top: -28px;
+      left: 50%;
+      font-size: 72px;
+      transform: translateX(-50%);
+    }
+
+    .testimonial-text {
+      margin-bottom: 22px;
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
+
+    .testimonial-arrow {
+      top: 120px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .testimonial-arrow.previous {
+      left: 16px;
+    }
+
+    .testimonial-arrow.next {
+      right: 16px;
+    }
+
+    .testimonial-slide {
+      padding: 10px 8px 28px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .testimonial-card {
+      min-height: 570px;
+      padding-right: 19px;
+      padding-left: 19px;
+    }
+
+    .testimonial-photo-wrapper,
+    .testimonial-photo {
+      width: 112px;
+      height: 112px;
+    }
+
+    .testimonial-arrow {
+      top: 105px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .testimonials-track {
+      transition: none;
+    }
+  }
+</style>
+
+<div
+  class="testimonials-slider"
+  id="testimonials-slider"
+  aria-label="Testimonials"
+>
+  <div class="testimonials-viewport">
+    <div class="testimonials-track">
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/yating.jpeg' | relative_url }}"
+              alt="Portrait of Yating Zou"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Marcos is an remarkably sharp, enthusiastic collaborator who stays closely attuned to the literature and is quick to connect ideas across problems. He thinks fast, engages directly, and brings genuine commitment to statistically principled work grounded in real, important biomedical questions. Beyond the research, he has been a great friend and a source of real support in my own scientific journey. I’m sure he’ll accomplish great things, and I look forward to continuing our work together at the intersection of statistical methodology and digital health!
+            </p>
+
+            <p class="testimonial-name">Yating Zou</p>
+
+            <p class="testimonial-role">
+              Biostatistics PhD Student at UNC-CH
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/cris.png' | relative_url }}"
+              alt="Portrait of Cristina Correa"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Marcos has been an amazing supervisor and, honestly, one of the most positive influences on my academic career so far. He is incredibly hardworking and someone I really look up to. He has opened my eyes to opportunities I had never considered before and encouraged me to be more ambitious in both my research and my academic career. Having him as a mentor has made me a much better researcher, and I feel very lucky to be part of his research lab.
+            </p>
+
+            <p class="testimonial-name">Cristina Correa</p>
+
+            <p class="testimonial-role">
+              Computational Biology Master Student at MBZUAI
+            </p>
+          </div>
+        </div>
+      </article>
+      {% comment %}
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/rounakdey.jpg' | relative_url }}"
+              alt="Portrait of Rounak Dey"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Marcos is a brilliant researcher who brings incredible rigor, dedication, and innovation to every project. He excels at fostering meaningful collaborations and maintains an exceptionally high standard for his publications. It has been a pleasure working alongside him, and I wish him continued success throughout his promising career.
+            </p>
+
+            <p class="testimonial-name">Rounak Dey</p>
+
+            <p class="testimonial-role">
+              Staff Data Scientist at Insitro
+            </p>
+          </div>
+        </div>
+      </article>
+      {% endcomment %}
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/antonio.png' | relative_url }}"
+              alt="Portrait of Antonio Álvarez"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              In the highly competitive world of science, Marcos stands out for his human approach. He puts personal relationships first, as reflected in the exceptional care he shows the many people in his network of collaborators. I have known him for several years, and over the past eighteen months we have written two papers together—one of which received an award—, an experience that has only reinforced my admiration for his dedication and teamwork. Marcos works tirelessly toward an ambitious and meaningful goal that goes far beyond mathematics: making a positive impact on society through the statistical and AI methods he develops for digital health. He is a brilliant researcher and a collaborator you can always count on.
+            </p>
+
+            <p class="testimonial-name">Antonio Álvarez</p>
+
+            <p class="testimonial-role">
+              Postdoc at Nanyang Technological University
+            </p>
+          </div>
+        </div>
+      </article>
+      {% comment %}
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img
+              class="testimonial-photo"
+              src="{{ '/images/elvis.jpg' | relative_url }}"
+              alt="Portrait of Elvis Han Cui"
+            >
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Digital Biostatistics is not merely a website; it is a banner raised at the frontier of biomedical science.
+Health, in this vision, is no longer a frozen number recorded at a clinic visit. It becomes a living signal: continuous, wearable, longitudinal, uncertain, and deeply human.
+Marcos Matabuena’s work refuses the false choice between mathematical rigor and clinical imagination. Functional data analysis, causal inference, uncertainty quantification, digital biomarkers, and AI are brought together as instruments for reading the pulse of the future.
+As the Chinese saying goes, “观水有术，必观其澜” — to understand the river, one must watch its waves.
+For those who wish to know whither biostatistics goeth, this is a place well worth following.
+            </p>
+
+            <p class="testimonial-name">Elvis Han Cui</p>
+
+            <p class="testimonial-role">
+              Biostatistics PhD Student at UCLA Fielding School of Public Health
+            </p>
+          </div>
+        </div>
+      </article>
+    {% endcomment %}
+    </div>
+  </div>
+
+  <button
+    class="testimonial-arrow previous"
+    type="button"
+    aria-label="Previous testimonial"
+  >
+    &#10094;
+  </button>
+
+  <button
+    class="testimonial-arrow next"
+    type="button"
+    aria-label="Next testimonial"
+  >
+    &#10095;
+  </button>
+
+  <div class="testimonial-dots" aria-label="Choose a testimonial">
+    <button
+      class="testimonial-dot is-active"
+      type="button"
+      data-slide="0"
+      aria-label="Show testimonial 1"
+    ></button>
+
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="1"
+      aria-label="Show testimonial 2"
+    ></button>
+    {% comment %}
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="2"
+      aria-label="Show testimonial 3"
+    ></button>
+    {% endcomment %}
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="3"
+      aria-label="Show testimonial 4"
+    ></button>
+    {% comment %}
+    <button
+      class="testimonial-dot"
+      type="button"
+      data-slide="4"
+      aria-label="Show testimonial 5"
+    ></button>
+    {% endcomment %}
+  </div>
+</div>
+<script src="{{ '/assets/js/testimonials.js' | relative_url }}" defer></script>
+
 ## Collaborators MBZUAI
 
 <div style="width: 100%; text-align: center;">
