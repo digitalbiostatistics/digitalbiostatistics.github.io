@@ -27,7 +27,13 @@ While en route, the device continuously transmits vital patient data, enabling d
 ## Our Mission and Vision
 
 Our long-term goal is to build a healthcare decision-making framework that supports better clinical and public health decisions at both the individual and population levels by combining biostatistics, digital health technologies, and operations research.
- 
+ <div style="max-width: 500px; margin: 40px auto 10px auto;">
+  <img
+    src="{{ '/images/missingdata.gif' | relative_url }}"
+    alt="Animation illustrating missing smartphone data"
+    style="width: 100%; display: block; border-radius: 4px;"
+  >
+</div>
 We are currently developing statistical and artificial intelligence methods for complex clinical problems involving continuous, high-frequency, and real-time health data. We want these methods not only to answer existing medical questions, but also to help identify the questions that matter most. What diet is best for a particular person? How much physical activity does someone need to support healthy aging and longevity? How should these recommendations change according to an individual’s clinical profile, biology, environment, and lifestyle?
  
 <div style="max-width: 700px; margin: 40px auto 10px auto;">
