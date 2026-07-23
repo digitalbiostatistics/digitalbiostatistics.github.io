@@ -656,6 +656,43 @@
 
   <section class="background" data-size="page">
     <style>
+  .image-video-row {
+  max-width: 1100px;
+  margin: 40px auto 10px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+}
+
+.image-video-item {
+  width: 100%;
+}
+
+.image-video-item img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+.video-wrapper {
+  aspect-ratio: 16 / 9;
+}
+
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* En móvil se colocan uno debajo del otro */
+@media (max-width: 750px) {
+  .image-video-row {
+    grid-template-columns: 1fr;
+  }
+}
   .teaching-quotes-slider {
     --teaching-quote-accent: #547f9d;
 
@@ -1094,6 +1131,51 @@
 </div>
 
 <script src="/assets/js/teaching-quotes.js" defer></script>
+
+<h2 id="the-university-medicine-and-digital-biostatistics-in-the-age-of-artificial-intelligence">The University, Medicine, and Digital Biostatistics in the Age of Artificial Intelligence</h2>
+
+<p>Higher education institutions emerged centuries ago as centers for preserving, organizing, and transmitting knowledge. For centuries, their authority rested on the interpretation of established texts, traditions, and bodies of knowledge. The arrival of the printing press gradually transformed this model by expanding access to ideas, while the Scientific Revolution and the critical thinking of the Enlightenment, represented by authors such as David Hume, broadened the boundaries of intellectual freedom and challenged absolute dependence on authority.</p>
+
+<p>During the nineteenth and twentieth centuries, the modern research university emerged, initially in Europe and later with extraordinary strength in the United States. The mission of the university was no longer limited to transmitting accumulated knowledge; it also began to include the systematic production of new discoveries. Laboratories, doctoral programs, scientific journals, and collaborations among universities, governments, and industry turned higher education into one of the principal engines of the scientific, medical, and technological revolutions that shaped modern society.</p>
+
+<p>In the age of artificial intelligence, the university will need to reinvent itself once again if it wishes to remain relevant. Many professors regard the incorporation of these technologies into education with concern. Yet artificial intelligence is not destroying a fully effective system. It is making the limitations of an educational model designed during an era of information scarcity increasingly visible. Too often, this model continues to prioritize memorization, uniformity, and hierarchy over creativity, collaboration, individual talent, and the search for solutions to society’s most important problems.</p>
+
+<p>Educators such as Ken Robinson argued that children are naturally curious, imaginative, and willing to experiment, but that conventional educational systems can gradually weaken these qualities by penalizing mistakes, rewarding conformity, and prioritizing standardized forms of achievement. In his view, creativity is not a rare talent possessed by a small minority, but a fundamental human capacity that education should identify and cultivate. With the arrival of artificial intelligence, this criticism has acquired renewed relevance.</p>
+
+<p>These technologies can extend individual capabilities, personalize learning, and allow people anywhere in the world to access knowledge, tools, and opportunities that were once available only to a minority. They may also help students explore ideas at their own pace, receive individualized support, and develop talents that do not fit easily within traditional educational structures. However, this potential will be realized only if inequalities in access are reduced and people are taught to use artificial intelligence critically, rigorously, responsibly, and with a clear awareness of its limitations.</p>
+
+<p>Education will change profoundly throughout the world. Its mission can no longer be limited to transmitting content that can now be retrieved almost instantly. It must teach people to formulate important questions, evaluate evidence critically, distinguish information from knowledge, integrate disciplines, reason under uncertainty, and use artificial intelligence with creativity and responsibility. The value of the university will not lie solely in providing information, but in building communities capable of interpreting knowledge, questioning it, producing new ideas, and using them to transform reality.</p>
+
+<p>This evolution will be especially important in biomedicine. Artificial intelligence can already analyze enormous volumes of information, identify complex patterns, and support scientific research and clinical decision-making. However, increasingly powerful predictive systems will not, by themselves, solve the major problems of medicine. We must also decide which questions should be asked, which data should be collected, which outcomes are clinically meaningful, and how predictions should be translated into safe and effective decisions for patients and populations.</p>
+
+<p>Medical education must evolve in two complementary directions. On the one hand, it will need to incorporate statistics, artificial intelligence, data science, study design, causal inference, uncertainty quantification, and other quantitative methods more deeply into the curriculum. These foundations will be essential for understanding contemporary medicine. On the other hand, medical education must place even greater emphasis on communication, empathy, ethics, attentive listening, and human care. The more powerful technology becomes, the more important it will be to remember that medicine is not merely about predicting disease, but also about understanding, accompanying, and caring for people.</p>
+
+<p>In biomedicine, this new form of education will require a discipline capable of connecting artificial intelligence, statistics, study design, uncertainty quantification, clinical knowledge, and decision-making. This integration lies at the heart of what we understand as <strong> Digital Biostatistics </strong>.</p>
+
+<p>We must therefore distinguish clearly between the decisions that should remain under human responsibility and the tasks that may be entrusted to artificial intelligence systems. Such delegation will be legitimate only when we retain a sufficient understanding of how the algorithms work, what information they use, which assumptions they rely on, where their limitations lie, and what consequences their errors may produce. It is not enough for a system to generate an apparently accurate prediction. We must also be able to assess its reliability, its uncertainty, its potential biases, and its ability to generalize across different individuals, hospitals, and clinical settings.</p>
+
+<p>Ethical regulation will be indispensable, but it will not be sufficient. General principles, legal frameworks, and administrative standards must be accompanied by a mathematical, statistical, and clinical understanding of the systems being used. We cannot responsibly govern a technology that we do not understand. Human oversight should not consist merely of accepting or rejecting an algorithmic recommendation. It should involve understanding the evidence that supports it, recognizing when the system may fail, and identifying when a decision requires clinical experience, contextual interpretation, or direct dialogue with the patient.</p>
+
+<p>This transformation will require new university curricula and the continuous education of thousands of professionals already working in medicine, research, public administration, and industry. Educating a new generation of students will not be enough. We will also need to update the knowledge of those who currently make decisions and create teams capable of integrating clinical experience, mathematics, statistics, computer science, the social sciences, and knowledge of healthcare systems.</p>
+
+<p>In this context, biostatistics must assume a broader role. It can no longer be limited to the retrospective analysis of clinical studies or conventional databases. It must contribute to the design, analysis, statistical inference, and clinical translation of continuous, longitudinal, multimodal data generated by digital technologies. It must also connect with artificial intelligence and operations research to transform predictions into medical decisions that are reliable, transparent, and genuinely useful.</p>
+
+<p>Artificial intelligence should not diminish the importance of the university, medicine, or the human being. It should compel us to redefine them and orient them toward something genuinely useful, creative, and transformative. Its greatest contribution will not be to think in our place, but to allow us to dedicate more time to what remains profoundly human: formulating questions, exercising judgment, understanding others, speaking with patients, collaborating across disciplines, and deciding what kind of future we want to build. Above all, it should help us identify, develop, and empower human talent wherever it may be found.</p>
+
+<div class="image-video-row">
+
+  <!-- Imagen izquierda -->
+  <div class="image-video-item">
+    <img src="/images/marcosbb.png" alt="Marcos">
+  </div>
+
+  <!-- Vídeo derecha -->
+  <div class="image-video-item video-wrapper">
+    <iframe src="https://www.youtube.com/embed/iG9CE55wbtY?si=XiBwjeYgg20yBMBu" title="YouTube video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
+    </iframe>
+  </div>
+
+</div>
 
 <div style="max-width: 600px; margin: 40px auto 10px auto;">
   <img src="/images/marcosbb.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
