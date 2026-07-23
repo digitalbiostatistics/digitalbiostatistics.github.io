@@ -85,6 +85,21 @@ nav:
     box-sizing: border-box;
   }
 
+  .single-video {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto 10px auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .single-video iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border: 0;
+    border-radius: 4px;
+  }
+
   .teaching-quotes-viewport {
     width: 100%;
     overflow: hidden;
@@ -504,17 +519,38 @@ In the age of artificial intelligence, the university will need to reinvent itse
 
 Educators such as Ken Robinson argued that children are naturally curious, imaginative, and willing to experiment, but that conventional educational systems can gradually weaken these qualities by penalizing mistakes, rewarding conformity, and prioritizing standardized forms of achievement. In his view, creativity is not a rare talent possessed by a small minority, but a fundamental human capacity that education should identify and cultivate. With the arrival of artificial intelligence, this criticism has acquired renewed relevance.
 
+<div class="image-video-row">
 
-These technologies can extend individual capabilities, personalize learning, and allow people anywhere in the world to access knowledge, tools, and opportunities that were once available only to a minority. They may also help students explore ideas at their own pace, receive individualized support, and develop talents that do not fit easily within traditional educational structures. However, this potential will be realized only if inequalities in access are reduced and people are taught to use artificial intelligence critically, rigorously, responsibly, and with a clear awareness of its limitations.
+  <!-- Imagen izquierda -->
+  <div class="image-video-item">
+    <img
+      src="{{ '/images/marcosbb.png' | relative_url }}"
+      alt="Marcos"
+    >
+  </div>
 
-<div class="video-box">
+  <!-- Vídeo derecha -->
+  <div class="image-video-item video-wrapper">
     <iframe
-      src="https://www.youtube.com/embed/hJP5GqnTrNo?si=6rybGNFYlLZzuxPs"
-      title="Video left"
+      src="https://www.youtube.com/embed/iG9CE55wbtY?si=XiBwjeYgg20yBMBu"
+      title="YouTube video"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen>
     </iframe>
   </div>
+
+</div>
+
+These technologies can extend individual capabilities, personalize learning, and allow people anywhere in the world to access knowledge, tools, and opportunities that were once available only to a minority. They may also help students explore ideas at their own pace, receive individualized support, and develop talents that do not fit easily within traditional educational structures. However, this potential will be realized only if inequalities in access are reduced and people are taught to use artificial intelligence critically, rigorously, responsibly, and with a clear awareness of its limitations.
+
+<div class="single-video">
+  <iframe
+    src="https://www.youtube.com/embed/hJP5GqnTrNo?si=6rybGNFYlLZzuxPs"
+    title="YouTube video"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
 
 Education will change profoundly throughout the world. Its mission can no longer be limited to transmitting content that can now be retrieved almost instantly. It must teach people to formulate important questions, evaluate evidence critically, distinguish information from knowledge, integrate disciplines, reason under uncertainty, and use artificial intelligence with creativity and responsibility. The value of the university will not lie solely in providing information, but in building communities capable of interpreting knowledge, questioning it, producing new ideas, and using them to transform reality.
 
@@ -566,27 +602,6 @@ In this context, biostatistics must assume a broader role. It can no longer be l
 
 Artificial intelligence should not diminish the importance of the university, medicine, or the human being. It should compel us to redefine them and orient them toward something genuinely useful, creative, and transformative. Its greatest contribution will not be to think in our place, but to allow us to dedicate more time to what remains profoundly human: formulating questions, exercising judgment, understanding others, speaking with patients, collaborating across disciplines, and deciding what kind of future we want to build. Above all, it should help us identify, develop, and empower human talent wherever it may be found.
 
-<div class="image-video-row">
-
-  <!-- Imagen izquierda -->
-  <div class="image-video-item">
-    <img
-      src="{{ '/images/marcosbb.png' | relative_url }}"
-      alt="Marcos"
-    >
-  </div>
-
-  <!-- Vídeo derecha -->
-  <div class="image-video-item video-wrapper">
-    <iframe
-      src="https://www.youtube.com/embed/iG9CE55wbtY?si=XiBwjeYgg20yBMBu"
-      title="YouTube video"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-</div>
 
 
 {% include section.html %}
