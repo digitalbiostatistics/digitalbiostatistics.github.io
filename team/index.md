@@ -380,7 +380,7 @@ nav:
           </div>
         </div>
       </article>
-      {% comment %}
+
       <article class="testimonial-slide">
         <div class="testimonial-card">
           <div class="testimonial-photo-wrapper">
@@ -404,7 +404,7 @@ nav:
           </div>
         </div>
       </article>
-      {% endcomment %}
+
       <article class="testimonial-slide">
         <div class="testimonial-card">
           <div class="testimonial-photo-wrapper">
@@ -428,7 +428,7 @@ nav:
           </div>
         </div>
       </article>
-      {% comment %}
+
       <article class="testimonial-slide">
         <div class="testimonial-card">
           <div class="testimonial-photo-wrapper">
@@ -456,7 +456,6 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
           </div>
         </div>
       </article>
-    {% endcomment %}
     </div>
   </div>
 
@@ -490,28 +489,24 @@ For those who wish to know whither biostatistics goeth, this is a place well wor
       data-slide="1"
       aria-label="Show testimonial 2"
     ></button>
-    {% comment %}
     <button
       class="testimonial-dot"
       type="button"
       data-slide="2"
       aria-label="Show testimonial 3"
     ></button>
-    {% endcomment %}
     <button
       class="testimonial-dot"
       type="button"
       data-slide="3"
       aria-label="Show testimonial 4"
     ></button>
-    {% comment %}
     <button
       class="testimonial-dot"
       type="button"
       data-slide="4"
       aria-label="Show testimonial 5"
     ></button>
-    {% endcomment %}
   </div>
 </div>
 <script src="{{ '/assets/js/testimonials.js' | relative_url }}" defer></script>
