@@ -472,10 +472,6 @@ We are pioneering the use of non-Euclidean statistical methods to define a new g
   text=text
 %}
 
-{% capture text %}
-
-Our current projects focus on developing a new generation of statistical AI methods capable of transforming the vast amounts of information collected by digital devices into clinically meaningful knowledge. We aim to demonstrate, through real-world medical problems, how these methods can produce tangible advances in clinical research and practice.
-
 ### Our Seven Pillars for Advancing Digital Health Research and Healthcare Decision-Making
 
 <style>
@@ -933,6 +929,10 @@ Our current projects focus on developing a new generation of statistical AI meth
   src="{{ '/assets/js/highlighted-papers.js' | relative_url }}"
   defer
 ></script>
+
+{% capture text %}
+
+Our current projects focus on developing a new generation of statistical AI methods capable of transforming the vast amounts of information collected by digital devices into clinically meaningful knowledge. We aim to demonstrate, through real-world medical problems, how these methods can produce tangible advances in clinical research and practice.
 
 {%
   include button.html
