@@ -507,6 +507,14 @@ Educators such as Ken Robinson argued that children are naturally curious, imagi
 
 These technologies can extend individual capabilities, personalize learning, and allow people anywhere in the world to access knowledge, tools, and opportunities that were once available only to a minority. They may also help students explore ideas at their own pace, receive individualized support, and develop talents that do not fit easily within traditional educational structures. However, this potential will be realized only if inequalities in access are reduced and people are taught to use artificial intelligence critically, rigorously, responsibly, and with a clear awareness of its limitations.
 
+<div class="video-box">
+    <iframe
+      src="https://www.youtube.com/embed/hJP5GqnTrNo?si=6rybGNFYlLZzuxPs"
+      title="Video left"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
 
 Education will change profoundly throughout the world. Its mission can no longer be limited to transmitting content that can now be retrieved almost instantly. It must teach people to formulate important questions, evaluate evidence critically, distinguish information from knowledge, integrate disciplines, reason under uncertainty, and use artificial intelligence with creativity and responsibility. The value of the university will not lie solely in providing information, but in building communities capable of interpreting knowledge, questioning it, producing new ideas, and using them to transform reality.
 
@@ -580,13 +588,6 @@ Artificial intelligence should not diminish the importance of the university, me
 
 </div>
 
-<div style="max-width: 600px; margin: 40px auto 10px auto;">
-  <img
-    src="{{ '/images/marcosbb.png' | relative_url }}"
-    alt=""
-    style="width: 100%; display: block; border-radius: 4px;"
-    >
-</div>
 
 {% include section.html %}
 <div style="max-width: 800px; margin: 40px auto 10px auto;">
