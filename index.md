@@ -349,40 +349,6 @@ translation_key: home
 
 Welcome to the website of Marcos Matabuena’s research group.
 
-<div class="homepage-music">
-  <audio
-    id="homepage-audio"
-    preload="metadata"
-    loop
-  >
-    <source
-      src="{{ '/assets/flamenco.mp3' | relative_url }}"
-      type="audio/mpeg"
-    >
-    Your browser does not support audio playback.
-  </audio>
-
-  <button
-    id="homepage-audio-button"
-    class="homepage-audio-button"
-    type="button"
-    aria-label="Play background music"
-  >
-    <span class="homepage-audio-icon" aria-hidden="true">
-      ▶
-    </span>
-
-    <span class="homepage-audio-label">
-      Play music
-    </span>
-  </button>
-</div>
-
-<script
-  src="{{ '/assets/js/homepage-audio.js' | relative_url }}"
-  defer
-></script>
-
 Digital health has the potential to identify disease risks years—or even decades—before clinical symptoms emerge. Our mission is to develop the mathematical, statistical, and artificial intelligence methods needed to make this transformation possible, based on continuous-time information collected through modern medical devices. Ultimately, we aim to move beyond the treatment of disease toward the continuous, real-time optimization of individual and population health.
 <div style="max-width: 560px; margin: 30px auto;">
   <iframe
@@ -503,6 +469,9 @@ We are pioneering the use of non-Euclidean statistical methods to define a new g
 {% capture text %}
 
 Our current projects focus on developing a new generation of statistical AI methods capable of transforming the vast amounts of information collected by digital devices into clinically meaningful knowledge. We aim to demonstrate, through real-world medical problems, how these methods can produce tangible advances in clinical research and practice.
+
+### Our Seven Pillars for Advancing Digital Health Research and Healthcare Decision-Making
+
 
 {%
   include button.html
@@ -961,3 +930,37 @@ An interdisciplinary team working at the intersection of statistics, artificial 
   </div>
 </div>
 <script src="{{ '/assets/js/testimonials.js' | relative_url }}" defer></script>
+
+<div class="homepage-music">
+  <audio
+    id="homepage-audio"
+    preload="metadata"
+    loop
+  >
+    <source
+      src="{{ '/assets/flamenco.mp3' | relative_url }}"
+      type="audio/mpeg"
+    >
+    Your browser does not support audio playback.
+  </audio>
+
+  <button
+    id="homepage-audio-button"
+    class="homepage-audio-button"
+    type="button"
+    aria-label="Play background music"
+  >
+    <span class="homepage-audio-icon" aria-hidden="true">
+      ▶
+    </span>
+
+    <span class="homepage-audio-label">
+      Play music
+    </span>
+  </button>
+</div>
+
+<script
+  src="{{ '/assets/js/homepage-audio.js' | relative_url }}"
+  defer
+></script>
