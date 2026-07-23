@@ -361,11 +361,32 @@ Digital health has the potential to identify disease risks years—or even decad
   </iframe>
 </div>
 
-## The Future of Artificial Intelligence in Medicine
+## What is the Core of Digital Biostatistics
+Our projects seek to establish the rigorous methodological foundations of digital biostatistics and demonstrate their practical value in biomedical research, clinical practice, and population health.
 
-Artificial intelligence in medicine is still in its early stages, and only a small fraction of its potential has been demonstrated in real-world clinical practice. Most current applications address relatively simple and well-defined problems from a statistical learning perspective.
+Over the next ten years, our ultimate research goal is to develop a low-cost healthcare operations framework that improves health outcomes at both the individual and population levels by integrating biostatistics, digital health, and operations research.
 
-Over the next 10 to 15 years, we expect to witness advances that are difficult to imagine today, particularly in neurological disorders such as ALS. New biological discoveries will emerge, comparable to the recent progress made in solving open mathematical problems using AI tools. The next frontier in biomedical research is the development of longitudinal, causal, and data-driven models that use AI tools to support revolutionary therapies and drug discovery. We will have access to metabolic phenotype profiles containing information at a level never seen before.
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe
+    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
+    src="https://www.youtube.com/embed/lZjDMStecZc"
+    title="YouTube video player 3"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+## Our Vision: Why Digital Biostatistics Is Essential to the Future of Artificial Intelligence in Medicine
+Artificial intelligence in medicine is still at an early stage, and only a small fraction of its potential has been demonstrated in real-world clinical practice. From a statistical learning perspective, many current applications still address relatively simple and well-defined prediction or classification problems. The next generation of medical AI, however, will need to confront substantially more complex questions: What is the optimal diet for a particular person? How should treatment and prevention strategies evolve over time? How can heterogeneous clinical, biological, behavioral, and environmental information be integrated into a unified decision-making framework?
+
+Digital biostatistics can provide the scientific foundation required to address these challenges. Powerful AI systems alone are not sufficient. Their predictions must be supported by rigorous statistical inference, uncertainty quantification, careful experimental and observational study design, and methods capable of analyzing continuous, longitudinal, high-frequency, and multimodal health data. These components must ultimately be integrated with operations research to translate predictions into reliable clinical and healthcare decisions.
+
+Over the next 10 to 15 years, advances in AI, together with our growing capacity to measure biological systems almost continuously and at population scale, may transform biomedical research. This progress could be particularly important in areas where current therapeutic options remain limited, including complex neurological disorders such as amyotrophic lateral sclerosis, as well as in pharmaceutical discovery and personalized medicine.
+
+We expect increasingly detailed metabolic and physiological phenotypes to emerge from wearable devices, medical sensors, imaging, genomics, microbiome data, electronic health records, and other digital technologies. The central challenge will not simply be to collect or process more data, but to develop scientifically valid frameworks that can identify meaningful biological patterns, distinguish association from causation, quantify uncertainty, and support decisions that adapt to each individual over time.
+
+In this context, digital biostatistics is not a secondary component of medical AI. It is a necessary scientific and mathematical framework for transforming increasingly powerful artificial intelligence systems into rigorous, interpretable, and clinically useful tools.
 
 <div style="
   display: flex;
@@ -422,21 +443,6 @@ Over the next 10 to 15 years, we expect to witness advances that are difficult t
     </iframe>
   </div>
 
-</div>
-
-## Our Ultimate Goal
-
-Over the next ten years, our ultimate research goal is to develop a low-cost healthcare operations framework that improves health outcomes at both the individual and population levels by integrating biostatistics, digital health, and operations research.
-
-<div style="max-width: 560px; margin: 30px auto;">
-  <iframe
-    style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
-    src="https://www.youtube.com/embed/lZjDMStecZc"
-    title="YouTube video player 3"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    referrerpolicy="strict-origin-when-cross-origin"
-    allowfullscreen>
-  </iframe>
 </div>
 
 {% include section.html %}
