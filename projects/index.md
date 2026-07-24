@@ -246,10 +246,6 @@ This vision has been shaped by formative experiences, mentorship, and collaborat
 
 {% include section.html %}
 
-# What is the core of biostatistics
-over Our projects seek to establish the rigorous methodological foundations of digital biostatistics and demonstrate their practical value in biomedical research, clinical practice, and population health.
-
-
 ## Open Questions We Are Working to Solve
 
 Our research is structured around a set of open methodological,
@@ -411,13 +407,3 @@ produce tangible clinical and biomedical value.
   filter="!group"
   style="small"
 %}
-
-## Digital Biostatistics
-<div style="max-width: 700px; margin: 40px auto 10px auto;">
-  <img
-    src="{{ '/images/coheteacolor.png' | relative_url }}"
-    alt=""
-    style="width: 100%; display: block; border-radius: 4px;"
-    >
-</div>
-</div>
