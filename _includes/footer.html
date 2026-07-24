@@ -1,3 +1,4 @@
+{% assign current_lang = page.lang | default: "en" %}
 {% assign image = page.footer | default: site.footer %}
 {% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
 
@@ -15,13 +16,35 @@
     </div>
   -->
 
-  <div>
+ <div class="footer-links">
     {% for link in site.links %}
       {% assign key = link[0] %}
       {% assign value = link[1] %}
       {% include button.html type=key text="" link=value style="bare" %}
     {% endfor %}
+
+    {% assign footer_pages = site.pages
+      | where_exp: "item", "item.nav"
+      | sort: "nav.order"
+    %}
+
+    {% for footer_page in footer_pages %}
+      {% assign footer_lang = footer_page.lang | default: "en" %}
+      {% assign footer_title = footer_page.title | downcase %}
+
+      {% if footer_lang == current_lang %}
+        {% if footer_title == "philosophy"
+          or footer_title == "teaching"
+          or footer_title == "mbzuai"
+        %}
+          <a href="{{ footer_page.url | relative_url | uri_escape }}">
+            {{ footer_page.title }}
+          </a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
   </div>
+
 
   <div>
     &copy; {{ site.time | date: "%Y" }}

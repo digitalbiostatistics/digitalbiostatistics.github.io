@@ -33,9 +33,9 @@ languages:
 # site social media and other links
 links:
   email: Marcos.Matabuena@mbzuai.ac.ae
-  orcid: 0000-0002-2764-5824
+  # orcid: 0000-0002-2764-5824
   google-scholar: qaEtbuEAAAAJ
-  github: digitalbiostatistics
+  # github: digitalbiostatistics
 
 ### jekyll settings
 
