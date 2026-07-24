@@ -645,29 +645,38 @@ Artificial intelligence should not diminish the importance of the university, me
 An opinion article from a national Spaish newspaper written by Marcos Matabuena. It explores whether universities can remain relevant in the age of artificial intelligence.
 
 <div style="max-width: 600px; margin: 40px auto 10px auto;">
-  <img
-    src="{{ '/images/la-voz-ingles.png' | relative_url }}"
-    alt=""
-    style="width: 100%; display: block; border-radius: 4px;"
+  <a
+    href="https://www.lavozdegalicia.es/noticia/opinion/2025/06/01/oxford-leccion-manana-institucion-ves/0003_202506G1P18995.htm"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="{{ '/images/la-voz-ingles.png' | relative_url }}"
+      alt="Oxford and Tomorrow's Lesson"
+      style="width: 100%; display: block; border-radius: 4px;"
     >
+  </a>
 </div>
-
-<p>To read the original article, click <a href="https://www.lavozdegalicia.es/noticia/opinion/2025/06/01/oxford-leccion-manana-institucion-ves/0003_202506G1P18995.htm" target="_blank" rel="noopener noreferrer">here</a>.</p>
 
 **AI evolution in Medicine in the future**
 
 In this interview, conducted more than a year ago, Marcos Matabuena predicted that, despite the rapid advance of artificial intelligence, medicine would evolve toward a more human-centered culture.
 
-<p>To read the original article, click <a href="https://www.lavozdegalicia.es/noticia/lavozdelasalud/enfermedades/2025/04/03/marcos-matabuena-investigador-gallego-harvard-bill-gates-acaba-predecir-diez-anos-medicos-tendran-rol-bastante-diferente-actual/00031743692850087318685.htm" target="_blank" rel="noopener noreferrer">here</a>.</p>
 <div style="max-width: 600px; margin: 40px auto 10px auto;">
-  <img
-    src="{{ '/images/lavozdegalicia2.png' | relative_url }}"
-    alt=""
-    style="width: 100%; display: block; border-radius: 4px;"
+  <a
+    href="https://www.lavozdegalicia.es/noticia/lavozdelasalud/enfermedades/2025/04/03/marcos-matabuena-investigador-gallego-harvard-bill-gates-acaba-predecir-diez-anos-medicos-tendran-rol-bastante-diferente-actual/00031743692850087318685.htm"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="{{ '/images/lavozdegalicia2.png' | relative_url }}"
+      alt="AI evolution in Medicine"
+      style="width: 100%; display: block; border-radius: 4px;"
     >
+  </a>
 </div>
 
-## Universal Literature for the Age of Artificial Intelligence and Beyond
+## Universal Literature to Survive in the Age of Artificial Intelligence
 
 <div style="max-width: 800px; margin: 40px auto 10px auto;">
   <img
