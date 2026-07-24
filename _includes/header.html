@@ -67,14 +67,20 @@
 
     {% for nav_page in nav_pages %}
       {% assign nav_lang = nav_page.lang | default: "en" %}
-
+      {% assign nav_title = nav_page.title | downcase %}
+        
       {% if nav_lang == current_lang %}
-        <a
-          href="{{ nav_page.url | relative_url | uri_escape }}"
-          data-tooltip="{{ nav_page.nav.tooltip | xml_escape }}"
-        >
-          {{ nav_page.title }}
-        </a>
+        {% unless nav_title == "philosophy"
+          or nav_title == "teaching"
+          or nav_title == "mbzuai"
+        %}
+          <a
+            href="{{ nav_page.url | relative_url | uri_escape }}"
+            data-tooltip="{{ nav_page.nav.tooltip | xml_escape }}"
+          >
+            {{ nav_page.title }}
+          </a>
+        {% endunless %}
       {% endif %}
     {% endfor %}
 
