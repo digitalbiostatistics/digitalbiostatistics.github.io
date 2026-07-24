@@ -21,4 +21,16 @@ footer .icon {
   font-size: var(--xl);
 }
 
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+footer .footer-links > a {
+  text-decoration: none;
+}
+
 /*# sourceMappingURL=footer.css.map */
