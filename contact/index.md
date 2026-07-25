@@ -31,7 +31,7 @@ nav:
 
 **Funding:** full MBZUAI scholarship, monthly stipend, access to university accommodation, health insurance and UAE visa
 
-**How to apply:** official application plus a brief introductory email containing CV, transcripts, research interests and one representative project or paper.
+**How to apply:** Apply through the official MBZUAI application portal for the [PhD in Computational Biology](https://mbzuai.ac.ae/study/phd-programs/phd-in-computational-biology/) and send a brief introductory email containing your CV, transcripts, research interests, and one representative project or paper.
 
 {% include section.html %}
 # {% include icon.html icon="fa-regular fa-envelope" %}Contact
