@@ -728,119 +728,6 @@
   <img src="/images/cluster.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
 </div>
 
-<style>
-  .research-focus-grid {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-
-    width: 100%;
-    max-width: 1100px;
-
-    margin: 48px auto 56px;
-  }
-
-  .research-focus-card {
-    display: flex;
-    flex-direction: column;
-
-    min-width: 0;
-    padding: 30px 28px;
-
-    box-sizing: border-box;
-
-    background: #ffffff;
-    border: 1px solid rgba(84, 127, 157, 0.18);
-    border-radius: var(--rounded, 8px);
-
-    box-shadow: 0 12px 32px rgba(32, 49, 60, 0.08);
-  }
-
-  .research-focus-card h3 {
-    margin: 0 0 14px;
-
-    font-size: clamp(1.15rem, 1.6vw, 1.4rem);
-    font-weight: 650;
-    line-height: 1.3;
-
-    color: #263b49;
-  }
-
-  .research-focus-card p {
-    margin: 0;
-
-    font-size: 1rem;
-    line-height: 1.65;
-
-    color: #66757f;
-  }
-
-  @media screen and (max-width: 900px) {
-    .research-focus-grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 20px;
-
-      margin: 40px auto 48px;
-    }
-
-    .research-focus-card:last-child {
-      grid-column: 1 / -1;
-    }
-  }
-
-  @media screen and (max-width: 640px) {
-    .research-focus-grid {
-      grid-template-columns: 1fr;
-      gap: 16px;
-
-      margin: 32px auto 42px;
-    }
-
-    .research-focus-card,
-    .research-focus-card:last-child {
-      grid-column: auto;
-    }
-
-    .research-focus-card {
-      padding: 24px 22px;
-    }
-
-    .research-focus-card h3 {
-      font-size: 1.12rem;
-    }
-
-    .research-focus-card p {
-      font-size: 0.96rem;
-    }
-  }
-</style>
-
-<div class="research-focus-grid" aria-label="Research areas">
-  <article class="research-focus-card">
-    <h3>Digital biomarkers</h3>
-    <p>
-      Methods for representing continuous physiological and behavioral data
-      as complex functional and distributional objects.
-    </p>
-  </article>
-
-  <article class="research-focus-card">
-    <h3>Statistical AI for complex health data</h3>
-    <p>
-      Machine learning, random-effects models, generative methods, and
-      uncertainty quantification for longitudinal and non-Euclidean data.
-    </p>
-  </article>
-
-  <article class="research-focus-card">
-    <h3>Personalized healthcare decisions</h3>
-    <p>
-      Integration of prediction, causal reasoning, uncertainty, and operations
-      research to support individualized and population-level decisions.
-    </p>
-  </article>
-</div>
-
 <h2 id="seven-pillars-of-our-research-program-in-digital-health">Seven Pillars of Our Research Program in Digital Health</h2>
 <p>Our seven papers represent a substantial methodological and conceptual advance for the field of digital health.</p>
 
@@ -848,15 +735,15 @@
 
 <p>The introduction of multivariate glucodensity represents a further conceptual step in the analysis of human physiology. Clinical data are no longer analyzed only as individual numbers, but as complex objects that are closer to medical images. We can now integrate the dynamics of the underlying physiological processes within a unified distributional glucodensity framework.</p>
 
-<p>The joint work with Ciprian Crainiceanu on random-effects models for glucodensity data extends these ideas to longitudinal studies conducted over weeks, months, or years. This work creates a new framework for using digital information in clinical trials, with the possibility of increasing statistical power and discovering new and more relevant longitudinal biomarkers.</p>
+<p>The joint work with <strong>Ciprian Crainiceanu</strong> on random-effects models for glucodensity data extends these ideas to longitudinal studies conducted over weeks, months, or years. This work creates a new framework for using digital information in clinical trials, with the possibility of increasing statistical power and discovering new and more relevant longitudinal biomarkers.</p>
 
-<p>With Mateo Cámara, we propose the first framework for random-effects modeling in general metric spaces, providing a unified approach for analyzing different types of statistical objects in clinical studies. Most of the information collected in digital health is nearly continuous over time, is measured at multiple time scales, and naturally exhibits a multilevel structure. Our framework provides, for the first time, a general analytical way to model these complex sources of variation within a broader mathematical generality.</p>
+<p>With <strong>Mateo Cámara</strong>, we propose the first framework for random-effects modeling in general metric spaces, providing a unified approach for analyzing different types of statistical objects in clinical studies. Most of the information collected in digital health is nearly continuous over time, is measured at multiple time scales, and naturally exhibits a multilevel structure. Our framework provides, for the first time, a general analytical way to model these complex sources of variation within a broader mathematical generality.</p>
 
-<p>The framework for uncertainty quantification in metric spaces, developed together with Gábor Lugosi, is methodologically important because it provides a formal method for calibrating and evaluating conditional coverage without restrictive smoothness conditions. At the same time, it opens a more general framework for uncertainty quantification for the biomarkers of the future, which will increasingly be represented as distributions, functions, images, networks, or other complex non-Euclidean random objects.</p>
+<p>The framework for uncertainty quantification in metric spaces, developed together with <strong>Gábor Lugosi</strong>, is methodologically important because it provides a formal method for calibrating and evaluating conditional coverage without restrictive smoothness conditions. At the same time, it opens a more general framework for uncertainty quantification for the biomarkers of the future, which will increasingly be represented as distributions, functions, images, networks, or other complex non-Euclidean random objects.</p>
 
-<p>The work with my Chinese colleagues, Mingyang Yi, Zhiming Ma, and Ruoyu Wang, on diffusion models and measurement error opens the possibility of incorporating measurement uncertainty into biomedical decision-making. The main idea is to use general generative artificial intelligence methods within classical measurement error statistical pipelines, allowing the error generated by sensors, clinical measurements, and other biomedical technologies to be incorporated directly into the analysis.</p>
+<p>The work with my Chinese colleagues, <strong>Mingyang Yi</strong>, <strong>Zhiming Ma</strong>, and <strong>Ruoyu Wang</strong>, on diffusion models and measurement error opens the possibility of incorporating measurement uncertainty into biomedical decision-making. The main idea is to use general generative artificial intelligence methods within classical measurement error statistical pipelines, allowing the error generated by sensors, clinical measurements, and other biomedical technologies to be incorporated directly into the analysis.</p>
 
-<p>Finally, the success of the new data-driven era will also depend on the development of new experimental and sampling designs. In joint work with Yating Zou and Michael Kosorok, we propose a new random forest methodology for complex survey data. The method has relevant inferential implications because the bootstrap procedure is applied at the node level. This opens new theoretical opportunities about how we can improve the performance of machine learning methods for complex sampling designs and, at the same time, provides a principled way to use large health datasets while preserving valid inference for the target population.</p>
+<p>Finally, the success of the new data-driven era will also depend on the development of new experimental and sampling designs. In joint work with <strong>Yating Zou</strong> and <strong>Michael Kosorok</strong>, we propose a new random forest methodology for complex survey data. The method has relevant inferential implications because the bootstrap procedure is applied at the node level. This opens new theoretical opportunities about how we can improve the performance of machine learning methods for complex sampling designs and, at the same time, provides a principled way to use large health datasets while preserving valid inference for the target population.</p>
 
 <p>Together, these works define the main pillars of our research program: the new representation of digital health data, longitudinal and multilevel modeling, uncertainty quantification, generative AI-driven measurement-error correction, and statistically valid inference from complex biomedical studies.</p>
 
