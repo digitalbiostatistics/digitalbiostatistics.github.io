@@ -1068,7 +1068,7 @@ An interdisciplinary team working at the intersection of statistics, artificial 
 %}
 
 ## Join Us
-We are building an interdisciplinary research program at the intersection of biostatistics, artificial intelligence, digital health, and medicine. We welcome ambitious students and collaborators interested in developing rigorous methods around consequential biomedical questions.
+We are building an interdisciplinary research program at the intersection of biostatistics, epidemiology, artificial intelligence, digital health, and medicine. We welcome ambitious students and collaborators interested in developing rigorous methods around consequential biomedical questions.
 
 {%
   include button.html
