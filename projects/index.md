@@ -191,12 +191,10 @@ address consequential problems in medicine and public health.
   <article class="question-card">
 
 
-    <h4>E-values for High-Dimensional Multiple Testing</h4>
+    <h4>Optimal Conformal Prediction for Random-Effects Models</h4>
 
     <p>
-      How can e-values be developed into a general framework for
-      large-scale multiple-hypothesis testing in high-dimensional
-      digital health studies?
+      How can conformal prediction be extended to multilevel and random-effects models while preserving meaningful marginal and  conditional coverage guarantees?
     </p>
 
   </article>
@@ -207,23 +205,7 @@ address consequential problems in medicine and public health.
     <h4>Conditional Predictive Inference for Random Objects</h4>
 
     <p>
-      How can we construct predictive regions for random objects in
-      metric spaces with strong—and, where possible, optimal—conditional
-      coverage guarantees, without imposing restrictive smoothing
-      assumptions?
-    </p>
-
-  </article>
-
-  <article class="question-card">
-
-
-    <h4>Optimal Conformal Prediction for Random-Effects Models</h4>
-
-    <p>
-      How can conformal prediction be extended to multilevel and
-      random-effects models while preserving meaningful conditional
-      coverage guarantees?
+      How can we construct predictive regions for random objects in metric spaces that provide strong conditional coverage guarantees without relying on restrictive smoothness assumptions?
     </p>
 
   </article>
@@ -234,23 +216,7 @@ address consequential problems in medicine and public health.
     <h4>Deep Learning Without Manifold Assumptions</h4>
 
     <p>
-      What theoretical guarantees can be established for deep-learning
-      algorithms operating on general non-Euclidean spaces without
-      assuming that the observations lie on a smooth manifold,
-      particularly in digital health applications?
-    </p>
-
-  </article>
-
-  <article class="question-card question-card-wide">
-
-
-    <h4>Mathematical Foundations of Distributional Data Analysis</h4>
-
-    <p>
-      What mathematical and statistical foundations are needed to
-      establish distributional data analysis as a rigorous,
-      interpretable, and broadly applicable framework for digital health?
+      What theoretical guarantees can be established for deep-learning algorithms operating on general non-Euclidean spaces, without assuming that the observations lie on a smooth manifold, and motivated by modern digital health applications?
     </p>
 
   </article>
