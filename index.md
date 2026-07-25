@@ -558,7 +558,7 @@ We pioneer the development of non-Euclidean statistical methods for defining a n
   text=text
 %}
 
-## Our research areas
+### Our research areas
 <style>
   .research-focus-grid {
     display: grid;
