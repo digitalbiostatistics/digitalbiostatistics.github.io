@@ -1075,19 +1075,25 @@ We pioneer the development of non-Euclidean statistical methods for defining a n
           <div class="highlighted-paper-card">
 
             <div class="highlighted-paper-image">
-              <a
-                href="{{ paper.link }}"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open paper: {{ paper.title | escape }}"
-              >
-                <img
-                  src="{{ paper.image | relative_url }}"
-                  alt="Abstract of {{ paper.title | escape }}"
-                  loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
-                  decoding="async"
+              {% if paper.link %}
+                <a
+                  href="{{ paper.link }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Open paper: {{ paper.title | escape }}"
                 >
-              </a>
+              {% endif %}
+            
+              <img
+                src="{{ paper.image | relative_url }}"
+                alt="Abstract of {{ paper.title | escape }}"
+                loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                decoding="async"
+              >
+            
+              {% if paper.link %}
+                </a>
+              {% endif %}
             </div>
 
             <div class="highlighted-paper-information">

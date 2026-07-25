@@ -1,27 +1,34 @@
 - title: "Glucodensities: A new representation of glucose profiles using distributional data analysis"
   authors: "Marcos Matabuena, Alexander Petersen, Juan C Vidal, Francisco Gude"
   image: "images/paperglucodensitiesanewrepresentation.png"
+  link: "https://pubmed.ncbi.nlm.nih.gov/33760665/"
 
 - title: "Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics"
   authors: "Marcos Matabuena, Rahul Ghosal, Javier Enrique Aguilar, Ayya Keshet, Robert Wagner, Carmen Fernandez Merino, Juan Sanchez Castro, Vadim Zipunnikov, J-P Onnela, Francisco Gude"
   image: "images/paperglucodensity.png"
+  link: "https://doi.org/10.1038/s41598-025-18119-2"
 
 - title: "Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials"
   authors: "Marcos Matabuena, Ciprian M. Crainiceanu"
   image: "images/papermultilevelbueno.png"
+  link: "https://doi.org/10.1214/26-AOAS2139"
 
 - title: "Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces"
   authors: "Gabor Lugosi, Marcos Matabuena"
   image: "images/paperconformalandknn.png"
+  link: "https://arxiv.org/abs/2507.15741"
 
 - title: "Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model"
   authors: "Mingyang Yi, Marcos Matabuena, Zhi-Ming Ma, Ruoyu Wang"
   image: "images/paperdenoisingdata.png"
+  link: "https://arxiv.org/abs/2501.00212"
 
 - title: "Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces"
   authors: "Yating Zou, Marcos Matabuena, and Michael R. Kosorok"
   image: "images/paperdistributionalrandomforest.png"
+  link: "https://arxiv.org/abs/2512.08179"
 
 - title: "Random-Effects Algorithm for Random Objects in Metric Spaces"
   authors: "Marcos Matabuena, Mateo Camara"
   image: "images/paperrandomeffectsalgorithm.png"
+  link: "https://arxiv.org/abs/2605.02693"
