@@ -563,6 +563,29 @@ Medical education must evolve in two complementary directions. On the one hand, 
 
 In biomedicine, this new form of education will require a discipline capable of connecting artificial intelligence, statistics, study design, uncertainty quantification, clinical knowledge, and decision-making. This integration lies at the heart of what we understand as <strong> Digital Biostatistics </strong>.
 
+<div class="two-videos-row">
+
+  <!-- Vídeo de la izquierda -->
+  <div class="video-box">
+    <iframe
+      src="https://www.youtube.com/embed/sR_xG8DNCSI"
+      title="Video left"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+  <!-- Vídeo de la derecha -->
+  <div class="video-box">
+    <iframe
+      src="https://www.youtube.com/embed/fJzRn3mwbpU"
+      title="Video right"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen>
+    </iframe>
+  </div>
+
+</div>
 
 We must therefore distinguish clearly between the decisions that should remain under human responsibility and the tasks that may be entrusted to artificial intelligence systems. Such delegation will be legitimate only when we retain a sufficient understanding of how the algorithms work, what information they use, which assumptions they rely on, where their limitations lie, and what consequences their errors may produce. It is not enough for a system to generate an apparently accurate prediction. We must also be able to assess its reliability, its uncertainty, its potential biases, and its ability to generalize across different individuals, hospitals, and clinical settings.
 
