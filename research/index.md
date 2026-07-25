@@ -49,11 +49,17 @@ We are currently developing statistical and artificial intelligence methods for 
 To address these questions, our research brings together modern statistical AI methods for causal inference, survival analysis, uncertainty quantification, and random-effects generative modeling to advance statistical learning for non-Euclidean random objects. Careful study design and computational scalability are essential to this vision. Our goal is to develop methods that are mathematically rigorous yet computationally efficient at population scale, targeting biomedical resources such as the UK Biobank, the All of Us Research Program, the Human Phenotype Project, and NHANES.
 
 <div style="max-width: 400px; margin: 40px auto 10px auto;">
-  <img
-    src="{{ '/images/HPP.png' | relative_url }}"
-    alt=""
-    style="width: 100%; display: block; border-radius: 4px;"
+  <a
+    href="https://humanphenotypeproject.org/home"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <img
+      src="{{ '/images/HPP.png' | relative_url }}"
+      alt="Human Phenotype Project"
+      style="width: 100%; display: block; border-radius: 4px;"
     >
+  </a>
 </div>
  
 Although many methods published in top methodological journals are mathematically rigorous and technically sound, they are not always designed with the complexities and hyphotesis of real-world clinical data in mind. Our research is therefore grounded in concrete biomedical questions and practical challenges. We develop methods that reflect the structure of the data, the realities of clinical practice, and the critical decisions facing patients, clinicians, and healthcare systems to progress the field.
