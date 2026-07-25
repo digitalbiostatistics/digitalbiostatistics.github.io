@@ -331,7 +331,7 @@ produce tangible clinical and biomedical value.
 
 </div>
 
-## More
+## Learn More About Our Work
 
 {% include list.html
   component="card"
