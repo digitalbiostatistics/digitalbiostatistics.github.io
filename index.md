@@ -1269,7 +1269,7 @@ We believe that important scientific problems require rigor, imagination, persev
 
 <div class="vision-callout">
   <p>
-    Just as the laboratory opened new frontiers in biomedicine, <strong>digital biostatistics may become one of the defining scientific instruments of the data-driven era</strong>—a new telescope for observing human health continuously and revealing biological patterns that were previously invisible.
+    Just as the laboratory opened new frontiers in biomedicine, <strong>digital biostatistics may become one of the defining scientific instruments of the data-driven era</strong>: a new telescope for observing human health continuously and revealing biological patterns that were previously invisible.
   </p>
 
 </div>
