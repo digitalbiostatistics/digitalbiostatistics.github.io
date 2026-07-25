@@ -726,6 +726,119 @@
   <img src="/images/cluster.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
 </div>
 
+<style>
+  .research-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 48px auto 56px;
+  }
+
+  .research-focus-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    padding: 30px 28px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid rgba(84, 127, 157, 0.18);
+    border-radius: var(--rounded, 8px);
+
+    box-shadow: 0 12px 32px rgba(32, 49, 60, 0.08);
+  }
+
+  .research-focus-card h3 {
+    margin: 0 0 14px;
+
+    font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+    font-weight: 650;
+    line-height: 1.3;
+
+    color: #263b49;
+  }
+
+  .research-focus-card p {
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.65;
+
+    color: #66757f;
+  }
+
+  @media screen and (max-width: 900px) {
+    .research-focus-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+
+      margin: 40px auto 48px;
+    }
+
+    .research-focus-card:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .research-focus-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+
+      margin: 32px auto 42px;
+    }
+
+    .research-focus-card,
+    .research-focus-card:last-child {
+      grid-column: auto;
+    }
+
+    .research-focus-card {
+      padding: 24px 22px;
+    }
+
+    .research-focus-card h3 {
+      font-size: 1.12rem;
+    }
+
+    .research-focus-card p {
+      font-size: 0.96rem;
+    }
+  }
+</style>
+
+<div class="research-focus-grid" aria-label="Research areas">
+  <article class="research-focus-card">
+    <h3>Digital biomarkers</h3>
+    <p>
+      Methods for representing continuous physiological and behavioral data
+      as complex functional and distributional objects.
+    </p>
+  </article>
+
+  <article class="research-focus-card">
+    <h3>Statistical AI for complex health data</h3>
+    <p>
+      Machine learning, random-effects models, generative methods, and
+      uncertainty quantification for longitudinal and non-Euclidean data.
+    </p>
+  </article>
+
+  <article class="research-focus-card">
+    <h3>Personalized healthcare decisions</h3>
+    <p>
+      Integration of prediction, causal reasoning, uncertainty, and operations
+      research to support individualized and population-level decisions.
+    </p>
+  </article>
+</div>
+
 <h2 id="seven-pillars-of-our-group-in-digital-health">Seven Pillars of Our Group in Digital Health</h2>
 <p>These seven papers represent, in my view, a real methodological and conceptual advance for the field of digital health.</p>
 
