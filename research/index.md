@@ -551,7 +551,7 @@ Finally, the success of the new data-driven era will also depend on the developm
  
 Together, these works define the main pillars of our research program: the new representation of digital health data, longitudinal and multilevel modeling, uncertainty quantification, generative AI-driven measurement-error correction, and statistically valid inference from complex biomedical studies.
 
-## All
+## Research Output from Previous Years
 
 {% include search-box.html %}
 {% include search-info.html %}
