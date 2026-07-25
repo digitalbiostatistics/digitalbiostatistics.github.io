@@ -523,8 +523,6 @@ Artificial intelligence in medicine is still at an early stage, and only a small
 
 </div>
 
-{% include section.html %}
-
 **Digital biostatistics** can provide the scientific foundation needed to address these challenges. Powerful AI systems may perform well on specific prediction tasks, but prediction alone is not sufficient in real-world clinical and healthcare settings. Their outputs must be supported by rigorous statistical inference, uncertainty quantification, careful experimental and observational study design, and methods capable of analyzing continuous, longitudinal, high-frequency, and multimodal health data. These components must ultimately be integrated with operations research to translate predictions into reliable clinical decisions and more effective healthcare operations.
 
 Over the next 10 to 15 years, advances in AI, together with our rapidly expanding capacity to measure biological systems almost continuously and at population scale, could transform biomedical research. These developments may enable a new generation of scientific discoveries, accelerate the development of personalized therapies, and deepen our understanding of complex diseases.
