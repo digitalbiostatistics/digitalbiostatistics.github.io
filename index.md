@@ -1225,6 +1225,55 @@ We believe that important scientific problems require rigor, imagination, persev
     >
 </div>
 
+<style>
+  .vision-callout {
+    max-width: 920px;
+    margin: 40px auto 46px;
+    padding: 34px 38px;
+
+    background: linear-gradient(
+      135deg,
+      rgba(245, 250, 252, 0.98),
+      rgba(255, 255, 255, 0.98)
+    );
+
+    border: 1px solid rgba(84, 127, 157, 0.18);
+    border-left: 5px solid #547f9d;
+    border-radius: 16px;
+
+    box-shadow: 0 12px 30px rgba(32, 49, 60, 0.08);
+
+    text-align: center;
+  }
+
+  .vision-callout p {
+    margin: 0;
+
+    font-size: 1.18rem;
+    line-height: 1.8;
+
+    color: #2d3d48;
+  }
+
+  @media (max-width: 640px) {
+    .vision-callout {
+      padding: 26px 22px;
+      margin: 34px auto 40px;
+    }
+
+    .vision-callout p {
+      font-size: 1.05rem;
+    }
+  }
+</style>
+
+<div class="vision-callout">
+  <p>
+    Just as the laboratory opened new frontiers in biomedicine, <strong>digital biostatistics may become one of the defining scientific instruments of the data-driven era</strong>—a new telescope for observing human health continuously and revealing biological patterns that were previously invisible.
+  </p>
+
+</div>
+
 <div class="homepage-music">
   <audio
     id="homepage-audio"
