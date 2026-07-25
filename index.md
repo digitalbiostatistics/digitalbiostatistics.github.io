@@ -958,6 +958,17 @@ We pioneer the development of non-Euclidean statistical methods for defining a n
     outline-offset: 3px;
   }
 
+  .highlighted-paper-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .highlighted-paper-image a:focus-visible {
+    outline: 3px solid rgba(84, 127, 157, 0.5);
+    outline-offset: 3px;
+  }
+
   @media screen and (max-width: 768px) {
     .highlighted-papers-slider {
       max-width: 100%;
@@ -1066,12 +1077,19 @@ We pioneer the development of non-Euclidean statistical methods for defining a n
           <div class="highlighted-paper-card">
 
             <div class="highlighted-paper-image">
-              <img
-                src="{{ paper.image | relative_url }}"
-                alt="Abstract of {{ paper.title | escape }}"
-                loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
-                decoding="async"
+              <a
+                href="{{ paper.link }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open paper: {{ paper.title | escape }}"
               >
+                <img
+                  src="{{ paper.image | relative_url }}"
+                  alt="Abstract of {{ paper.title | escape }}"
+                  loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                  decoding="async"
+                >
+              </a>
             </div>
 
             <div class="highlighted-paper-information">
