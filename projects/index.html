@@ -821,6 +821,71 @@
     letter-spacing: normal !important;
     hyphens: auto;
   }
+
+  /* ---------- FLAGSHIP RESEARCH PROGRAMS ---------- */
+
+  .research-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+  
+    width: 100%;
+    margin: 36px 0 52px;
+  }
+  
+  .research-focus-card {
+    display: flex;
+    flex-direction: column;
+  
+    padding: 30px 28px;
+  
+    background: #ffffff;
+    border: 1px solid rgba(84, 127, 157, 0.18);
+    border-radius: 12px;
+  
+    box-shadow: 0 12px 32px rgba(32, 49, 60, 0.08);
+  }
+  
+  .research-focus-card h3 {
+    margin: 0 0 14px;
+  
+    color: #263b49;
+    font-size: 1.2rem;
+    line-height: 1.35;
+  }
+  
+  .research-focus-card p {
+    margin: 0;
+  
+    color: #66757f;
+    line-height: 1.65;
+  }
+  
+  @media (max-width: 900px) {
+    .research-focus-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  
+    .research-focus-card:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .research-focus-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  
+    .research-focus-card,
+    .research-focus-card:last-child {
+      grid-column: auto;
+    }
+  
+    .research-focus-card {
+      padding: 24px 22px;
+    }
+}
 </style>
 
 <div class="projects-page">
@@ -832,6 +897,36 @@
 <p class="projects-lead">
 Our projects aim to establish the rigorous methodological foundations of digital biostatistics while demonstrating their practical value in biomedical research, clinical practice, and population health. Our goal is to develop the statistical methods required to transform continuous, longitudinal, and multimodal health data into reliable biomedical knowledge and clinically meaningful decisions. We organize this work around three interconnected research programs.</p>  
 
+### Flagship Research Programs
+
+<div class="research-focus-grid" aria-label="Flagship research programs">
+
+  <article class="research-focus-card">
+    <h3>Digital Phenotyping and Personalized Health</h3>
+    <p>
+      How can continuous physiological and multimodal biological data be
+      transformed into reproducible digital phenotypes for personalized
+      medicine?
+    </p>
+  </article>
+
+  <article class="research-focus-card">
+    <h3>Digital Biomarkers for Disease Progression</h3>
+    <p>
+      Can near-continuous digital measurements detect clinically meaningful
+      changes before conventional clinical assessments?
+    </p>
+  </article>
+
+  <article class="research-focus-card">
+    <h3>Population Health and Digital Epidemiology</h3>
+    <p>
+      How can digital health data improve population-level surveillance,
+      prevention, and healthcare planning?
+    </p>
+  </article>
+
+</div>
 
 <div style="max-width: 950px; margin: 40px auto 10px auto;">
   <img src="/images/projects.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
