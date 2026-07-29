@@ -150,103 +150,102 @@ def load_data(path):
 
 def save_data(path, data):
     """
-    write data to yaml file
+    Write data to a UTF-8 YAML file.
     """
 
-    # convert to path object
     path = Path(path)
 
-    # try to open file
-    try:
-        file = open(path, mode="w")
-    except Exception:
-        raise Exception("Can't open file for writing")
-
-    # prevent yaml anchors/aliases (pointers)
+    # Prevent YAML anchors and aliases.
     yaml.Dumper.ignore_aliases = lambda *args: True
 
-    # try to save data as yaml
-    try:
-        with file:
-            yaml.dump(data, file, default_flow_style=False, sort_keys=False)
-    except Exception:
-        raise Exception("Can't save YAML to file")
-
-    # write warning note to top of file
     note = "# DO NOT EDIT, GENERATED AUTOMATICALLY"
+
     try:
-        with open(path, "r") as file:
-            data = file.read()
-        with open(path, "w") as file:
-            file.write(f"{note}\n\n{data}")
-    except Exception:
-        raise Exception("Can't write to file")
+        with open(path, mode="w", encoding="utf-8", newline="\n") as file:
+            file.write(f"{note}\n\n")
+
+            yaml.dump(
+                data,
+                file,
+                Dumper=yaml.Dumper,
+                default_flow_style=False,
+                sort_keys=False,
+                allow_unicode=True,
+            )
+
+    except Exception as e:
+        raise Exception(f"Can't save YAML to file: {e}")
 
 
 @log_cache
 @cache.memoize(name="manubot", expire=90 * (60 * 60 * 24))
 def cite_with_manubot(_id):
     """
-    generate citation data for source id with Manubot
+    Generate citation data for source id with Manubot.
     """
 
-    # run manubot
     try:
         commands = ["manubot", "cite", _id, "--log-level=WARNING"]
-        output = subprocess.Popen(commands, stdout=subprocess.PIPE).communicate()
+
+        result = subprocess.run(
+            commands,
+            stdout=subprocess.PIPE,
+            stderr=subprocess.PIPE,
+            text=True,
+            encoding="utf-8",
+            errors="strict",
+            check=True,
+        )
+
+    except subprocess.CalledProcessError as e:
+        log(e.stderr, indent=3)
+        raise Exception("Manubot could not generate citation")
     except Exception as e:
         log(e, indent=3)
         raise Exception("Manubot could not generate citation")
 
-    # parse results as json
     try:
-        manubot = json.loads(output[0])[0]
-    except Exception:
-        raise Exception("Couldn't parse Manubot response")
+        manubot = json.loads(result.stdout)[0]
+    except Exception as e:
+        raise Exception(f"Couldn't parse Manubot response: {e}")
 
-    # new citation with only needed info
     citation = {}
 
-    # original id
     citation["id"] = _id
-
-    # title
     citation["title"] = get_safe(manubot, "title", "").strip()
 
-    # authors
     citation["authors"] = []
+
     for author in get_safe(manubot, "author", {}):
         given = get_safe(author, "given", "").strip()
         family = get_safe(author, "family", "").strip()
-        if given or family:
-            citation["authors"].append(" ".join([given, family]))
 
-    # publisher
+        if given or family:
+            citation["authors"].append(
+                " ".join(part for part in [given, family] if part)
+            )
+
     container = get_safe(manubot, "container-title", "").strip()
     collection = get_safe(manubot, "collection-title", "").strip()
     publisher = get_safe(manubot, "publisher", "").strip()
+
     citation["publisher"] = container or publisher or collection or ""
 
-    # extract date part
-    def date_part(citation, index):
+    def date_part(citation_data, index):
         try:
-            return citation["issued"]["date-parts"][0][index]
+            return citation_data["issued"]["date-parts"][0][index]
         except (KeyError, IndexError, TypeError):
             return ""
 
-    # date
     year = date_part(manubot, 0)
+
     if year:
-        # fallbacks for month and day
         month = date_part(manubot, 1) or "1"
         day = date_part(manubot, 2) or "1"
         citation["date"] = format_date(f"{year}-{month}-{day}")
     else:
-        # if no year, consider date missing data
         citation["date"] = ""
 
-    # link
     citation["link"] = get_safe(manubot, "URL", "").strip()
 
-    # return citation data
     return citation
