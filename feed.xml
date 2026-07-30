@@ -1,4 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://digitalbiostatistics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://digitalbiostatistics.github.io/" rel="alternate" type="text/html" /><updated>2026-07-30T12:39:25+00:00</updated><id>https://digitalbiostatistics.github.io/feed.xml</id><title type="html">digitalbiostatistics</title><entry><title type="html">2026 Diabetes Technology Meeting</title><link href="https://digitalbiostatistics.github.io/2026/07/19/DTM2026.html" rel="alternate" type="text/html" title="2026 Diabetes Technology Meeting" /><published>2026-07-19T00:00:00+00:00</published><updated>2026-07-30T12:38:33+00:00</updated><id>https://digitalbiostatistics.github.io/2026/07/19/DTM2026</id><content type="html" xml:base="https://digitalbiostatistics.github.io/2026/07/19/DTM2026.html"><![CDATA[<p>Marcos Matabuena will be an invited speaker at the 2026 Diabetes Technology Meeting, taking place in Washington, D.C., from October 27–29.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://digitalbiostatistics.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://digitalbiostatistics.github.io/" rel="alternate" type="text/html" /><updated>2026-07-30T13:32:19+00:00</updated><id>https://digitalbiostatistics.github.io/feed.xml</id><title type="html">digitalbiostatistics</title><entry><title type="html">2026 Diabetes Technology Meeting</title><link href="https://digitalbiostatistics.github.io/2026/07/30/VariableSelection.html" rel="alternate" type="text/html" title="2026 Diabetes Technology Meeting" /><published>2026-07-30T00:00:00+00:00</published><updated>2026-07-30T13:28:38+00:00</updated><id>https://digitalbiostatistics.github.io/2026/07/30/VariableSelection</id><content type="html" xml:base="https://digitalbiostatistics.github.io/2026/07/30/VariableSelection.html"><![CDATA[<style>
+    .two-images {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.two-images img {
+  width: calc(50% - 10px);
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .two-images {
+    flex-direction: column;
+  }
+
+  .two-images img {
+    width: 100%;
+  }
+}
+</style>
+
+<p>Our paper, “Variable Selection for Fixed and Random Effects in Multilevel Functional Mixed-Effects Models,” has been accepted in Statistics in Medicine.
+This work introduces the first variable-selection method for multilevel functional models. Congratulations to Rahul Ghosal, Enakshi Saha, and the whole team.</p>
+
+<div class="two-images">
+  <img src="/images/statisticsinmedicine.jpeg" alt="" />
+  <img src="/images/variableselection.png" alt="" />
+</div>]]></content><author><name></name></author><category term="statistics in medicine" /><category term="paper" /><category term="variable selection" /><summary type="html"><![CDATA[]]></summary></entry><entry><title type="html">2026 Diabetes Technology Meeting</title><link href="https://digitalbiostatistics.github.io/2026/07/19/DTM2026.html" rel="alternate" type="text/html" title="2026 Diabetes Technology Meeting" /><published>2026-07-19T00:00:00+00:00</published><updated>2026-07-30T13:28:38+00:00</updated><id>https://digitalbiostatistics.github.io/2026/07/19/DTM2026</id><content type="html" xml:base="https://digitalbiostatistics.github.io/2026/07/19/DTM2026.html"><![CDATA[<p>Marcos Matabuena will be an invited speaker at the 2026 Diabetes Technology Meeting, taking place in Washington, D.C., from October 27–29.
 At one of the world’s leading international conferences on diabetes technology, he will present innovative statistical and digital health methods developed by our research group using glucose data, and discuss their potential applications in diabetes research and clinical practice.</p>
 <p>
   For more information about the DTM2026,
