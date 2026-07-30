@@ -1,5 +1,5 @@
 ---
-title: Teaching
+title: Education & Teaching
 lang: en
 translation_key: teaching
 description: 
@@ -428,7 +428,7 @@ nav:
   }
 </style>
 
-# Teaching
+# Education & Teaching
 
 <div
   id="teaching-quotes-slider"

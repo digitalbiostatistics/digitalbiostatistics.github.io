@@ -30,19 +30,6 @@ At the age of fifteen, while competing in athletics, Marcos Matabuena became fas
 
 This curiosity eventually led him to study Mathematics. During his early academic training, he developed methods for estimating maximal oxygen uptake, modelling the relationship between training and fatigue, and identifying physiological thresholds through heart-rate variability. These projects were motivated not only by athletic performance, but also by a broader question: how can data help us understand what is happening inside the human body?
 
-That work revealed a wider scientific opportunity. Data collected continuously from the body can capture patterns that conventional clinical measurements often miss. They can help us understand individual physiology, monitor changes over time, prevent injuries, and design more personalized approaches to health and physical activity. Long before digital health became an established research field, this idea began to shape a scientific path connecting mathematics, statistics, physiology, and medicine.
-
-Over time, the questions became increasingly clinical. How can continuous glucose-monitoring data improve our understanding of metabolic health? How can digital biomarkers help predict disease onset and progression? How should uncertainty be quantified when medical outcomes are curves, distributions, images, networks, or other complex non-Euclidean objects? And how can these methodological advances support better prevention, diagnosis, treatment, and healthcare decision-making?
-
-Digital Biostatistics emerged from this journey. It reflects the conviction that mathematical innovation has its greatest value when it is used to address meaningful biomedical problems arising from the continuous, high-frequency, and multimodal data now collected about human health and behaviour.
-
-Behind every digital signal is a person. Behind every statistical prediction is a decision. And behind every methodological contribution should be the possibility of improving human health.
-
-
-{% include section.html %}
-
-## Foundational Papers in Sport, Movement, and Mathematical Physiology
-
 <style>
   .highlighted-papers-slider {
     --highlighted-accent: #547f9d;
@@ -505,7 +492,16 @@ Behind every digital signal is a person. Behind every statistical prediction is 
   defer
 ></script>
 
-These three papers reflect the origin of a research philosophy built around sport, physiology, and the idea that mathematical models should remain close to real human signals. They connect early questions about aerobic capacity, movement, training load, and physical adaptation with the broader digital-health vision of the group.
+That work revealed a wider scientific opportunity. Data collected continuously from the body can capture patterns that conventional clinical measurements often miss. They can help us understand individual physiology, monitor changes over time, prevent injuries, and design more personalized approaches to health and physical activity. Long before digital health became an established research field, this idea began to shape a scientific path connecting mathematics, statistics, physiology, and medicine.
+
+Over time, the questions became increasingly clinical. How can continuous glucose-monitoring data improve our understanding of metabolic health? How can digital biomarkers help predict disease onset and progression? How should uncertainty be quantified when medical outcomes are curves, distributions, images, networks, or other complex non-Euclidean objects? And how can these methodological advances support better prevention, diagnosis, treatment, and healthcare decision-making?
+
+Digital Biostatistics emerged from this journey. It reflects the conviction that mathematical innovation has its greatest value when it is used to address meaningful biomedical problems arising from the continuous, high-frequency, and multimodal data now collected about human health and behaviour.
+
+<i> Behind every digital signal is a person. Behind every statistical prediction is a decision. And behind every methodological contribution should be the possibility of improving human health. </i>
+
+
+{% include section.html %}
 
 ## Our Twelve Principles
 
@@ -581,16 +577,24 @@ These three papers reflect the origin of a research philosophy built around spor
 
 — **J. K. Rowling**
 
+These principles did not emerge in isolation. They were shaped by personal experience, years of scientific uncertainty, the example of exceptional mentors, and the conviction that ambitious research must remain connected to problems that truly matter.
+
+
 {% include section.html %}
 
-## The Mentorship Behind Our Scientific Ambition
-Five years ago, one of my most important mentors—and perhaps the person who has had the greatest influence on my life, aside from my mother and my high school teacher—told me, “Marcos, if you truly focus, you have the potential to become one of the best in the world.”
+## The Mentorship Behind Our Scientific Purpose
+Five years ago, one of my most important mentors—perhaps the person who has influenced my life the most, aside from my mother and one of my high school teachers—told me:
 
-Three years later, he shared another piece of advice that has stayed with me ever since: “Many statisticians take pride in the impact of their work, yet their contributions remain largely unknown within the biomedical community. You have a gift. You must develop models that truly matter.” 
+<i> “Marcos, if you truly focus, you have the potential to make a meaningful impact on medicine and become an influential researcher.” </i>
 
-Four months ago, he reminded me once again that, if I remain focused, the sky is the limit. 
+Three years later, he gave me another piece of advice that has stayed with me ever since:
 
-His words have profoundly shaped my scientific ambitions, my approach to mentorship, and the way I support my team. Our central goal is to build upon the glucodensity framework and related statistical methodologies to help drive transformative advances in diabetes research and personalized nutrition. We seek to develop methods that are not only mathematically innovative, but also capable of changing how diseases are understood, monitored, prevented, and treated.
+<i> “Many statisticians are proud of the impact of their work, but their contributions remain largely unknown within the biomedical community or have limited practical value. You have a gift. You need to develop models that truly matter.” </i>
+
+Four months ago, he reminded me once again that, if I remain focused, the sky is the limit.
+His words have deeply shaped my scientific ambition, my understanding of mentorship, and the way I support my team. They have taught me that mathematical sophistication is not enough on its own. The most valuable methodological research begins with important biomedical questions and leads to tools that researchers, clinicians, and patients can genuinely benefit from.
+
+Our central ambition is to build on the glucodensity framework and related statistical methodologies to contribute to major advances in diabetes research and personalized nutrition. We aim to develop methods that are not only mathematically innovative, but also capable of changing how diseases are understood, monitored, predicted, prevented, and treated.
 
 {% include section.html %}
 ## Manifests that Inspire Us
