@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" role="img" aria-labelledby="title desc">
+  <title id="title">A 6-minute sub-maximal run test to predict VO2 max</title>
+  <desc id="desc">Journal of Sports Sciences paper by Marcos Matabuena, Juan C. Vidal, Philip R. Hayes, Fernando Huelin Trillo</desc>
+  <rect width="900" height="620" fill="#f7f9fa"/>
+  <rect x="92" y="54" width="716" height="512" rx="8" fill="#ffffff" stroke="#dfe7eb"/>
+  <rect x="92" y="54" width="716" height="82" rx="8" fill="#547f9d"/>
+  <rect x="92" y="118" width="716" height="18" fill="#547f9d"/>
+  <text x="132" y="104" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Journal of Sports Sciences</text>
+  <text x="132" y="174" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#547f9d">2018 paper</text>
+  <text x="132" y="228" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#263b49">A 6-minute sub-maximal run test to predict</text>
+  <text x="132" y="270" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="700" fill="#263b49">VO2 max</text>
+  <text x="132" y="346" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#66757f">Functional data analysis for submaximal aerobic testing</text>
+  <text x="132" y="400" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#4d5d66">Marcos Matabuena, Juan C. Vidal, Philip R. Hayes, Fernando</text>
+  <text x="132" y="430" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#4d5d66">Huelin Trillo</text>
+  <rect x="132" y="488" width="636" height="1" fill="#dfe7eb"/>
+  <text x="132" y="530" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="#66757f">DOI: 10.1080/02640414.2018.1468149</text>
+</svg>
