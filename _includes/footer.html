@@ -30,12 +30,12 @@
 
     {% for footer_page in footer_pages %}
       {% assign footer_lang = footer_page.lang | default: "en" %}
-      {% assign footer_title = footer_page.title | downcase %}
+      {% assign footer_key = footer_page.translation_key | default: "" %}
 
       {% if footer_lang == current_lang %}
-        {% if footer_title == "philosophy"
-          or footer_title == "Education & Teaching"
-          or footer_title == "mbzuai"
+        {% if footer_key == "philosophy"
+          or footer_key == "teaching"
+          or footer_key == "mbzuai"
         %}
           <a href="{{ footer_page.url | relative_url | uri_escape }}">
             {{ footer_page.title }}
