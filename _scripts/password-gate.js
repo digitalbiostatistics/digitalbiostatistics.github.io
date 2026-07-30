@@ -1,6 +1,18 @@
 (function () {
   const storageKey = "digitalbiostatistics:site-unlocked";
 
+  function lockSite() {
+    document.documentElement.classList.add("is-password-locked");
+    document.documentElement.classList.remove("is-password-unlocked");
+  }
+
+  function unlockSite(gate, expectedHash) {
+    window.localStorage.setItem(storageKey, expectedHash);
+    document.documentElement.classList.remove("is-password-locked");
+    document.documentElement.classList.add("is-password-unlocked");
+    gate.hidden = true;
+  }
+
   function toHex(buffer) {
     return Array.from(new Uint8Array(buffer))
       .map(function (byte) {
@@ -41,12 +53,12 @@
       return;
     }
 
-    if (window.sessionStorage.getItem(storageKey) === expectedHash) {
-      gate.hidden = true;
+    if (window.localStorage.getItem(storageKey) === expectedHash) {
+      unlockSite(gate, expectedHash);
       return;
     }
 
-    document.documentElement.classList.add("is-password-locked");
+    lockSite();
     window.setTimeout(function () {
       input.focus();
     }, 0);
@@ -57,9 +69,7 @@
       const candidateHash = await sha256(input.value);
 
       if (candidateHash === expectedHash) {
-        window.sessionStorage.setItem(storageKey, expectedHash);
-        document.documentElement.classList.remove("is-password-locked");
-        gate.hidden = true;
+        unlockSite(gate, expectedHash);
         input.value = "";
         return;
       }

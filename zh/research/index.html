@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh" dir="ltr" data-dark="false">
+<html lang="zh" dir="ltr" data-dark="false" class="is-password-locked">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <!--
@@ -374,7 +374,164 @@
 </head>
 
   <body>
-    <div class="password-gate" data-password-gate data-password-hash="928ab9d4a7dddbc9e28cb26adbd9ca1c11f77c69f3af377d9274a6c27b2118b7" aria-modal="true" role="dialog" aria-labelledby="password-gate-title">
+    <style>
+  html.is-password-locked,
+  html.is-password-locked body {
+    overflow: hidden !important;
+  }
+
+  html.is-password-locked body > :not(.password-gate):not(script):not(style) {
+    display: none !important;
+  }
+
+  html.is-password-unlocked .password-gate,
+  .password-gate[hidden] {
+    display: none !important;
+  }
+
+  .password-gate {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    padding: 24px;
+
+    box-sizing: border-box;
+
+    background:
+      linear-gradient(
+        135deg,
+        rgba(247, 249, 250, 0.98),
+        rgba(229, 238, 242, 0.98)
+      );
+  }
+
+  .password-gate-panel {
+    width: min(100%, 430px);
+    padding: 36px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid rgba(84, 127, 157, 0.22);
+    border-radius: var(--rounded, 8px);
+
+    box-shadow: 0 18px 48px rgba(32, 49, 60, 0.16);
+  }
+
+  .password-gate-kicker {
+    margin: 0 0 10px;
+
+    color: #547f9d;
+
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .password-gate h1 {
+    margin: 0 0 14px;
+
+    color: #263b49;
+
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .password-gate-message {
+    margin: 0 0 28px;
+
+    color: #66757f;
+
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .password-gate label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #4d5d66;
+
+    font-size: 0.95rem;
+    font-weight: 650;
+  }
+
+  .password-gate input {
+    width: 100%;
+    min-height: 48px;
+    padding: 10px 13px;
+
+    box-sizing: border-box;
+
+    color: #263b49;
+    background: #ffffff;
+
+    border: 1px solid rgba(84, 127, 157, 0.28);
+    border-radius: var(--rounded, 8px);
+
+    font: inherit;
+  }
+
+  .password-gate input:focus {
+    outline: 3px solid rgba(84, 127, 157, 0.28);
+    outline-offset: 2px;
+  }
+
+  .password-gate-error {
+    margin: 12px 0 0;
+
+    color: #9b3b3b;
+
+    font-size: 0.92rem;
+  }
+
+  .password-gate button {
+    width: 100%;
+    min-height: 48px;
+    margin-top: 22px;
+
+    border: 0;
+    border-radius: var(--rounded, 8px);
+
+    color: #ffffff;
+    background: #547f9d;
+
+    font: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+  }
+
+  .password-gate button:hover {
+    background: #466f8a;
+  }
+</style>
+
+<script>
+  (function () {
+    var storageKey = "digitalbiostatistics:site-unlocked";
+    var expectedHash = "b4daa6c0a3075e20a89fff9f3ba99e06d97037adc7ec4d2fa3c4cae7ad5203f5";
+
+    try {
+      if (window.localStorage.getItem(storageKey) === expectedHash) {
+        document.documentElement.classList.remove("is-password-locked");
+        document.documentElement.classList.add("is-password-unlocked");
+      }
+    } catch (error) {
+      document.documentElement.classList.add("is-password-locked");
+    }
+  })();
+</script>
+
+<div class="password-gate" data-password-gate data-password-hash="b4daa6c0a3075e20a89fff9f3ba99e06d97037adc7ec4d2fa3c4cae7ad5203f5" aria-modal="true" role="dialog" aria-labelledby="password-gate-title">
   <form class="password-gate-panel" data-password-form>
     <noscript>
       <p class="password-gate-error">
@@ -387,6 +544,10 @@
     <h1 id="password-gate-title">
       Digital Biostatistics
     </h1>
+
+    <p class="password-gate-message">
+      This website is under review. Please enter the password to continue.
+    </p>
 
     <label for="site-password">
       Password
