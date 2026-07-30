@@ -307,6 +307,8 @@
 
   <script src="/_scripts/fetch-tags.js"></script>
 
+  <script src="/_scripts/password-gate.js"></script>
+
   <script src="/_scripts/search.js"></script>
 
   <script src="/_scripts/site-search.js"></script>
@@ -320,6 +322,36 @@
 </head>
 
   <body>
+    <div class="password-gate" data-password-gate data-password-hash="928ab9d4a7dddbc9e28cb26adbd9ca1c11f77c69f3af377d9274a6c27b2118b7" aria-modal="true" role="dialog" aria-labelledby="password-gate-title">
+  <form class="password-gate-panel" data-password-form>
+    <noscript>
+      <p class="password-gate-error">
+        JavaScript is required to access this private website.
+      </p>
+    </noscript>
+
+    <p class="password-gate-kicker">Private website</p>
+
+    <h1 id="password-gate-title">
+      Digital Biostatistics
+    </h1>
+
+    <label for="site-password">
+      Password
+    </label>
+
+    <input id="site-password" name="password" type="password" autocomplete="current-password" data-password-input required>
+
+    <p class="password-gate-error" data-password-error role="alert" hidden>
+      Incorrect password.
+    </p>
+
+    <button type="submit">
+      Enter
+    </button>
+  </form>
+</div>
+
     
 
 
