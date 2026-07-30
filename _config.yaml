@@ -7,6 +7,7 @@ footer: images/banner3.png
 proofer: false
 header-dark: false
 footer-dark: false
+site_password_hash: 928ab9d4a7dddbc9e28cb26adbd9ca1c11f77c69f3af377d9274a6c27b2118b7
 
 languages:
   - code: en
