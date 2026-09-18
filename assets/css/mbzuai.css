@@ -90,10 +90,8 @@ html.mbzuai-theme[data-dark="true"], .mbzuai-theme [data-dark="true"] {
 .mbzuai-theme .mbzuai-hero-art { position: relative; overflow: hidden; background: var(--sand); display: flex; flex-direction: column; justify-content: space-between; min-width: 0; }
 .mbzuai-theme .mbzuai-hero-art img { width: 100%; height: auto; max-height: 445px; object-fit: cover; object-position: center; display: block; opacity: .85; }
 .mbzuai-theme .mbzuai-hero-art > span { padding: 24px 38px 34px; color: var(--navy); font-size: clamp(1.6rem, 2.6vw, 2.4rem); line-height: 1.12; letter-spacing: -.02em; }
-.mbzuai-theme .mbzuai-intro-strip { display: flex; align-items: center; justify-content: space-between; gap: 48px; padding: 30px max(var(--page-gutter), calc((100% - var(--page-width)) / 2)); background: var(--sand-light); color: #0c2945; border-bottom: 1px solid var(--sand-mid); }
-.mbzuai-theme .mbzuai-intro-strip p { font-size: 16px; max-width: 740px; line-height: 1.55; margin: 0; }
-.mbzuai-theme .mbzuai-intro-strip a { flex-shrink: 0; font-size: 13px; color: var(--navy); }
-.mbzuai-theme .mbzuai-intro-strip a span { margin-left: 14px; }
+.mbzuai-theme .mbzuai-reading-image { padding: clamp(24px, 4vw, 48px) var(--page-gutter) 0; background: var(--background); }
+.mbzuai-theme .mbzuai-reading-image img { display: block; width: 100%; max-width: var(--page-width); height: auto; margin: 0 auto; }
 
 /* Shared components, including the existing page-specific cards and sliders. */
 .mbzuai-theme .button { border-radius: 0; padding: 12px 18px; font-weight: 500; }
@@ -155,7 +153,6 @@ html.mbzuai-theme[data-dark="true"], .mbzuai-theme [data-dark="true"] {
   .mbzuai-theme .mbzuai-hero-copy { padding: 48px 30px 48px var(--page-gutter); }
   .mbzuai-theme .mbzuai-hero h1 { font-size: clamp(3rem, 6.4vw, 4.3rem); }
   .mbzuai-theme .mbzuai-hero-art > span { padding: 26px; }
-  .mbzuai-theme .mbzuai-intro-strip { gap: 24px; }
 }
 @media (max-width: 700px) {
   .mbzuai-theme .mbzuai-methods { grid-template-columns: 1fr; }
@@ -180,7 +177,6 @@ html.mbzuai-theme[data-dark="true"], .mbzuai-theme [data-dark="true"] {
   .mbzuai-theme .mbzuai-hero-art { min-height: 185px; flex-direction: row; align-items: center; }
   .mbzuai-theme .mbzuai-hero-art img { width: 48%; height: 210px; }
   .mbzuai-theme .mbzuai-hero-art > span { font-size: clamp(1.25rem, 4.6vw, 1.9rem); padding: 22px; }
-  .mbzuai-theme .mbzuai-intro-strip { align-items: flex-start; flex-direction: column; gap: 20px; padding-block: 28px; }
   .mbzuai-theme main > section, .mbzuai-theme main > section[data-size="wide"] { padding: 44px var(--page-gutter); }
   .mbzuai-theme .mbzuai-footer-brand { flex-direction: column; align-items: flex-start; text-align: left; }
   .mbzuai-theme .mbzuai-footer-brand p { text-align: left; }
