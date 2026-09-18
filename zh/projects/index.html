@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh" dir="ltr" data-dark="false" class="is-password-locked">
+<html lang="zh" dir="ltr" data-dark="false" class="is-password-locked mbzuai-theme">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -43,21 +44,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>研究 | digitalbiostatistics</title>
+<title>项目 | digitalbiostatistics</title>
 
 <link rel="icon" href="/images/icon.png">
 
-<meta name="title" content="研究">
+<meta name="title" content="项目">
 <meta name="description" content="">
 
-<meta property="og:title" content="研究">
+<meta property="og:title" content="项目">
 <meta property="og:site_title" content="digitalbiostatistics">
 <meta property="og:description" content="">
 <meta property="og:url" content="https://digitalbiostatistics.github.io">
 <meta property="og:image" content="/images/share.jpg">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 
-<meta property="twitter:title" content="研究">
+<meta property="twitter:title" content="项目">
 <meta property="twitter:description" content="">
 <meta property="twitter:url" content="https://digitalbiostatistics.github.io">
 <meta property="twitter:card" content="summary_large_image">
@@ -73,9 +74,9 @@
     
       "@type": "WebSite",
     
-    "name": "研究",
+    "name": "Projects",
     "description": "",
-    "headline": "研究",
+    "headline": "Projects",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -89,11 +90,7 @@
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
 
-
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
-
+<link rel="preload" href="/assets/fonts/mbzuai/aktiv-grotesk-regular.ttf" as="font" type="font/ttf" crossorigin>
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -350,7 +347,9 @@
 
 
 
+  <link href="/assets/css/mbzuai.css?v=20260918-i18n" rel="stylesheet">
 
+  <script src="/assets/js/localization.js"></script>
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -377,6 +376,7 @@
 
 
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "42ceeff2db3345bab6f504fe15400493"}'></script><!-- End Cloudflare Web Analytics -->
+<script type="application/json" id="site-translations">{"Play music":"播放音乐","Pause music":"暂停音乐","Play background music":"播放背景音乐","Pause background music":"暂停背景音乐","Clear search":"清除搜索","Showing {x} of {n} results":"显示 {n} 条结果中的 {x} 条","link to this section":"链接至本节"}</script>
 </head>
 
   <body>
@@ -579,32 +579,32 @@
   <form class="password-gate-panel" data-password-form>
     <noscript>
       <p class="password-gate-error">
-        JavaScript is required to access this private website.
+        访问此私密网站需要启用 JavaScript。
       </p>
     </noscript>
 
     <h1 id="password-gate-title">
-      Digital Biostatistics
+      数字生物统计学
     </h1>
 
     <p class="password-gate-message">
-      This website is under construction. Please enter the password to continue.
+      本网站正在建设中。请输入密码以继续访问。
     </p>
 
     <div class="password-gate-form-row">
       <label for="site-password">
-        Password
+        密码
       </label>
 
       <input id="site-password" name="password" type="password" autocomplete="current-password" data-password-input required>
 
       <button type="submit">
-        Enter
+        进入
       </button>
     </div>
 
     <p class="password-gate-error" data-password-error role="alert" hidden>
-      Incorrect password.
+      密码错误。
     </p>
   </form>
 </div>
@@ -612,288 +612,243 @@
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<header class="background" style="--image: url('/images/banner3.png')" data-dark="false">
-  <a href="/zh/" class="home">
-    
-      <span class="logo">
-        
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="-40 -60 80 100">
-  <style>
-    .bubble {
-      animation: float 2s ease-out both infinite var(--delay);
-    }
-    @keyframes float {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-      75% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(-40px);
-      }
-    }
-  </style>
-  <g fill="currentColor" opacity="0.5">
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.1s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.4s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.1s"></circle>
-  </g>
-  <path fill="#38bdf8" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L -19.5 11.25
-      L 0 22.5
-      L 19.5 11.25
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="#bae6fd" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L 0 0
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="none" stroke="currentColor" stroke-width="5" d="
-      M -18 -53
-      L -10 -53
-      L -10 -29.2
-      L -30.3 -17.5
-      L -30.3 17.5
-      L 0 35
-      L 30.3 17.5
-      L 30.3 -17.5
-      L 10 -29.2
-      L 10 -53
-      L 18 -53
-    "></path>
-</svg>
-
-        
-      </span>
-    
-
-    
-      <span class="title-text" data-tooltip="Home">
-        
-          <span class="title">digitalbiostatistics</span>
-        
-
-        
-      </span>
-    
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    
-
-    
+<a class="mbzuai-skip-link" href="#main-content">跳至正文</a>
+<header class="mbzuai-header">
+  <div class="mbzuai-masthead">
+    <a class="mbzuai-university" href="https://mbzuai.ac.ae/" aria-label="穆罕默德·本·扎耶德人工智能大学">
+      <img src="/images/mbzuai/logo-mbzuai-navy.svg" width="238" height="80" alt="穆罕默德·本·扎耶德人工智能大学">
+    </a>
+    <a class="mbzuai-group" href="/zh/">
+      <span>数字生物统计学</span>
+      <span class="mbzuai-group-caption">Marcos Matabuena 研究组</span>
+    </a>
+  </div>
+  <div class="mbzuai-nav-bar">
+    <button class="mbzuai-menu-toggle" type="button" aria-expanded="false" aria-controls="mbzuai-navigation">
+      <span>菜单</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="mbzuai-navigation" aria-label="主导航">
       
       
         
-      
-    
-      
-      
         
-      
-    
-      
-      
         
       
         
-          <a href="/zh/projects/" data-tooltip="已发表的研究成果">
-            研究
-          </a>
         
-      
-    
-      
-      
         
       
         
-          <a href="/zh/research/" data-tooltip="已发表的研究成果">
-            研究
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
         
       
         
-          <a href="/zh/team/" data-tooltip="了解我们的团队">
-            团队
-          </a>
         
-      
-    
-      
-      
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
+          
+            <a href="/zh/research/">研究</a>
+          
         
       
         
-          <a href="/zh/blog/" data-tooltip="最新动态与其他内容">
-            新闻
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
         
       
         
-          <a href="/zh/contact/" data-tooltip="电子邮箱、网站和地址">
-            联系我们
-          </a>
+        
         
       
-    
-
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/projects/" aria-current="page">项目</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/team/">团队</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/blog/">新闻</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/contact/">加入我们</a>
+          
+        
+      
+        
+        
+        
+      
+    </nav>
     <div class="language-menu">
-      <button class="language-menu-button" type="button" aria-label="Choose language" aria-expanded="false" aria-controls="language-menu-dropdown">
-        <span aria-hidden="true">
-          <i class="fa-solid fa-globe"></i>
-        </span>
+      <button class="language-menu-button" type="button" aria-label="选择语言" aria-expanded="false" aria-controls="language-menu-dropdown">
+        <span aria-hidden="true">ZH</span><span aria-hidden="true">⌄</span>
       </button>
-    
       <div class="language-menu-dropdown" id="language-menu-dropdown">
         
           
-    
           
-            
-          <a href="/projects/" lang="en">
-            English
-          </a>
+          <a href="/projects/" lang="en">English</a>
         
           
-    
           
-            
-          <a href="/zh/projects/" lang="zh" class="is-current" aria-current="page">
-            中文
-          </a>
+          <a href="/zh/projects/" lang="zh" class="is-current" aria-current="page">中文</a>
         
           
-    
           
-            
-          <a href="/es/" lang="es">
-            Español
-          </a>
+          <a href="/es/projects/" lang="es">Español</a>
         
           
-    
           
-            
-          <a href="/gl/" lang="gl">
-            Galego
-          </a>
+          <a href="/gl/projects/" lang="gl">Galego</a>
         
           
-    
           
-            
-          <a href="/ar/projects/" lang="ar" dir="rtl">
-            العربية
-          </a>
+          <a href="/ar/projects/" lang="ar" dir="rtl">العربية</a>
         
       </div>
     </div>
-  </nav>
+  </div>
 </header>
 <script src="/assets/js/language-menu.js" defer></script>
+<script src="/assets/js/mbzuai-navigation.js" defer></script>
 
 
     
@@ -915,9 +870,472 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="研究">研究</h1>
+    <style>
+  /* ---------- INTRODUCCIÓN ---------- */
 
-<p>这里展示数字生物统计学研究团队的论文和研究成果。</p>
+  .projects-intro {
+    max-width: 900px;
+    margin-bottom: 55px;
+  }
+
+  .projects-lead {
+    font-size: 1.08rem;
+    line-height: 1.75;
+  }
+
+  .projects-intro p {
+    line-height: 1.75;
+  }
+
+
+  /* ---------- ENCABEZADOS ANTIGUOS ---------- */
+  /* Evita que se desplacen o se queden flotando si todavía
+     queda algún <header> antiguo en el HTML. */
+
+  .questions-main-header,
+  .questions-section-header {
+    position: static !important;
+    inset: auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    z-index: auto !important;
+    width: auto !important;
+    max-width: 900px;
+    margin: 0 0 30px;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .questions-section {
+    position: static !important;
+    margin: 55px 0 70px;
+  }
+
+  .section-label {
+    display: none;
+  }
+
+
+  /* ---------- CUADRÍCULA DE PREGUNTAS ---------- */
+
+  .question-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    margin: 30px 0 45px;
+    padding: 0;
+    position: static;
+  }
+
+
+  /* ---------- RECUADROS AZULES ---------- */
+
+  .question-card {
+    position: static;
+    display: block;
+    box-sizing: border-box;
+    min-width: 0;
+    height: auto;
+    margin: 0;
+    padding: 24px 26px;
+
+    background: #eef6fa;
+    border: 1px solid #cbdfe9;
+    border-radius: 14px;
+    box-shadow: 0 5px 16px rgba(40, 78, 98, 0.08);
+
+    overflow: visible;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  .question-card:hover,
+  .question-card:focus,
+  .question-card:focus-within {
+    transform: none !important;
+  }
+
+  .question-card h3,
+  .question-card h4 {
+    margin: 0 0 12px;
+    color: #254f65;
+    font-size: 1.05rem;
+    line-height: 1.4;
+  }
+
+ .question-card p {
+  margin: 0;
+  color: #314b59;
+  font-size: 0.97rem;
+  line-height: 1.65;
+
+  text-align: left !important;
+  word-spacing: normal !important;
+  letter-spacing: normal;
+}
+
+  .question-card p + p {
+    margin-top: 12px;
+  }
+
+  .question-card strong {
+    color: #254f65;
+  }
+
+
+  /* ---------- PANTALLAS PEQUEÑAS ---------- */
+
+  @media (max-width: 760px) {
+    .projects-intro {
+      margin-bottom: 40px;
+    }
+
+    .question-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      margin: 24px 0 50px;
+    }
+
+    .question-card {
+      padding: 21px 20px;
+    }
+  }
+ .card-text p {
+    text-align: left !important;
+    word-spacing: normal !important;
+    letter-spacing: normal !important;
+    hyphens: auto;
+  }
+
+  /* ---------- FLAGSHIP RESEARCH PROGRAMS ---------- */
+
+  .research-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    width: 100%;
+    margin: 36px 0 52px;
+  }
+
+  .research-focus-card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 30px 28px;
+
+    background: #ffffff;
+    border: 1px solid rgba(84, 127, 157, 0.18);
+    border-radius: 12px;
+
+    box-shadow: 0 12px 32px rgba(32, 49, 60, 0.08);
+  }
+
+  .research-focus-card h3 {
+    margin: 0 0 14px;
+
+    color: #263b49;
+    font-size: 1.2rem;
+    line-height: 1.35;
+  }
+
+  .research-focus-card p {
+    margin: 0;
+
+    color: #66757f;
+    line-height: 1.65;
+  }
+
+  @media (max-width: 900px) {
+    .research-focus-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .research-focus-card:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .research-focus-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .research-focus-card,
+    .research-focus-card:last-child {
+      grid-column: auto;
+    }
+
+    .research-focus-card {
+      padding: 24px 22px;
+    }
+}
+</style>
+
+<div class="projects-page">
+
+  <h1 id="projects">项目</h1>
+
+  <div class="projects-intro">
+
+<p class="projects-lead">
+我们的项目旨在为数字生物统计学建立严谨的方法学基础，同时验证其在生物医学研究、临床实践和人群健康中的实际价值。我们开发统计方法，将连续、纵向、多模态健康数据转化为可靠的生物医学知识和有临床意义的决策。研究围绕三个相互关联的计划展开，整体目标是在代谢健康、糖尿病照护和个体化营养方面产生实际影响。</p>  
+
+<h3>核心研究计划</h3>
+<div class="research-focus-grid" aria-label="核心研究计划">
+
+  <article class="research-focus-card">
+    <h3>数字表型分析与个体化健康</h3>
+    <p>
+      如何将连续生理数据与多模态生物数据转化为可重复的数字表型，用于个体化医疗？
+    </p>
+  </article>
+
+  <article class="research-focus-card">
+    <h3>疾病进展的数字生物标志物</h3>
+    <p>
+      近乎连续的数字测量能否比传统临床评估更早发现具有临床意义的变化？
+    </p>
+  </article>
+
+  <article class="research-focus-card">
+    <h3>人群健康与数字流行病学</h3>
+    <p>
+      数字健康数据如何改善人群层面的监测、预防与医疗卫生规划？
+    </p>
+  </article>
+
+</div>
+
+<div style="max-width: 950px; margin: 40px auto 10px auto;">
+  <img src="/images/projects.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
+</div>
+
+</div>
+  
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+  <h2 id="open-questions-we-are-working-to-solve">我们正在探索的开放问题</h2>
+
+  <p>我们的研究围绕尚未解决的方法学、应用和临床问题展开。这些问题引导新统计理论的发展，并确保由此产生的方法能够应对医学与公共卫生中的重要问题。</p>
+
+  <div class="question-grid">
+
+  <article class="question-card">
+
+
+      <h4>高维多重检验中的 e 值</h4>
+
+      <p>
+      如何将 e 值发展为通用框架，用于高维数字健康研究中的大规模多重假设检验？
+      </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>随机效应模型的最优共形预测</h4>
+
+    <p>
+      如何将共形预测扩展至多层模型和随机效应模型，同时保留有意义的边际与条件覆盖率保证？
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>随机对象的条件预测推断</h4>
+
+    <p>
+      如何为度量空间中的随机对象构建预测区域，在不依赖苛刻光滑性假设的前提下提供有力的条件覆盖率保证？
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>无需流形假设的深度学习</h4>
+
+    <p>
+      以现代数字健康应用为出发点，在不假设观测值位于光滑流形上的情况下，能够为一般非欧几里得空间中的深度学习算法建立哪些理论保证？
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>分布型数据分析的数学基础</h4>
+
+    <p>
+      要使分布型数据分析成为严谨、可解释且广泛适用于数字健康的框架，需要哪些数学与统计基础？
+    </p>
+
+  </article>
+
+</div>
+
+  <h2 id="applied-and-clinical-questions">应用与临床问题</h2>
+
+  <p>在研究这些方法学挑战的同时，我们也探索重要的应用问题，使先进统计方法能够产生切实的临床和生物医学价值。</p>
+
+  <div class="question-grid">
+
+  <article class="question-card">
+
+
+    <h4>利用数字表型开展遗传学发现</h4>
+
+    <p>
+      数字表型能否揭示传统临床生物标志物无法检测到的遗传关联？
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+    <h4>验证葡萄糖密度作为数字生物标志物的价值</h4>
+
+    <p>
+      能否验证葡萄糖密度及相关分布表示是稳健、可重复且信息更丰富的代谢健康数字生物标志物？
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>血糖变异性与微生物组</h4>
+
+    <p>
+      血糖变异性在微生物组与代谢健康的关系中发挥什么作用？持续血糖监测数据如何帮助更好地刻画这一关系？
+    </p>
+
+  </article>
+
+  <article class="question-card">
+
+
+    <h4>持续血糖监测与视网膜病变</h4>
+
+    <p>
+      持续血糖监测表型与糖尿病视网膜病变及其他微血管并发症有何关联？
+    </p>
+
+  </article>
+
+  <article class="question-card question-card-wide">
+
+
+    <h4>连续生物医学信号的表型分析</h4>
+
+    <p>
+      如何将连续生理信号转化为具有临床意义、可重复的数字表型？在无糖尿病人群中建立严谨的持续血糖监测表型分析框架，需要满足哪些条件？
+    </p>
+
+  </article>
+
+</div>
+
+  <h2 id="learn-more-about-our-work">进一步了解我们的工作</h2>
+
+  <div class="card" data-style="small">
+  <a aria-label="Human Phenotype Project 中多模态数字健康与组学数据的统计建模" class="card-image">
+    <img src="/images/AEGIScoeffunct.png" alt="Human Phenotype Project 中多模态数字健康与组学数据的统计建模" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    
+      <a class="card-title">
+        Human Phenotype Project 中多模态数字健康与组学数据的统计建模
+    </a>
+    
+
+    
+
+    
+      <p>
+        开发统计人工智能模型，整合 Human Phenotyping Project 的多模态数字健康、医学影像、基因组与微生物组数据，应用于视网膜病变风险、葡萄糖代谢和函数型数字健康表型研究。
+
+      </p>
+    
+
+    
+  </div>
+</div>
+
+  <div class="card" data-style="small">
+  <a aria-label="应用于糖尿病的数字流行病学时空方法" class="card-image">
+    <img src="/images/heatmap.png" alt="应用于糖尿病的数字流行病学时空方法" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    
+      <a class="card-title">
+        应用于糖尿病的数字流行病学时空方法
+    </a>
+    
+
+    
+
+    
+      <p>
+        开发时空统计与机器学习方法，分析可穿戴设备、持续血糖监测系统和电子健康记录产生的数字健康数据，以描绘糖尿病风险及代谢控制在空间和时间上的分布。
+
+      </p>
+    
+
+    
+  </div>
+</div>
+
+  <div class="card" data-style="small">
+  <a aria-label="用于追踪肌萎缩侧索硬化症进展的函数型分布生物标志物" class="card-image">
+    <img src="/images/ALSfigure.jpeg" alt="用于追踪肌萎缩侧索硬化症进展的函数型分布生物标志物" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  </a>
+
+  <div class="card-text">
+    
+      <a class="card-title">
+        用于追踪肌萎缩侧索硬化症进展的函数型分布生物标志物
+    </a>
+    
+
+    
+
+    
+      <p>
+        利用近乎连续的手部运动数据开发函数型与分布型生物标志物，改善肌萎缩侧索硬化症进展的监测与生存预测。
+
+      </p>
+    
+
+    
+  </div>
+</div>
+
+</section>
+</div>
   </section>
 
 
@@ -927,8 +1345,21 @@
 
 
 
-<footer class="background" style="--image: url('/images/banner3.png')" data-dark="false" data-size="wide">
+
   
+  
+
+<footer class="background mbzuai-footer" data-dark="true" data-size="wide">
+
+    <div class="mbzuai-footer-brand">
+      <a href="https://mbzuai.ac.ae/" aria-label="穆罕默德·本·扎耶德人工智能大学">
+        <img src="/images/mbzuai/logo-mbzuai-white.svg" width="238" height="80" alt="穆罕默德·本·扎耶德人工智能大学" loading="lazy">
+      </a>
+      <div>
+<p>数字生物统计学</p>
+<span>生物统计学、人工智能与数字健康。</span>
+</div>
+    </div>
   <!--
     <div>
       Extra details like contact info or address
@@ -944,7 +1375,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="电子邮件" data-style="bare" aria-label="电子邮件">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -985,56 +1416,12 @@
       
 
       
-        
-      
     
       
       
 
       
         
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-        
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
       
     
       
@@ -1078,7 +1465,169 @@
       
 
       
+    
+      
+      
+
+      
         
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/philosophy/">
+            理念
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/teaching/">
+            教育与教学
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/mbzuai/">
+            MBZUAI
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
       
     
   </div>
@@ -1089,7 +1638,7 @@
     digitalbiostatistics
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="深色模式" aria-label="切换深色模式" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>

@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh" dir="ltr" data-dark="false" class="is-password-locked">
+<html lang="zh" dir="ltr" data-dark="false" class="is-password-locked mbzuai-theme">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -55,7 +56,7 @@
 <meta property="og:description" content="">
 <meta property="og:url" content="https://digitalbiostatistics.github.io">
 <meta property="og:image" content="/images/share.jpg">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 
 <meta property="twitter:title" content="新闻">
 <meta property="twitter:description" content="">
@@ -73,9 +74,9 @@
     
       "@type": "WebSite",
     
-    "name": "新闻",
+    "name": "News",
     "description": "",
-    "headline": "新闻",
+    "headline": "News",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -89,11 +90,7 @@
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
 
-
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
-
+<link rel="preload" href="/assets/fonts/mbzuai/aktiv-grotesk-regular.ttf" as="font" type="font/ttf" crossorigin>
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -350,7 +347,9 @@
 
 
 
+  <link href="/assets/css/mbzuai.css?v=20260918-i18n" rel="stylesheet">
 
+  <script src="/assets/js/localization.js"></script>
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -377,6 +376,7 @@
 
 
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "42ceeff2db3345bab6f504fe15400493"}'></script><!-- End Cloudflare Web Analytics -->
+<script type="application/json" id="site-translations">{"Play music":"播放音乐","Pause music":"暂停音乐","Play background music":"播放背景音乐","Pause background music":"暂停背景音乐","Clear search":"清除搜索","Showing {x} of {n} results":"显示 {n} 条结果中的 {x} 条","link to this section":"链接至本节"}</script>
 </head>
 
   <body>
@@ -579,32 +579,32 @@
   <form class="password-gate-panel" data-password-form>
     <noscript>
       <p class="password-gate-error">
-        JavaScript is required to access this private website.
+        访问此私密网站需要启用 JavaScript。
       </p>
     </noscript>
 
     <h1 id="password-gate-title">
-      Digital Biostatistics
+      数字生物统计学
     </h1>
 
     <p class="password-gate-message">
-      This website is under construction. Please enter the password to continue.
+      本网站正在建设中。请输入密码以继续访问。
     </p>
 
     <div class="password-gate-form-row">
       <label for="site-password">
-        Password
+        密码
       </label>
 
       <input id="site-password" name="password" type="password" autocomplete="current-password" data-password-input required>
 
       <button type="submit">
-        Enter
+        进入
       </button>
     </div>
 
     <p class="password-gate-error" data-password-error role="alert" hidden>
-      Incorrect password.
+      密码错误。
     </p>
   </form>
 </div>
@@ -612,288 +612,243 @@
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<header class="background" style="--image: url('/images/banner3.png')" data-dark="false">
-  <a href="/zh/" class="home">
-    
-      <span class="logo">
-        
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="-40 -60 80 100">
-  <style>
-    .bubble {
-      animation: float 2s ease-out both infinite var(--delay);
-    }
-    @keyframes float {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-      75% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(-40px);
-      }
-    }
-  </style>
-  <g fill="currentColor" opacity="0.5">
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.1s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.4s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.1s"></circle>
-  </g>
-  <path fill="#38bdf8" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L -19.5 11.25
-      L 0 22.5
-      L 19.5 11.25
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="#bae6fd" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L 0 0
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="none" stroke="currentColor" stroke-width="5" d="
-      M -18 -53
-      L -10 -53
-      L -10 -29.2
-      L -30.3 -17.5
-      L -30.3 17.5
-      L 0 35
-      L 30.3 17.5
-      L 30.3 -17.5
-      L 10 -29.2
-      L 10 -53
-      L 18 -53
-    "></path>
-</svg>
-
-        
-      </span>
-    
-
-    
-      <span class="title-text" data-tooltip="Home">
-        
-          <span class="title">digitalbiostatistics</span>
-        
-
-        
-      </span>
-    
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    
-
-    
+<a class="mbzuai-skip-link" href="#main-content">跳至正文</a>
+<header class="mbzuai-header">
+  <div class="mbzuai-masthead">
+    <a class="mbzuai-university" href="https://mbzuai.ac.ae/" aria-label="穆罕默德·本·扎耶德人工智能大学">
+      <img src="/images/mbzuai/logo-mbzuai-navy.svg" width="238" height="80" alt="穆罕默德·本·扎耶德人工智能大学">
+    </a>
+    <a class="mbzuai-group" href="/zh/">
+      <span>数字生物统计学</span>
+      <span class="mbzuai-group-caption">Marcos Matabuena 研究组</span>
+    </a>
+  </div>
+  <div class="mbzuai-nav-bar">
+    <button class="mbzuai-menu-toggle" type="button" aria-expanded="false" aria-controls="mbzuai-navigation">
+      <span>菜单</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="mbzuai-navigation" aria-label="主导航">
       
       
         
-      
-    
-      
-      
         
-      
-    
-      
-      
         
       
         
-          <a href="/zh/projects/" data-tooltip="已发表的研究成果">
-            研究
-          </a>
         
-      
-    
-      
-      
         
       
         
-          <a href="/zh/research/" data-tooltip="已发表的研究成果">
-            研究
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
         
       
         
-          <a href="/zh/team/" data-tooltip="了解我们的团队">
-            团队
-          </a>
         
-      
-    
-      
-      
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
+          
+            <a href="/zh/research/">研究</a>
+          
         
       
         
-          <a href="/zh/blog/" data-tooltip="最新动态与其他内容">
-            新闻
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
         
       
         
-          <a href="/zh/contact/" data-tooltip="电子邮箱、网站和地址">
-            联系我们
-          </a>
+        
         
       
-    
-
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/projects/">项目</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/team/">团队</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/blog/" aria-current="page">新闻</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/contact/">加入我们</a>
+          
+        
+      
+        
+        
+        
+      
+    </nav>
     <div class="language-menu">
-      <button class="language-menu-button" type="button" aria-label="Choose language" aria-expanded="false" aria-controls="language-menu-dropdown">
-        <span aria-hidden="true">
-          <i class="fa-solid fa-globe"></i>
-        </span>
+      <button class="language-menu-button" type="button" aria-label="选择语言" aria-expanded="false" aria-controls="language-menu-dropdown">
+        <span aria-hidden="true">ZH</span><span aria-hidden="true">⌄</span>
       </button>
-    
       <div class="language-menu-dropdown" id="language-menu-dropdown">
         
           
-    
           
-            
-          <a href="/blog/" lang="en">
-            English
-          </a>
+          <a href="/blog/" lang="en">English</a>
         
           
-    
           
-            
-          <a href="/zh/blog/" lang="zh" class="is-current" aria-current="page">
-            中文
-          </a>
+          <a href="/zh/blog/" lang="zh" class="is-current" aria-current="page">中文</a>
         
           
-    
           
-            
-          <a href="/es/" lang="es">
-            Español
-          </a>
+          <a href="/es/blog/" lang="es">Español</a>
         
           
-    
           
-            
-          <a href="/gl/" lang="gl">
-            Galego
-          </a>
+          <a href="/gl/blog/" lang="gl">Galego</a>
         
           
-    
           
-            
-          <a href="/ar/blog/" lang="ar" dir="rtl">
-            العربية
-          </a>
+          <a href="/ar/blog/" lang="ar" dir="rtl">العربية</a>
         
       </div>
     </div>
-  </nav>
+  </div>
 </header>
 <script src="/assets/js/language-menu.js" defer></script>
+<script src="/assets/js/mbzuai-navigation.js" defer></script>
 
 
     
@@ -915,10 +870,9 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="新闻">新闻</h1>
+    <h1 id="news">新闻</h1>
 
-<p>及时了解我们团队的最新动态，包括研究进展、学术成果发表、合作项目、获奖情况、活动以及其他重要里程碑。在这里，我们将分享推动数字生物统计学研究组不断发展壮大的各项活动与成就。</p>
-
+<p>了解团队的最新动态，包括研究进展、论文发表、合作、奖项、活动及其他重要里程碑。我们在这里分享推动数字生物统计学研究组发展的活动与成果。</p>
 <div style="max-width: 800px; margin: 40px auto 10px auto;">
   <img src="/images/news.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
 </div>
@@ -936,37 +890,25 @@
 -->
 
 <div class="search-box">
-  <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="Search items on this page">
-  <button disabled data-tooltip="Clear search" aria-label="clear search" onclick="onSearchClear()">
+  <input type="text" class="search-input" oninput="onSearchInput(this)" placeholder="搜索本页内容">
+  <button disabled data-tooltip="清除搜索" aria-label="清除搜索" onclick="onSearchClear()">
     <i class="icon fa-solid fa-magnifying-glass"></i>
   </button>
 </div>
 
 <div class="tags">
     
-      <a href="/zh/blog/?search=%22tag:%20diabetes%22" class="tag" data-tooltip='Show items with the tag "diabetes"'>
-        diabetes
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20diabetes%22" class="tag" data-tooltip="显示带有“糖尿病”标签的内容" data-tag-key="diabetes">糖尿病</a>
     
-      <a href="/zh/blog/?search=%22tag:%20conference%22" class="tag" data-tooltip='Show items with the tag "conference"'>
-        conference
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20conference%22" class="tag" data-tooltip="显示带有“会议”标签的内容" data-tag-key="conference">会议</a>
     
-      <a href="/zh/blog/?search=%22tag:%20technology%22" class="tag" data-tooltip='Show items with the tag "technology"'>
-        technology
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20technology%22" class="tag" data-tooltip="显示带有“技术”标签的内容" data-tag-key="technology">技术</a>
     
-      <a href="/zh/blog/?search=%22tag:%20statistics-in-medicine%22" class="tag" data-tooltip='Show items with the tag "statistics-in-medicine"'>
-        statistics-in-medicine
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20statistics-in-medicine%22" class="tag" data-tooltip="显示带有“医学统计”标签的内容" data-tag-key="statistics-in-medicine">医学统计</a>
     
-      <a href="/zh/blog/?search=%22tag:%20paper%22" class="tag" data-tooltip='Show items with the tag "paper"'>
-        paper
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20paper%22" class="tag" data-tooltip="显示带有“论文”标签的内容" data-tag-key="paper">论文</a>
     
-      <a href="/zh/blog/?search=%22tag:%20variable-selection%22" class="tag" data-tooltip='Show items with the tag "variable-selection"'>
-        variable-selection
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20variable-selection%22" class="tag" data-tooltip="显示带有“变量选择”标签的内容" data-tag-key="variable-selection">变量选择</a>
     
   </div>
 
@@ -981,7 +923,7 @@
     
 
     <div class="post-excerpt-text">
-      <a href="/2026/07/30/VariableSelection.html">2026 Diabetes Technology Meeting</a>
+      <a href="/zh/2026/07/30/VariableSelection.html">2026 年糖尿病技术大会</a>
 
       <div class="post-info">
   
@@ -990,14 +932,14 @@
   
 
   
-    <span data-tooltip="Originally published on">
+    <span data-tooltip="首次发布于">
       <i class="icon fa-regular fa-calendar"></i>
-      <span>July 30, 2026</span>
+      <span>2026 年 7 月 30 日</span>
     </span>
   
 
   
-    <span data-tooltip="Last updated on">
+    <span data-tooltip="最近更新于">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
       <span>September 18, 2026</span>
     </span>
@@ -1010,17 +952,11 @@
 
   <div class="tags">
     
-      <a href="/blog?search=%22tag:%20statistics-in-medicine%22" class="tag" data-tooltip='Show items with the tag "statistics-in-medicine"'>
-        statistics-in-medicine
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20statistics-in-medicine%22" class="tag" data-tooltip="显示带有“医学统计”标签的内容" data-tag-key="statistics-in-medicine">医学统计</a>
     
-      <a href="/blog?search=%22tag:%20paper%22" class="tag" data-tooltip='Show items with the tag "paper"'>
-        paper
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20paper%22" class="tag" data-tooltip="显示带有“论文”标签的内容" data-tag-key="paper">论文</a>
     
-      <a href="/blog?search=%22tag:%20variable-selection%22" class="tag" data-tooltip='Show items with the tag "variable-selection"'>
-        variable-selection
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20variable-selection%22" class="tag" data-tooltip="显示带有“变量选择”标签的内容" data-tag-key="variable-selection">变量选择</a>
     
   </div>
 
@@ -1047,7 +983,7 @@
     
 
     <div class="post-excerpt-text">
-      <a href="/2026/07/19/DTM2026.html">2026 Diabetes Technology Meeting</a>
+      <a href="/zh/2026/07/19/DTM2026.html">2026 年糖尿病技术大会</a>
 
       <div class="post-info">
   
@@ -1056,14 +992,14 @@
   
 
   
-    <span data-tooltip="Originally published on">
+    <span data-tooltip="首次发布于">
       <i class="icon fa-regular fa-calendar"></i>
-      <span>July 19, 2026</span>
+      <span>2026 年 7 月 19 日</span>
     </span>
   
 
   
-    <span data-tooltip="Last updated on">
+    <span data-tooltip="最近更新于">
       <i class="icon fa-solid fa-clock-rotate-left"></i>
       <span>September 18, 2026</span>
     </span>
@@ -1076,17 +1012,11 @@
 
   <div class="tags">
     
-      <a href="/blog?search=%22tag:%20diabetes%22" class="tag" data-tooltip='Show items with the tag "diabetes"'>
-        diabetes
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20diabetes%22" class="tag" data-tooltip="显示带有“糖尿病”标签的内容" data-tag-key="diabetes">糖尿病</a>
     
-      <a href="/blog?search=%22tag:%20conference%22" class="tag" data-tooltip='Show items with the tag "conference"'>
-        conference
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20conference%22" class="tag" data-tooltip="显示带有“会议”标签的内容" data-tag-key="conference">会议</a>
     
-      <a href="/blog?search=%22tag:%20technology%22" class="tag" data-tooltip='Show items with the tag "technology"'>
-        technology
-      </a>
+      <a href="/zh/blog/?search=%22tag:%20technology%22" class="tag" data-tooltip="显示带有“技术”标签的内容" data-tag-key="technology">技术</a>
     
   </div>
 
@@ -1097,13 +1027,7 @@
       
       
       <p data-search="Marcos Matabuena will be an invited speaker at the 2026 Diabetes Technology Meeting, taking place in Washington, D.C., from October 27 29.At one of the world s leading international conferences on diabetes technology, he will present innovative statistical and digital health methods developed by our research group using glucose data, and discuss their potential applications in diabetes research and clinical practice. For more information about the DTM2026, click here .">
-        Marcos Matabuena will be an invited speaker at the 2026 Diabetes Technology Meeting, taking place in Washington, D.C., from October 27–29.
-At one of the world’s leading international conferences on diabetes technology, he will present innovative statistical and digital health methods developed by our research group using glucose data, and discuss their potential applications in diabetes research and clinical practice.
-
-  For more information about the DTM2026,
-  
-    click here
-  .
+        Marcos Matabuena 将作为受邀报告人出席于 10 月 27 日至 29 日在华盛顿特区举行的 2026 年糖尿病技术大会。在这一全球领先的糖尿病技术国际会议上，他将介绍本研究组利用血糖数据开发的创新统计与数字健康方法，并探讨其在糖尿病研究和临床实践中的潜在应用。 如需了解 DTM2026 的更多信息， 请点击此处.
 
 
       </p>
@@ -1119,8 +1043,21 @@ At one of the world’s leading international conferences on diabetes technology
 
 
 
-<footer class="background" style="--image: url('/images/banner3.png')" data-dark="false" data-size="wide">
+
   
+  
+
+<footer class="background mbzuai-footer" data-dark="true" data-size="wide">
+
+    <div class="mbzuai-footer-brand">
+      <a href="https://mbzuai.ac.ae/" aria-label="穆罕默德·本·扎耶德人工智能大学">
+        <img src="/images/mbzuai/logo-mbzuai-white.svg" width="238" height="80" alt="穆罕默德·本·扎耶德人工智能大学" loading="lazy">
+      </a>
+      <div>
+<p>数字生物统计学</p>
+<span>生物统计学、人工智能与数字健康。</span>
+</div>
+    </div>
   <!--
     <div>
       Extra details like contact info or address
@@ -1136,7 +1073,7 @@ At one of the world’s leading international conferences on diabetes technology
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="电子邮件" data-style="bare" aria-label="电子邮件">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -1177,56 +1114,12 @@ At one of the world’s leading international conferences on diabetes technology
       
 
       
-        
-      
     
       
       
 
       
         
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-        
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
       
     
       
@@ -1270,7 +1163,169 @@ At one of the world’s leading international conferences on diabetes technology
       
 
       
+    
+      
+      
+
+      
         
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/philosophy/">
+            理念
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/teaching/">
+            教育与教学
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/mbzuai/">
+            MBZUAI
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
       
     
   </div>
@@ -1281,7 +1336,7 @@ At one of the world’s leading international conferences on diabetes technology
     digitalbiostatistics
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="深色模式" aria-label="切换深色模式" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>

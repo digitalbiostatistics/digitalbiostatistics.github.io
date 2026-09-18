@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh" dir="ltr" data-dark="false" class="is-password-locked">
+<html lang="zh" dir="ltr" data-dark="false" class="is-password-locked mbzuai-theme">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -43,21 +44,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>联系我们 | digitalbiostatistics</title>
+<title>加入我们 | digitalbiostatistics</title>
 
 <link rel="icon" href="/images/icon.png">
 
-<meta name="title" content="联系我们">
+<meta name="title" content="加入我们">
 <meta name="description" content="">
 
-<meta property="og:title" content="联系我们">
+<meta property="og:title" content="加入我们">
 <meta property="og:site_title" content="digitalbiostatistics">
 <meta property="og:description" content="">
 <meta property="og:url" content="https://digitalbiostatistics.github.io">
 <meta property="og:image" content="/images/share.jpg">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 
-<meta property="twitter:title" content="联系我们">
+<meta property="twitter:title" content="加入我们">
 <meta property="twitter:description" content="">
 <meta property="twitter:url" content="https://digitalbiostatistics.github.io">
 <meta property="twitter:card" content="summary_large_image">
@@ -73,9 +74,9 @@
     
       "@type": "WebSite",
     
-    "name": "联系我们",
+    "name": "Join us",
     "description": "",
-    "headline": "联系我们",
+    "headline": "Join us",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -89,11 +90,7 @@
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
 
-
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
-
+<link rel="preload" href="/assets/fonts/mbzuai/aktiv-grotesk-regular.ttf" as="font" type="font/ttf" crossorigin>
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -350,7 +347,9 @@
 
 
 
+  <link href="/assets/css/mbzuai.css?v=20260918-i18n" rel="stylesheet">
 
+  <script src="/assets/js/localization.js"></script>
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -377,6 +376,7 @@
 
 
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "42ceeff2db3345bab6f504fe15400493"}'></script><!-- End Cloudflare Web Analytics -->
+<script type="application/json" id="site-translations">{"Play music":"播放音乐","Pause music":"暂停音乐","Play background music":"播放背景音乐","Pause background music":"暂停背景音乐","Clear search":"清除搜索","Showing {x} of {n} results":"显示 {n} 条结果中的 {x} 条","link to this section":"链接至本节"}</script>
 </head>
 
   <body>
@@ -579,32 +579,32 @@
   <form class="password-gate-panel" data-password-form>
     <noscript>
       <p class="password-gate-error">
-        JavaScript is required to access this private website.
+        访问此私密网站需要启用 JavaScript。
       </p>
     </noscript>
 
     <h1 id="password-gate-title">
-      Digital Biostatistics
+      数字生物统计学
     </h1>
 
     <p class="password-gate-message">
-      This website is under construction. Please enter the password to continue.
+      本网站正在建设中。请输入密码以继续访问。
     </p>
 
     <div class="password-gate-form-row">
       <label for="site-password">
-        Password
+        密码
       </label>
 
       <input id="site-password" name="password" type="password" autocomplete="current-password" data-password-input required>
 
       <button type="submit">
-        Enter
+        进入
       </button>
     </div>
 
     <p class="password-gate-error" data-password-error role="alert" hidden>
-      Incorrect password.
+      密码错误。
     </p>
   </form>
 </div>
@@ -612,288 +612,243 @@
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<header class="background" style="--image: url('/images/banner3.png')" data-dark="false">
-  <a href="/zh/" class="home">
-    
-      <span class="logo">
-        
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="-40 -60 80 100">
-  <style>
-    .bubble {
-      animation: float 2s ease-out both infinite var(--delay);
-    }
-    @keyframes float {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-      75% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(-40px);
-      }
-    }
-  </style>
-  <g fill="currentColor" opacity="0.5">
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.1s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.4s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.1s"></circle>
-  </g>
-  <path fill="#38bdf8" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L -19.5 11.25
-      L 0 22.5
-      L 19.5 11.25
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="#bae6fd" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L 0 0
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="none" stroke="currentColor" stroke-width="5" d="
-      M -18 -53
-      L -10 -53
-      L -10 -29.2
-      L -30.3 -17.5
-      L -30.3 17.5
-      L 0 35
-      L 30.3 17.5
-      L 30.3 -17.5
-      L 10 -29.2
-      L 10 -53
-      L 18 -53
-    "></path>
-</svg>
-
-        
-      </span>
-    
-
-    
-      <span class="title-text" data-tooltip="Home">
-        
-          <span class="title">digitalbiostatistics</span>
-        
-
-        
-      </span>
-    
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    
-
-    
+<a class="mbzuai-skip-link" href="#main-content">跳至正文</a>
+<header class="mbzuai-header">
+  <div class="mbzuai-masthead">
+    <a class="mbzuai-university" href="https://mbzuai.ac.ae/" aria-label="穆罕默德·本·扎耶德人工智能大学">
+      <img src="/images/mbzuai/logo-mbzuai-navy.svg" width="238" height="80" alt="穆罕默德·本·扎耶德人工智能大学">
+    </a>
+    <a class="mbzuai-group" href="/zh/">
+      <span>数字生物统计学</span>
+      <span class="mbzuai-group-caption">Marcos Matabuena 研究组</span>
+    </a>
+  </div>
+  <div class="mbzuai-nav-bar">
+    <button class="mbzuai-menu-toggle" type="button" aria-expanded="false" aria-controls="mbzuai-navigation">
+      <span>菜单</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="mbzuai-navigation" aria-label="主导航">
       
       
         
-      
-    
-      
-      
         
-      
-    
-      
-      
         
       
         
-          <a href="/zh/projects/" data-tooltip="已发表的研究成果">
-            研究
-          </a>
         
-      
-    
-      
-      
         
       
         
-          <a href="/zh/research/" data-tooltip="已发表的研究成果">
-            研究
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
         
       
         
-          <a href="/zh/team/" data-tooltip="了解我们的团队">
-            团队
-          </a>
         
-      
-    
-      
-      
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
+          
+            <a href="/zh/research/">研究</a>
+          
         
       
         
-          <a href="/zh/blog/" data-tooltip="最新动态与其他内容">
-            新闻
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
         
       
         
-          <a href="/zh/contact/" data-tooltip="电子邮箱、网站和地址">
-            联系我们
-          </a>
+        
         
       
-    
-
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/projects/">项目</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/team/">团队</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/blog/">新闻</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/contact/" aria-current="page">加入我们</a>
+          
+        
+      
+        
+        
+        
+      
+    </nav>
     <div class="language-menu">
-      <button class="language-menu-button" type="button" aria-label="Choose language" aria-expanded="false" aria-controls="language-menu-dropdown">
-        <span aria-hidden="true">
-          <i class="fa-solid fa-globe"></i>
-        </span>
+      <button class="language-menu-button" type="button" aria-label="选择语言" aria-expanded="false" aria-controls="language-menu-dropdown">
+        <span aria-hidden="true">ZH</span><span aria-hidden="true">⌄</span>
       </button>
-    
       <div class="language-menu-dropdown" id="language-menu-dropdown">
         
           
-    
           
-            
-          <a href="/contact/" lang="en">
-            English
-          </a>
+          <a href="/contact/" lang="en">English</a>
         
           
-    
           
-            
-          <a href="/zh/contact/" lang="zh" class="is-current" aria-current="page">
-            中文
-          </a>
+          <a href="/zh/contact/" lang="zh" class="is-current" aria-current="page">中文</a>
         
           
-    
           
-            
-          <a href="/es/" lang="es">
-            Español
-          </a>
+          <a href="/es/contact/" lang="es">Español</a>
         
           
-    
           
-            
-          <a href="/gl/" lang="gl">
-            Galego
-          </a>
+          <a href="/gl/contact/" lang="gl">Galego</a>
         
           
-    
           
-            
-          <a href="/ar/contact/" lang="ar" dir="rtl">
-            العربية
-          </a>
+          <a href="/ar/contact/" lang="ar" dir="rtl">العربية</a>
         
       </div>
     </div>
-  </nav>
+  </div>
 </header>
 <script src="/assets/js/language-menu.js" defer></script>
+<script src="/assets/js/mbzuai-navigation.js" defer></script>
 
 
     
@@ -915,10 +870,45 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="contact">
-<i class="icon fa-regular fa-envelope"></i>Contact</h1>
+    <h1 id="join-us">加入我们</h1>
 
-<p>如果您有一些想法或问题，并认为严谨的统计方法能够在临床或生物医学领域产生切实影响，欢迎与我们联系。<strong>Marcos 乐于开展合作</strong>，共同研究那些<strong>具有重要影响力的问题</strong>，以推动变革，并帮助塑造医疗健康的数字化未来。</p>
+<div style="max-width: 800px; margin: 40px auto 10px auto;">
+  <img src="/images/joinus.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
+</div>
+
+<h2 id="phd-opportunities-in-digital-biostatistics">数字生物统计学博士研究机会</h2>
+
+<p><strong>当前招生：</strong> 2027 年秋季入学博士生</p>
+
+<p><strong>机构：</strong> 穆罕默德·本·扎耶德人工智能大学</p>
+
+<p><strong>可选项目：</strong> 计算生物学博士项目</p>
+
+<p><strong>研究方向：</strong> 统计人工智能、数字生物标志物、函数型与分布型数据、不确定性量化、纵向健康研究、遗传学及多模态生物医学数据</p>
+
+<p><strong>理想专业背景：</strong> 数学、统计学、计算机科学、生物医学工程、生物信息学或相关专业</p>
+
+<p><strong>资助：</strong> MBZUAI 全额奖学金、月度津贴、大学住宿、医疗保险及阿联酋签证</p>
+
+<p><strong>申请方式：</strong> 请通过 MBZUAI 官方申请平台申请 <a href="https://mbzuai.ac.ae/study/phd-programs/phd-in-computational-biology/">计算生物学博士项目</a> ，并发送一封简短的自我介绍邮件，附上简历、成绩单、研究兴趣，以及一项有代表性的项目或论文。</p>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<h1 id="contact">
+<i class="icon fa-regular fa-envelope"></i>联系我们</h1>
+
+<p>如果您有相关想法或问题，认为严谨的统计方法能够在临床或生物医学场景中发挥重要作用，欢迎与我们联系。 <strong>Marcos 欢迎开展合作</strong> ，共同研究 <strong>具有重要影响的问题</strong>
+，以带来切实改变，并共同塑造医疗卫生的数字未来。</p>
 
 <div style="max-width: 800px; margin: 40px auto 10px auto;">
   <img src="/images/contact.png" alt="" style="width: 100%; display: block; border-radius: 4px;">
@@ -937,25 +927,25 @@
 -->
 
 <div class="button-wrapper">
-    <a class="button" href="mailto:marcos.matabuena@mbzuai.ac.ae" data-tooltip="Email" data-style="" aria-label="Email">
+    <a class="button" href="mailto:marcos.matabuena@mbzuai.ac.ae" data-tooltip="电子邮件" data-style="" aria-label="电子邮件">
       <i class="icon fa-solid fa-envelope"></i>
       
-        <span>Email</span>
+        <span>电子邮件</span>
       
     </a>
   </div>
 
 <div class="button-wrapper">
-    <a class="button" href="https://marcosmatabuena.org/" data-tooltip="Website" data-style="" aria-label="Website">
+    <a class="button" href="https://marcosmatabuena.org/" data-tooltip="网站" data-style="" aria-label="网站">
       <i class="icon fa-solid fa-globe"></i>
       
-        <span>Webpage</span>
+        <span>网页</span>
       
     </a>
   </div>
 
 <div class="button-wrapper">
-    <a class="button" href="https://www.google.com/maps/search/?api=1&query=Mohamed+bin+Zayed+University+of+Artificial+Intelligence+Masdar+City+Abu+Dhabi" data-tooltip="Mohamed bin Zayed University of Artificial Intelligence on Google Maps" data-style="" aria-label="Mohamed bin Zayed University of Artificial Intelligence on Google Maps">
+    <a class="button" href="https://www.google.com/maps/search/?api=1&query=Mohamed+bin+Zayed+University+of+Artificial+Intelligence+Masdar+City+Abu+Dhabi" data-tooltip="Google 地图上的穆罕默德·本·扎耶德人工智能大学" data-style="" aria-label="Google 地图上的穆罕默德·本·扎耶德人工智能大学">
       <i class="icon fa-solid fa-map-location-dot"></i>
       
         <span>MBZUAI</span>
@@ -971,8 +961,21 @@
 
 
 
-<footer class="background" style="--image: url('/images/banner3.png')" data-dark="false" data-size="wide">
+
   
+  
+
+<footer class="background mbzuai-footer" data-dark="true" data-size="wide">
+
+    <div class="mbzuai-footer-brand">
+      <a href="https://mbzuai.ac.ae/" aria-label="穆罕默德·本·扎耶德人工智能大学">
+        <img src="/images/mbzuai/logo-mbzuai-white.svg" width="238" height="80" alt="穆罕默德·本·扎耶德人工智能大学" loading="lazy">
+      </a>
+      <div>
+<p>数字生物统计学</p>
+<span>生物统计学、人工智能与数字健康。</span>
+</div>
+    </div>
   <!--
     <div>
       Extra details like contact info or address
@@ -988,7 +991,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="电子邮件" data-style="bare" aria-label="电子邮件">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -1029,56 +1032,12 @@
       
 
       
-        
-      
     
       
       
 
       
         
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-        
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
       
     
       
@@ -1122,7 +1081,169 @@
       
 
       
+    
+      
+      
+
+      
         
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/philosophy/">
+            理念
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/teaching/">
+            教育与教学
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/mbzuai/">
+            MBZUAI
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
       
     
   </div>
@@ -1133,7 +1254,7 @@
     digitalbiostatistics
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="深色模式" aria-label="切换深色模式" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>

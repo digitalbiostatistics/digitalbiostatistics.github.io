@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="zh" dir="ltr" data-dark="false" class="is-password-locked">
+<html lang="zh" dir="ltr" data-dark="false" class="is-password-locked mbzuai-theme">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -55,7 +56,7 @@
 <meta property="og:description" content="">
 <meta property="og:url" content="https://digitalbiostatistics.github.io">
 <meta property="og:image" content="/images/share.jpg">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 
 <meta property="twitter:title" content="团队">
 <meta property="twitter:description" content="">
@@ -73,9 +74,9 @@
     
       "@type": "WebSite",
     
-    "name": "团队",
+    "name": "Team",
     "description": "",
-    "headline": "团队",
+    "headline": "Team",
     "publisher": {
       "@type": "Organization",
       "logo": { "@type": "ImageObject", "url": "/images/icon.png" }
@@ -89,11 +90,7 @@
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
 
-
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
-
+<link rel="preload" href="/assets/fonts/mbzuai/aktiv-grotesk-regular.ttf" as="font" type="font/ttf" crossorigin>
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -350,7 +347,9 @@
 
 
 
+  <link href="/assets/css/mbzuai.css?v=20260918-i18n" rel="stylesheet">
 
+  <script src="/assets/js/localization.js"></script>
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -377,6 +376,7 @@
 
 
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "42ceeff2db3345bab6f504fe15400493"}'></script><!-- End Cloudflare Web Analytics -->
+<script type="application/json" id="site-translations">{"Play music":"播放音乐","Pause music":"暂停音乐","Play background music":"播放背景音乐","Pause background music":"暂停背景音乐","Clear search":"清除搜索","Showing {x} of {n} results":"显示 {n} 条结果中的 {x} 条","link to this section":"链接至本节"}</script>
 </head>
 
   <body>
@@ -579,32 +579,32 @@
   <form class="password-gate-panel" data-password-form>
     <noscript>
       <p class="password-gate-error">
-        JavaScript is required to access this private website.
+        访问此私密网站需要启用 JavaScript。
       </p>
     </noscript>
 
     <h1 id="password-gate-title">
-      Digital Biostatistics
+      数字生物统计学
     </h1>
 
     <p class="password-gate-message">
-      This website is under construction. Please enter the password to continue.
+      本网站正在建设中。请输入密码以继续访问。
     </p>
 
     <div class="password-gate-form-row">
       <label for="site-password">
-        Password
+        密码
       </label>
 
       <input id="site-password" name="password" type="password" autocomplete="current-password" data-password-input required>
 
       <button type="submit">
-        Enter
+        进入
       </button>
     </div>
 
     <p class="password-gate-error" data-password-error role="alert" hidden>
-      Incorrect password.
+      密码错误。
     </p>
   </form>
 </div>
@@ -612,288 +612,243 @@
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<header class="background" style="--image: url('/images/banner3.png')" data-dark="false">
-  <a href="/zh/" class="home">
-    
-      <span class="logo">
-        
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="-40 -60 80 100">
-  <style>
-    .bubble {
-      animation: float 2s ease-out both infinite var(--delay);
-    }
-    @keyframes float {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-      75% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(-40px);
-      }
-    }
-  </style>
-  <g fill="currentColor" opacity="0.5">
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.1s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.4s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.1s"></circle>
-  </g>
-  <path fill="#38bdf8" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L -19.5 11.25
-      L 0 22.5
-      L 19.5 11.25
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="#bae6fd" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L 0 0
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="none" stroke="currentColor" stroke-width="5" d="
-      M -18 -53
-      L -10 -53
-      L -10 -29.2
-      L -30.3 -17.5
-      L -30.3 17.5
-      L 0 35
-      L 30.3 17.5
-      L 30.3 -17.5
-      L 10 -29.2
-      L 10 -53
-      L 18 -53
-    "></path>
-</svg>
-
-        
-      </span>
-    
-
-    
-      <span class="title-text" data-tooltip="Home">
-        
-          <span class="title">digitalbiostatistics</span>
-        
-
-        
-      </span>
-    
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    
-
-    
+<a class="mbzuai-skip-link" href="#main-content">跳至正文</a>
+<header class="mbzuai-header">
+  <div class="mbzuai-masthead">
+    <a class="mbzuai-university" href="https://mbzuai.ac.ae/" aria-label="穆罕默德·本·扎耶德人工智能大学">
+      <img src="/images/mbzuai/logo-mbzuai-navy.svg" width="238" height="80" alt="穆罕默德·本·扎耶德人工智能大学">
+    </a>
+    <a class="mbzuai-group" href="/zh/">
+      <span>数字生物统计学</span>
+      <span class="mbzuai-group-caption">Marcos Matabuena 研究组</span>
+    </a>
+  </div>
+  <div class="mbzuai-nav-bar">
+    <button class="mbzuai-menu-toggle" type="button" aria-expanded="false" aria-controls="mbzuai-navigation">
+      <span>菜单</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="mbzuai-navigation" aria-label="主导航">
       
       
         
-      
-    
-      
-      
         
-      
-    
-      
-      
         
       
         
-          <a href="/zh/projects/" data-tooltip="已发表的研究成果">
-            研究
-          </a>
         
-      
-    
-      
-      
         
       
         
-          <a href="/zh/research/" data-tooltip="已发表的研究成果">
-            研究
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
         
       
         
-          <a href="/zh/team/" data-tooltip="了解我们的团队">
-            团队
-          </a>
         
-      
-    
-      
-      
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
+          
+            <a href="/zh/research/">研究</a>
+          
         
       
         
-          <a href="/zh/blog/" data-tooltip="最新动态与其他内容">
-            新闻
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
         
       
         
-          <a href="/zh/contact/" data-tooltip="电子邮箱、网站和地址">
-            联系我们
-          </a>
+        
         
       
-    
-
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/projects/">项目</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/team/" aria-current="page">团队</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/blog/">新闻</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/zh/contact/">加入我们</a>
+          
+        
+      
+        
+        
+        
+      
+    </nav>
     <div class="language-menu">
-      <button class="language-menu-button" type="button" aria-label="Choose language" aria-expanded="false" aria-controls="language-menu-dropdown">
-        <span aria-hidden="true">
-          <i class="fa-solid fa-globe"></i>
-        </span>
+      <button class="language-menu-button" type="button" aria-label="选择语言" aria-expanded="false" aria-controls="language-menu-dropdown">
+        <span aria-hidden="true">ZH</span><span aria-hidden="true">⌄</span>
       </button>
-    
       <div class="language-menu-dropdown" id="language-menu-dropdown">
         
           
-    
           
-            
-          <a href="/team/" lang="en">
-            English
-          </a>
+          <a href="/team/" lang="en">English</a>
         
           
-    
           
-            
-          <a href="/zh/team/" lang="zh" class="is-current" aria-current="page">
-            中文
-          </a>
+          <a href="/zh/team/" lang="zh" class="is-current" aria-current="page">中文</a>
         
           
-    
           
-            
-          <a href="/es/" lang="es">
-            Español
-          </a>
+          <a href="/es/team/" lang="es">Español</a>
         
           
-    
           
-            
-          <a href="/gl/" lang="gl">
-            Galego
-          </a>
+          <a href="/gl/team/" lang="gl">Galego</a>
         
           
-    
           
-            
-          <a href="/ar/" lang="ar" dir="rtl">
-            العربية
-          </a>
+          <a href="/ar/team/" lang="ar" dir="rtl">العربية</a>
         
       </div>
     </div>
-  </nav>
+  </div>
 </header>
 <script src="/assets/js/language-menu.js" defer></script>
+<script src="/assets/js/mbzuai-navigation.js" defer></script>
 
 
     
@@ -915,8 +870,8 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="-团队">
-<i class="icon fa-solid fa-users"></i> 团队</h1>
+    <h1 id="team">
+<i class="icon fa-solid fa-users"></i>团队</h1>
   </section>
 
   
@@ -930,11 +885,29 @@
   <size></size>
 -->
 
-<div class="portrait-wrapper">
-  <a href="/members/marcos-matabuena.html" class="portrait" data-style="" aria-label="Marcos Matabuena">
+<div style="width: 100%; text-align: center; margin-bottom: 40px;">
+  
+
+
+
+
+
+  
+
+  
+
+  
     
 
-    <img src="/images/marcospatron.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    
+
+
+
+<div class="portrait-wrapper">
+  <a href="/zh/members/marcos-matabuena.html" class="portrait" data-style="" aria-label="Marcos Matabuena">
+    
+
+    <img src="/images/marcospatron.jpeg" class="portrait-image" alt="团队成员肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -944,7 +917,7 @@
 
     
       <span class="portrait-description">
-        Founder and Principal Investigator
+        创始人兼首席研究员
       </span>
     
 
@@ -956,11 +929,34 @@
   </a>
 </div>
 
-<div class="portrait-wrapper">
-  <a href="/members/akhter.html" class="portrait" data-style="" aria-label="Yasmeena Akhter">
+  
+
+
+</div>
+
+<div style="width: 100%; text-align: center;">
+  
+
+
+
+
+
+  
+
+  
+
+  
     
 
-    <img src="/images/yasmeena.jpg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    
+
+
+
+<div class="portrait-wrapper">
+  <a href="/zh/members/akhter.html" class="portrait" data-style="" aria-label="Yasmeena Akhter">
+    
+
+    <img src="/images/yasmeena.jpg" class="portrait-image" alt="团队成员肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -969,9 +965,7 @@
     
 
     
-      <span class="portrait-description">
-        Visiting Researcher
-      </span>
+      <span class="portrait-description">访问研究员</span>
     
 
     
@@ -982,11 +976,18 @@
   </a>
 </div>
 
-<div class="portrait-wrapper">
-  <a href="/members/correa.html" class="portrait" data-style="" aria-label="Cristina Correa Segade">
+  
     
 
-    <img src="/images/cris.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    
+
+
+
+<div class="portrait-wrapper">
+  <a href="/zh/members/correa.html" class="portrait" data-style="" aria-label="Cristina Correa Segade">
+    
+
+    <img src="/images/cris.png" class="portrait-image" alt="团队成员肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -996,7 +997,7 @@
 
     
       <span class="portrait-description">
-        Research Engineer
+        研究工程师
       </span>
     
 
@@ -1008,11 +1009,18 @@
   </a>
 </div>
 
-<div class="portrait-wrapper">
-  <a href="/members/galan.html" class="portrait" data-style="" aria-label="Carlos Javier Galan Zavala">
+  
     
 
-    <img src="/images/carlosjavier.jpeg" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    
+
+
+
+<div class="portrait-wrapper">
+  <a href="/zh/members/galan.html" class="portrait" data-style="" aria-label="Carlos Javier Galan Zavala">
+    
+
+    <img src="/images/carlosjavier.jpeg" class="portrait-image" alt="团队成员肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1022,7 +1030,7 @@
 
     
       <span class="portrait-description">
-        Intern
+        实习生
       </span>
     
 
@@ -1034,11 +1042,18 @@
   </a>
 </div>
 
-<div class="portrait-wrapper">
-  <a href="/members/vazquez.html" class="portrait" data-style="" aria-label="Natalia Vazquez Purriños">
+  
     
 
-    <img src="/images/natalia.JPG" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    
+
+
+
+<div class="portrait-wrapper">
+  <a href="/zh/members/vazquez.html" class="portrait" data-style="" aria-label="Natalia Vazquez Purriños">
+    
+
+    <img src="/images/natalia.JPG" class="portrait-image" alt="团队成员肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1048,7 +1063,7 @@
 
     
       <span class="portrait-description">
-        Research Engineer
+        研究工程师
       </span>
     
 
@@ -1060,11 +1075,18 @@
   </a>
 </div>
 
-<div class="portrait-wrapper">
-  <a href="/members/xiao.html" class="portrait" data-style="" aria-label="Yang Xiao">
+  
     
 
-    <img src="/images/yang.png" class="portrait-image" alt="member portrait" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+    
+
+
+
+<div class="portrait-wrapper">
+  <a href="/zh/members/xiao.html" class="portrait" data-style="" aria-label="Yang Xiao">
+    
+
+    <img src="/images/yang.png" class="portrait-image" alt="团队成员肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
 
     
       <span class="portrait-name">
@@ -1074,7 +1096,7 @@
 
     
       <span class="portrait-description">
-        Visiting Researcher
+        访问研究员
       </span>
     
 
@@ -1085,6 +1107,18 @@
     
   </a>
 </div>
+
+  
+
+
+</div>
+<p>
+  <strong>
+    <em>
+     发现、建立并用心维系科研合作关系意义重大。优秀的合作者在塑造我的思考方式、推动我的职业发展，以及影响我选择研究问题的过程中发挥了关键作用。与世界各地的杰出科学家合作，不仅带来极大的满足感，也为深刻改善数百万人的生活创造了非凡机会。
+    </em>
+  </strong>
+</p>
   </section>
 
   
@@ -1098,10 +1132,433 @@
   <size></size>
 -->
 
-<h2 id="mbzuai-合作者">MBZUAI 合作者</h2>
+<h2 id="testimonials">评价与寄语</h2>
 
-<div>
+<style>
+  .testimonials-slider {
+    --testimonial-accent: #547f9d;
+    position: relative;
+    width: 100%;
+    max-width: 1050px;
+    margin: 40px auto 70px;
+    padding: 0 34px;
+    box-sizing: border-box;
+  }
 
+  .testimonials-viewport {
+    overflow: hidden;
+    border-radius: 28px;
+    touch-action: pan-y;
+    cursor: grab;
+  }
+
+  .testimonials-viewport:active {
+    cursor: grabbing;
+  }
+
+  .testimonials-track {
+    display: flex !important;
+    align-items: stretch !important;
+    width: 100%;
+    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: transform;
+  }
+
+  .testimonial-slide {
+    display: flex !important;
+    align-items: stretch !important;
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    min-width: 100% !important;
+    box-sizing: border-box;
+
+    /* Espacio interior para que la sombra no sea recortada */
+    padding: 14px 14px 32px;
+  }
+
+  .testimonial-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: 190px minmax(0, 1fr);
+    align-items: center;
+    gap: 44px;
+
+    width: 100%;
+    min-height: 390px;
+    padding: 46px 54px;
+    box-sizing: border-box;
+
+    overflow: hidden;
+    border: 1px solid rgba(84, 127, 157, 0.18);
+    border-radius: 24px;
+
+    background:
+      radial-gradient(
+        circle at top right,
+        rgba(84, 127, 157, 0.12),
+        transparent 35%
+      ),
+      #ffffff;
+
+    box-shadow:
+      0 22px 35px rgba(32, 49, 60, 0.12),
+      0 5px 12px rgba(32, 49, 60, 0.07);
+
+    flex: 1 1 auto;
+  }
+
+  .testimonial-photo-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: auto;
+  }
+
+  .testimonial-photo-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: -9px;
+    border: 2px solid rgba(84, 127, 157, 0.18);
+    border-radius: 50%;
+  }
+
+  .testimonial-photo {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+    background: #eef3f6;
+  }
+
+  .testimonial-content {
+    position: relative;
+    min-width: 0;
+  }
+
+  .testimonial-quote-mark {
+    position: absolute;
+    top: -32px;
+    left: -5px;
+    font-family: Georgia, serif;
+    font-size: 90px;
+    line-height: 1;
+    color: var(--testimonial-accent);
+    opacity: 0.16;
+    pointer-events: none;
+  }
+
+  .testimonial-text {
+    position: relative;
+    margin: 0 0 26px;
+    font-size: 1.06rem;
+    line-height: 1.75;
+  }
+
+  .testimonial-name {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 750;
+  }
+
+  .testimonial-role {
+    margin: 6px 0 0;
+    font-size: 0.92rem;
+    line-height: 1.5;
+    opacity: 0.68;
+  }
+
+  .testimonial-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    padding: 0;
+    border: 1px solid rgba(84, 127, 157, 0.22);
+    border-radius: 50%;
+    background: #ffffff;
+    color: #263b49;
+    box-shadow: 0 10px 28px rgba(32, 49, 60, 0.14);
+    cursor: pointer;
+    transform: translateY(-50%);
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease,
+      background 0.2s ease;
+  }
+
+  .testimonial-arrow:hover {
+    background: #f4f8fa;
+    box-shadow: 0 13px 32px rgba(32, 49, 60, 0.2);
+    transform: translateY(-50%) scale(1.08);
+  }
+
+  .testimonial-arrow.previous {
+    left: 7px;
+  }
+
+  .testimonial-arrow.next {
+    right: 7px;
+  }
+
+  .testimonial-dots {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    min-height: 22px;
+    margin-top: 24px;
+  }
+
+  .testimonial-dot {
+    width: 10px;
+    height: 10px;
+    display: block;
+    padding: 0;
+    border: 0;
+    border-radius: 999px;
+    background: var(--testimonial-accent);
+    opacity: 0.28;
+    cursor: pointer;
+    transition:
+      width 0.3s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .testimonial-dot.is-active {
+    width: 34px;
+    opacity: 1;
+  }
+
+  .testimonial-dot:hover {
+    opacity: 0.75;
+    transform: scale(1.12);
+  }
+
+  .testimonial-arrow:focus-visible,
+  .testimonial-dot:focus-visible {
+    outline: 3px solid rgba(84, 127, 157, 0.55);
+    outline-offset: 3px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .testimonials-slider {
+      margin: 28px auto 60px;
+      padding: 0 8px;
+    }
+
+    .testimonial-card {
+      grid-template-columns: 1fr;
+      align-content: center;
+      gap: 27px;
+      min-height: 540px;
+      padding: 38px 25px 42px;
+      text-align: center;
+    }
+
+    .testimonial-photo-wrapper,
+    .testimonial-photo {
+      width: 132px;
+      height: 132px;
+    }
+
+    .testimonial-content {
+      padding-top: 12px;
+    }
+
+    .testimonial-quote-mark {
+      top: -28px;
+      left: 50%;
+      font-size: 72px;
+      transform: translateX(-50%);
+    }
+
+    .testimonial-text {
+      margin-bottom: 22px;
+      font-size: 0.98rem;
+      line-height: 1.65;
+    }
+
+    .testimonial-arrow {
+      top: 120px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .testimonial-arrow.previous {
+      left: 16px;
+    }
+
+    .testimonial-arrow.next {
+      right: 16px;
+    }
+
+    .testimonial-slide {
+      padding: 10px 8px 28px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .testimonial-card {
+      min-height: 570px;
+      padding-right: 19px;
+      padding-left: 19px;
+    }
+
+    .testimonial-photo-wrapper,
+    .testimonial-photo {
+      width: 112px;
+      height: 112px;
+    }
+
+    .testimonial-arrow {
+      top: 105px;
+      width: 36px;
+      height: 36px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .testimonials-track {
+      transition: none;
+    }
+  }
+</style>
+
+<div class="testimonials-slider" id="testimonials-slider" aria-label="评价与寄语">
+  <div class="testimonials-viewport">
+    <div class="testimonials-track">
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img class="testimonial-photo" src="/images/yating.jpeg" alt="Yating Zou 的肖像">
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Marcos 是一位思维敏锐、充满热情的合作者。他紧跟研究文献，善于迅速发现不同问题之间的联系。他思考敏捷、交流直接，并始终致力于以严谨的统计方法解决真实而重要的生物医学问题。科研之外，他也是一位非常好的朋友，在我的学术道路上给予了切实支持。我相信他会取得出色成就，也期待继续与他在统计方法和数字健康交叉领域开展合作！
+            </p>
+
+            <p class="testimonial-name">Yating Zou</p>
+
+            <p class="testimonial-role">
+              北卡罗来纳大学教堂山分校生物统计学博士生
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img class="testimonial-photo" src="/images/cris.png" alt="Cristina Correa 的肖像">
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Marcos 是一位出色的导师，坦率地说，也是迄今对我的学术生涯产生最积极影响的人之一。他非常勤奋，是我十分敬佩的榜样。他让我看到此前从未考虑过的机会，鼓励我在研究和学术发展上追求更高目标。在他的指导下，我成为了更好的研究者，也非常庆幸能加入他的研究组。
+            </p>
+
+            <p class="testimonial-name">Cristina Correa</p>
+
+            <p class="testimonial-role">
+              MBZUAI 计算生物学硕士生
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img class="testimonial-photo" src="/images/rounakdey.jpg" alt="Rounak Dey 的肖像">
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              Marcos 是一位杰出的研究者，在每个项目中都展现出非凡的严谨、投入与创新精神。他善于建立有价值的合作，并始终对研究发表保持极高标准。与他共事令人愉快，祝愿他在充满前景的学术生涯中不断取得成功。
+            </p>
+
+            <p class="testimonial-name">Rounak Dey</p>
+
+            <p class="testimonial-role">
+              Insitro 资深数据科学家
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img class="testimonial-photo" src="/images/antonio.png" alt="Antonio Álvarez 的肖像">
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              在竞争激烈的科学界，Marcos 以待人真诚而格外突出。他把人与人之间的关系放在首位，对庞大合作网络中的许多伙伴都给予细致关怀。我与他相识多年，在过去十八个月里共同完成了两篇论文，其中一篇获奖。这段经历让我更加敬佩他的投入与团队精神。他不懈追求一个超越数学本身、既有雄心又有意义的目标：通过为数字健康开发统计与人工智能方法，为社会带来积极影响。他是一位杰出的研究者，也是始终值得信赖的合作者。
+            </p>
+
+            <p class="testimonial-name">Antonio Álvarez</p>
+
+            <p class="testimonial-role">
+              南洋理工大学博士后研究员
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-slide">
+        <div class="testimonial-card">
+          <div class="testimonial-photo-wrapper">
+            <img class="testimonial-photo" src="/images/elvis.jpg" alt="Elvis Han Cui 的肖像">
+          </div>
+
+          <div class="testimonial-content">
+            <p class="testimonial-text">
+              数字生物统计学不仅是一个网站，更是一面树立在生物医学科学前沿的旗帜。在这一愿景中，健康不再是一次门诊记录下的静止数字，而成为鲜活的信号：连续、可由穿戴设备记录、纵向、不确定，并且与人的生活紧密相连。Marcos Matabuena 的工作拒绝在数学严谨性与临床想象力之间作出虚假的二选一。函数型数据分析、因果推断、不确定性量化、数字生物标志物和人工智能汇聚为感知未来脉搏的工具。正所谓“观水有术，必观其澜”。对于想了解生物统计学未来方向的人而言，这里值得持续关注。
+            </p>
+
+            <p class="testimonial-name">Elvis Han Cui</p>
+
+            <p class="testimonial-role">
+              加州大学洛杉矶分校菲尔丁公共卫生学院生物统计学博士生
+            </p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <button class="testimonial-arrow previous" type="button" aria-label="上一条评价">
+    ❮
+  </button>
+
+  <button class="testimonial-arrow next" type="button" aria-label="下一条评价">
+    ❯
+  </button>
+
+  <div class="testimonial-dots" aria-label="选择评价">
+    <button class="testimonial-dot is-active" type="button" data-slide="0" aria-label="显示第 1 条评价"></button>
+
+    <button class="testimonial-dot" type="button" data-slide="1" aria-label="显示第 2 条评价"></button>
+    <button class="testimonial-dot" type="button" data-slide="2" aria-label="显示第 3 条评价"></button>
+    <button class="testimonial-dot" type="button" data-slide="3" aria-label="显示第 4 条评价"></button>
+    <button class="testimonial-dot" type="button" data-slide="4" aria-label="显示第 5 条评价"></button>
+  </div>
+</div>
+<script src="/assets/js/testimonials.js" defer></script>
+
+<h2 id="collaborators-mbzuai">MBZUAI 合作研究者</h2>
+
+<div style="width: 100%; text-align: center;">
+  
 
 
 
@@ -1117,11 +1574,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=r1Jkj7MAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Raul Astudillo">
+    <a href="https://scholar.google.com/citations?user=r1Jkj7MAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Raul Astudillo 的个人资料">
   
 
     
-      <img src="/images/astudillo.png" class="portrait-image" alt="Portrait of Raul Astudillo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/astudillo.png" class="portrait-image" alt="Raul Astudillo 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1144,11 +1601,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=L3Rf6kkAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Abhijit Das">
+    <a href="https://scholar.google.com/citations?user=L3Rf6kkAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Abhijit Das 的个人资料">
   
 
     
-      <img src="/images/abhijit2.jpeg" class="portrait-image" alt="Portrait of Abhijit Das" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/abhijit2.jpeg" class="portrait-image" alt="Abhijit Das 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1171,11 +1628,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=3bL-H00AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Georgios Pavlopoulos">
+    <a href="https://scholar.google.com/citations?user=3bL-H00AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Georgios Pavlopoulos 的个人资料">
   
 
     
-      <img src="/images/georgios.jpg" class="portrait-image" alt="Portrait of Georgios Pavlopoulos" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/georgios.jpg" class="portrait-image" alt="Georgios Pavlopoulos 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1198,11 +1655,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=_XE1LvQAAAAJ&hl=fr" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Eric Moulines">
+    <a href="https://scholar.google.com/citations?user=_XE1LvQAAAAJ&hl=fr" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Eric Moulines 的个人资料">
   
 
     
-      <img src="/images/eric.png" class="portrait-image" alt="Portrait of Eric Moulines" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/eric.png" class="portrait-image" alt="Eric Moulines 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1225,11 +1682,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=ETgWwQoAAAAJ&hl=zh-TW" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Jianing Qiu">
+    <a href="https://scholar.google.com/citations?user=ETgWwQoAAAAJ&hl=zh-TW" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Jianing Qiu 的个人资料">
   
 
     
-      <img src="/images/jianing.jpeg" class="portrait-image" alt="Portrait of Jianing Qiu" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/jianing.jpeg" class="portrait-image" alt="Jianing Qiu 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1252,11 +1709,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.researchgate.net/scientific-contributions/Jierui-Qu-2272281888" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Jierui Qu">
+    <a href="https://www.researchgate.net/scientific-contributions/Jierui-Qu-2272281888" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Jierui Qu 的个人资料">
   
 
     
-      <img src="/images/QuJierui.png" class="portrait-image" alt="Portrait of Jierui Qu" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/QuJierui.png" class="portrait-image" alt="Jierui Qu 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1279,11 +1736,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=kQrQJ1gAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Hagai Rossman">
+    <a href="https://scholar.google.com/citations?user=kQrQJ1gAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Hagai Rossman 的个人资料">
   
 
     
-      <img src="/images/Hagai-Rossman.jpg" class="portrait-image" alt="Portrait of Hagai Rossman" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/Hagai-Rossman.jpg" class="portrait-image" alt="Hagai Rossman 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1306,11 +1763,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=oAD8PrkAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Eran Segal">
+    <a href="https://scholar.google.com/citations?user=oAD8PrkAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Eran Segal 的个人资料">
   
 
     
-      <img src="/images/eransegal.png" class="portrait-image" alt="Portrait of Eran Segal" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/eransegal.png" class="portrait-image" alt="Eran Segal 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1333,11 +1790,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=IEXX2rYAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Ruben Solozabal">
+    <a href="https://scholar.google.com/citations?user=IEXX2rYAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Ruben Solozabal 的个人资料">
   
 
     
-      <img src="/images/NUEVORuben_Solozabal.jpg" class="portrait-image" alt="Portrait of Ruben Solozabal" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/NUEVORuben_Solozabal.jpg" class="portrait-image" alt="Ruben Solozabal 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1360,11 +1817,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=ZzhBMpsAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Vladimir Kondratyev">
+    <a href="https://scholar.google.com/citations?user=ZzhBMpsAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Vladimir Kondratyev 的个人资料">
   
 
     
-      <img src="/images/vladimir.jpeg" class="portrait-image" alt="Portrait of Vladimir Kondratyev" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/vladimir.jpeg" class="portrait-image" alt="Vladimir Kondratyev 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1387,11 +1844,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=Gw2ekPsAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Jun Wen">
+    <a href="https://scholar.google.com/citations?user=Gw2ekPsAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Jun Wen 的个人资料">
   
 
     
-      <img src="/images/junwen.jpg" class="portrait-image" alt="Portrait of Jun Wen" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/junwen.jpg" class="portrait-image" alt="Jun Wen 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1425,10 +1882,10 @@
   <size></size>
 -->
 
-<h2 id="国际合作者">国际合作者</h2>
+<h2 id="international-collaborators-currentpast">国际合作研究者（现任及往届）</h2>
 
-<div>
-
+<div style="width: 100%; text-align: center;">
+  
 
 
 
@@ -1444,11 +1901,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=c1Norb8AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Louis Abraham">
+    <a href="https://scholar.google.com/citations?user=c1Norb8AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Louis Abraham 的个人资料">
   
 
     
-      <img src="/images/louis-abraham.png" class="portrait-image" alt="Portrait of Louis Abraham" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/louis-abraham.png" class="portrait-image" alt="Louis Abraham 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1475,11 +1932,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=4Xm2yLgAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Antonio Alvarez Lopez">
+    <a href="https://scholar.google.com/citations?user=4Xm2yLgAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Antonio Alvarez Lopez 的个人资料">
   
 
     
-      <img src="/images/antonio.png" class="portrait-image" alt="Portrait of Antonio Alvarez Lopez" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/antonio.png" class="portrait-image" alt="Antonio Alvarez Lopez 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1506,11 +1963,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=evVsTgQAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Emmanuel Ambriz">
+    <a href="https://scholar.google.com/citations?user=evVsTgQAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Emmanuel Ambriz 的个人资料">
   
 
     
-      <img src="/images/ambrizemmanuel.png" class="portrait-image" alt="Portrait of Emmanuel Ambriz" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/ambrizemmanuel.png" class="portrait-image" alt="Emmanuel Ambriz 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1537,11 +1994,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=lRFao6EAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of James Berry">
+    <a href="https://scholar.google.com/citations?user=lRFao6EAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 James Berry 的个人资料">
   
 
     
-      <img src="/images/jamesberry.jpeg" class="portrait-image" alt="Portrait of James Berry" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/jamesberry.jpeg" class="portrait-image" alt="James Berry 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1568,11 +2025,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.mghihp.edu/ihp-directory/katey-burke" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Katherine Burke">
+    <a href="https://www.mghihp.edu/ihp-directory/katey-burke" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Katherine Burke 的个人资料">
   
 
     
-      <img src="/images/katherine-burke.png" class="portrait-image" alt="Portrait of Katherine Burke" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/katherine-burke.png" class="portrait-image" alt="Katherine Burke 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1599,11 +2056,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.researchgate.net/profile/Narghes-Calcagno" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Narghes Calcagno">
+    <a href="https://www.researchgate.net/profile/Narghes-Calcagno" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Narghes Calcagno 的个人资料">
   
 
     
-      <img src="/images/narghes-carpenter.jpg" class="portrait-image" alt="Portrait of Narghes Calcagno" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/narghes-carpenter.jpg" class="portrait-image" alt="Narghes Calcagno 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1630,11 +2087,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=muINbiEAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Mateo Camara">
+    <a href="https://scholar.google.com/citations?user=muINbiEAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Mateo Camara 的个人资料">
   
 
     
-      <img src="/images/mateo-camara.png" class="portrait-image" alt="Portrait of Mateo Camara" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/mateo-camara.png" class="portrait-image" alt="Mateo Camara 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1661,11 +2118,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.lshtm.ac.uk/aboutus/people/carpenter.james" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of James Carpenter">
+    <a href="https://www.lshtm.ac.uk/aboutus/people/carpenter.james" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 James Carpenter 的个人资料">
   
 
     
-      <img src="/images/james-carpenter.png" class="portrait-image" alt="Portrait of James Carpenter" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/james-carpenter.png" class="portrait-image" alt="James Carpenter 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1692,11 +2149,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=gW-1ooUAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Ciprian Crainiceanu">
+    <a href="https://scholar.google.com/citations?user=gW-1ooUAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Ciprian Crainiceanu 的个人资料">
   
 
     
-      <img src="/images/ciprian.jpg" class="portrait-image" alt="Portrait of Ciprian Crainiceanu" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/ciprian.jpg" class="portrait-image" alt="Ciprian Crainiceanu 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1723,11 +2180,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=02oA4PoAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Borja del Pozo Cruz">
+    <a href="https://scholar.google.com/citations?user=02oA4PoAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Borja del Pozo Cruz 的个人资料">
   
 
     
-      <img src="/images/borja-delpozo-cruz.png" class="portrait-image" alt="Portrait of Borja del Pozo Cruz" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/borja-delpozo-cruz.png" class="portrait-image" alt="Borja del Pozo Cruz 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1754,11 +2211,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.researchgate.net/profile/Aaron_Desalvio" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Aaron DeSalvio">
+    <a href="https://www.researchgate.net/profile/Aaron_Desalvio" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Aaron DeSalvio 的个人资料">
   
 
     
-      <img src="/images/aaron-deSalvio.png" class="portrait-image" alt="Portrait of Aaron DeSalvio" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/aaron-deSalvio.png" class="portrait-image" alt="Aaron DeSalvio 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1785,11 +2242,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=-GMPEDQAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Debangan Dey">
+    <a href="https://scholar.google.com/citations?user=-GMPEDQAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Debangan Dey 的个人资料">
   
 
     
-      <img src="/images/debangandey.jpeg" class="portrait-image" alt="Portrait of Debangan Dey" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/debangandey.jpeg" class="portrait-image" alt="Debangan Dey 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1816,11 +2273,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=VnUquOYAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Rounak Dey">
+    <a href="https://scholar.google.com/citations?user=VnUquOYAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Rounak Dey 的个人资料">
   
 
     
-      <img src="/images/rounakdey.jpg" class="portrait-image" alt="Portrait of Rounak Dey" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/rounakdey.jpg" class="portrait-image" alt="Rounak Dey 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1847,11 +2304,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.researchgate.net/profile/Marc-Ditzhaus" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Marc Ditzhaus">
+    <a href="https://www.researchgate.net/profile/Marc-Ditzhaus" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Marc Ditzhaus 的个人资料">
   
 
     
-      <img src="/images/marc-ditzhaus.jpg" class="portrait-image" alt="Portrait of Marc Ditzhaus" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/marc-ditzhaus.jpg" class="portrait-image" alt="Marc Ditzhaus 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1878,11 +2335,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=sjPHTcoAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Paromita Dubey">
+    <a href="https://scholar.google.com/citations?user=sjPHTcoAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Paromita Dubey 的个人资料">
   
 
     
-      <img src="/images/paromita-dubey.png" class="portrait-image" alt="Portrait of Paromita Dubey" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/paromita-dubey.png" class="portrait-image" alt="Paromita Dubey 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1909,11 +2366,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=lDXkvhIAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Carlos Garcia Meixide">
+    <a href="https://scholar.google.com/citations?user=lDXkvhIAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Carlos Garcia Meixide 的个人资料">
   
 
     
-      <img src="/images/carlosmeixide.jpg" class="portrait-image" alt="Portrait of Carlos Garcia Meixide" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/carlosmeixide.jpg" class="portrait-image" alt="Carlos Garcia Meixide 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1940,11 +2397,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=vmerQscAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Rahul Ghosal">
+    <a href="https://scholar.google.com/citations?user=vmerQscAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Rahul Ghosal 的个人资料">
   
 
     
-      <img src="/images/ghosalraul.jpeg" class="portrait-image" alt="Portrait of Rahul Ghosal" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/ghosalraul.jpeg" class="portrait-image" alt="Rahul Ghosal 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -1971,11 +2428,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=nDj-zN0AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Sujit Ghosh">
+    <a href="https://scholar.google.com/citations?user=nDj-zN0AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Sujit Ghosh 的个人资料">
   
 
     
-      <img src="/images/realsujitghosh.jpeg" class="portrait-image" alt="Portrait of Sujit Ghosh" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/realsujitghosh.jpeg" class="portrait-image" alt="Sujit Ghosh 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2002,11 +2459,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.researchgate.net/profile/Fernando-Gomez-Peralta" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Fernando Gomez Peralta">
+    <a href="https://www.researchgate.net/profile/Fernando-Gomez-Peralta" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Fernando Gomez Peralta 的个人资料">
   
 
     
-      <img src="/images/fernando-gomez-peralta.png" class="portrait-image" alt="Portrait of Fernando Gomez Peralta" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/fernando-gomez-peralta.png" class="portrait-image" alt="Fernando Gomez Peralta 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2033,11 +2490,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=ybbVnqQAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Francisco Gude">
+    <a href="https://scholar.google.com/citations?user=ybbVnqQAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Francisco Gude 的个人资料">
   
 
     
-      <img src="/images/franciscogude.jpeg" class="portrait-image" alt="Portrait of Francisco Gude" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/franciscogude.jpeg" class="portrait-image" alt="Francisco Gude 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2064,11 +2521,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=Ex5ar8EAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Ziad Hammouri">
+    <a href="https://scholar.google.com/citations?user=Ex5ar8EAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Ziad Hammouri 的个人资料">
   
 
     
-      <img src="/images/ziad-hammouri.jpeg" class="portrait-image" alt="Portrait of Ziad Hammouri" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/ziad-hammouri.jpeg" class="portrait-image" alt="Ziad Hammouri 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2095,11 +2552,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.researchgate.net/profile/Philip-Hayes-4" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Philip Hayes">
+    <a href="https://www.researchgate.net/profile/Philip-Hayes-4" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Philip Hayes 的个人资料">
   
 
     
-      <img src="/images/philip-hayes.png" class="portrait-image" alt="Portrait of Philip Hayes" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/philip-hayes.png" class="portrait-image" alt="Philip Hayes 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2130,7 +2587,7 @@
   
 
     
-      <img src="/images/fernando-huelin-trillo.png" class="portrait-image" alt="Portrait of Fernando Huelin Trillo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/fernando-huelin-trillo.png" class="portrait-image" alt="Fernando Huelin Trillo 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2157,11 +2614,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=S27sttcAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Marta Karas">
+    <a href="https://scholar.google.com/citations?user=S27sttcAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Marta Karas 的个人资料">
   
 
     
-      <img src="/images/martakaras.jpg" class="portrait-image" alt="Portrait of Marta Karas" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/martakaras.jpg" class="portrait-image" alt="Marta Karas 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2188,11 +2645,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=iFB8x-IAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Ayya Keshet">
+    <a href="https://scholar.google.com/citations?user=iFB8x-IAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Ayya Keshet 的个人资料">
   
 
     
-      <img src="/images/ayya-keshet.jpeg" class="portrait-image" alt="Portrait of Ayya Keshet" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/ayya-keshet.jpeg" class="portrait-image" alt="Ayya Keshet 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2219,11 +2676,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=1mWFU5AAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of David Klonoff">
+    <a href="https://scholar.google.com/citations?user=1mWFU5AAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 David Klonoff 的个人资料">
   
 
     
-      <img src="/images/klonoff.jpeg" class="portrait-image" alt="Portrait of David Klonoff" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/klonoff.jpeg" class="portrait-image" alt="David Klonoff 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2250,11 +2707,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=OXi5o3oAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Michael Kosorok">
+    <a href="https://scholar.google.com/citations?user=OXi5o3oAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Michael Kosorok 的个人资料">
   
 
     
-      <img src="/images/kosorok.jpeg" class="portrait-image" alt="Portrait of Michael Kosorok" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/kosorok.jpeg" class="portrait-image" alt="Michael Kosorok 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2281,11 +2738,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://citius.gal/es/team/paulo-felix-lamas/" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Paulo Felix Lamas">
+    <a href="https://citius.gal/es/team/paulo-felix-lamas/" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Paulo Felix Lamas 的个人资料">
   
 
     
-      <img src="/images/paulo-felix-lamas.jpeg" class="portrait-image" alt="Portrait of Paulo Felix Lamas" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/paulo-felix-lamas.jpeg" class="portrait-image" alt="Paulo Felix Lamas 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2312,11 +2769,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=Wblb-OsAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Angel Lopez Oriona">
+    <a href="https://scholar.google.com/citations?user=Wblb-OsAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Angel Lopez Oriona 的个人资料">
   
 
     
-      <img src="/images/NUEVOlopezoriona.jpg" class="portrait-image" alt="Portrait of Angel Lopez Oriona" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/NUEVOlopezoriona.jpg" class="portrait-image" alt="Angel Lopez Oriona 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2343,11 +2800,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=WgPhMfwAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Gabor Lugosi">
+    <a href="https://scholar.google.com/citations?user=WgPhMfwAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Gabor Lugosi 的个人资料">
   
 
     
-      <img src="/images/glugosi-file.jpg" class="portrait-image" alt="Portrait of Gabor Lugosi" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/glugosi-file.jpg" class="portrait-image" alt="Gabor Lugosi 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2374,11 +2831,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=esYDJLgAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Xiaokai Luo">
+    <a href="https://scholar.google.com/citations?user=esYDJLgAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Xiaokai Luo 的个人资料">
   
 
     
-      <img src="/images/realxiaokailuo.jpeg" class="portrait-image" alt="Portrait of Xiaokai Luo" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/realxiaokailuo.jpeg" class="portrait-image" alt="Xiaokai Luo 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2405,11 +2862,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://hernanmp.github.io/" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Oscar Hernan Madrid Padilla">
+    <a href="https://hernanmp.github.io/" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Oscar Hernan Madrid Padilla 的个人资料">
   
 
     
-      <img src="/images/oscarhernanmadridpadilla.jpeg" class="portrait-image" alt="Portrait of Oscar Hernan Madrid Padilla" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/oscarhernanmadridpadilla.jpeg" class="portrait-image" alt="Oscar Hernan Madrid Padilla 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2436,11 +2893,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=9-p1MCsAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Diego Martinez Taboada">
+    <a href="https://scholar.google.com/citations?user=9-p1MCsAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Diego Martinez Taboada 的个人资料">
   
 
     
-      <img src="/images/diegomartinez.jpeg" class="portrait-image" alt="Portrait of Diego Martinez Taboada" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/diegomartinez.jpeg" class="portrait-image" alt="Diego Martinez Taboada 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2467,11 +2924,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=cyCp3pIAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Rahul Mazumder">
+    <a href="https://scholar.google.com/citations?user=cyCp3pIAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Rahul Mazumder 的个人资料">
   
 
     
-      <img src="/images/rahulmazumder.jpeg" class="portrait-image" alt="Portrait of Rahul Mazumder" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/rahulmazumder.jpeg" class="portrait-image" alt="Rahul Mazumder 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2498,11 +2955,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=BqnwV_oAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Wendy Meiring">
+    <a href="https://scholar.google.com/citations?user=BqnwV_oAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Wendy Meiring 的个人资料">
   
 
     
-      <img src="/images/wendy-meiring.jpg" class="portrait-image" alt="Portrait of Wendy Meiring" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/wendy-meiring.jpg" class="portrait-image" alt="Wendy Meiring 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2529,11 +2986,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.researchgate.net/profile/Jorge-Mota-8" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Jorge Mota">
+    <a href="https://www.researchgate.net/profile/Jorge-Mota-8" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Jorge Mota 的个人资料">
   
 
     
-      <img src="/images/jorge-mota.jpg" class="portrait-image" alt="Portrait of Jorge Mota" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/jorge-mota.jpg" class="portrait-image" alt="Jorge Mota 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2560,11 +3017,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=tVhEYZsAAAAJ&hl=fr" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Pavlo Mozharovskyi">
+    <a href="https://scholar.google.com/citations?user=tVhEYZsAAAAJ&hl=fr" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Pavlo Mozharovskyi 的个人资料">
   
 
     
-      <img src="/images/pavlo-mozharovskyi.png" class="portrait-image" alt="Portrait of Pavlo Mozharovskyi" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/pavlo-mozharovskyi.png" class="portrait-image" alt="Pavlo Mozharovskyi 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2591,11 +3048,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=hiOfejkAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Rajarshi Mukherjee">
+    <a href="https://scholar.google.com/citations?user=hiOfejkAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Rajarshi Mukherjee 的个人资料">
   
 
     
-      <img src="/images/rajarshi-mukherjee.png" class="portrait-image" alt="Portrait of Rajarshi Mukherjee" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/rajarshi-mukherjee.png" class="portrait-image" alt="Rajarshi Mukherjee 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2622,11 +3079,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=o2U40BEAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Seth Murray">
+    <a href="https://scholar.google.com/citations?user=o2U40BEAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Seth Murray 的个人资料">
   
 
     
-      <img src="/images/seth-murray.png" class="portrait-image" alt="Portrait of Seth Murray" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/seth-murray.png" class="portrait-image" alt="Seth Murray 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2653,11 +3110,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://jeffnaef.github.io/" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Jeffrey Naf">
+    <a href="https://jeffnaef.github.io/" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Jeffrey Naf 的个人资料">
   
 
     
-      <img src="/images/jeffrey-na.jpeg" class="portrait-image" alt="Portrait of Jeffrey Naf" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/jeffrey-na.jpeg" class="portrait-image" alt="Jeffrey Naf 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2684,11 +3141,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=eyYubf4AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Jukka-Pekka Onnela">
+    <a href="https://scholar.google.com/citations?user=eyYubf4AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Jukka-Pekka Onnela 的个人资料">
   
 
     
-      <img src="/images/NUEVO-onnelaJukka-pEKKA.jpg" class="portrait-image" alt="Portrait of Jukka-Pekka Onnela" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/NUEVO-onnelaJukka-pEKKA.jpg" class="portrait-image" alt="Jukka-Pekka Onnela 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2715,11 +3172,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=xPiBQPoAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Alexander Petersen">
+    <a href="https://scholar.google.com/citations?user=xPiBQPoAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Alexander Petersen 的个人资料">
   
 
     
-      <img src="/images/alexander-petersen.png" class="portrait-image" alt="Portrait of Alexander Petersen" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/alexander-petersen.png" class="portrait-image" alt="Alexander Petersen 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2746,11 +3203,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=YJjC8xUAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Kyle Ritscher">
+    <a href="https://scholar.google.com/citations?user=YJjC8xUAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Kyle Ritscher 的个人资料">
   
 
     
-      <img src="/images/kyle-ritscher.jpg" class="portrait-image" alt="Portrait of Kyle Ritscher" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/kyle-ritscher.jpg" class="portrait-image" alt="Kyle Ritscher 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2777,11 +3234,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=EG4aDFAAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Rosana Rodriguez Lopez">
+    <a href="https://scholar.google.com/citations?user=EG4aDFAAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Rosana Rodriguez Lopez 的个人资料">
   
 
     
-      <img src="/images/Rosana-Rodriguez-Lopez.jpg" class="portrait-image" alt="Portrait of Rosana Rodriguez Lopez" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/Rosana-Rodriguez-Lopez.jpg" class="portrait-image" alt="Rosana Rodriguez Lopez 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2808,11 +3265,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=o8v__F8AAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Pablo Rodriguez Mier">
+    <a href="https://scholar.google.com/citations?user=o8v__F8AAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Pablo Rodriguez Mier 的个人资料">
   
 
     
-      <img src="/images/Pablo-Rodriguez-Mier.jpeg" class="portrait-image" alt="Portrait of Pablo Rodriguez Mier" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/Pablo-Rodriguez-Mier.jpeg" class="portrait-image" alt="Pablo Rodriguez Mier 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2839,11 +3296,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=1iWGSc0AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of David Rossell">
+    <a href="https://scholar.google.com/citations?user=1iWGSc0AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 David Rossell 的个人资料">
   
 
     
-      <img src="/images/davidrossell.jpeg" class="portrait-image" alt="Portrait of David Rossell" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/davidrossell.jpeg" class="portrait-image" alt="David Rossell 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2870,11 +3327,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=Sy0BE_sAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Enakshi Saha">
+    <a href="https://scholar.google.com/citations?user=Sy0BE_sAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Enakshi Saha 的个人资料">
   
 
     
-      <img src="/images/enakshi-saha.jpeg" class="portrait-image" alt="Portrait of Enakshi Saha" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/enakshi-saha.jpeg" class="portrait-image" alt="Enakshi Saha 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2901,11 +3358,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=JDVbSoIAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Joe Sartini">
+    <a href="https://scholar.google.com/citations?user=JDVbSoIAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Joe Sartini 的个人资料">
   
 
     
-      <img src="/images/NEWjoe-santini.png" class="portrait-image" alt="Portrait of Joe Sartini" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/NEWjoe-santini.png" class="portrait-image" alt="Joe Sartini 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2932,11 +3389,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=v8Dg1lIAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Dino Sejdinovic">
+    <a href="https://scholar.google.com/citations?user=v8Dg1lIAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Dino Sejdinovic 的个人资料">
   
 
     
-      <img src="/images/dinosejdinovic.jpg" class="portrait-image" alt="Portrait of Dino Sejdinovic" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/dinosejdinovic.jpg" class="portrait-image" alt="Dino Sejdinovic 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2963,11 +3420,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=9RBi1pAAAAAJ&hl=pl" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Marcin Straczkiewicz">
+    <a href="https://scholar.google.com/citations?user=9RBi1pAAAAAJ&hl=pl" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Marcin Straczkiewicz 的个人资料">
   
 
     
-      <img src="/images/marcin-straczkiewicz-krakow.jpeg" class="portrait-image" alt="Portrait of Marcin Straczkiewicz" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/marcin-straczkiewicz-krakow.jpeg" class="portrait-image" alt="Marcin Straczkiewicz 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -2994,11 +3451,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=RIg9nbsAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Mia S. Tackney">
+    <a href="https://scholar.google.com/citations?user=RIg9nbsAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Mia S. Tackney 的个人资料">
   
 
     
-      <img src="/images/NEWmia-tackney.jpg" class="portrait-image" alt="Portrait of Mia S. Tackney" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/NEWmia-tackney.jpg" class="portrait-image" alt="Mia S. Tackney 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3025,11 +3482,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://citius.gal/es/team/juan-carlos-vidal-aguiar/" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Juan Carlos Vidal Aguiar">
+    <a href="https://citius.gal/es/team/juan-carlos-vidal-aguiar/" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Juan Carlos Vidal Aguiar 的个人资料">
   
 
     
-      <img src="/images/juancarlos-vidal-aguiar-usc.jpeg" class="portrait-image" alt="Portrait of Juan Carlos Vidal Aguiar" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/juancarlos-vidal-aguiar-usc.jpeg" class="portrait-image" alt="Juan Carlos Vidal Aguiar 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3056,11 +3513,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.mrc-bsu.cam.ac.uk/staff/sofia-villar" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Sofia Villar">
+    <a href="https://www.mrc-bsu.cam.ac.uk/staff/sofia-villar" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Sofia Villar 的个人资料">
   
 
     
-      <img src="/images/NEWsofia-villar.png" class="portrait-image" alt="Portrait of Sofia Villar" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/NEWsofia-villar.png" class="portrait-image" alt="Sofia Villar 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3087,11 +3544,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://www.researchgate.net/profile/Robert-Wagner-36" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Robert Wagner">
+    <a href="https://www.researchgate.net/profile/Robert-Wagner-36" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Robert Wagner 的个人资料">
   
 
     
-      <img src="/images/robert-wagner.jpg" class="portrait-image" alt="Portrait of Robert Wagner" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/robert-wagner.jpg" class="portrait-image" alt="Robert Wagner 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3118,11 +3575,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=1mO8fMgAAAAJ&hl=zh-CN" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Ruoyu Wang">
+    <a href="https://scholar.google.com/citations?user=1mO8fMgAAAAJ&hl=zh-CN" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Ruoyu Wang 的个人资料">
   
 
     
-      <img src="/images/ruoyuwang.jpg" class="portrait-image" alt="Portrait of Ruoyu Wang" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/ruoyuwang.jpg" class="portrait-image" alt="Ruoyu Wang 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3149,11 +3606,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=fWiD5a8AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Kejin Wu">
+    <a href="https://scholar.google.com/citations?user=fWiD5a8AAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Kejin Wu 的个人资料">
   
 
     
-      <img src="/images/kejin-wu.png" class="portrait-image" alt="Portrait of Kejin Wu" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/kejin-wu.png" class="portrait-image" alt="Kejin Wu 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3180,11 +3637,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=RlOZiPUAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Mingyang Yi">
+    <a href="https://scholar.google.com/citations?user=RlOZiPUAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Mingyang Yi 的个人资料">
   
 
     
-      <img src="/images/mingyangyi.jpg" class="portrait-image" alt="Portrait of Mingyang Yi" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/mingyangyi.jpg" class="portrait-image" alt="Mingyang Yi 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3211,11 +3668,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=GvzcEosAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Archer Gong Zhang">
+    <a href="https://scholar.google.com/citations?user=GvzcEosAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Archer Gong Zhang 的个人资料">
   
 
     
-      <img src="/images/archer-gong-zhang.png" class="portrait-image" alt="Portrait of Archer Gong Zhang" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/archer-gong-zhang.png" class="portrait-image" alt="Archer Gong Zhang 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3242,11 +3699,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=fc2ufDwAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Vadim Zipunnikov">
+    <a href="https://scholar.google.com/citations?user=fc2ufDwAAAAJ&hl=en" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Vadim Zipunnikov 的个人资料">
   
 
     
-      <img src="/images/vadim-zipunnikov.png" class="portrait-image" alt="Portrait of Vadim Zipunnikov" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/vadim-zipunnikov.png" class="portrait-image" alt="Vadim Zipunnikov 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3273,11 +3730,11 @@
     <div class="portrait-wrapper">
 
   
-    <a href="https://scholar.google.com/citations?user=8iEtZZoAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="Open profile of Yating Zou">
+    <a href="https://scholar.google.com/citations?user=8iEtZZoAAAAJ&hl=es" class="portrait" data-style="" target="_blank" rel="noopener noreferrer" aria-label="查看 Yating Zou 的个人资料">
   
 
     
-      <img src="/images/yating.jpeg" class="portrait-image" alt="Portrait of Yating Zou" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+      <img src="/images/yating.jpeg" class="portrait-image" alt="Yating Zou 的肖像" loading="lazy" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
     
 
     
@@ -3311,8 +3768,21 @@
 
 
 
-<footer class="background" style="--image: url('/images/banner3.png')" data-dark="false" data-size="wide">
+
   
+  
+
+<footer class="background mbzuai-footer" data-dark="true" data-size="wide">
+
+    <div class="mbzuai-footer-brand">
+      <a href="https://mbzuai.ac.ae/" aria-label="穆罕默德·本·扎耶德人工智能大学">
+        <img src="/images/mbzuai/logo-mbzuai-white.svg" width="238" height="80" alt="穆罕默德·本·扎耶德人工智能大学" loading="lazy">
+      </a>
+      <div>
+<p>数字生物统计学</p>
+<span>生物统计学、人工智能与数字健康。</span>
+</div>
+    </div>
   <!--
     <div>
       Extra details like contact info or address
@@ -3328,7 +3798,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="电子邮件" data-style="bare" aria-label="电子邮件">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -3369,56 +3839,12 @@
       
 
       
-        
-      
     
       
       
 
       
         
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-        
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
-      
-    
-      
-      
-
       
     
       
@@ -3462,7 +3888,169 @@
       
 
       
+    
+      
+      
+
+      
         
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/philosophy/">
+            理念
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/teaching/">
+            教育与教学
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+          <a href="/zh/mbzuai/">
+            MBZUAI
+          </a>
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
       
     
   </div>
@@ -3473,7 +4061,7 @@
     digitalbiostatistics
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="深色模式" aria-label="切换深色模式" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>

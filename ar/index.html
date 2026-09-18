@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-dark="false" class="is-password-locked">
+<html lang="ar" dir="rtl" data-dark="false" class="is-password-locked mbzuai-theme">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
   <!--
   put your analytics (e.g. Google Analytics) tracking code here
 -->
@@ -55,7 +56,7 @@
 <meta property="og:description" content="">
 <meta property="og:url" content="https://digitalbiostatistics.github.io">
 <meta property="og:image" content="/images/share.jpg">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="ar_AE">
 
 <meta property="twitter:title" content="">
 <meta property="twitter:description" content="">
@@ -89,11 +90,7 @@
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
 
-
-
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?display=swap&&family=Barlow:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600&amp;family=Roboto+Mono:ital,wght@0,200;0,400;0,500;0,600;1,200;1,400;1,500;1,600" rel="stylesheet">
-
+<link rel="preload" href="/assets/fonts/mbzuai/aktiv-grotesk-regular.ttf" as="font" type="font/ttf" crossorigin>
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 
@@ -350,7 +347,9 @@
 
 
 
+  <link href="/assets/css/mbzuai.css?v=20260918-i18n" rel="stylesheet">
 
+  <script src="/assets/js/localization.js"></script>
   <!-- third party scripts -->
 <script src="https://unpkg.com/@popperjs/core@2" defer></script>
 <script src="https://unpkg.com/tippy.js@6" defer></script>
@@ -377,6 +376,7 @@
 
 
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "42ceeff2db3345bab6f504fe15400493"}'></script><!-- End Cloudflare Web Analytics -->
+<script type="application/json" id="site-translations">{"Play music":"تشغيل الموسيقى","Pause music":"إيقاف الموسيقى مؤقتًا","Play background music":"تشغيل الموسيقى الخلفية","Pause background music":"إيقاف الموسيقى الخلفية مؤقتًا","Clear search":"مسح البحث","Showing {x} of {n} results":"عرض {x} من أصل {n} نتيجة","link to this section":"رابط إلى هذا القسم"}</script>
 </head>
 
   <body>
@@ -579,32 +579,32 @@
   <form class="password-gate-panel" data-password-form>
     <noscript>
       <p class="password-gate-error">
-        JavaScript is required to access this private website.
+        يتطلب الدخول إلى هذا الموقع الخاص تفعيل JavaScript.
       </p>
     </noscript>
 
     <h1 id="password-gate-title">
-      Digital Biostatistics
+      الإحصاء الحيوي الرقمي
     </h1>
 
     <p class="password-gate-message">
-      This website is under construction. Please enter the password to continue.
+      هذا الموقع قيد الإنشاء. يُرجى إدخال كلمة المرور للمتابعة.
     </p>
 
     <div class="password-gate-form-row">
       <label for="site-password">
-        Password
+        كلمة المرور
       </label>
 
       <input id="site-password" name="password" type="password" autocomplete="current-password" data-password-input required>
 
       <button type="submit">
-        Enter
+        دخول
       </button>
     </div>
 
     <p class="password-gate-error" data-password-error role="alert" hidden>
-      Incorrect password.
+      كلمة المرور غير صحيحة.
     </p>
   </form>
 </div>
@@ -612,289 +612,265 @@
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<header class="background" style="--image: url('/images/banner3.png')" data-dark="false" data-big>
-  <a href="/ar/" class="home">
-    
-      <span class="logo">
-        
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="-40 -60 80 100">
-  <style>
-    .bubble {
-      animation: float 2s ease-out both infinite var(--delay);
-    }
-    @keyframes float {
-      0% {
-        opacity: 0;
-      }
-      50% {
-        transform: translateY(0);
-        opacity: 0;
-      }
-      75% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-        transform: translateY(-40px);
-      }
-    }
-  </style>
-  <g fill="currentColor" opacity="0.5">
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.1s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 0.4s"></circle>
-    <circle class="bubble" cx="0" cy="-10" r="3" style="--delay: 1.1s"></circle>
-  </g>
-  <path fill="#38bdf8" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L -19.5 11.25
-      L 0 22.5
-      L 19.5 11.25
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="#bae6fd" d="
-      M 0 -22.5
-      L -19.5 -11.25
-      L 0 0
-      L 19.5 -11.25
-      z
-    "></path>
-  <path fill="none" stroke="currentColor" stroke-width="5" d="
-      M -18 -53
-      L -10 -53
-      L -10 -29.2
-      L -30.3 -17.5
-      L -30.3 17.5
-      L 0 35
-      L 30.3 17.5
-      L 30.3 -17.5
-      L 10 -29.2
-      L 10 -53
-      L 18 -53
-    "></path>
-</svg>
-
-        
-      </span>
-    
-
-    
-      <span class="title-text" data-tooltip="Home">
-        
-          <span class="title">digitalbiostatistics</span>
-        
-
-        
-      </span>
-    
-  </a>
-
-  <input class="nav-toggle" type="checkbox" aria-label="show/hide nav">
-
-  <nav>
-    
-
-    
+<a class="mbzuai-skip-link" href="#main-content">الانتقال إلى المحتوى</a>
+<header class="mbzuai-header">
+  <div class="mbzuai-masthead">
+    <a class="mbzuai-university" href="https://mbzuai.ac.ae/" aria-label="جامعة محمد بن زايد للذكاء الاصطناعي">
+      <img src="/images/mbzuai/logo-mbzuai-ar-navy.svg" width="238" height="80" alt="جامعة محمد بن زايد للذكاء الاصطناعي">
+    </a>
+    <a class="mbzuai-group" href="/ar/">
+      <span>الإحصاء الحيوي الرقمي</span>
+      <span class="mbzuai-group-caption">مجموعة ماركوس ماتابوينا البحثية</span>
+    </a>
+  </div>
+  <div class="mbzuai-nav-bar">
+    <button class="mbzuai-menu-toggle" type="button" aria-expanded="false" aria-controls="mbzuai-navigation">
+      <span>القائمة</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="mbzuai-navigation" aria-label="التنقّل الرئيسي">
       
       
         
-      
         
-          <a href="/ar/research/" data-tooltip="الأعمال المنشورة">
-            الأبحاث
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
+          
+            <a href="/ar/research/">البحث العلمي</a>
+          
         
       
         
-          <a href="/ar/projects/" data-tooltip="البرمجيات، ومجموعات البيانات، والمزيد">
-            المشاريع
-          </a>
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
-        
-      
-    
-      
-      
         
       
         
-      
-    
-      
-      
         
-      
-    
-      
-      
         
       
         
-      
-    
-      
-      
         
-      
-    
-      
-      
         
       
         
-      
-    
-      
-      
         
-      
-    
-      
-      
         
       
         
-          <a href="/ar/blog/" data-tooltip="التحديثات والمنوعات">
-            الأخبار
-          </a>
         
-      
-    
-      
-      
         
-      
-    
-      
-      
-        
-      
-    
-      
-      
+          
+            <a href="/ar/projects/">المشروعات</a>
+          
         
       
         
-          <a href="/ar/contact/" data-tooltip="البريد الإلكتروني والمزيد">
-            اتصل بنا
-          </a>
+        
         
       
-    
-      
-      
+        
+        
         
       
-    
-      
-      
+        
+        
         
       
-    
-
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/ar/team/">الفريق</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/ar/blog/">الأخبار</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+          
+            <a href="/ar/contact/">انضم إلينا</a>
+          
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+        
+        
+        
+      
+    </nav>
     <div class="language-menu">
-      <button class="language-menu-button" type="button" aria-label="Choose language" aria-expanded="false" aria-controls="language-menu-dropdown">
-        <span aria-hidden="true">
-          <i class="fa-solid fa-globe"></i>
-        </span>
+      <button class="language-menu-button" type="button" aria-label="اختيار اللغة" aria-expanded="false" aria-controls="language-menu-dropdown">
+        <span aria-hidden="true">AR</span><span aria-hidden="true">⌄</span>
       </button>
-    
       <div class="language-menu-dropdown" id="language-menu-dropdown">
         
           
-    
           
-            
-          <a href="/" lang="en">
-            English
-          </a>
+          <a href="/" lang="en">English</a>
         
           
-    
           
-            
-          <a href="/zh/" lang="zh">
-            中文
-          </a>
+          <a href="/zh/" lang="zh">中文</a>
         
           
-    
           
-            
-          <a href="/es/" lang="es">
-            Español
-          </a>
+          <a href="/es/" lang="es">Español</a>
         
           
-    
           
-            
-          <a href="/gl/" lang="gl">
-            Galego
-          </a>
+          <a href="/gl/" lang="gl">Galego</a>
         
           
-    
           
-            
-          <a href="/ar/" lang="ar" dir="rtl" class="is-current" aria-current="page">
-            العربية
-          </a>
+          <a href="/ar/" lang="ar" dir="rtl" class="is-current" aria-current="page">العربية</a>
         
       </div>
     </div>
-  </nav>
+  </div>
 </header>
 <script src="/assets/js/language-menu.js" defer></script>
+<script src="/assets/js/mbzuai-navigation.js" defer></script>
 
+
+    
+      <section class="mbzuai-hero" aria-labelledby="mbzuai-hero-title">
+  <div class="mbzuai-hero-copy">
+    <p class="mbzuai-eyebrow">الإحصاء الحيوي · الذكاء الاصطناعي · الصحة الرقمية</p>
+    <h1 id="mbzuai-hero-title">الإحصاء الحيوي<br>الرقمي</h1>
+    <p class="mbzuai-hero-intro">إطار علمي جديد لفهم الصحة على نحو مستمر.</p>
+    <p class="mbzuai-hero-description">نجمع بين الإحصاء الحيوي والذكاء الاصطناعي والصحة الرقمية واتخاذ القرارات السريرية.</p>
+    <div class="mbzuai-hero-actions">
+      <a class="mbzuai-action" href="/ar/research/">تعرّف إلى أبحاثنا <span aria-hidden="true">↗</span></a>
+      <a class="mbzuai-text-link" href="/ar/team/">تعرّف إلى الفريق <span aria-hidden="true">↗</span></a>
+    </div>
+  </div>
+  <div class="mbzuai-hero-art" aria-hidden="true">
+    <img src="/images/mbzuai/banner-mbzuai.svg" width="700" height="700" alt="" fetchpriority="high">
+    <span>من البيانات المستمرة<br>إلى صحة أفضل.</span>
+  </div>
+</section>
+<div class="mbzuai-intro-strip">
+  <p><em>مهما علا الجبل، فهناك دائمًا طريق إلى القمة.</em></p>
+</div>
 
     
     <main id="main-content">
@@ -915,295 +891,128 @@
   
 
   <section class="background" data-size="page">
-    <style>
-  .home-hero {
-    position: relative;
-    width: 100%;
-    margin: 20px auto 70px;
-    padding: clamp(38px, 7vw, 82px) clamp(24px, 6vw, 78px);
-    box-sizing: border-box;
-    overflow: hidden;
-    border: 1px solid rgba(84, 127, 157, 0.16);
-    border-radius: 28px;
-    background:
-      radial-gradient(
-        circle at 88% 15%,
-        rgba(84, 127, 157, 0.17),
-        transparent 34%
-      ),
-      radial-gradient(
-        circle at 8% 92%,
-        rgba(175, 201, 218, 0.18),
-        transparent 30%
-      ),
-      linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.98),
-        rgba(245, 250, 252, 0.96)
-      );
-    box-shadow:
-      0 24px 65px rgba(32, 49, 60, 0.08),
-      0 4px 14px rgba(32, 49, 60, 0.04);
+    <h2 id="welcome">مرحبًا بكم</h2>
+
+<p><strong>مرحبًا بكم في موقع مجموعة ماركوس ماتابوينا البحثية بجامعة محمد بن زايد للذكاء الاصطناعي</strong></p>
+
+<p>تتيح الصحة الرقمية إمكانية الكشف عن مخاطر الإصابة بالأمراض قبل ظهور أعراضها السريرية بسنوات، بل بعقود أحيانًا. وتتمثل رسالتنا في تطوير المناهج الرياضية والإحصائية وأساليب الذكاء الاصطناعي اللازمة لتحقيق هذا التحوّل، بالاستفادة من المعلومات المستمرة وعالية التواتر التي تجمعها الأجهزة الطبية الحديثة.</p>
+
+<p>وغايتنا هي تجاوز علاج المرض إلى التحسين المستمر والآني لصحة الأفراد والسكان. ولدعم هذا الانتقال، نعمل على تطوير إطار علمي نطلق عليه اسم <strong>الإحصاء الحيوي الرقمي</strong>.</p>
+<div style="max-width: 560px; margin: 30px auto;">
+  <iframe loading="lazy" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" src="https://www.youtube.com/embed/UnkboTF1Bhk" title="مشغّل فيديو YouTube" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+  </iframe>
+</div>
+
+<h2 id="what-is-digital-biostatistics">ما الإحصاء الحيوي الرقمي؟</h2>
+<p>نعرّف <strong> الإحصاء الحيوي الرقمي </strong> بأنه فرع من الإحصاء الحيوي يُعنى بتصميم الدراسات وتحليل البيانات والاستدلال الإحصائي والتطبيق السريري للبيانات الصحية الطولية ومتعددة الوسائط التي تُجمع باستمرار وبتواتر عالٍ باستخدام التقنيات الرقمية. ويهدف في نهاية المطاف إلى دعم القرارات السريرية وقرارات الرعاية الصحية من خلال دمج الإحصاء الحيوي ببحوث العمليات.</p>
+
+<div class="mbzuai-methods" aria-label="نهجنا العلمي">
+  <div>
+<span>01 / الرصد</span><strong>بيانات صحية مستمرة</strong><p>أجهزة رقمية وقياسات طولية.</p>
+</div>
+  <div>
+<span>02 / الفهم</span><strong>الاستدلال الإحصائي</strong><p>منهجيات دقيقة وقياس كمّي لعدم اليقين.</p>
+</div>
+  <div>
+<span>03 / التطبيق</span><strong>قرارات الرعاية الصحية</strong><p>رعاية شخصية وصحة السكان.</p>
+</div>
+</div>
+  </section>
+
+  
+  
+  
+
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<p>تبلورت هذه الرؤية عبر تجارب التعلّم والإرشاد والتعاون في جامعات هارفارد وجونز هوبكنز وكارولينا الشمالية في تشابل هيل، ولا سيما في مجالات التنميط الظاهري الرقمي، وتحليل البيانات الدالية، والطب الشخصي، والبيانات الصحية الطولية.</p>
+
+<style>
+  .dual-videos {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: stretch !important;
+    gap: 24px !important;
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 30px auto !important;
   }
 
-  .home-hero::before {
-    content: "";
-    position: absolute;
-    top: -110px;
-    right: -90px;
-    width: 280px;
-    height: 280px;
-    border: 1px solid rgba(84, 127, 157, 0.13);
-    border-radius: 50%;
-    animation: hero-float 9s ease-in-out infinite;
+  .dual-videos .dual-video {
+    display: block !important;
+    flex: 0 0 calc(50% - 12px) !important;
+    width: calc(50% - 12px) !important;
+    max-width: calc(50% - 12px) !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
-  .home-hero::after {
-    content: "";
-    position: absolute;
-    right: 12%;
-    bottom: -145px;
-    width: 230px;
-    height: 230px;
-    border: 1px solid rgba(84, 127, 157, 0.1);
-    border-radius: 50%;
-    animation: hero-float 12s ease-in-out infinite reverse;
-  }
-
-  .home-hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 930px;
-  }
-
-  .home-hero-label {
-    margin: 0 0 12px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #547f9d;
-    opacity: 0;
-    animation: hero-reveal 0.7s ease forwards;
-  }
-
-  .home-hero-title {
-    margin: 0;
-    font-size: clamp(2.4rem, 6vw, 5.4rem);
-    line-height: 1.02;
-    letter-spacing: -0.045em;
-    font-weight: 780;
-    background: linear-gradient(
-      110deg,
-      #17242d 10%,
-      #547f9d 48%,
-      #17242d 85%
-    );
-    background-size: 220% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    opacity: 0;
-    animation:
-      hero-reveal 0.85s 0.12s ease forwards,
-      hero-shimmer 8s 1.2s ease-in-out infinite;
-  }
-
-  .home-hero-quote {
-    max-width: 780px;
-    margin: 28px 0 34px;
-    padding-left: 22px;
-    border-left: 3px solid rgba(84, 127, 157, 0.55);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.2rem, 2.2vw, 1.65rem);
-    line-height: 1.55;
-    font-style: italic;
-    color: #263b49;
-    opacity: 0;
-    transform: translateY(18px);
-    animation: hero-reveal 0.8s 0.35s ease forwards;
-  }
-
-  .home-hero-text {
-    max-width: 880px;
-    margin: 0 0 19px;
-    font-size: clamp(1.02rem, 1.5vw, 1.22rem);
-    line-height: 1.8;
-    color: #26343d;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  .home-hero-text.first {
-    animation: hero-reveal 0.8s 0.58s ease forwards;
-  }
-
-  .home-hero-text.second {
-    animation: hero-reveal 0.8s 0.8s ease forwards;
-  }
-
-  .hero-highlight {
-    position: relative;
-    display: inline;
-    font-weight: 650;
-    color: #274e68;
-    background-image: linear-gradient(
-      transparent 66%,
-      rgba(124, 174, 204, 0.28) 66%
-    );
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    animation: highlight-draw 1.15s 1.35s ease forwards;
-  }
-
-  .home-hero-title a,
-  .home-hero-title .anchor,
-  .home-hero-title .header-link,
-  .home-hero-title .heading-anchor {
-    display: none !important;
-  }
-
-  .home-hero-title::before,
-  .home-hero-title::after {
-    content: none !important;
-    display: none !important;
-  }
-
-  @keyframes hero-reveal {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-      filter: blur(4px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-      filter: blur(0);
-    }
-  }
-
-  @keyframes hero-shimmer {
-    0%,
-    100% {
-      background-position: 0% center;
-    }
-
-    50% {
-      background-position: 100% center;
-    }
-  }
-
-  @keyframes highlight-draw {
-    from {
-      background-size: 0% 100%;
-    }
-
-    to {
-      background-size: 100% 100%;
-    }
-  }
-
-  @keyframes hero-float {
-    0%,
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-
-    50% {
-      transform: translate3d(-12px, 16px, 0);
-    }
+  .dual-videos .dual-video iframe {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16 / 9 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important;
   }
 
   @media screen and (max-width: 768px) {
-    .home-hero {
-      margin: 12px auto 48px;
-      padding: 38px 24px 42px;
-      border-radius: 22px;
+    .dual-videos {
+      flex-direction: column !important;
+      flex-wrap: nowrap !important;
     }
 
-    .home-hero-title {
-      letter-spacing: -0.035em;
-    }
-
-    .home-hero-quote {
-      margin-top: 22px;
-      margin-bottom: 27px;
-      padding-left: 17px;
-    }
-
-    .home-hero-text {
-      line-height: 1.7;
-    }
-
-    .home-hero::before {
-      width: 190px;
-      height: 190px;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .home-hero::before,
-    .home-hero::after,
-    .home-hero-label,
-    .home-hero-title,
-    .home-hero-quote,
-    .home-hero-text,
-    .hero-highlight {
-      animation: none !important;
-      opacity: 1;
-      transform: none;
-      filter: none;
-      background-size: 100% 100%;
+    .dual-videos .dual-video {
+      flex: 0 0 100% !important;
+      width: 100% !important;
+      max-width: 100% !important;
     }
   }
 </style>
 
-<section class="home-hero" aria-label="Digital Biostatistics introduction">
-  <div class="home-hero-content">
-
-    <div class="home-hero-title" role="heading" aria-level="1">
-     الإحصاء الحيوي الرقمي
-    </div>
-
-    <p class="home-hero-quote">
-      مهما كان الجبل شاهقًا، فهناك دائمًا طريق إلى القمة.
-
-    </p>
-
-    <p class="home-hero-text first">
-      ما النظام الغذائي الأنسب لكل شخص؟ وهل يمكننا التنبؤ بالأمراض التي
-      قد يُصاب بها شخص ما خلال العشرين عامًا القادمة—
-      <span class="hero-highlight">والتدخل قبل ظهورها؟</span>
-    </p>
-
-    <p class="home-hero-text second">
-      تتطلب الإجابة عن مثل هذه الأسئلة إطارًا علميًا جديدًا يجمع بين
-      <span class="hero-highlight">الإحصاء الحيوي</span>،
-      والذكاء الاصطناعي، والصحة الرقمية، واتخاذ القرارات السريرية.
-    </p>
-
-
-
+<div class="dual-videos">
+  <div class="dual-video">
+    <iframe loading="lazy" src="https://www.youtube.com/embed/aI8VAvqbvg0" title="يوكا بيكا أونيلا: التنميط الظاهري الرقمي باستخدام الهواتف الذكية" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+    </iframe>
   </div>
-</section>
 
-<h2 id="مرحبًا">مرحبًا</h2>
+  <div class="dual-video">
+    <iframe loading="lazy" src="https://www.youtube.com/embed/IsbcQo8LgyQ" title="الدكتور مايكل كوسوروك: تصميم التجارب السريرية للطب الدقيق" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+    </iframe>
+  </div>
+</div>
+  </section>
 
-<p>مرحبًا بكم في الموقع الإلكتروني لمجموعة ماركوس ماتابوينا البحثية.</p>
+  
+  
+  
 
-<p>تمتلك الصحة الرقمية القدرة على تحديد مخاطر الإصابة بالأمراض قبل ظهور الأعراض السريرية بسنوات، بل وحتى بعقود. وتتمثل مهمتنا في تطوير الأساليب الرياضية والإحصائية وأساليب الذكاء الاصطناعي اللازمة لجعل هذا التحول ممكنًا، بالاعتماد على المعلومات المستمرة زمنيًا التي تُجمع عبر الأجهزة الطبية الحديثة. وفي نهاية المطاف، نهدف إلى تجاوز علاج الأمراض نحو التحسين المستمر والآني لصحة الأفراد والسكان.</p>
+  <section class="background" data-size="page">
+    <!--
+  <background></background>
+  <dark></dark>
+  <size></size>
+-->
+
+<p>تسعى مشروعاتنا إلى إرساء أسس منهجية رصينة للإحصاء الحيوي الرقمي وإثبات قيمته العملية في البحث الطبي الحيوي والممارسة السريرية وصحة السكان.</p>
+
+<p>يتمثل هدفنا البحثي النهائي خلال السنوات العشر المقبلة في تطوير إطار منخفض التكلفة لإدارة عمليات الرعاية الصحية، يحسّن النتائج الصحية على مستوى الأفراد والسكان عبر دمج الإحصاء الحيوي والصحة الرقمية وبحوث العمليات.</p>
 
 <div style="max-width: 560px; margin: 30px auto;">
-  <iframe style="width: 100%; aspect-ratio: 16 / 9; border: 0;" src="https://www.youtube.com/embed/UnkboTF1Bhk" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+  <iframe loading="lazy" style="width: 100%; aspect-ratio: 16 / 9; border: 0;" src="https://www.youtube.com/embed/lZjDMStecZc" title="فيديو YouTube 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
   </iframe>
 </div>
 
-<h2 id="مستقبل-الذكاء-الاصطناعي-في-الطب">مستقبل الذكاء الاصطناعي في الطب</h2>
-
-<p>لا يزال الذكاء الاصطناعي في الطب في مراحله الأولى، ولم يُثبت في الممارسة السريرية الواقعية سوى جزء ضئيل من إمكاناته. وتعالج معظم التطبيقات الحالية مشكلات بسيطة نسبيًا ومحددة بوضوح من منظور التعلّم الإحصائي.</p>
-
-<p>وخلال السنوات العشر إلى الخمس عشرة المقبلة، نتوقع أن نشهد تطورات يصعب تصورها اليوم، ولا سيما في الاضطرابات العصبية مثل التصلب الجانبي الضموري. وستظهر اكتشافات بيولوجية جديدة تضاهي التقدم الحديث في حل المسائل الرياضية المفتوحة باستخدام أدوات الذكاء الاصطناعي. ويتمثل الأفق التالي للبحث الطبي الحيوي في تطوير نماذج طولية وسببية وقائمة على البيانات، تستخدم أدوات الذكاء الاصطناعي لدعم العلاجات الثورية واكتشاف الأدوية. كما سيتاح لنا الوصول إلى ملفات تعريفية للأنماط الظاهرية الأيضية تتضمن معلومات بمستوى من التفصيل لم يسبق له مثيل.</p>
+<h2 id="our-vision-why-digital-biostatistics-is-a-cornerstone-of-the-future-of-artificial-intelligence-in-medicine">رؤيتنا: أسس الذكاء الاصطناعي في الطب</h2>
+<p>لا يزال الذكاء الاصطناعي في الطب في مراحله الأولى، ولم يُثبت في الممارسة السريرية الفعلية سوى جزء محدود من إمكاناته. ومن منظور التعلّم الإحصائي، ما زالت تطبيقات كثيرة تتناول مهام تنبؤية بسيطة نسبيًا ومحددة بوضوح. أما الجيل المقبل من الذكاء الاصطناعي الطبي، فسيحتاج إلى مواجهة أسئلة أشد تعقيدًا وأعمق أثرًا سريريًا: ما النظام الغذائي الأمثل لشخص بعينه؟ وكيف ينبغي أن تتطوّر استراتيجيات العلاج والوقاية بمرور الوقت؟ وكيف يمكن دمج المعلومات السريرية والبيولوجية والسلوكية والبيئية المتباينة ضمن إطار موحّد لاتخاذ القرار؟</p>
 
 <div style="
   display: flex;
@@ -1220,14 +1029,14 @@
     margin: 0;
     padding: 0;
   ">
-    <iframe style="
+    <iframe loading="lazy" style="
         display: block;
         width: 100%;
         aspect-ratio: 16 / 9;
         border: 0;
         margin: 0;
         padding: 0;
-      " src="https://www.youtube.com/embed/tIgO_Sjh3tQ" title="YouTube video player 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+      " src="https://www.youtube.com/embed/tIgO_Sjh3tQ" title="فيديو YouTube 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
     </iframe>
   </div>
 
@@ -1237,57 +1046,42 @@
     margin: 0;
     padding: 0;
   ">
-    <iframe style="
+    <iframe loading="lazy" style="
         display: block;
         width: 100%;
         aspect-ratio: 16 / 9;
         border: 0;
         margin: 0;
         padding: 0;
-      " src="https://www.youtube.com/embed/0z03xkwFbw4" title="YouTube video player 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
+      " src="https://www.youtube.com/embed/0z03xkwFbw4" title="فيديو YouTube 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
     </iframe>
   </div>
 
 </div>
 
-<h2 id="هدفنا-الأسمى">هدفنا الأسمى</h2>
+<p><strong>الإحصاء الحيوي الرقمي</strong> يمكن أن يوفّر الأساس العلمي اللازم لمواجهة هذه التحديات. فقد تتفوّق أنظمة الذكاء الاصطناعي القوية في مهام تنبؤية محددة، لكن التنبؤ وحده لا يكفي في الواقع السريري والصحي. فلا بد من دعم مخرجاتها باستدلال إحصائي دقيق، وقياس كمّي لعدم اليقين، وتصميم متأنٍّ للدراسات التجريبية والرصدية، وأساليب قادرة على تحليل البيانات المستمرة والطولية وعالية التواتر ومتعددة الوسائط. ويجب دمج هذه العناصر ببحوث العمليات لتحويل التنبؤات إلى قرارات سريرية موثوقة وإدارة أكثر فاعلية للرعاية الصحية.</p>
 
-<p>يتمثل الهدف الأسمى لبحثنا في تطوير منظومة تشغيلية منخفضة التكلفة للرعاية الصحية، تهدف إلى تحسين صحة الأفراد والمجتمعات من خلال الجمع بين الإحصاء الحيوي، والصحة الرقمية، وبحوث العمليات.</p>
+<p>خلال السنوات العشر إلى الخمس عشرة المقبلة، قد تُحدث تطورات الذكاء الاصطناعي، إلى جانب قدرتنا المتنامية على قياس الأنظمة البيولوجية بصورة شبه مستمرة وعلى نطاق سكاني واسع، تحوّلًا في البحث الطبي الحيوي. وقد تتيح هذه التطورات جيلًا جديدًا من الاكتشافات العلمية، وتسرّع تطوير العلاجات الشخصية، وتعمّق فهمنا للأمراض المعقدة.</p>
 
-<p>منذ طفولتي، كان حلمي أن أساهم في إيجاد علاجات للأمراض. وسيسهم الذكاء الاصطناعي في اكتشاف أدوية مخصصة لكل فرد، وخفض تكاليف الرعاية الصحية، وتعزيز قدر أكبر من المساواة، ودعم وصف علاجات أكثر تخصيصًا.</p>
+<p>نتوقّع ظهور أنماط ظاهرية طولية للأيض والوظائف الفسيولوجية تزداد تفصيلًا، اعتمادًا على الأجهزة القابلة للارتداء والمستشعرات الطبية والتصوير الطبي وعلم الجينوم وتقنيات الخلية المفردة وبيانات الميكروبيوم والسجلات الصحية الإلكترونية وغيرها من التقنيات الرقمية. ولن يكون التحدّي الأساسي مجرد جمع مزيد من البيانات أو معالجتها، بل تطوير أطر سليمة علميًا تستطيع تحديد الأنماط ذات الدلالة البيولوجية، والتمييز بين الارتباط والسببية، وقياس عدم اليقين، ودعم قرارات شخصية تتكيّف مع كل فرد بمرور الوقت.</p>
 
-<div style="max-width: 560px; margin: 30px auto;">
-  <iframe style="width: 100%; aspect-ratio: 16 / 9; border: 0;" src="https://www.youtube.com/embed/lZjDMStecZc" title="YouTube video player 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="">
-  </iframe>
-</div>
-  </section>
+<p>وفي هذا السياق، فإن <strong>الإحصاء الحيوي الرقمي</strong> ليس عنصرًا ثانويًا في الذكاء الاصطناعي الطبي، بل يوفّر الأسس العلمية والرياضية اللازمة لتحويل أنظمة الذكاء الاصطناعي المتزايدة القوة إلى أدوات دقيقة وقابلة للتفسير وذات فائدة سريرية.</p>
 
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  <background></background>
-  <dark></dark>
-  <size></size>
--->
-
-<h2 id="أبرز-الإنجازات">أبرز الإنجازات</h2>
+<h2 id="highlights">أبرز أعمالنا</h2>
 
 <div class="feature">
-  <a href="/research" class="feature-image" aria-label="أبحاثنا">
-    <img src="/images/OurResearch.png" loading="lazy" alt="أبحاثنا" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/ar/research/" class="feature-image" aria-label="أبحاثنا">
+    <img src="/images/mbzuai/research-mbzuai.svg" loading="lazy" alt="أبحاثنا" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
       <p class="feature-title">أبحاثنا</p>
     
     
-<p>نحن روّاد في استخدام الأساليب الإحصائية غير الإقليدية لتطوير جيل جديد من المؤشرات الحيوية الرقمية. وقد أسهم عملنا في تقديم مفهوم «كثافة الغلوكوز»، وهو مؤشر حيوي شامل صُمم لتلخيص بيانات الصحة الرقمية التي تُجمع في ظروف الحياة اليومية. كما نطوّر تقنيات حديثة في تعلّم الآلة وأساليب مبتكرة لقياس عدم اليقين في البيانات المعقدة وعالية الأبعاد، مما يتيح لنا الاستفادة الكاملة من المعلومات الغنية والكثيفة والطولية التي تولدها تقنيات الصحة الرقمية.</p>
+<p>نؤدي دورًا رياديًا في تطوير أساليب إحصائية غير إقليدية لتعريف جيل جديد من المؤشرات الحيوية الرقمية. وقد قدّم عملنا مفهوم <strong>كثافة الغلوكوز (glucodensity)</strong>، وهو مؤشر حيوي توزيعي شامل صُمّم لتمثيل بيانات الصحة الرقمية المجمّعة في ظروف الحياة اليومية. كما نطوّر أساليب حديثة في التعلّم الآلي والذكاء الاصطناعي الإحصائي، ومناهج جديدة لقياس عدم اليقين في البيانات المعقدة وعالية الأبعاد. وتتيح لنا هذه الأدوات الاستفادة بصورة أشمل من المعلومات الغنية والكثيفة والطولية التي تولّدها تقنيات الصحة الرقمية.</p>
 
 <div class="button-wrapper">
-    <a class="button" href="/research" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
+    <a class="button" href="/ar/research/" data-style="bare" data-flip="" aria-label="اطّلع على منشوراتنا">
       <i class="icon fa-solid fa-arrow-right"></i>
       
         <span>اطّلع على منشوراتنا</span>
@@ -1299,22 +1093,755 @@
   </div>
 </div>
 
+<h3 id="our-research-areas">مجالاتنا البحثية</h3>
+<style>
+  .research-focus-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 48px auto 56px;
+  }
+
+  .research-focus-card {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+    padding: 30px 28px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid rgba(84, 127, 157, 0.18);
+    border-radius: var(--rounded, 8px);
+
+    box-shadow: 0 12px 32px rgba(32, 49, 60, 0.08);
+  }
+
+  .research-focus-card h3 {
+    margin: 0 0 14px;
+
+    font-size: clamp(1.15rem, 1.6vw, 1.4rem);
+    font-weight: 650;
+    line-height: 1.3;
+
+    color: #263b49;
+  }
+
+  .research-focus-card p {
+    margin: 0;
+
+    font-size: 1rem;
+    line-height: 1.65;
+
+    color: #66757f;
+  }
+
+  @media screen and (max-width: 900px) {
+    .research-focus-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 20px;
+
+      margin: 40px auto 48px;
+    }
+
+    .research-focus-card:last-child {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media screen and (max-width: 640px) {
+    .research-focus-grid {
+      grid-template-columns: 1fr;
+      gap: 16px;
+
+      margin: 32px auto 42px;
+    }
+
+    .research-focus-card,
+    .research-focus-card:last-child {
+      grid-column: auto;
+    }
+
+    .research-focus-card {
+      padding: 24px 22px;
+    }
+
+    .research-focus-card h3 {
+      font-size: 1.12rem;
+    }
+
+    .research-focus-card p {
+      font-size: 0.96rem;
+    }
+  }
+</style>
+
+<div class="research-focus-grid" aria-label="مجالات البحث">
+  <article class="research-focus-card">
+    <h3>المؤشرات الحيوية الرقمية</h3>
+    <p>
+      أساليب لتمثيل البيانات الفسيولوجية والسلوكية المستمرة في صورة كائنات دالية وتوزيعية معقدة.
+    </p>
+  </article>
+
+  <article class="research-focus-card">
+    <h3>الذكاء الاصطناعي الإحصائي للبيانات الصحية المعقدة</h3>
+    <p>
+      التعلّم الآلي ونماذج التأثيرات العشوائية والأساليب التوليدية وقياس عدم اليقين للبيانات الطولية وغير الإقليدية.
+    </p>
+  </article>
+
+  <article class="research-focus-card">
+    <h3>قرارات صحية مخصّصة للفرد</h3>
+    <p>
+      دمج التنبؤ والاستدلال السببي وعدم اليقين وبحوث العمليات لدعم القرارات على مستوى الأفراد والسكان.
+    </p>
+  </article>
+</div>
+
+<h3 id="our-seven-pillars-for-advancing-digital-health-research-and-healthcare-decision-making">سبع ركائز للنهوض بأبحاث الصحة الرقمية</h3>
+
+<style>
+  .highlighted-papers-slider {
+    --highlighted-accent: #547f9d;
+
+    position: relative;
+
+    width: 100%;
+    max-width: 900px;
+
+    margin: 40px auto 65px;
+    padding: 0 38px;
+
+    box-sizing: border-box;
+  }
+
+  .highlighted-papers-viewport {
+    width: 100%;
+    overflow: hidden;
+
+    border-radius: var(--rounded, 8px);
+
+    cursor: grab;
+    touch-action: pan-y;
+  }
+
+  .highlighted-papers-viewport:active {
+    cursor: grabbing;
+  }
+
+  .highlighted-papers-track {
+    display: flex !important;
+    align-items: stretch !important;
+
+    width: 100%;
+
+    transition:
+      transform 0.6s
+      cubic-bezier(0.22, 1, 0.36, 1);
+
+    will-change: transform;
+  }
+
+  .highlighted-paper-slide {
+    display: flex !important;
+    align-items: stretch !important;
+
+    flex: 0 0 100% !important;
+
+    width: 100% !important;
+    min-width: 100% !important;
+
+    padding: 10px;
+
+    box-sizing: border-box;
+  }
+
+  .highlighted-paper-card {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border:
+      1px solid
+      rgba(84, 127, 157, 0.17);
+
+    border-radius: var(--rounded, 8px);
+
+    box-shadow:
+      0 14px 38px
+      rgba(32, 49, 60, 0.1);
+  }
+
+  /*
+    Esta caja siempre tiene la misma altura.
+    Así, el carrusel no crece ni se encoge aunque
+    los abstracts tengan dimensiones diferentes.
+  */
+  .highlighted-paper-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: clamp(240px, 32vw, 340px);
+
+    padding: 20px 24px;
+
+    overflow: hidden;
+    box-sizing: border-box;
+
+    background: #f7f9fa;
+  }
+
+  /*
+    contain muestra el abstract completo:
+    no lo recorta y no lo deforma.
+  */
+  .highlighted-paper-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    background: #ffffff;
+  }
+
+  .highlighted-paper-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 190px;
+
+    padding: 24px 38px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+
+    border-top:
+      1px solid
+      rgba(84, 127, 157, 0.13);
+
+    text-align: center;
+  }
+
+  .highlighted-paper-title {
+    max-width: 760px;
+
+    margin: 0;
+
+    font-size:
+      clamp(
+        1.2rem,
+        2vw,
+        1.6rem
+      );
+
+    font-weight: 650;
+    line-height: 1.28;
+
+    color: #263b49;
+
+    text-wrap: balance;
+  }
+
+  .highlighted-paper-authors {
+    max-width: 730px;
+
+    margin: 15px 0 0;
+
+    font-size: 1rem;
+    line-height: 1.5;
+
+    color: #66757f;
+
+    text-wrap: balance;
+  }
+
+  .highlighted-paper-arrow {
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+
+    display: grid;
+    place-items: center;
+
+    width: 46px;
+    height: 46px;
+
+    padding: 0;
+
+    border:
+      1px solid
+      rgba(84, 127, 157, 0.22);
+
+    border-radius: 50%;
+
+    background: #ffffff;
+    color: #263b49;
+
+    box-shadow:
+      0 9px 25px
+      rgba(32, 49, 60, 0.14);
+
+    font-size: 27px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+
+    transition:
+      transform 0.2s ease,
+      background 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+
+  .highlighted-paper-arrow:hover {
+    background: #f4f8fa;
+
+    box-shadow:
+      0 12px 30px
+      rgba(32, 49, 60, 0.19);
+
+    transform:
+      translateY(-50%)
+      scale(1.06);
+  }
+
+  .highlighted-paper-arrow.previous {
+    left: 8px;
+  }
+
+  .highlighted-paper-arrow.next {
+    right: 8px;
+  }
+
+  .highlighted-papers-dots {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 18px;
+    margin-top: 16px;
+  }
+
+  .highlighted-paper-dot {
+    display: block;
+
+    width: 9px;
+    height: 9px;
+
+    padding: 0;
+    border: 0;
+
+    border-radius: 999px;
+
+    background: var(--highlighted-accent);
+    opacity: 0.25;
+
+    cursor: pointer;
+
+    transition:
+      width 0.3s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
+
+  .highlighted-paper-dot.is-active {
+    width: 30px;
+    opacity: 1;
+  }
+
+  .highlighted-paper-dot:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+
+  .highlighted-paper-arrow:focus-visible,
+  .highlighted-paper-dot:focus-visible {
+    outline:
+      3px solid
+      rgba(84, 127, 157, 0.5);
+
+    outline-offset: 3px;
+  }
+
+  .highlighted-paper-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .highlighted-paper-image a:focus-visible {
+    outline: 3px solid rgba(84, 127, 157, 0.5);
+    outline-offset: 3px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .highlighted-papers-slider {
+      max-width: 100%;
+
+      margin: 28px auto 50px;
+      padding: 0 8px;
+    }
+
+    .highlighted-paper-slide {
+      padding: 6px;
+    }
+
+    .highlighted-paper-image {
+      height: 260px;
+      padding: 10px;
+    }
+
+    .highlighted-paper-information {
+      height: auto;
+      min-height: 185px;
+
+      padding: 24px 42px;
+    }
+
+    .highlighted-paper-title {
+      font-size: 1.15rem;
+    }
+
+    .highlighted-paper-authors {
+      margin-top: 12px;
+      font-size: 0.92rem;
+    }
+
+    .highlighted-paper-arrow {
+      top: 43%;
+
+      width: 38px;
+      height: 38px;
+
+      font-size: 22px;
+    }
+
+    .highlighted-paper-arrow.previous {
+      left: 14px;
+    }
+
+    .highlighted-paper-arrow.next {
+      right: 14px;
+    }
+
+    .highlighted-papers-dots {
+      margin-top: 12px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .highlighted-paper-image {
+      height: 220px;
+      padding: 8px;
+    }
+
+    .highlighted-paper-information {
+      min-height: 190px;
+      padding: 22px 38px;
+    }
+
+    .highlighted-paper-title {
+      font-size: 1.02rem;
+    }
+
+    .highlighted-paper-authors {
+      font-size: 0.85rem;
+    }
+
+    .highlighted-paper-arrow {
+      width: 34px;
+      height: 34px;
+
+      font-size: 20px;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .highlighted-papers-track,
+    .highlighted-paper-arrow,
+    .highlighted-paper-dot {
+      transition: none;
+    }
+  }
+</style>
+
+<div id="highlighted-papers-slider" class="highlighted-papers-slider" aria-label="منشورات الركائز السبع" aria-roledescription="carousel">
+  <div class="highlighted-papers-viewport">
+    <div class="highlighted-papers-track">
+
+      
+        <article class="highlighted-paper-slide" aria-hidden="false">
+          <div class="highlighted-paper-card">
+
+            <div class="highlighted-paper-image">
+              
+                <a href="https://pubmed.ncbi.nlm.nih.gov/33760665/" target="_blank" rel="noopener noreferrer" aria-label="فتح البحث: Glucodensities: A new representation of glucose profiles using distributional data analysis">
+              
+            
+              <img src="/images/paperglucodensitiesanewrepresentation.png" alt="ملخّص Glucodensities: A new representation of glucose profiles using distributional data analysis" loading="eager" decoding="async">
+            
+              
+                </a>
+              
+            </div>
+
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Glucodensities: A new representation of glucose profiles using distributional data analysis
+              </h3>
+
+              <p class="highlighted-paper-authors">
+                Marcos Matabuena, Alexander Petersen, Juan C Vidal, Francisco Gude
+              </p>
+            </div>
+
+          </div>
+        </article>
+      
+        <article class="highlighted-paper-slide" aria-hidden="true">
+          <div class="highlighted-paper-card">
+
+            <div class="highlighted-paper-image">
+              
+                <a href="https://doi.org/10.1038/s41598-025-18119-2" target="_blank" rel="noopener noreferrer" aria-label="فتح البحث: Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics">
+              
+            
+              <img src="/images/paperglucodensity.png" alt="ملخّص Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics" loading="lazy" decoding="async">
+            
+              
+                </a>
+              
+            </div>
+
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Glucodensity functional profiles outperform traditional continuous glucose monitoring metrics
+              </h3>
+
+              <p class="highlighted-paper-authors">
+                Marcos Matabuena, Rahul Ghosal, Javier Enrique Aguilar, Ayya Keshet, Robert Wagner, Carmen Fernandez Merino, Juan Sanchez Castro, Vadim Zipunnikov, J-P Onnela, Francisco Gude
+              </p>
+            </div>
+
+          </div>
+        </article>
+      
+        <article class="highlighted-paper-slide" aria-hidden="true">
+          <div class="highlighted-paper-card">
+
+            <div class="highlighted-paper-image">
+              
+                <a href="https://doi.org/10.1214/26-AOAS2139" target="_blank" rel="noopener noreferrer" aria-label="فتح البحث: Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials">
+              
+            
+              <img src="/images/papermultilevelbueno.png" alt="ملخّص Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials" loading="lazy" decoding="async">
+            
+              
+                </a>
+              
+            </div>
+
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Multilevel functional distributional models with applications to continuous glucose monitoring in diabetes clinical trials
+              </h3>
+
+              <p class="highlighted-paper-authors">
+                Marcos Matabuena, Ciprian M. Crainiceanu
+              </p>
+            </div>
+
+          </div>
+        </article>
+      
+        <article class="highlighted-paper-slide" aria-hidden="true">
+          <div class="highlighted-paper-card">
+
+            <div class="highlighted-paper-image">
+              
+                <a href="https://arxiv.org/abs/2507.15741" target="_blank" rel="noopener noreferrer" aria-label="فتح البحث: Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces">
+              
+            
+              <img src="/images/paperconformalandknn.png" alt="ملخّص Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces" loading="lazy" decoding="async">
+            
+              
+                </a>
+              
+            </div>
+
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Conformal and kNN Predictive Uncertainty Quantification Algorithms in Metric Spaces
+              </h3>
+
+              <p class="highlighted-paper-authors">
+                Gabor Lugosi, Marcos Matabuena
+              </p>
+            </div>
+
+          </div>
+        </article>
+      
+        <article class="highlighted-paper-slide" aria-hidden="true">
+          <div class="highlighted-paper-card">
+
+            <div class="highlighted-paper-image">
+              
+                <a href="https://arxiv.org/abs/2501.00212" target="_blank" rel="noopener noreferrer" aria-label="فتح البحث: Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model">
+              
+            
+              <img src="/images/paperdenoisingdata.png" alt="ملخّص Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model" loading="lazy" decoding="async">
+            
+              
+                </a>
+              
+            </div>
+
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Denoising Data with Measurement Error Using a Reproducing Kernel-based Diffusion Model
+              </h3>
+
+              <p class="highlighted-paper-authors">
+                Mingyang Yi, Marcos Matabuena, Zhi-Ming Ma, Ruoyu Wang
+              </p>
+            </div>
+
+          </div>
+        </article>
+      
+        <article class="highlighted-paper-slide" aria-hidden="true">
+          <div class="highlighted-paper-card">
+
+            <div class="highlighted-paper-image">
+              
+                <a href="https://arxiv.org/abs/2512.08179" target="_blank" rel="noopener noreferrer" aria-label="فتح البحث: Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces">
+              
+            
+              <img src="/images/paperdistributionalrandomforest.png" alt="ملخّص Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces" loading="lazy" decoding="async">
+            
+              
+                </a>
+              
+            </div>
+
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Distributional Random Forests for Complex Survey Designs on Reproducing Kernel Hilbert Spaces
+              </h3>
+
+              <p class="highlighted-paper-authors">
+                Yating Zou, Marcos Matabuena, and Michael R. Kosorok
+              </p>
+            </div>
+
+          </div>
+        </article>
+      
+        <article class="highlighted-paper-slide" aria-hidden="true">
+          <div class="highlighted-paper-card">
+
+            <div class="highlighted-paper-image">
+              
+                <a href="https://arxiv.org/abs/2605.02693" target="_blank" rel="noopener noreferrer" aria-label="فتح البحث: Random-Effects Algorithm for Random Objects in Metric Spaces">
+              
+            
+              <img src="/images/paperrandomeffectsalgorithm.png" alt="ملخّص Random-Effects Algorithm for Random Objects in Metric Spaces" loading="lazy" decoding="async">
+            
+              
+                </a>
+              
+            </div>
+
+            <div class="highlighted-paper-information">
+              <h3 class="highlighted-paper-title">
+                Random-Effects Algorithm for Random Objects in Metric Spaces
+              </h3>
+
+              <p class="highlighted-paper-authors">
+                Marcos Matabuena, Mateo Camara
+              </p>
+            </div>
+
+          </div>
+        </article>
+      
+
+    </div>
+  </div>
+
+  <button class="highlighted-paper-arrow previous" type="button" aria-label="المنشور السابق">
+    <span aria-hidden="true">‹</span>
+  </button>
+
+  <button class="highlighted-paper-arrow next" type="button" aria-label="المنشور التالي">
+    <span aria-hidden="true">›</span>
+  </button>
+
+  <div class="highlighted-papers-dots" aria-label="اختيار منشور">
+    
+      <button class="highlighted-paper-dot is-active" type="button" data-slide="0" aria-label="عرض المنشور 1" aria-current="true"></button>
+    
+      <button class="highlighted-paper-dot" type="button" data-slide="1" aria-label="عرض المنشور 2"></button>
+    
+      <button class="highlighted-paper-dot" type="button" data-slide="2" aria-label="عرض المنشور 3"></button>
+    
+      <button class="highlighted-paper-dot" type="button" data-slide="3" aria-label="عرض المنشور 4"></button>
+    
+      <button class="highlighted-paper-dot" type="button" data-slide="4" aria-label="عرض المنشور 5"></button>
+    
+      <button class="highlighted-paper-dot" type="button" data-slide="5" aria-label="عرض المنشور 6"></button>
+    
+      <button class="highlighted-paper-dot" type="button" data-slide="6" aria-label="عرض المنشور 7"></button>
+    
+  </div>
+</div>
+
+<script src="/assets/js/highlighted-papers.js" defer></script>
+
 <div class="feature" data-flip="">
-  <a href="/projects" class="feature-image" aria-label="مشاريعنا">
-    <img src="/images/ourprojects_web.png" loading="lazy" alt="مشاريعنا" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
+  <a href="/ar/projects/" class="feature-image" aria-label="مشروعاتنا">
+    <img src="/images/mbzuai/projects-mbzuai.svg" loading="lazy" alt="مشروعاتنا" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   <div class="feature-text">
     
-      <p class="feature-title">مشاريعنا</p>
+      <p class="feature-title">مشروعاتنا</p>
     
     
-<p>تركّز مشاريعنا الحالية على تطوير جيل جديد من أساليب الذكاء الاصطناعي الإحصائي القادرة على تحويل الكميات الهائلة من المعلومات التي تجمعها الأجهزة الرقمية إلى معرفة ذات معنى سريري. ونهدف، من خلال مشكلات طبية واقعية، إلى إظهار كيف يمكن لهذه الأساليب أن تحقق تقدمًا ملموسًا في البحث والممارسة السريرية.</p>
+<p>تركّز مشروعاتنا الحالية على تطوير جيل جديد من أساليب الذكاء الاصطناعي الإحصائي القادرة على تحويل الكم الهائل من المعلومات التي تجمعها الأجهزة الرقمية إلى معرفة ذات قيمة سريرية. ونسعى، من خلال مشكلات طبية واقعية، إلى إثبات قدرة هذه الأساليب على تحقيق تقدّم ملموس في البحث والممارسة السريرية.</p>
 
 <div class="button-wrapper">
-    <a class="button" href="/projects" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
+    <a class="button" href="/ar/projects/" data-style="bare" data-flip="" aria-label="استكشف مشروعاتنا">
       <i class="icon fa-solid fa-arrow-right"></i>
       
-        <span>تصفّح مشاريعنا</span>
+        <span>استكشف مشروعاتنا</span>
       
     </a>
   </div>
@@ -1324,7 +1851,7 @@
 </div>
 
 <div class="feature">
-  <a href="/team" class="feature-image" aria-label="فريقنا">
+  <a href="/ar/team/" class="feature-image" aria-label="فريقنا">
     <img src="/images/collageconsolo1pelado.png" loading="lazy" alt="فريقنا" onerror="this.src = '/images/fallback.svg'; this.onerror = null;">
   </a>
   <div class="feature-text">
@@ -1332,13 +1859,13 @@
       <p class="feature-title">فريقنا</p>
     
     
-<p>يعتمد نجاح البحث على الاختيار الدقيق لأعضاء فريقك والمتعاونين معك. وللمساهمة في دفع المجال إلى الأمام، أحط نفسك بأشخاص متحمسين، ومحفَّزين، ومؤهلين تأهيلًا جيدًا.</p>
+<p>فريق متعدد التخصصات يعمل عند تقاطع الإحصاء والذكاء الاصطناعي والبحث الطبي الحيوي، ضمن شبكة عالمية من الباحثين المتعاونين البارزين.</p>
 
 <div class="button-wrapper">
-    <a class="button" href="/team" data-style="bare" data-flip="" aria-label="fa-solid fa-arrow-right">
+    <a class="button" href="/ar/team/" data-style="bare" data-flip="" aria-label="تعرّف إلى فريقنا">
       <i class="icon fa-solid fa-arrow-right"></i>
       
-        <span>تعرّف على فريقنا</span>
+        <span>تعرّف إلى فريقنا</span>
       
     </a>
   </div>
@@ -1347,458 +1874,100 @@
   </div>
 </div>
 
-<h2 id="شهادات-وآراء">شهادات وآراء</h2>
+<h2 id="join-us">انضم إلينا</h2>
+<p>نعمل على بناء برنامج بحثي متعدد التخصصات يجمع بين الإحصاء الحيوي وعلم الأوبئة والذكاء الاصطناعي والصحة الرقمية والطب. ونرحّب بالطلاب والباحثين المتعاونين الطموحين الراغبين في تطوير مناهج دقيقة لمعالجة أسئلة طبية حيوية ذات أثر مهم.</p>
+
+<div class="mbzuai-reading-image">
+  <img src="/images/horizontalguy.png" width="1916" height="821" alt="رجل يقرأ كتابًا وهو يطفو فوق السحاب" loading="lazy" decoding="async">
+</div>
+
+<div class="button-wrapper">
+    <a class="button" href="/ar/projects/" data-style="bare" data-flip="" aria-label="استكشف الفرص المتاحة">
+      <i class="icon fa-solid fa-arrow-right"></i>
+      
+        <span>استكشف الفرص المتاحة</span>
+      
+    </a>
+  </div>
+
+<div class="button-wrapper">
+    <a class="button" href="/ar/team/" data-style="bare" data-flip="" aria-label="تعرّف إلى الفريق">
+      <i class="icon fa-solid fa-arrow-right"></i>
+      
+        <span>تعرّف إلى الفريق</span>
+      
+    </a>
+  </div>
+
+<p>نؤمن بأن معالجة المشكلات العلمية المهمة تتطلب الدقة والخيال والمثابرة والتعاون بروح العطاء.</p>
 
 <style>
-  .testimonials-slider {
-    --testimonial-accent: #547f9d;
-    position: relative;
-    width: 100%;
-    max-width: 1050px;
-    margin: 40px auto 70px;
-    padding: 0 34px;
-    box-sizing: border-box;
-  }
+  .vision-callout {
+    max-width: 920px;
+    margin: 40px auto 46px;
+    padding: 34px 38px;
 
-  .testimonials-viewport {
-    overflow: hidden;
-    border-radius: 28px;
-    touch-action: pan-y;
-    cursor: grab;
-  }
+    background: linear-gradient(
+      135deg,
+      rgba(245, 250, 252, 0.98),
+      rgba(255, 255, 255, 0.98)
+    );
 
-  .testimonials-viewport:active {
-    cursor: grabbing;
-  }
-
-  .testimonials-track {
-    display: flex !important;
-    align-items: stretch !important;
-    width: 100%;
-    transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-    will-change: transform;
-  }
-
-  .testimonial-slide {
-    display: flex !important;
-    align-items: stretch !important;
-    flex: 0 0 100% !important;
-    width: 100% !important;
-    min-width: 100% !important;
-    box-sizing: border-box;
-
-    /* Espacio interior para que la sombra no sea recortada */
-    padding: 14px 14px 32px;
-  }
-
-  .testimonial-card {
-    position: relative;
-    display: grid;
-    grid-template-columns: 190px minmax(0, 1fr);
-    align-items: center;
-    gap: 44px;
-
-    width: 100%;
-    min-height: 390px;
-    padding: 46px 54px;
-    box-sizing: border-box;
-
-    overflow: hidden;
     border: 1px solid rgba(84, 127, 157, 0.18);
-    border-radius: 24px;
+    border-left: 5px solid #547f9d;
+    border-radius: 16px;
 
-    background:
-      radial-gradient(
-        circle at top right,
-        rgba(84, 127, 157, 0.12),
-        transparent 35%
-      ),
-      #ffffff;
+    box-shadow: 0 12px 30px rgba(32, 49, 60, 0.08);
 
-    box-shadow:
-      0 22px 35px rgba(32, 49, 60, 0.12),
-      0 5px 12px rgba(32, 49, 60, 0.07);
-
-    flex: 1 1 auto;
+    text-align: center;
   }
 
-  .testimonial-photo-wrapper {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    margin: auto;
-  }
-
-  .testimonial-photo-wrapper::before {
-    content: "";
-    position: absolute;
-    inset: -9px;
-    border: 2px solid rgba(84, 127, 157, 0.18);
-    border-radius: 50%;
-  }
-
-  .testimonial-photo {
-    position: relative;
-    width: 180px;
-    height: 180px;
-    display: block;
-    object-fit: cover;
-    border-radius: 50%;
-    background: #eef3f6;
-  }
-
-  .testimonial-content {
-    position: relative;
-    min-width: 0;
-  }
-
-  .testimonial-quote-mark {
-    position: absolute;
-    top: -32px;
-    left: -5px;
-    font-family: Georgia, serif;
-    font-size: 90px;
-    line-height: 1;
-    color: var(--testimonial-accent);
-    opacity: 0.16;
-    pointer-events: none;
-  }
-
-  .testimonial-text {
-    position: relative;
-    margin: 0 0 26px;
-    font-size: 1.06rem;
-    line-height: 1.75;
-  }
-
-  .testimonial-name {
+  .vision-callout p {
     margin: 0;
-    font-size: 1.05rem;
-    font-weight: 750;
+
+    font-size: 1.18rem;
+    line-height: 1.8;
+
+    color: #2d3d48;
   }
 
-  .testimonial-role {
-    margin: 6px 0 0;
-    font-size: 0.92rem;
-    line-height: 1.5;
-    opacity: 0.68;
-  }
-
-  .testimonial-arrow {
-    position: absolute;
-    top: 50%;
-    z-index: 5;
-    width: 48px;
-    height: 48px;
-    display: grid;
-    place-items: center;
-    padding: 0;
-    border: 1px solid rgba(84, 127, 157, 0.22);
-    border-radius: 50%;
-    background: #ffffff;
-    color: #263b49;
-    box-shadow: 0 10px 28px rgba(32, 49, 60, 0.14);
-    cursor: pointer;
-    transform: translateY(-50%);
-    transition:
-      transform 0.2s ease,
-      box-shadow 0.2s ease,
-      background 0.2s ease;
-  }
-
-  .testimonial-arrow:hover {
-    background: #f4f8fa;
-    box-shadow: 0 13px 32px rgba(32, 49, 60, 0.2);
-    transform: translateY(-50%) scale(1.08);
-  }
-
-  .testimonial-arrow.previous {
-    left: 7px;
-  }
-
-  .testimonial-arrow.next {
-    right: 7px;
-  }
-
-  .testimonial-dots {
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    min-height: 22px;
-    margin-top: 24px;
-  }
-
-  .testimonial-dot {
-    width: 10px;
-    height: 10px;
-    display: block;
-    padding: 0;
-    border: 0;
-    border-radius: 999px;
-    background: var(--testimonial-accent);
-    opacity: 0.28;
-    cursor: pointer;
-    transition:
-      width 0.3s ease,
-      opacity 0.3s ease,
-      transform 0.3s ease;
-  }
-
-  .testimonial-dot.is-active {
-    width: 34px;
-    opacity: 1;
-  }
-
-  .testimonial-dot:hover {
-    opacity: 0.75;
-    transform: scale(1.12);
-  }
-
-  .testimonial-arrow:focus-visible,
-  .testimonial-dot:focus-visible {
-    outline: 3px solid rgba(84, 127, 157, 0.55);
-    outline-offset: 3px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .testimonials-slider {
-      margin: 28px auto 60px;
-      padding: 0 8px;
+  @media (max-width: 640px) {
+    .vision-callout {
+      padding: 26px 22px;
+      margin: 34px auto 40px;
     }
 
-    .testimonial-card {
-      grid-template-columns: 1fr;
-      align-content: center;
-      gap: 27px;
-      min-height: 540px;
-      padding: 38px 25px 42px;
-      text-align: center;
+    .vision-callout p {
+      font-size: 1.05rem;
     }
-
-    .testimonial-photo-wrapper,
-    .testimonial-photo {
-      width: 132px;
-      height: 132px;
-    }
-
-    .testimonial-content {
-      padding-top: 12px;
-    }
-
-    .testimonial-quote-mark {
-      top: -28px;
-      left: 50%;
-      font-size: 72px;
-      transform: translateX(-50%);
-    }
-
-    .testimonial-text {
-      margin-bottom: 22px;
-      font-size: 0.98rem;
-      line-height: 1.65;
-    }
-
-    .testimonial-arrow {
-      top: 120px;
-      width: 40px;
-      height: 40px;
-    }
-
-    .testimonial-arrow.previous {
-      left: 16px;
-    }
-
-    .testimonial-arrow.next {
-      right: 16px;
-    }
-
-    .testimonial-slide {
-      padding: 10px 8px 28px;
-    }
-  }
-
-  @media screen and (max-width: 420px) {
-    .testimonial-card {
-      min-height: 570px;
-      padding-right: 19px;
-      padding-left: 19px;
-    }
-
-    .testimonial-photo-wrapper,
-    .testimonial-photo {
-      width: 112px;
-      height: 112px;
-    }
-
-    .testimonial-arrow {
-      top: 105px;
-      width: 36px;
-      height: 36px;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .testimonials-track {
-      transition: none;
-    }
-  }
-
-    /* El carrusel funciona internamente de izquierda a derecha */
-  .testimonials-slider {
-    direction: ltr;
-  }
-
-  /* El contenido textual continúa en árabe */
-  .testimonial-content {
-    direction: rtl;
-    text-align: right;
   }
 </style>
 
-<div class="testimonials-slider" id="testimonials-slider" aria-label="Testimonials" dir="ltr">
-  <div class="testimonials-viewport">
-    <div class="testimonials-track">
+<div class="vision-callout">
+  <p>
+    وكما فتح المختبر آفاقًا جديدة في الطب الحيوي، فإن <strong>الإحصاء الحيوي الرقمي قد يصبح إحدى الأدوات العلمية التي تميّز عصر البيانات</strong>؛ أشبه بتلسكوب جديد يرصد صحة الإنسان باستمرار ويكشف أنماطًا بيولوجية لم تكن مرئية من قبل.
+  </p>
 
-      <article class="testimonial-slide">
-        <div class="testimonial-card">
-          <div class="testimonial-photo-wrapper">
-            <img class="testimonial-photo" src="/images/yating.jpeg" alt="Portrait of Yating Zou">
-          </div>
-
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              ماركوس متعاون يتمتع بذكاء لافت وحماس كبير، ويواكب الأدبيات العلمية عن كثب، كما يتميز بسرعة الربط بين الأفكار عبر مشكلات مختلفة. فهو سريع التفكير، ويتفاعل بصورة مباشرة، ويُظهر التزامًا حقيقيًا بالعمل القائم على أسس إحصائية رصينة والمرتبط بأسئلة طبية حيوية واقعية وذات أهمية.
-
-              وإلى جانب الجانب البحثي، كان صديقًا رائعًا ومصدرًا حقيقيًا للدعم في مسيرتي العلمية. وأنا واثق من أنه سيحقق إنجازات عظيمة، وأتطلع إلى مواصلة عملنا معًا عند نقطة التقاء المنهجيات الإحصائية والصحة الرقمية!
-
-            </p>
-
-            <p class="testimonial-name">Yating Zou</p>
-
-            <p class="testimonial-role">
-              طالب دكتوراه في الإحصاء الحيوي بجامعة كارولينا الشمالية في تشابل هيل
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="testimonial-slide">
-        <div class="testimonial-card">
-          <div class="testimonial-photo-wrapper">
-            <img class="testimonial-photo" src="/images/cris.png" alt="Portrait of Cristina Correa">
-          </div>
-
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              كان ماركوس مشرفًا رائعًا، وبصراحة، أحد أكثر الأشخاص تأثيرًا بصورة إيجابية في مسيرتي الأكاديمية حتى الآن. فهو مجتهد للغاية وشخص أكنّ له قدرًا كبيرًا من الاحترام والتقدير. لقد فتح عينيّ على فرص لم أكن قد فكرت فيها من قبل، وشجّعني على أن أكون أكثر طموحًا في أبحاثي وفي مسيرتي الأكاديمية على حد سواء. وقد جعلني وجوده مرشدًا لي باحثةً أفضل بكثير، وأشعر بامتنان كبير لكوني جزءًا من مختبره البحثي.
-            </p>
-
-            <p class="testimonial-name">Cristina Correa</p>
-
-            <p class="testimonial-role">
-              طالبة ماجستير في علم الأحياء الحاسوبي بجامعة محمد بن زايد للذكاء الاصطناعي
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="testimonial-slide">
-        <div class="testimonial-card">
-          <div class="testimonial-photo-wrapper">
-            <img class="testimonial-photo" src="/images/rounakdey.jpg" alt="Portrait of Rounak Dey">
-          </div>
-
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              ماركوس باحث لامع يجلب إلى كل مشروع قدرًا استثنائيًا من الدقة والتفاني والابتكار. كما يتميز بقدرته على بناء علاقات تعاون مثمرة، ويحافظ على معايير عالية جدًا في منشوراته العلمية. لقد كان من دواعي سروري العمل إلى جانبه، وأتمنى له دوام النجاح طوال مسيرته المهنية الواعدة.
-            </p>
-
-            <p class="testimonial-name">Rounak Dey</p>
-
-            <p class="testimonial-role">
-              عالِم بيانات رئيسي في شركة Insitro
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="testimonial-slide">
-        <div class="testimonial-card">
-          <div class="testimonial-photo-wrapper">
-            <img class="testimonial-photo" src="/images/antonio.png" alt="Portrait of Antonio Álvarez">
-          </div>
-
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              في عالم العلوم شديد التنافسية، يتميّز ماركوس بنهجه الإنساني. فهو يضع العلاقات الشخصية في المقام الأول، ويتجلى ذلك في الاهتمام الاستثنائي الذي يوليه للأشخاص العديدين ضمن شبكة المتعاونين معه. أعرفه منذ عدة سنوات، وخلال الأشهر الثمانية عشر الماضية شاركنا في تأليف ورقتين بحثيتين، حصلت إحداهما على جائزة، وهي تجربة لم تزدني إلا إعجابًا بتفانيه وروحه التعاونية.
-
-              يعمل ماركوس بلا كلل لتحقيق هدف طموح وهادف يتجاوز الرياضيات بكثير، وهو إحداث أثر إيجابي في المجتمع من خلال الأساليب الإحصائية وأساليب الذكاء الاصطناعي التي يطورها في مجال الصحة الرقمية. إنه باحث لامع ومتعاون يمكنك الاعتماد عليه دائمًا.
-
-            </p>
-
-            <p class="testimonial-name">Antonio Álvarez</p>
-
-            <p class="testimonial-role">
-             باحث ما بعد الدكتوراه في جامعة نانيانغ التكنولوجية
-            </p>
-          </div>
-        </div>
-      </article>
-
-      <article class="testimonial-slide">
-        <div class="testimonial-card">
-          <div class="testimonial-photo-wrapper">
-            <img class="testimonial-photo" src="/images/elvis.jpg" alt="Portrait of Elvis Han Cui">
-          </div>
-
-          <div class="testimonial-content">
-            <p class="testimonial-text">
-              إن «الإحصاء الحيوي الرقمي» ليس مجرد موقع إلكتروني، بل هو راية مرفوعة على تخوم علوم الطب الحيوي.
-
-              في هذه الرؤية، لم تعد الصحة رقمًا جامدًا يُسجَّل خلال زيارة إلى العيادة، بل أصبحت إشارة حيّة: مستمرة، وقابلة للرصد عبر الأجهزة القابلة للارتداء، وطولية، ومحاطة بعدم اليقين، وإنسانية في جوهرها.
-
-              يرفض عمل ماركوس ماتابوينا المفاضلة الزائفة بين الصرامة الرياضية والخيال السريري. إذ يجمع بين تحليل البيانات الدالية، والاستدلال السببي، وقياس عدم اليقين، والمؤشرات الحيوية الرقمية، والذكاء الاصطناعي، بوصفها أدوات لقراءة نبض المستقبل.
-
-              وكما يقول المثل الصيني: «观水有术，必观其澜» — لفهم النهر، لا بد من تأمل أمواجه.
-
-              ولمن يرغب في معرفة الوجهة التي يمضي إليها علم الإحصاء الحيوي، فهذا مكان جدير بالمتابعة.
-
-            </p>
-
-            <p class="testimonial-name">Elvis Han Cui</p>
-
-            <p class="testimonial-role">
-              طالب دكتوراه في الإحصاء الحيوي بكلية فيلدينغ للصحة العامة في جامعة كاليفورنيا، لوس أنجلوس
-            </p>
-          </div>
-        </div>
-      </article>
-
-    </div>
-  </div>
-
-  <button class="testimonial-arrow previous" type="button" aria-label="Previous testimonial">
-    ❮
-  </button>
-
-  <button class="testimonial-arrow next" type="button" aria-label="Next testimonial">
-    ❯
-  </button>
-
-  <div class="testimonial-dots" aria-label="Choose a testimonial">
-    <button class="testimonial-dot is-active" type="button" data-slide="0" aria-label="Show testimonial 1"></button>
-
-    <button class="testimonial-dot" type="button" data-slide="1" aria-label="Show testimonial 2"></button>
-
-    <button class="testimonial-dot" type="button" data-slide="2" aria-label="Show testimonial 3"></button>
-
-    <button class="testimonial-dot" type="button" data-slide="3" aria-label="Show testimonial 4"></button>
-
-    <button class="testimonial-dot" type="button" data-slide="4" aria-label="Show testimonial 5"></button>
-  </div>
 </div>
-<script src="/assets/js/testimonials.js" defer></script>
+
+<div class="homepage-music">
+  <audio id="homepage-audio" preload="metadata" loop="">
+    <source src="/assets/flamenco.mp3" type="audio/mpeg"></source>
+    متصفحك لا يدعم تشغيل الصوت.
+  </audio>
+
+  <button id="homepage-audio-button" class="homepage-audio-button" type="button" aria-label="تشغيل الموسيقى الخلفية">
+    <span class="homepage-audio-icon" aria-hidden="true">
+      ▶
+    </span>
+
+    <span class="homepage-audio-label">
+      تشغيل الموسيقى
+    </span>
+  </button>
+</div>
+
+<script src="/assets/js/homepage-audio.js" defer></script>
   </section>
 
 
@@ -1808,8 +1977,21 @@
 
 
 
-<footer class="background" style="--image: url('/images/banner3.png')" data-dark="false" data-size="wide">
+
   
+  
+
+<footer class="background mbzuai-footer" data-dark="true" data-size="wide">
+
+    <div class="mbzuai-footer-brand">
+      <a href="https://mbzuai.ac.ae/" aria-label="جامعة محمد بن زايد للذكاء الاصطناعي">
+        <img src="/images/mbzuai/logo-mbzuai-ar-white.svg" width="238" height="80" alt="جامعة محمد بن زايد للذكاء الاصطناعي" loading="lazy">
+      </a>
+      <div>
+<p>الإحصاء الحيوي الرقمي</p>
+<span>الإحصاء الحيوي والذكاء الاصطناعي والصحة الرقمية.</span>
+</div>
+    </div>
   <!--
     <div>
       Extra details like contact info or address
@@ -1825,7 +2007,7 @@
 
 
   <div class="button-wrapper">
-    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="Email" data-style="bare" aria-label="Email">
+    <a class="button" href="mailto:Marcos.Matabuena@mbzuai.ac.ae" data-tooltip="البريد الإلكتروني" data-style="bare" aria-label="البريد الإلكتروني">
       <i class="icon fa-solid fa-envelope"></i>
       
     </a>
@@ -1878,7 +2060,44 @@
       
 
       
+    
+      
+      
+
+      
         
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
       
     
       
@@ -1902,9 +2121,24 @@
       
         
           <a href="/ar/philosophy/">
-            الفلسفة
+            فلسفتنا
           </a>
         
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
       
     
       
@@ -1918,7 +2152,7 @@
       
         
           <a href="/ar/teaching/">
-            التدريس
+            التعليم والتدريس
           </a>
         
       
@@ -1932,8 +2166,23 @@
       
 
       
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
         
-          <a href="/ar/mbuzai/">
+          <a href="/ar/mbzuai/">
             MBZUAI
           </a>
         
@@ -1948,8 +2197,6 @@
       
 
       
-        
-      
     
       
       
@@ -1966,6 +2213,43 @@
 
       
         
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+    
+      
+      
+
+      
+        
+      
+    
+      
+      
+
+      
+    
+      
+      
+
       
     
       
@@ -1986,7 +2270,7 @@
     digitalbiostatistics
   </div>
 
-  <input type="checkbox" class="dark-toggle" data-tooltip="Dark mode" aria-label="toggle dark mode" oninput="onDarkToggleChange(event)">
+  <input type="checkbox" class="dark-toggle" data-tooltip="الوضع الداكن" aria-label="تبديل الوضع الداكن" oninput="onDarkToggleChange(event)">
 </footer>
 
   </body>
