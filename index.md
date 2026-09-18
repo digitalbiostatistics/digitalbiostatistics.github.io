@@ -861,6 +861,10 @@ An interdisciplinary team working at the intersection of statistics, artificial 
 ## Join us
 We are building an interdisciplinary research program at the intersection of biostatistics, epidemiology, artificial intelligence, digital health, and medicine. We welcome ambitious students and collaborators interested in developing rigorous methods around consequential biomedical questions.
 
+<div class="mbzuai-reading-image">
+  <img src="{{ '/images/horizontalguy.png' | relative_url }}" width="1916" height="821" alt="A man floating above the clouds while reading a book" loading="lazy" decoding="async">
+</div>
+
 {%
   include button.html
   link="projects"

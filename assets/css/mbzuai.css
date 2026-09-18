@@ -90,7 +90,9 @@ html.mbzuai-theme[data-dark="true"], .mbzuai-theme [data-dark="true"] {
 .mbzuai-theme .mbzuai-hero-art { position: relative; overflow: hidden; background: var(--sand); display: flex; flex-direction: column; justify-content: space-between; min-width: 0; }
 .mbzuai-theme .mbzuai-hero-art img { width: 100%; height: auto; max-height: 445px; object-fit: cover; object-position: center; display: block; opacity: .85; }
 .mbzuai-theme .mbzuai-hero-art > span { padding: 24px 38px 34px; color: var(--navy); font-size: clamp(1.6rem, 2.6vw, 2.4rem); line-height: 1.12; letter-spacing: -.02em; }
-.mbzuai-theme .mbzuai-reading-image { padding: clamp(24px, 4vw, 48px) var(--page-gutter) 0; background: var(--background); }
+.mbzuai-theme .mbzuai-intro-strip { padding: clamp(24px, 4vw, 48px) max(var(--page-gutter), calc((100vw - var(--page-width)) / 2)); background: var(--sand-light); color: var(--navy); }
+.mbzuai-theme .mbzuai-intro-strip p { margin: 0; font-size: clamp(1.25rem, 2.5vw, 2rem); line-height: 1.4; text-align: center; }
+.mbzuai-theme .mbzuai-reading-image { margin: 32px 0; }
 .mbzuai-theme .mbzuai-reading-image img { display: block; width: 100%; max-width: var(--page-width); height: auto; margin: 0 auto; }
 
 /* Shared components, including the existing page-specific cards and sliders. */
