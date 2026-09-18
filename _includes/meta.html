@@ -1,5 +1,7 @@
 {% assign filename = page.path | split: "/" | last %}
-{% if page.name and page.name != filename %}
+{% if page.display_name %}
+  {% assign title = page.display_name %}
+{% elsif page.name and page.name != filename %}
   {% assign title = page.name %}
 {% elsif page.title %}
   {% assign title = page.title %}

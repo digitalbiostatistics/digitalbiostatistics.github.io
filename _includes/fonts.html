@@ -1,13 +1,7 @@
 <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
 {% assign font_lang = page.lang | default: 'en' %}
-{% if font_lang != 'en' %}
-{% assign googlefonts = "_styles/-theme.scss" | file_read | google_fonts %}
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="{{ googlefonts }}" rel="stylesheet">
-{% else %}
 <link rel="preload" href="{{ '/assets/fonts/mbzuai/aktiv-grotesk-regular.ttf' | relative_url }}" as="font" type="font/ttf" crossorigin>
-{% endif %}
 
 <!-- Font Awesome icons (load asynchronously due to size) -->
 {% assign fontawesome = "https://use.fontawesome.com/releases/v6.7.0/css/all.css" %}

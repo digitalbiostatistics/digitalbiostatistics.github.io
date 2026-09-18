@@ -94,6 +94,7 @@ exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+  - tests
 
 # configure jekyll spaceship
 jekyll-spaceship:

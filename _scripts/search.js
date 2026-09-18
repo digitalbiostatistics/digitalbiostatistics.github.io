@@ -62,7 +62,7 @@
         .includes(string);
     // check if text matches a tag in element
     const hasTag = (string) =>
-      tagElements.some((tag) => normalizeTag(tag.innerText) === string);
+      tagElements.some((tag) => normalizeTag(tag.dataset.tagKey || tag.innerText) === string);
 
     // match logic
     return (
@@ -136,8 +136,8 @@
 
       // info template
       let info = "";
-      info += `Showing ${x.toLocaleString()} of ${n.toLocaleString()} results<br>`;
-      info += "<a href='./'>Clear search</a>";
+      info += window.siteTranslate("Showing {x} of {n} results", { x: x.toLocaleString(), n: n.toLocaleString() }) + "<br>";
+      info += "<a href='./'>" + window.siteTranslate("Clear search") + "</a>";
 
       // set info HTML string
       boxes.forEach((el) => (el.innerHTML = info));
@@ -154,7 +154,7 @@
     const { tags } = splitQuery(query);
     document.querySelectorAll(tagSelector).forEach((tag) => {
       // set active if tag is in query
-      if (tags.includes(normalizeTag(tag.innerText)))
+      if (tags.includes(normalizeTag(tag.dataset.tagKey || tag.innerText)))
         tag.setAttribute("data-active", "");
       else tag.removeAttribute("data-active");
     });

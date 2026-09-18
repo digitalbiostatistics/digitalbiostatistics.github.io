@@ -2,6 +2,8 @@
 layout: default
 ---
 
+{% assign member_name = page.display_name | default: page.name | default: page.title %}
+
 {% capture floatcontent %}
 
 {% include portrait.html lookup=page.slug %}
@@ -21,7 +23,7 @@ layout: default
 {{ content }}
 
 {% assign aliases = page.aliases
-  | default: page.name
+  | default: member_name
   | default: page.title
   | join: ","
   | split: ","
@@ -34,7 +36,7 @@ layout: default
 
 <p class="center">
   <a href="{{ search | relative_url | uri_escape }}">
-    Search for {{ page.name | default: page.title }}'s papers on the Research page
+    Search for {{ member_name }}'s papers on the Research page
   </a>
 </p>
 

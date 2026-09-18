@@ -1,6 +1,6 @@
 <!-- third party styles -->
 <!-- https://stylishthemes.github.io/Syntax-Themes/pygments/ -->
-<link 
+<link
   href="https://cdn.jsdelivr.net/gh/StylishThemes/Syntax-Themes/pygments/css-github/pygments-tomorrow-night-eighties.css"
   rel="stylesheet"
 />
@@ -28,6 +28,5 @@
 {% endfor %}
 
 {% assign style_lang = page.lang | default: 'en' %}
-{% if style_lang == 'en' %}
-  <link href="{{ '/assets/css/mbzuai.css' | relative_url }}" rel="stylesheet">
-{% endif %}
+
+  <link href="{{ '/assets/css/mbzuai.css' | relative_url }}?v=20260918-i18n" rel="stylesheet">

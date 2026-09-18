@@ -1,8 +1,10 @@
+{% assign header_logo = '/images/mbzuai/logo-mbzuai-navy.svg' %}
+{% if current_lang == 'ar' %}{% assign header_logo = '/images/mbzuai/logo-mbzuai-ar-navy.svg' %}{% endif %}
 <a class="mbzuai-skip-link" href="#main-content">Skip to content</a>
 <header class="mbzuai-header">
   <div class="mbzuai-masthead">
     <a class="mbzuai-university" href="https://mbzuai.ac.ae/" aria-label="Mohamed bin Zayed University of Artificial Intelligence">
-      <img src="{{ '/images/mbzuai/logo-mbzuai-navy.svg' | relative_url }}" width="238" height="80" alt="Mohamed bin Zayed University of Artificial Intelligence">
+      <img src="{{ header_logo | relative_url }}" width="238" height="80" alt="Mohamed bin Zayed University of Artificial Intelligence">
     </a>
     <a class="mbzuai-group" href="{{ '/' | relative_url }}">
       <span>Digital Biostatistics</span>
@@ -18,7 +20,7 @@
       {% for nav_page in nav_pages %}
         {% assign nav_lang = nav_page.lang | default: 'en' %}
         {% assign nav_key = nav_page.translation_key | default: '' %}
-        {% if nav_lang == 'en' %}
+        {% if nav_lang == current_lang %}
           {% unless nav_key == 'philosophy' or nav_key == 'teaching' or nav_key == 'mbzuai' %}
             <a href="{{ nav_page.url | relative_url }}"{% if page.url == nav_page.url %} aria-current="page"{% endif %}>{{ nav_page.title }}</a>
           {% endunless %}
@@ -27,16 +29,17 @@
     </nav>
     <div class="language-menu">
       <button class="language-menu-button" type="button" aria-label="Choose language" aria-expanded="false" aria-controls="language-menu-dropdown">
-        <span aria-hidden="true">EN</span><span aria-hidden="true">⌄</span>
+        <span aria-hidden="true">{{ current_lang | upcase }}</span><span aria-hidden="true">⌄</span>
       </button>
       <div class="language-menu-dropdown" id="language-menu-dropdown">
         {% for language in site.languages %}
           {% assign language_url = language.home %}
           {% if page.translation_key %}
-            {% assign translated_page = site.pages | where: 'translation_key', page.translation_key | where: 'lang', language.code | first %}
+            {% assign language_pages = site.pages | concat: site.members | concat: site.posts %}
+            {% assign translated_page = language_pages | where: 'translation_key', page.translation_key | where: 'lang', language.code | first %}
             {% if translated_page %}{% assign language_url = translated_page.url %}{% endif %}
           {% endif %}
-          <a href="{{ language_url | relative_url }}" lang="{{ language.code }}"{% if language.direction == 'rtl' %} dir="rtl"{% endif %}{% if language.code == 'en' %} class="is-current" aria-current="page"{% endif %}>{{ language.name }}</a>
+          <a href="{{ language_url | relative_url }}" lang="{{ language.code }}"{% if language.direction == 'rtl' %} dir="rtl"{% endif %}{% if language.code == current_lang %} class="is-current" aria-current="page"{% endif %}>{{ language.name }}</a>
         {% endfor %}
       </div>
     </div>

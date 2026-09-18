@@ -29,12 +29,12 @@
       }
 
       if (label) {
-        label.textContent = "Pause music";
+        label.textContent = window.siteTranslate("Pause music");
       }
 
       button.setAttribute(
         "aria-label",
-        "Pause background music"
+        window.siteTranslate("Pause background music")
       );
     }
 
@@ -44,12 +44,12 @@
       }
 
       if (label) {
-        label.textContent = "Play music";
+        label.textContent = window.siteTranslate("Play music");
       }
 
       button.setAttribute(
         "aria-label",
-        "Play background music"
+        window.siteTranslate("Play background music")
       );
     }
 
