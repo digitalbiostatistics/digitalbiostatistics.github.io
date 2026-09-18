@@ -4,7 +4,7 @@ lang: en
 ---
 # Statistical Modeling of Multimodal Digital Health and Omics Data in the Human Phenotype Project
 
-The Human Phenotyping Project (HPP) offers enormous opportunities to improve our understanding of human health by integrating medical imaging, biochemical measurements, omics data, and digital health profiles collected at multiple time points.
+The Human Phenotype Project (HPP) offers enormous opportunities to improve our understanding of human health by integrating medical imaging, biochemical measurements, omics data, and digital health profiles collected at multiple time points.
 
 However, the multimodal, high-dimensional, and densely sampled nature of these data requires new analytical methods to ensure rigorous scientific inference and to fully exploit the information collected.
 
@@ -12,7 +12,7 @@ The goal of this project is to develop a new generation of statistical models fo
 
 ## Objectives
 
-1. Develop general statistical AI models for integrating digital health and omics data within the Human Phenotyping Project.
+1. Develop general statistical AI models for integrating digital health and omics data within the Human Phenotype Project.
 
 2. Develop modality-specific statistical methods for data sources such as genome-wide association studies (GWAS) and microbiome data, with the aim of predicting functional digital health phenotypes.
 

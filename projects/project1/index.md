@@ -19,4 +19,4 @@ To achieve these objectives, we will design a spatiotemporal statistical framewo
 
 ## Data and application
 
-The proposed models will be applied to data from the Human Phenotyping Project (HPP) and, where feasible, to electronic health records from Abu Dhabi. Our goal is to monitor diabetes risk across space and time using spatiotemporal epidemiological maps derived from CGM data, and to better understand the geographic and temporal effectiveness of disease management and metabolic control under real-world conditions.
+The proposed models will be applied to data from the Human Phenotype Project (HPP) and, where feasible, to electronic health records from Abu Dhabi. Our goal is to monitor diabetes risk across space and time using spatiotemporal epidemiological maps derived from CGM data, and to better understand the geographic and temporal effectiveness of disease management and metabolic control under real-world conditions.

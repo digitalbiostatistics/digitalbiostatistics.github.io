@@ -867,7 +867,7 @@ We are building an interdisciplinary research program at the intersection of bio
 
 {%
   include button.html
-  link="projects"
+  link="contact"
   text="Explore Opportunities"
   icon="fa-solid fa-arrow-right"
   flip=true
