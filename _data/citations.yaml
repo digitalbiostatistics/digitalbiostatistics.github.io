@@ -604,14 +604,6 @@
   image: images/photo.jpg
   plugin: sources.py
   file: sources.yaml
-- id: ''
-  type: paper
-  link: https://www.researchgate.net/profile/Marcos-Matabuena/publication/380814667_Multilevel_functional_data_analysis_modeling_of_human_glucose_response_to_meal_intake/links/664f623f479366623a088815/Multilevel-functional-data-analysis-modeling-of-human-glucose-response-to-meal-intake.pdf
-  title: Multilevel functional data analysis modeling of human glucose response to
-    meal intake
-  image: images/photo.jpg
-  plugin: sources.py
-  file: sources.yaml
 - id: doi:10.1016/j.clnu.2024.11.020
   title: Divergent hypoglycemic and hyperglycemic responses to the components of evening
     meals. A general adult population study in individuals without diabetes (AEGIS

@@ -224,12 +224,6 @@
   title: "Insulin glargine 300 U/ml versus insulin degludec 100 U/ml improves nocturnal glycaemic control and variability in type 1 diabetes under routine clinical practice: A glucodensities-based post hoc analysis of the OneCare study"
   image: "images/photo.jpg"
   
-- id: ""
-  type: paper
-  link: "https://www.researchgate.net/profile/Marcos-Matabuena/publication/380814667_Multilevel_functional_data_analysis_modeling_of_human_glucose_response_to_meal_intake/links/664f623f479366623a088815/Multilevel-functional-data-analysis-modeling-of-human-glucose-response-to-meal-intake.pdf"
-  title: "Multilevel functional data analysis modeling of human glucose response to meal intake"
-  image: "images/photo.jpg"
-  
 - id: "doi:10.1016/j.clnu.2024.11.020"
   type: paper
   link: "https://doi.org/10.1016/j.clnu.2024.11.020"
