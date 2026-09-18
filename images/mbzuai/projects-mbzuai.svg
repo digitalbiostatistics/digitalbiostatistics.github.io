@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">From measurements to healthcare decisions</title>
+  <desc id="desc">Abstract continuous signals connected to a network of decisions. Decorative illustration, not clinical data.</desc>
+  <rect width="720" height="480" fill="#f2e3c3"/>
+  <g stroke="#154677" stroke-width="1" opacity=".15"><path d="M50 80H670M50 160H670M50 240H670M50 320H670M50 400H670M100 60V420M200 60V420M300 60V420M400 60V420M500 60V420M600 60V420"/></g>
+  <path d="M50 240H100L122 220 145 255 172 148 202 318 230 218 254 240H350" fill="none" stroke="#154677" stroke-width="5" stroke-linejoin="round"/>
+  <g fill="none" stroke="#154677" stroke-width="2"><path d="M350 240L480 112 610 180 550 330 480 112M350 240L550 330 650 395M350 240L610 180 660 80"/></g>
+  <g fill="#154677"><circle cx="350" cy="240" r="15"/><circle cx="480" cy="112" r="23"/><circle cx="610" cy="180" r="12"/><circle cx="550" cy="330" r="32"/><circle cx="650" cy="395" r="9"/><circle cx="660" cy="80" r="9"/></g>
+  <g fill="#e5c687"><circle cx="480" cy="112" r="7"/><circle cx="550" cy="330" r="12"/></g>
+</svg>

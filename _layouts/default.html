@@ -1,15 +1,19 @@
+{% assign current_lang = page.lang | default: 'en' %}
 <!DOCTYPE html>
 <html
   lang="{{ page.lang | default: 'en' }}"
   dir="{% if page.lang == 'ar' %}rtl{% else %}ltr{% endif %}"
   data-dark="false"
-  class="is-password-locked"
+  class="is-password-locked{% if current_lang == 'en' %} mbzuai-theme{% endif %}"
 >
   {% include head.html %}
   <body>
     {% include password-gate.html %}
     {% include header.html %}
-    <main>
+    {% if current_lang == 'en' and page.translation_key == 'home' %}
+      {% include mbzuai-hero.html %}
+    {% endif %}
+    <main id="main-content">
       {% include content.html content=content %}
     </main>
     {% include footer.html %}

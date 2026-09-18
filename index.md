@@ -3,348 +3,6 @@ lang: en
 translation_key: home
 ---
 
-<style>
-  .home-hero {
-    position: relative;
-    width: 100%;
-    margin: 20px auto 70px;
-    padding: clamp(38px, 7vw, 82px) clamp(24px, 6vw, 78px);
-    box-sizing: border-box;
-    overflow: hidden;
-    border: 1px solid rgba(84, 127, 157, 0.16);
-    border-radius: 28px;
-    background:
-      radial-gradient(
-        circle at 88% 15%,
-        rgba(84, 127, 157, 0.17),
-        transparent 34%
-      ),
-      radial-gradient(
-        circle at 8% 92%,
-        rgba(175, 201, 218, 0.18),
-        transparent 30%
-      ),
-      linear-gradient(
-        135deg,
-        rgba(255, 255, 255, 0.98),
-        rgba(245, 250, 252, 0.96)
-      );
-    box-shadow:
-      0 24px 65px rgba(32, 49, 60, 0.08),
-      0 4px 14px rgba(32, 49, 60, 0.04);
-  }
-
-  .home-hero::before {
-    content: "";
-    position: absolute;
-    top: -110px;
-    right: -90px;
-    width: 280px;
-    height: 280px;
-    border: 1px solid rgba(84, 127, 157, 0.13);
-    border-radius: 50%;
-    animation: hero-float 9s ease-in-out infinite;
-  }
-
-  .home-hero::after {
-    content: "";
-    position: absolute;
-    right: 12%;
-    bottom: -145px;
-    width: 230px;
-    height: 230px;
-    border: 1px solid rgba(84, 127, 157, 0.1);
-    border-radius: 50%;
-    animation: hero-float 12s ease-in-out infinite reverse;
-  }
-
-  .home-hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 930px;
-  }
-
-  .home-hero-label {
-    margin: 0 0 12px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
-    color: #547f9d;
-    opacity: 0;
-    animation: hero-reveal 0.7s ease forwards;
-  }
-
-  .home-hero-title {
-    margin: 0;
-    font-size: clamp(2.4rem, 6vw, 5.4rem);
-    line-height: 1.02;
-    letter-spacing: -0.045em;
-    font-weight: 780;
-    background: linear-gradient(
-      110deg,
-      #17242d 10%,
-      #547f9d 48%,
-      #17242d 85%
-    );
-    background-size: 220% auto;
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    opacity: 0;
-    animation:
-      hero-reveal 0.85s 0.12s ease forwards,
-      hero-shimmer 8s 1.2s ease-in-out infinite;
-  }
-
-  .home-hero-quote {
-    max-width: 780px;
-    margin: 28px 0 34px;
-    padding-left: 22px;
-    border-left: 3px solid rgba(84, 127, 157, 0.55);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: clamp(1.2rem, 2.2vw, 1.65rem);
-    line-height: 1.55;
-    font-style: italic;
-    color: #263b49;
-    opacity: 0;
-    transform: translateY(18px);
-    animation: hero-reveal 0.8s 0.35s ease forwards;
-  }
-
-  .home-hero-text {
-    max-width: 880px;
-    margin: 0 0 19px;
-    font-size: clamp(1.02rem, 1.5vw, 1.22rem);
-    line-height: 1.8;
-    color: #26343d;
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  .home-hero-text.first {
-    animation: hero-reveal 0.8s 0.58s ease forwards;
-  }
-
-  .home-hero-text.second {
-    animation: hero-reveal 0.8s 0.8s ease forwards;
-  }
-
-  .hero-highlight {
-    position: relative;
-    display: inline;
-    font-weight: 650;
-    color: #274e68;
-    background-image: linear-gradient(
-      transparent 66%,
-      rgba(124, 174, 204, 0.28) 66%
-    );
-    background-repeat: no-repeat;
-    background-size: 0% 100%;
-    animation: highlight-draw 1.15s 1.35s ease forwards;
-  }
-
-  .home-hero-title a,
-  .home-hero-title .anchor,
-  .home-hero-title .header-link,
-  .home-hero-title .heading-anchor {
-    display: none !important;
-  }
-
-  .home-hero-title::before,
-  .home-hero-title::after {
-    content: none !important;
-    display: none !important;
-  }
-
-  @keyframes hero-reveal {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-      filter: blur(4px);
-    }
-
-    to {
-      opacity: 1;
-      transform: translateY(0);
-      filter: blur(0);
-    }
-  }
-
-  @keyframes hero-shimmer {
-    0%,
-    100% {
-      background-position: 0% center;
-    }
-
-    50% {
-      background-position: 100% center;
-    }
-  }
-
-  @keyframes highlight-draw {
-    from {
-      background-size: 0% 100%;
-    }
-
-    to {
-      background-size: 100% 100%;
-    }
-  }
-
-  @keyframes hero-float {
-    0%,
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-
-    50% {
-      transform: translate3d(-12px, 16px, 0);
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .home-hero {
-      margin: 12px auto 48px;
-      padding: 38px 24px 42px;
-      border-radius: 22px;
-    }
-
-    .home-hero-title {
-      letter-spacing: -0.035em;
-    }
-
-    .home-hero-quote {
-      margin-top: 22px;
-      margin-bottom: 27px;
-      padding-left: 17px;
-    }
-
-    .home-hero-text {
-      line-height: 1.7;
-    }
-
-    .home-hero::before {
-      width: 190px;
-      height: 190px;
-    }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    .home-hero::before,
-    .home-hero::after,
-    .home-hero-label,
-    .home-hero-title,
-    .home-hero-quote,
-    .home-hero-text,
-    .hero-highlight {
-      animation: none !important;
-      opacity: 1;
-      transform: none;
-      filter: none;
-      background-size: 100% 100%;
-    }
-  }
-
-  .homepage-music {
-    display: flex;
-    justify-content: center;
-
-    margin: 24px auto;
-  }
-
-  .homepage-audio-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    padding: 11px 19px;
-
-    border: 1px solid rgba(84, 127, 157, 0.28);
-    border-radius: 999px;
-
-    background: rgba(255, 255, 255, 0.92);
-    color: #263b49;
-
-    box-shadow:
-      0 7px 20px rgba(32, 49, 60, 0.1);
-
-    font: inherit;
-    font-size: 0.92rem;
-    font-weight: 600;
-
-    cursor: pointer;
-
-    transition:
-      transform 0.2s ease,
-      background 0.2s ease,
-      box-shadow 0.2s ease;
-  }
-
-  .homepage-audio-button:hover {
-    background: #f4f8fa;
-
-    box-shadow:
-      0 10px 25px rgba(32, 49, 60, 0.15);
-
-    transform: translateY(-1px);
-  }
-
-  .homepage-audio-button:focus-visible {
-    outline: 3px solid rgba(84, 127, 157, 0.45);
-    outline-offset: 3px;
-  }
-
-  .homepage-audio-icon {
-    width: 1em;
-    text-align: center;
-  }
-</style>
-
-<section
-  class="home-hero"
-  aria-label="Digital Biostatistics introduction"
->
-  <div class="home-hero-content">
-
-    <div
-      class="home-hero-title"
-      role="heading"
-      aria-level="1"
-    >
-      DIGITAL BIOSTATISTICS
-    </div>
-
-    <p class="home-hero-quote">
-      No matter how high the mountain, there is always a path to the summit.
-    </p>
-
-    <p class="home-hero-text first">
-      What is the best diet for each person? Can we predict which diseases
-      someone may develop over the next twenty years—and
-      <span class="hero-highlight">act before they appear?</span>
-    </p>
-
-    <p class="home-hero-text second">
-      Answering questions like these requires a new scientific framework that
-      brings together
-      <span class="hero-highlight">biostatistics</span>,
-      artificial intelligence, digital health, and clinical decision-making.
-    </p>
-
-  </div>
-</section>
-
-<div style="max-width: 900px; margin: 40px auto 10px auto;">
-  <img
-    src="{{ '/images/horizontalguy.png' | relative_url }}"
-    alt=""
-    style="width: 100%; display: block; border-radius: 4px;"
-    >
-</div>
-
-
 ## Welcome
 
 **Welcome to the website of Marcos Matabuena’s research group at Mohamed bin Zayed University of Artificial Intelligence**
@@ -353,7 +11,7 @@ Digital health has the potential to identify disease risks years—or even decad
 
 Ultimately, we aim to move beyond the treatment of disease toward the continuous, real-time optimization of individual and population health. To support this transition, we are developing a scientific framework that we call **Digital Biostatistics**.
 <div style="max-width: 560px; margin: 30px auto;">
-  <iframe
+  <iframe loading="lazy"
     style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
     src="https://www.youtube.com/embed/UnkboTF1Bhk"
     title="YouTube video player"
@@ -363,15 +21,13 @@ Ultimately, we aim to move beyond the treatment of disease toward the continuous
   </iframe>
 </div>
 
-## What Is Digital Biostatistics?
+## What is digital biostatistics?
 We define <strong> digital biostatistics </strong> as the branch of biostatistics concerned with the design, analysis, statistical inference, and clinical translation of continuously collected, high-frequency, longitudinal, and multimodal health data generated by digital technologies, with the ultimate goal of supporting clinical and healthcare decision-making by integrating biostatistics with operations research.
 
-<div style="max-width: 950px; margin: 40px auto 10px auto;">
-  <img
-    src="{{ '/images/projects.png' | relative_url }}"
-    alt=""
-    style="width: 100%; display: block; border-radius: 4px;"
-    >
+<div class="mbzuai-methods" aria-label="Our scientific approach">
+  <div><span>01 / Observe</span><strong>Continuous health data</strong><p>Digital devices and longitudinal measurements.</p></div>
+  <div><span>02 / Understand</span><strong>Statistical inference</strong><p>Rigorous methods and uncertainty quantification.</p></div>
+  <div><span>03 / Translate</span><strong>Healthcare decisions</strong><p>Personalized care and population health.</p></div>
 </div>
 
 {% include section.html %}
@@ -426,7 +82,7 @@ This vision has been shaped by formative experiences, mentorship, and collaborat
 
 <div class="dual-videos" markdown="0">
   <div class="dual-video">
-    <iframe
+    <iframe loading="lazy"
       src="https://www.youtube.com/embed/aI8VAvqbvg0"
       title="Jukka-Pekka 'JP' Onnela 'Smartphone Based Digital Phenotyping'"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -436,7 +92,7 @@ This vision has been shaped by formative experiences, mentorship, and collaborat
   </div>
 
   <div class="dual-video">
-    <iframe
+    <iframe loading="lazy"
       src="https://www.youtube.com/embed/IsbcQo8LgyQ"
       title="Dr. Michael Kosorok (UNC) 'Clinical trial design for precision medicine'"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -450,10 +106,10 @@ This vision has been shaped by formative experiences, mentorship, and collaborat
 
 Our projects seek to establish the rigorous methodological foundations of digital biostatistics and demonstrate their practical value in biomedical research, clinical practice, and population health.
 
-Over the next ten years, our ultimate research goal is to develop a low-cost healthcare operations framework that improves health outcomes at both the individual and population levels by integrating biostatistics, digital health, and operations research.
+Over the next 10 years, our ultimate research goal is to develop a low-cost healthcare operations framework that improves health outcomes at both the individual and population levels by integrating biostatistics, digital health, and operations research.
 
 <div style="max-width: 560px; margin: 30px auto;">
-  <iframe
+  <iframe loading="lazy"
     style="width: 100%; aspect-ratio: 16 / 9; border: 0;"
     src="https://www.youtube.com/embed/lZjDMStecZc"
     title="YouTube video player 3"
@@ -463,7 +119,8 @@ Over the next ten years, our ultimate research goal is to develop a low-cost hea
   </iframe>
 </div>
 
-## Our Vision: Why Digital Biostatistics Is a Cornerstone of the Future of Artificial Intelligence in Medicine
+## Our vision: the foundations of AI in medicine
+{: #our-vision-why-digital-biostatistics-is-a-cornerstone-of-the-future-of-artificial-intelligence-in-medicine }
 Artificial intelligence in medicine is still at an early stage, and only a small fraction of its potential has been demonstrated in real-world clinical practice. From a statistical-learning perspective, many current applications continue to address relatively simple and well-defined prediction tasks. The next generation of medical AI, however, will need to confront substantially more complex and clinically consequential questions: What is the optimal diet for a particular person? How should treatment and prevention strategies evolve over time? How can heterogeneous clinical, biological, behavioral, and environmental information be integrated into a unified decision-making framework?
 
 <div style="
@@ -481,7 +138,7 @@ Artificial intelligence in medicine is still at an early stage, and only a small
     margin: 0;
     padding: 0;
   ">
-    <iframe
+    <iframe loading="lazy"
       style="
         display: block;
         width: 100%;
@@ -504,7 +161,7 @@ Artificial intelligence in medicine is still at an early stage, and only a small
     margin: 0;
     padding: 0;
   ">
-    <iframe
+    <iframe loading="lazy"
       style="
         display: block;
         width: 100%;
@@ -550,9 +207,9 @@ We pioneer the development of non-Euclidean statistical methods for defining a n
 
 {%
   include feature.html
-  image="images/OurResearch.png"
+  image="images/mbzuai/research-mbzuai.svg"
   link="research"
-  title="Our Research"
+  title="Our research"
   text=text
 %}
 
@@ -670,7 +327,8 @@ We pioneer the development of non-Euclidean statistical methods for defining a n
   </article>
 </div>
 
-### Our Seven Pillars for Advancing Digital Health Research and Healthcare Decision-Making
+### Seven pillars for advancing digital health research
+{: #our-seven-pillars-for-advancing-digital-health-research-and-healthcare-decision-making }
 
 <style>
   .highlighted-papers-slider {
@@ -1169,9 +827,9 @@ Our current projects focus on developing a new generation of statistical AI meth
 
 {%
   include feature.html
-  image="images/ourprojects_web.png"
+  image="images/mbzuai/projects-mbzuai.svg"
   link="projects"
-  title="Our Projects"
+  title="Our projects"
   flip=true
   style="bare"
   text=text
@@ -1196,11 +854,11 @@ An interdisciplinary team working at the intersection of statistics, artificial 
   include feature.html
   image="images/collageconsolo1pelado.png"
   link="team"
-  title="Our Team"
+  title="Our team"
   text=text
 %}
 
-## Join Us
+## Join us
 We are building an interdisciplinary research program at the intersection of biostatistics, epidemiology, artificial intelligence, digital health, and medicine. We welcome ambitious students and collaborators interested in developing rigorous methods around consequential biomedical questions.
 
 {%
@@ -1223,13 +881,7 @@ We are building an interdisciplinary research program at the intersection of bio
 
 We believe that important scientific problems require rigor, imagination, perseverance, and generous collaboration.
 
-<div style="max-width: 900px; margin: 40px auto 10px auto;">
-  <img
-    src="{{ '/images/horizontalguy.png' | relative_url }}"
-    alt=""
-    style="width: 100%; display: block; border-radius: 4px;"
-    >
-</div>
+<blockquote class="mbzuai-quote">No matter how high the mountain, there is always a path to the summit.</blockquote>
 
 <style>
   .vision-callout {

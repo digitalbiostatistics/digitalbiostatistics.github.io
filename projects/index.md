@@ -265,7 +265,7 @@ Our projects aim to establish the rigorous methodological foundations of digital
 </div>
 {% include section.html %}
 
-## Open Questions We Are Working to Solve
+## Open questions we are working to solve
 
 Our research is structured around a set of open methodological,
 applied, and clinical questions. These questions guide the development
@@ -333,7 +333,7 @@ address consequential problems in medicine and public health.
 </div>
 
 
-## Applied and Clinical Questions
+## Applied and clinical questions
 
 Alongside these methodological challenges, we investigate major
 applied questions through which advanced statistical methods could
@@ -406,7 +406,7 @@ produce tangible clinical and biomedical value.
 
 </div>
 
-## Learn More About Our Work
+## Learn more about our work
 
 {% include list.html
   component="card"

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 480" role="img" aria-labelledby="title desc">
+  <title id="title">Statistical patterns in continuous health data</title>
+  <desc id="desc">Abstract distribution curves in the MBZUAI navy and sand palette. Decorative illustration, not research data.</desc>
+  <rect width="720" height="480" fill="#154677"/>
+  <g stroke="#c5d1dd" stroke-width="1" opacity=".22"><path d="M60 80H660M60 160H660M60 240H660M60 320H660M60 400H660M120 60V420M240 60V420M360 60V420M480 60V420M600 60V420"/></g>
+  <path d="M60 400C130 400 134 390 178 380S230 180 302 180S365 390 420 395S580 400 660 400" fill="none" stroke="#8aa2bb" stroke-width="3"/>
+  <path d="M60 360C180 360 230 358 262 324S319 96 390 96S453 329 509 352S600 360 660 360" fill="none" stroke="#e5c687" stroke-width="5"/>
+  <path d="M60 320C175 320 235 318 290 284S380 165 449 165S530 286 579 310S630 320 660 320" fill="none" stroke="#fff" stroke-width="3"/>
+  <g fill="#e5c687"><circle cx="390" cy="96" r="7"/><circle cx="320" cy="214" r="5"/><circle cx="479" cy="331" r="5"/></g>
+</svg>

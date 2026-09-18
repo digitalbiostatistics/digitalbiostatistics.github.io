@@ -9,7 +9,7 @@ nav:
 
 # Research
 
-## The Ongoing Future
+## The ongoing future
 
 Imagine a person experiencing an acute coronary syndrome alone at home, wearing a device that continuously monitors vital signs. As the device detects critical changes—such as an abnormal electrocardiogram or a drop in oxygen levels—it automatically triggers an emergency response. Within seconds, the system locates and dispatches the nearest available ambulance, adapting in real-time to factors like traffic conditions and hospital capacity.
 
@@ -24,7 +24,7 @@ While en route, the device continuously transmits vital patient data, enabling d
 
 {% include section.html %}
 
-## Our Mission and Vision
+## Our mission and vision
 
 Our long-term goal is to build a healthcare decision-making framework that supports better clinical and public health decisions at both the individual and population levels by combining biostatistics, digital health technologies, and operations research. 
 
@@ -72,7 +72,7 @@ Although many methods published in top methodological journals are mathematicall
     >
 </div>
 
-## Seven Pillars of Our Research Program in Digital Health
+## Seven pillars of our research program in digital health
 
 <style>
   .highlighted-papers-slider {
@@ -548,7 +548,7 @@ Finally, the success of the new data-driven era will also depend on the developm
  
 Together, these works define the main pillars of our research program: the new representation of digital health data, longitudinal and multilevel modeling, uncertainty quantification, generative AI-driven measurement-error correction, and statistically valid inference from complex biomedical studies.
 
-## Research Output from Previous Years
+## Research output from previous years
 
 {% include search-box.html %}
 {% include search-info.html %}

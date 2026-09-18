@@ -1,0 +1,46 @@
+<a class="mbzuai-skip-link" href="#main-content">Skip to content</a>
+<header class="mbzuai-header">
+  <div class="mbzuai-masthead">
+    <a class="mbzuai-university" href="https://mbzuai.ac.ae/" aria-label="Mohamed bin Zayed University of Artificial Intelligence">
+      <img src="{{ '/images/mbzuai/logo-mbzuai-navy.svg' | relative_url }}" width="238" height="80" alt="Mohamed bin Zayed University of Artificial Intelligence">
+    </a>
+    <a class="mbzuai-group" href="{{ '/' | relative_url }}">
+      <span>Digital Biostatistics</span>
+      <span class="mbzuai-group-caption">Marcos Matabuena’s research group</span>
+    </a>
+  </div>
+  <div class="mbzuai-nav-bar">
+    <button class="mbzuai-menu-toggle" type="button" aria-expanded="false" aria-controls="mbzuai-navigation">
+      <span>Menu</span><span aria-hidden="true">☰</span>
+    </button>
+    <nav id="mbzuai-navigation" aria-label="Main navigation">
+      {% assign nav_pages = site.pages | where_exp: 'item', 'item.nav' | sort: 'nav.order' %}
+      {% for nav_page in nav_pages %}
+        {% assign nav_lang = nav_page.lang | default: 'en' %}
+        {% assign nav_key = nav_page.translation_key | default: '' %}
+        {% if nav_lang == 'en' %}
+          {% unless nav_key == 'philosophy' or nav_key == 'teaching' or nav_key == 'mbzuai' %}
+            <a href="{{ nav_page.url | relative_url }}"{% if page.url == nav_page.url %} aria-current="page"{% endif %}>{{ nav_page.title }}</a>
+          {% endunless %}
+        {% endif %}
+      {% endfor %}
+    </nav>
+    <div class="language-menu">
+      <button class="language-menu-button" type="button" aria-label="Choose language" aria-expanded="false" aria-controls="language-menu-dropdown">
+        <span aria-hidden="true">EN</span><span aria-hidden="true">⌄</span>
+      </button>
+      <div class="language-menu-dropdown" id="language-menu-dropdown">
+        {% for language in site.languages %}
+          {% assign language_url = language.home %}
+          {% if page.translation_key %}
+            {% assign translated_page = site.pages | where: 'translation_key', page.translation_key | where: 'lang', language.code | first %}
+            {% if translated_page %}{% assign language_url = translated_page.url %}{% endif %}
+          {% endif %}
+          <a href="{{ language_url | relative_url }}" lang="{{ language.code }}"{% if language.direction == 'rtl' %} dir="rtl"{% endif %}{% if language.code == 'en' %} class="is-current" aria-current="page"{% endif %}>{{ language.name }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</header>
+<script src="{{ '/assets/js/language-menu.js' | relative_url }}" defer></script>
+<script src="{{ '/assets/js/mbzuai-navigation.js' | relative_url }}" defer></script>

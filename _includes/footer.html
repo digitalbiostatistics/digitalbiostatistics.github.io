@@ -1,15 +1,27 @@
 {% assign current_lang = page.lang | default: "en" %}
 {% assign image = page.footer | default: site.footer %}
 {% assign dark = page.footer-dark | is_nil: site.footer-dark | is_nil: true %}
+{% if current_lang == 'en' %}
+  {% assign image = nil %}
+  {% assign dark = true %}
+{% endif %}
 
 <footer
-  class="background"
-  style="--image: url('{{ image | relative_url | uri_escape }}')"
+  class="background{% if current_lang == 'en' %} mbzuai-footer{% endif %}"
+  {% if image %}style="--image: url('{{ image | relative_url | uri_escape }}')"{% endif %}
   {% if dark == true or dark == false %}
     data-dark="{{ dark }}"
   {% endif %}
   data-size="wide"
 >
+  {% if current_lang == 'en' %}
+    <div class="mbzuai-footer-brand">
+      <a href="https://mbzuai.ac.ae/" aria-label="Mohamed bin Zayed University of Artificial Intelligence">
+        <img src="{{ '/images/mbzuai/logo-mbzuai-white.svg' | relative_url }}" width="238" height="80" alt="Mohamed bin Zayed University of Artificial Intelligence" loading="lazy">
+      </a>
+      <div><p>Digital Biostatistics</p><span>Biostatistics, AI, and digital health.</span></div>
+    </div>
+  {% endif %}
   <!--
     <div>
       Extra details like contact info or address
