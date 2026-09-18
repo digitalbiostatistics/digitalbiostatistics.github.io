@@ -881,8 +881,6 @@ We are building an interdisciplinary research program at the intersection of bio
 
 We believe that important scientific problems require rigor, imagination, perseverance, and generous collaboration.
 
-<blockquote class="mbzuai-quote">No matter how high the mountain, there is always a path to the summit.</blockquote>
-
 <style>
   .vision-callout {
     max-width: 920px;
