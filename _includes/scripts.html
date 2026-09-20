@@ -6,7 +6,11 @@
 <!-- include all js in scripts folder -->
 {% assign scripts = site.static_files | where_exp: "file", "file.path contains '/_scripts'" %}
 {% for script in scripts %}
-  {% if script.path != '/_scripts/password-gate.js' or password_required %}
+  {% if script.path == '/_scripts/password-gate.js' %}
+    {% if password_required %}
+      <script src="{{ script.path | relative_url }}?v=20260920-sections"></script>
+    {% endif %}
+  {% else %}
     <script src="{{ script.path | relative_url }}"></script>
   {% endif %}
 {% endfor %}

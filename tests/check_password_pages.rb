@@ -5,11 +5,20 @@ require 'yaml'
 
 root = ARGV.fetch(0, '_site')
 languages = %w[en es gl zh ar]
-password_hash = YAML.safe_load(File.read('_config.yaml'))['site_password_hash']
-protected_pages = %w[team/index.html projects/index.html]
-protected_pages += Dir.glob('members/*.html', base: root)
-protected_pages += Dir.glob('projects/**/index.html', base: root)
-protected_pages.uniq!
+password_hashes = YAML.safe_load(File.read('_config.yaml'))['section_password_hashes']
+expected_sections = %w[team projects education philosophy]
+abort 'Missing section passwords' unless password_hashes&.keys&.sort == expected_sections.sort
+abort 'Section passwords must be distinct SHA-256 hashes' unless password_hashes.values.uniq.size == 4 && password_hashes.values.all? { |hash| hash.match?(/\A[0-9a-f]{64}\z/) }
+protected_pages = {
+  'team/index.html' => 'team',
+  'projects/index.html' => 'projects',
+  'teaching/index.html' => 'education',
+  'philosophy/index.html' => 'philosophy'
+}
+%w[team projects teaching philosophy members].each do |directory|
+  section = { 'members' => 'team', 'teaching' => 'education' }.fetch(directory, directory)
+  Dir.glob("#{directory}/**/*.html", base: root).each { |path| protected_pages[path] = section }
+end
 english_pages = Dir.glob('**/*.html', base: root).reject { |path| path.match?(%r{\A(es|gl|zh|ar)/}) }
 errors = []
 counts = Hash.new(0)
@@ -32,7 +41,8 @@ languages.each do |lang|
     doc = Nokogiri::HTML(File.read(file, encoding: 'UTF-8'))
     next unless doc.at_css('html')&.[]('class').to_s.include?('mbzuai-theme')
 
-    protected = protected_pages.include?(path)
+    section = protected_pages[path]
+    protected = !section.nil?
     gates = doc.css('[data-password-gate]')
     locked = doc.at_css('html')['class'].split.include?('is-password-locked')
     scripts = doc.css('script[src]').select { |script| script['src'].split('?').first.end_with?('/_scripts/password-gate.js') }
@@ -40,15 +50,21 @@ languages.each do |lang|
     counts[protected ? 'protected' : 'public'] += 1
     if protected && gates.size == 1
       gate = gates.first
-      errors << "Password changed: #{file}" unless gate['data-password-hash'] == password_hash
+      password_hash = password_hashes.fetch(section)
+      storage_key = "digitalbiostatistics:section-unlocked:#{section}"
+      errors << "Wrong section password: #{file}" unless gate['data-password-hash'] == password_hash
+      errors << "Wrong remembered-access scope: #{file}" unless gate['data-password-storage-key'] == storage_key
+      startup = doc.css('script:not([src])').find { |script| script.text.include?('var storageKey =') }&.text.to_s
+      errors << "Wrong startup scope: #{file}" unless startup.include?("var storageKey = #{storage_key.to_json};") && startup.include?("var expectedHash = #{password_hash.to_json};")
+      errors << "Another section password exposed: #{file}" if password_hashes.values.reject { |hash| hash == password_hash }.any? { |hash| doc.to_html.include?(hash) }
       errors << "Missing input: #{file}" unless gate.at_css('input[type=password][required]')
       errors << "Wrong translated message: #{file}" unless gate.at_css('.password-gate-message')&.text&.strip == dictionary.fetch(message, message)
       home = gate.at_css('.password-gate-home')
       errors << "Wrong public home link: #{file}" unless home && home['href'] == "/#{prefix}" && home.text.strip == dictionary.fetch('Return to home', 'Return to home')
     elsif !protected
-      errors << "Password configuration on public page: #{file}" if doc.to_html.include?(password_hash)
+      errors << "Password configuration on public page: #{file}" if password_hashes.values.any? { |hash| doc.to_html.include?(hash) }
     end
   end
 end
 abort errors.uniq.join("\n") unless errors.empty?
-puts "Passed: #{counts['protected']} protected pages and #{counts['public']} public pages across all five languages; password scope, scripts, translations and return links."
+puts "Passed: #{counts['protected']} protected pages and #{counts['public']} public pages across all five languages; four independent password scopes, scripts, translations and return links."

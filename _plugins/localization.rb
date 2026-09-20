@@ -77,6 +77,9 @@ module SiteLocalization
     doc.xpath('//text()').each do |node|
       next if node.ancestors.any? { |a| %w[script style code pre].include?(a.name) }
       key = normalize(node.text)
+      # The two hero lines reverse word order in some languages. Their mappings
+      # must not translate journal names such as "Biostatistics" elsewhere.
+      next if %w[Digital Biostatistics].include?(key) && !node.ancestors.any? { |a| a['id'] == 'mbzuai-hero-title' }
       if dictionary.key?(key)
         leading = node.text[/\A[[:space:]]*/]
         trailing = node.text[/[[:space:]]*\z/]

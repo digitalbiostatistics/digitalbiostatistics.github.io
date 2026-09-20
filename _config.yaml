@@ -7,7 +7,12 @@ footer: images/banner3.png
 proofer: false
 header-dark: false
 footer-dark: false
-site_password_hash: d5a40d8f7791c5f0a2e0eb261da1e0bd7d8fcda6839662708bd84e0f7c0d3cdc
+# Section passwords are stored as SHA-256 hashes; members share Team access.
+section_password_hashes:
+  team: daad2b37ffea7b1afef5e3be67e78a866e8f41558eff203106799e998a7f6d80
+  projects: 7c1298aaa5bdf88e9a86bb7c5afb345ef0261a6aee13f3acd9c2fc777b2ec617
+  education: a8af33740ca3534293348322fc2c2e981298fc23174cb545608d9cc105758c9e
+  philosophy: 790b042da11402ac539382a9db6463da6b7b795ee4b2a6ba90405a12cdf06afe
 
 languages:
   - code: en

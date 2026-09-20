@@ -1,9 +1,16 @@
 {% assign current_lang = page.lang | default: 'en' %}
 {% assign canonical_path = page.english_url | default: page.url %}
 {% assign page_section = canonical_path | remove_first: '/' | split: '/' | first %}
-{% assign protected_sections = 'team,projects,members' | split: ',' %}
+{% assign password_section = page_section %}
+{% if page_section == 'members' %}
+  {% assign password_section = 'team' %}
+{% elsif page_section == 'teaching' %}
+  {% assign password_section = 'education' %}
+{% endif %}
+{% assign password_hash = site.section_password_hashes[password_section] %}
+{% assign password_storage_key = 'digitalbiostatistics:section-unlocked:' | append: password_section %}
 {% assign password_required = false %}
-{% if protected_sections contains page_section %}
+{% if password_hash %}
   {% assign password_required = true %}
 {% endif %}
 <!DOCTYPE html>
