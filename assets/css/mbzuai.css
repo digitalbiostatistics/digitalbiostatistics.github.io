@@ -123,6 +123,12 @@ html.mbzuai-theme[data-dark="true"], .mbzuai-theme [data-dark="true"] {
 .mbzuai-theme .homepage-music { margin: 30px auto; }
 .mbzuai-theme .tags a { border-radius: 0; }
 .mbzuai-theme .post-info, .mbzuai-theme figcaption { font-family: var(--code); font-size: 12px; }
+.mbzuai-theme .mbzuai-news-gallery { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 24px; margin: 32px 0; }
+.mbzuai-theme .mbzuai-news-gallery img { display: block; max-width: 100%; height: auto; }
+.mbzuai-theme .mbzuai-news-cover { width: 240px; }
+.mbzuai-theme .mbzuai-news-paper { width: 300px; }
+.mbzuai-theme .mbzuai-news-schedule img { display: block; width: 100%; height: auto; }
+.mbzuai-theme .mbzuai-news-schedule { width: min(100%, 402px); margin: 32px auto; }
 .mbzuai-theme .mbzuai-quote { margin: 48px 0; border-left: 4px solid var(--sand); padding: 14px 28px; font-size: 1.4rem; color: var(--primary); }
 .mbzuai-theme .mbzuai-methods { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 40px 0; border: 1px solid var(--light-gray); text-align: start; }
 .mbzuai-theme .mbzuai-methods > div { padding: 26px; }
