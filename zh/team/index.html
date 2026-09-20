@@ -369,7 +369,9 @@
   
 
   
-    <script src="/_scripts/password-gate.js"></script>
+    
+      <script src="/_scripts/password-gate.js?v=20260920-sections"></script>
+    
   
 
   
@@ -580,8 +582,8 @@
 
 <script>
   (function () {
-    var storageKey = "digitalbiostatistics:site-unlocked";
-    var expectedHash = "d5a40d8f7791c5f0a2e0eb261da1e0bd7d8fcda6839662708bd84e0f7c0d3cdc";
+    var storageKey = "digitalbiostatistics:section-unlocked:team";
+    var expectedHash = "daad2b37ffea7b1afef5e3be67e78a866e8f41558eff203106799e998a7f6d80";
 
     try {
       if (window.localStorage.getItem(storageKey) === expectedHash) {
@@ -594,7 +596,7 @@
   })();
 </script>
 
-<div class="password-gate" data-password-gate data-password-hash="d5a40d8f7791c5f0a2e0eb261da1e0bd7d8fcda6839662708bd84e0f7c0d3cdc" aria-modal="true" role="dialog" aria-labelledby="password-gate-title">
+<div class="password-gate" data-password-gate data-password-hash="daad2b37ffea7b1afef5e3be67e78a866e8f41558eff203106799e998a7f6d80" data-password-storage-key="digitalbiostatistics:section-unlocked:team" aria-modal="true" role="dialog" aria-labelledby="password-gate-title">
   <form class="password-gate-panel" data-password-form>
     <noscript>
       <p class="password-gate-error">

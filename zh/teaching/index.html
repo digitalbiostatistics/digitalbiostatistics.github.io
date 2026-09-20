@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh" dir="ltr" data-dark="false" class="mbzuai-theme">
+<html lang="zh" dir="ltr" data-dark="false" class="mbzuai-theme is-password-locked">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
@@ -369,6 +369,10 @@
   
 
   
+    
+      <script src="/_scripts/password-gate.js?v=20260920-sections"></script>
+    
+  
 
   
     <script src="/_scripts/search.js"></script>
@@ -392,7 +396,242 @@
 </head>
 
   <body>
-    
+    <style>
+  html.is-password-locked,
+  html.is-password-locked body {
+    overflow: hidden !important;
+  }
+
+  html.is-password-locked body > :not(.password-gate):not(script):not(style) {
+    display: none !important;
+  }
+
+  html.is-password-unlocked .password-gate,
+  .password-gate[hidden] {
+    display: none !important;
+  }
+
+  .password-gate {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    padding: 24px;
+
+    box-sizing: border-box;
+
+    background:
+      linear-gradient(
+        135deg,
+        rgba(247, 249, 250, 0.98),
+        rgba(229, 238, 242, 0.98)
+      );
+  }
+
+  .password-gate-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    width: min(100%, 820px);
+    padding: 46px 54px;
+
+    box-sizing: border-box;
+
+    background: #ffffff;
+    border: 1px solid rgba(84, 127, 157, 0.22);
+    border-radius: var(--rounded, 8px);
+
+    box-shadow: 0 18px 48px rgba(32, 49, 60, 0.16);
+  }
+
+  .password-gate h1 {
+    margin: 0 0 16px;
+
+    color: #263b49;
+
+    font-size: 2.75rem;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .password-gate-message {
+    margin: 0 0 32px;
+
+    color: #66757f;
+
+    font-size: 1.15rem;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  .password-gate-form-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 16px;
+    width: 100%;
+  }
+
+  .password-gate label {
+    display: block;
+
+    margin: 0;
+
+    color: #4d5d66;
+
+    font-size: 1.05rem;
+    font-weight: 650;
+    white-space: nowrap;
+  }
+
+  .password-gate input {
+    width: min(42vw, 360px);
+    min-height: 48px;
+    padding: 10px 16px;
+
+    box-sizing: border-box;
+
+    color: #111111;
+    -webkit-text-fill-color: #111111;
+    background: #ffffff;
+
+    border: 1px solid rgba(84, 127, 157, 0.28);
+    border-radius: var(--rounded, 8px);
+
+    font: inherit;
+    font-size: 1.2rem;
+    letter-spacing: 0;
+    caret-color: #111111;
+  }
+
+  .password-gate input:focus {
+    outline: 3px solid rgba(84, 127, 157, 0.28);
+    outline-offset: 2px;
+  }
+
+  .password-gate-error {
+    margin: 16px 0 0;
+
+    color: #9b3b3b;
+
+    font-size: 0.92rem;
+    text-align: center;
+  }
+
+  .password-gate-home {
+    margin-top: 24px;
+    text-align: center;
+  }
+
+  .password-gate button {
+    width: auto;
+    min-width: 96px;
+    min-height: 48px;
+    margin: 0;
+    padding: 0 24px;
+
+    border: 0;
+    border-radius: var(--rounded, 8px);
+
+    color: #ffffff;
+    background: #547f9d;
+
+    font: inherit;
+    font-weight: 700;
+
+    cursor: pointer;
+  }
+
+  .password-gate button:hover {
+    background: #466f8a;
+  }
+
+  @media screen and (max-width: 680px) {
+    .password-gate-panel {
+      padding: 34px 24px;
+    }
+
+    .password-gate h1 {
+      font-size: 2rem;
+    }
+
+    .password-gate-form-row {
+      flex-wrap: wrap;
+    }
+
+    .password-gate label {
+      width: 100%;
+      text-align: center;
+    }
+
+    .password-gate input {
+      width: min(100%, 360px);
+    }
+  }
+</style>
+
+<script>
+  (function () {
+    var storageKey = "digitalbiostatistics:section-unlocked:education";
+    var expectedHash = "a8af33740ca3534293348322fc2c2e981298fc23174cb545608d9cc105758c9e";
+
+    try {
+      if (window.localStorage.getItem(storageKey) === expectedHash) {
+        document.documentElement.classList.remove("is-password-locked");
+        document.documentElement.classList.add("is-password-unlocked");
+      }
+    } catch (error) {
+      document.documentElement.classList.add("is-password-locked");
+    }
+  })();
+</script>
+
+<div class="password-gate" data-password-gate data-password-hash="a8af33740ca3534293348322fc2c2e981298fc23174cb545608d9cc105758c9e" data-password-storage-key="digitalbiostatistics:section-unlocked:education" aria-modal="true" role="dialog" aria-labelledby="password-gate-title">
+  <form class="password-gate-panel" data-password-form>
+    <noscript>
+      <p class="password-gate-error">
+        访问此栏目需要启用 JavaScript。
+      </p>
+    </noscript>
+
+    <h1 id="password-gate-title">
+      数字生物统计学
+    </h1>
+
+    <p class="password-gate-message">
+      此栏目受密码保护，请输入密码以继续访问。
+    </p>
+
+    <div class="password-gate-form-row">
+      <label for="site-password">
+        密码
+      </label>
+
+      <input id="site-password" name="password" type="password" autocomplete="current-password" data-password-input required>
+
+      <button type="submit">
+        进入
+      </button>
+    </div>
+
+    <p class="password-gate-error" data-password-error role="alert" hidden>
+      密码错误。
+    </p>
+
+    <a class="password-gate-home" href="/zh/">返回首页</a>
+  </form>
+</div>
+
     
 
 

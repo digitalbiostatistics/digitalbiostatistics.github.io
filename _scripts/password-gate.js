@@ -1,13 +1,15 @@
 (function () {
-  const storageKey = "digitalbiostatistics:site-unlocked";
-
   function lockSite() {
     document.documentElement.classList.add("is-password-locked");
     document.documentElement.classList.remove("is-password-unlocked");
   }
 
-  function unlockSite(gate, expectedHash) {
-    window.localStorage.setItem(storageKey, expectedHash);
+  function unlockSite(gate, expectedHash, storageKey) {
+    try {
+      window.localStorage.setItem(storageKey, expectedHash);
+    } catch (error) {
+      // If storage is unavailable, allow access for the current page only.
+    }
     document.documentElement.classList.remove("is-password-locked");
     document.documentElement.classList.add("is-password-unlocked");
     gate.hidden = true;
@@ -39,12 +41,14 @@
     }
 
     const expectedHash = gate.dataset.passwordHash;
+    const storageKey = gate.dataset.passwordStorageKey;
     const form = gate.querySelector("[data-password-form]");
     const input = gate.querySelector("[data-password-input]");
     const error = gate.querySelector("[data-password-error]");
 
     if (
       !expectedHash ||
+      !storageKey ||
       !form ||
       !input ||
       !window.crypto ||
@@ -53,9 +57,13 @@
       return;
     }
 
-    if (window.localStorage.getItem(storageKey) === expectedHash) {
-      unlockSite(gate, expectedHash);
-      return;
+    try {
+      if (window.localStorage.getItem(storageKey) === expectedHash) {
+        unlockSite(gate, expectedHash, storageKey);
+        return;
+      }
+    } catch (error) {
+      // Continue to the form if browser storage is unavailable.
     }
 
     lockSite();
@@ -69,7 +77,7 @@
       const candidateHash = await sha256(input.value);
 
       if (candidateHash === expectedHash) {
-        unlockSite(gate, expectedHash);
+        unlockSite(gate, expectedHash, storageKey);
         input.value = "";
         return;
       }
