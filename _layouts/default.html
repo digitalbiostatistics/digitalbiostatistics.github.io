@@ -1,14 +1,21 @@
 {% assign current_lang = page.lang | default: 'en' %}
+{% assign canonical_path = page.english_url | default: page.url %}
+{% assign page_section = canonical_path | remove_first: '/' | split: '/' | first %}
+{% assign protected_sections = 'team,projects,members' | split: ',' %}
+{% assign password_required = false %}
+{% if protected_sections contains page_section %}
+  {% assign password_required = true %}
+{% endif %}
 <!DOCTYPE html>
 <html
   lang="{{ page.lang | default: 'en' }}"
   dir="{% if page.lang == 'ar' %}rtl{% else %}ltr{% endif %}"
   data-dark="false"
-  class="is-password-locked mbzuai-theme"
+  class="mbzuai-theme{% if password_required %} is-password-locked{% endif %}"
 >
   {% include head.html %}
   <body>
-    {% include password-gate.html %}
+    {% if password_required %}{% include password-gate.html %}{% endif %}
     {% include header.html %}
     {% if page.translation_key == 'home' %}
       {% include mbzuai-hero.html %}

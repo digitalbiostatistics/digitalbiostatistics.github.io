@@ -1,15 +1,19 @@
 [
   {
-    "source": "JavaScript is required to access this private website.",
-    "translation": "يتطلب الدخول إلى هذا الموقع الخاص تفعيل JavaScript."
+    "source": "JavaScript is required to access this section.",
+    "translation": "يتطلب الدخول إلى هذا القسم تفعيل JavaScript."
   },
   {
     "source": "Digital Biostatistics",
     "translation": "الإحصاء الحيوي الرقمي"
   },
   {
-    "source": "This website is under construction. Please enter the password to continue.",
-    "translation": "هذا الموقع قيد الإنشاء. يُرجى إدخال كلمة المرور للمتابعة."
+    "source": "This section is password-protected. Please enter the password to continue.",
+    "translation": "هذا القسم محمي بكلمة مرور. يُرجى إدخال كلمة المرور للمتابعة."
+  },
+  {
+    "source": "Return to home",
+    "translation": "العودة إلى الصفحة الرئيسية"
   },
   {
     "source": "Password",

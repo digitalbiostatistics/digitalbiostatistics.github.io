@@ -1,15 +1,19 @@
 [
   {
-    "source": "JavaScript is required to access this private website.",
-    "translation": "访问此私密网站需要启用 JavaScript。"
+    "source": "JavaScript is required to access this section.",
+    "translation": "访问此栏目需要启用 JavaScript。"
   },
   {
     "source": "Digital Biostatistics",
     "translation": "数字生物统计学"
   },
   {
-    "source": "This website is under construction. Please enter the password to continue.",
-    "translation": "本网站正在建设中。请输入密码以继续访问。"
+    "source": "This section is password-protected. Please enter the password to continue.",
+    "translation": "此栏目受密码保护，请输入密码以继续访问。"
+  },
+  {
+    "source": "Return to home",
+    "translation": "返回首页"
   },
   {
     "source": "Password",

@@ -36,7 +36,11 @@ El árabe usa `dir="rtl"`, alineación adaptada, carruseles compatibles y los lo
 
 Después de compilar, `bundle exec ruby tests/check_locales.rb _site` comprueba la correspondencia entre páginas, imágenes, enlaces, idiomas y traducciones.
 
-Se mantiene el acceso por contraseña, el selector de idiomas, el modo oscuro, las publicaciones y los contenidos científicos. Los ajustes editoriales iniciales se limitan a los titulares, la presentación de la portada y convenciones como `Ph.D.`.
+`bundle exec ruby tests/check_password_pages.rb _site` comprueba qué páginas solicitan la contraseña, incluidos los perfiles y subproyectos, y verifica los avisos traducidos y los enlaces de vuelta al inicio.
+
+El acceso por contraseña se solicita solo en Team (`/team/`), Projects (`/projects/` y sus subpáginas) y las biografías del equipo (`/members/`), en los cinco idiomas. `_layouts/default.html` comprueba la ruta inglesa de cada página, incluida la de las traducciones. La portada y el resto de las secciones son públicas. Se mantiene la contraseña configurada en `site_password_hash` y el acceso recordado en el navegador; el aviso permite volver al inicio sin introducirla. Este mecanismo es una barrera visual en JavaScript: el HTML y los archivos siguen siendo accesibles, por lo que no debe utilizarse para guardar información confidencial. Una protección real requiere autenticación en el servidor o en la plataforma de alojamiento.
+
+Se mantienen el selector de idiomas, el modo oscuro, las publicaciones y los contenidos científicos. Los ajustes editoriales iniciales se limitan a los titulares, la presentación de la portada y convenciones como `Ph.D.`.
 
 Para una compilación normal, utilizar el entorno Jekyll del proyecto y `bundle exec jekyll serve --config _config.yaml`. Los cambios locales no se publican hasta incorporarlos al flujo habitual de GitHub Pages.
 

@@ -1,15 +1,19 @@
 [
   {
-    "source": "JavaScript is required to access this private website.",
-    "translation": "Se necesita JavaScript para acceder a este sitio privado."
+    "source": "JavaScript is required to access this section.",
+    "translation": "Se necesita JavaScript para acceder a esta sección."
   },
   {
     "source": "Digital Biostatistics",
     "translation": "Bioestadística digital"
   },
   {
-    "source": "This website is under construction. Please enter the password to continue.",
-    "translation": "Esta web está en construcción. Introduce la contraseña para continuar."
+    "source": "This section is password-protected. Please enter the password to continue.",
+    "translation": "Esta sección está protegida con contraseña. Introduce la contraseña para continuar."
+  },
+  {
+    "source": "Return to home",
+    "translation": "Volver al inicio"
   },
   {
     "source": "Password",
