@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" data-dark="false" class="is-password-locked mbzuai-theme">
+<html lang="ar" dir="rtl" data-dark="false" class="mbzuai-theme is-password-locked">
   <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
@@ -356,21 +356,37 @@
 <!-- include all js in scripts folder -->
 
 
-  <script src="/_scripts/anchors.js"></script>
+  
+    <script src="/_scripts/anchors.js"></script>
+  
 
-  <script src="/_scripts/dark-mode.js"></script>
+  
+    <script src="/_scripts/dark-mode.js"></script>
+  
 
-  <script src="/_scripts/fetch-tags.js"></script>
+  
+    <script src="/_scripts/fetch-tags.js"></script>
+  
 
-  <script src="/_scripts/password-gate.js"></script>
+  
+    <script src="/_scripts/password-gate.js"></script>
+  
 
-  <script src="/_scripts/search.js"></script>
+  
+    <script src="/_scripts/search.js"></script>
+  
 
-  <script src="/_scripts/site-search.js"></script>
+  
+    <script src="/_scripts/site-search.js"></script>
+  
 
-  <script src="/_scripts/table-wrap.js"></script>
+  
+    <script src="/_scripts/table-wrap.js"></script>
+  
 
-  <script src="/_scripts/tooltip.js"></script>
+  
+    <script src="/_scripts/tooltip.js"></script>
+  
 
 
   <!-- Cloudflare Web Analytics --><script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "42ceeff2db3345bab6f504fe15400493"}'></script><!-- End Cloudflare Web Analytics -->
@@ -510,6 +526,11 @@
     text-align: center;
   }
 
+  .password-gate-home {
+    margin-top: 24px;
+    text-align: center;
+  }
+
   .password-gate button {
     width: auto;
     min-width: 96px;
@@ -577,7 +598,7 @@
   <form class="password-gate-panel" data-password-form>
     <noscript>
       <p class="password-gate-error">
-        يتطلب الدخول إلى هذا الموقع الخاص تفعيل JavaScript.
+        يتطلب الدخول إلى هذا القسم تفعيل JavaScript.
       </p>
     </noscript>
 
@@ -586,7 +607,7 @@
     </h1>
 
     <p class="password-gate-message">
-      هذا الموقع قيد الإنشاء. يُرجى إدخال كلمة المرور للمتابعة.
+      هذا القسم محمي بكلمة مرور. يُرجى إدخال كلمة المرور للمتابعة.
     </p>
 
     <div class="password-gate-form-row">
@@ -604,6 +625,8 @@
     <p class="password-gate-error" data-password-error role="alert" hidden>
       كلمة المرور غير صحيحة.
     </p>
+
+    <a class="password-gate-home" href="/ar/">العودة إلى الصفحة الرئيسية</a>
   </form>
 </div>
 
