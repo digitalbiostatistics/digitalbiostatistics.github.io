@@ -4,7 +4,12 @@ require 'nokogiri'
 require 'json'
 
 module SiteLocalization
-  LANGUAGES = %w[es gl zh ar].freeze
+  LANGUAGES = %w[es gl zh ar ru pl].freeze
+  ENGLISH_MONTHS = %w[January February March April May June July August September October November December].freeze
+  DATE_MONTHS = {
+    'ru' => %w[января февраля марта апреля мая июня июля августа сентября октября ноября декабря],
+    'pl' => %w[stycznia lutego marca kwietnia maja czerwca lipca sierpnia września października listopada grudnia]
+  }.freeze
   def self.normalize(text)
     text.to_s.gsub(/[[:space:]]+/, ' ').strip
   end
@@ -84,6 +89,8 @@ module SiteLocalization
         leading = node.text[/\A[[:space:]]*/]
         trailing = node.text[/[[:space:]]*\z/]
         node.content = leading + dictionary[key] + trailing
+      elsif DATE_MONTHS.key?(lang) && node.ancestors.any? { |a| a['class'].to_s.split.include?('post-info') } && (date = key.match(/\A([A-Z][a-z]+) (\d{2}), (\d{4})\z/)) && (month = ENGLISH_MONTHS.index(date[1]))
+        node.content = "#{date[2].to_i} #{DATE_MONTHS[lang][month]} #{date[3]}#{lang == 'ru' ? ' года' : ''}"
       elsif key.start_with?('Search for ') && key.end_with?("'s papers on the Research page")
         name = key.delete_prefix('Search for ').delete_suffix("'s papers on the Research page")
         node.content = dictionary.fetch('Search papers by {name}', 'Search papers by {name}').gsub('{name}', name)
@@ -120,7 +127,7 @@ module SiteLocalization
     end
     doc.css('.portrait').each do |portrait|
       if portrait.at_css('.portrait-name')&.text&.strip == 'Yasmeena Akhter'
-        portrait.at_css('.portrait-description').content = { 'es'=>'Investigadora visitante', 'gl'=>'Investigadora visitante', 'zh'=>'访问研究员', 'ar'=>'باحثة زائرة' }[lang]
+        portrait.at_css('.portrait-description').content = { 'es'=>'Investigadora visitante', 'gl'=>'Investigadora visitante', 'zh'=>'访问研究员', 'ar'=>'باحثة زائرة', 'ru'=>'Приглашённая исследовательница', 'pl'=>'Badaczka wizytująca' }[lang]
       end
     end
     # Localize dynamic controls with the same reviewed dictionary.
@@ -131,7 +138,7 @@ module SiteLocalization
     data.content = JSON.generate(dictionary.select { |key, _| dynamic_keys.include?(key) }).gsub('<', '\\u003c')
     doc.at_css('head').add_child(data)
     doc.css('meta[name="title"],meta[name="description"],meta[property$=":title"],meta[property$=":description"]').each { |n| n['content'] = translate.call(n['content']) }
-    doc.at_css('meta[property="og:locale"]')['content'] = { 'es'=>'es_ES', 'gl'=>'gl_ES', 'zh'=>'zh_CN', 'ar'=>'ar_AE' }[lang]
+    doc.at_css('meta[property="og:locale"]')['content'] = { 'es'=>'es_ES', 'gl'=>'gl_ES', 'zh'=>'zh_CN', 'ar'=>'ar_AE', 'ru'=>'ru_RU', 'pl'=>'pl_PL' }[lang]
     page.output = doc.to_html
   end
 end

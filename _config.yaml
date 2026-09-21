@@ -36,6 +36,14 @@ languages:
     home: /ar/
     direction: rtl
 
+  - code: ru
+    name: Русский
+    home: /ru/
+
+  - code: pl
+    name: Polski
+    home: /pl/
+
 # site social media and other links
 links:
   email: Marcos.Matabuena@mbzuai.ac.ae

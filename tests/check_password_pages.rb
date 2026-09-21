@@ -4,7 +4,7 @@ require 'json'
 require 'yaml'
 
 root = ARGV.fetch(0, '_site')
-languages = %w[en es gl zh ar]
+languages = %w[en es gl zh ar ru pl]
 password_hashes = YAML.safe_load(File.read('_config.yaml'))['section_password_hashes']
 expected_sections = %w[team projects education philosophy]
 abort 'Missing section passwords' unless password_hashes&.keys&.sort == expected_sections.sort
@@ -19,7 +19,7 @@ protected_pages = {
   section = { 'members' => 'team', 'teaching' => 'education' }.fetch(directory, directory)
   Dir.glob("#{directory}/**/*.html", base: root).each { |path| protected_pages[path] = section }
 end
-english_pages = Dir.glob('**/*.html', base: root).reject { |path| path.match?(%r{\A(es|gl|zh|ar)/}) }
+english_pages = Dir.glob('**/*.html', base: root).reject { |path| path.match?(%r{\A(es|gl|zh|ar|ru|pl)/}) }
 errors = []
 counts = Hash.new(0)
 message = 'This section is password-protected. Please enter the password to continue.'
@@ -67,4 +67,4 @@ languages.each do |lang|
   end
 end
 abort errors.uniq.join("\n") unless errors.empty?
-puts "Passed: #{counts['protected']} protected pages and #{counts['public']} public pages across all five languages; four independent password scopes, scripts, translations and return links."
+puts "Passed: #{counts['protected']} protected pages and #{counts['public']} public pages across all #{languages.size} languages; four independent password scopes, scripts, translations and return links."
