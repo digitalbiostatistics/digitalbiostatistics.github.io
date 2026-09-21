@@ -216,7 +216,8 @@ html.mbzuai-theme:lang(zh) { --title: "Aktiv Grotesk", "PingFang SC", "Microsoft
 .mbzuai-theme[dir="rtl"] .highlighted-paper-slide, .mbzuai-theme[dir="rtl"] .testimonial-slide, .mbzuai-theme[dir="rtl"] .teaching-quote-slide { direction: rtl; }
 .mbzuai-theme[dir="rtl"] .citation-authors, .mbzuai-theme[dir="rtl"] .highlighted-paper-title, .mbzuai-theme[dir="rtl"] .highlighted-paper-authors, .mbzuai-theme[dir="rtl"] .portrait-name { unicode-bidi: plaintext; }
 .mbzuai-theme:not(:lang(en)) .mbzuai-group-caption { white-space: normal; }
-.mbzuai-theme:lang(es) .mbzuai-hero h1, .mbzuai-theme:lang(gl) .mbzuai-hero h1 { font-size: clamp(2.2rem, 5vw, 4.6rem); }
+.mbzuai-theme:lang(es) .mbzuai-hero h1, .mbzuai-theme:lang(gl) .mbzuai-hero h1,
+.mbzuai-theme:lang(ru) .mbzuai-hero h1, .mbzuai-theme:lang(pl) .mbzuai-hero h1 { font-size: clamp(2.2rem, 5vw, 4.6rem); }
 @media (max-width: 900px) { .mbzuai-theme[dir="rtl"] .mbzuai-hero-copy { padding: 48px var(--page-gutter) 48px 30px; } }
 @media (max-width: 700px) {
   .mbzuai-theme[dir="rtl"] .mbzuai-hero-copy { padding: 44px var(--page-gutter) 46px; }
